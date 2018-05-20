@@ -2,20 +2,23 @@ let styles = {
     a: {
         display: 'block',
         color: '#eee',
-        backgroundColor: '#989898',
+        // backgroundColor: '#989898', // debugging
+        fontSize: '1.4em',
+        fontWeight: 'bold',
+        textDecoration: 'none',
+        textTransform: 'uppercase'
     },
-    contentsWrapper: {
+    wrapper: {
+        display: 'flex',
+        alignItems: 'center'
     },
     text: {
-        display: 'inline-block',
-        height: '50px',
-        
-        fontSize: '1.4em'
+        marginLeft: '0.5em',
     },
     arrowImage: {
-        float: 'right',
-        height: '50px',
-        width: '50px'
+        marginLeft: 'auto',
+        height: '2em',
+        width: '2em'
     }
 }
 
