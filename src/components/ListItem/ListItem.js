@@ -1,7 +1,6 @@
 import React from 'react';
 import Img from 'react-image';
 import Link from '../Link/Link';
-import Radium from 'radium';
 import getStyles from './ListItem.css';
 
 class ListItem extends React.Component {
@@ -20,4 +19,4 @@ class ListItem extends React.Component {
     }
 }
 
-export default Radium(ListItem);
+export default ListItem;
