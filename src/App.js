@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import List from './components/List/List';
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
   state = {
@@ -11,15 +12,20 @@ class App extends Component {
     let xhr = new XMLHttpRequest();
     xhr.responseType = 'json';
     xhr.onload = () => {
-      this.setState({codingProjects: xhr.response});
+      this.setState({ codingProjects: xhr.response });
     };
     xhr.open('GET', 'https://raw.githubusercontent.com/arkadyt/json-content/master/react-p.json')
     xhr.send();
-  }  
+  }
 
   render() {
     if (this.state.codingProjects) {
-      return <List projectsList={this.state.codingProjects}/>;
+      return (
+        <div>
+          <List projectsList={this.state.codingProjects} />
+          <Footer />
+        </div>
+      );
     }
 
     return null;
