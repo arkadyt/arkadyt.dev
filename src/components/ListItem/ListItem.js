@@ -1,14 +1,15 @@
 import React from 'react';
 import Img from 'react-image';
 import Link from '../Link/Link';
-//import Radium from 'radium';
-import styles from './ListItem.css';
+import Radium from 'radium';
+import getStyles from './ListItem.css';
 
 class ListItem extends React.Component {
     render() {
+        let styles = getStyles(this.props.id);
         return (
             <div style={styles.wrapper}>
-                <Img src={[this.props.picture]} alt={this.props.title}/>
+                <Img src={[this.props.picture]} style={styles.image}/>
                 <div style={styles.description}>
                     <h2>{this.props.title}</h2>
                     <p>{this.props.content}</p>
@@ -19,4 +20,4 @@ class ListItem extends React.Component {
     }
 }
 
-export default ListItem;
+export default Radium(ListItem);

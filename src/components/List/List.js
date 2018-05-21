@@ -8,17 +8,9 @@ class List extends React.Component {
     }
 
     render() {
-        return (
-            <div>
-                {this.props.projectsList.map(project => {
-                    return (
-                        <div>
-                            <ListItem {...project} />
-                        </div>
-                    );
-                })}
-            </div>
-        );
+        return this.props.projectsList.map((project, index) => {
+            return <ListItem key={index} id={index} {...project} />;
+        });
     }
 }
 
