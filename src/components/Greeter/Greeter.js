@@ -4,7 +4,7 @@ import styles from './Greeter.css';
 class Greeter extends React.Component {
     render() {
         return <div style={styles.container}>
-            <img style={styles.image} src='https://i.imgur.com/9uekvHt.jpg'/>
+            <img style={styles.image} src='https://i.imgur.com/9uekvHt.jpg' alt=''/>
             <video style={styles.vid} autoPlay="true" loop="true">
                 <source src="https://www.jam3.com/wp-content/uploads/2017/08/Jam3_About_RV_v04.mp4" type="video/mp4" />
             </video>
@@ -17,7 +17,7 @@ class Greeter extends React.Component {
             </p>
 
             {/* Dummy objects create specific balance inside the flexbox,
-                putting the visible paragraph into the first third of the space. */}
+                pushing the visible paragraph into the first fourth of the space. */}
             <p style={{ margin: 'auto' }} />
             <p style={{ margin: 'auto' }} />
             <p style={{ margin: 'auto' }} />

@@ -23,11 +23,11 @@ class App extends Component {
   render() {
     if (this.state.codingProjects) {
       return <div>
-          <Greeter />
-          <List projectsList={this.state.codingProjects} />
-          <EmailMe />
-          <Footer />
-        </div>;
+{/*         <Greeter />
+        <List projectsList={this.state.codingProjects} /> */}
+        <EmailMe />
+        <Footer />
+      </div>;
     }
 
     return null;
