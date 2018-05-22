@@ -1,7 +1,9 @@
+import palette from '../../misc/colorPalette';
+
 let styles = {
     a: {
         display: 'block',
-        color: '#eee',
+        color: palette.FONT_WHITE,
         // backgroundColor: '#989898', // debugging
         fontSize: '1.4em',
         fontWeight: 'bold',

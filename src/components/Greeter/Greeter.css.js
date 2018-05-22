@@ -1,3 +1,5 @@
+import palette from '../../misc/colorPalette';
+
 let styles = {
     container: {
         height: '100vh',
@@ -23,7 +25,7 @@ let styles = {
     },
     nameParagraph: {
         margin: 'auto',
-        color: '#eee',
+        color: palette.FONT_WHITE,
         fontSize: '2.4em',
     }
 }

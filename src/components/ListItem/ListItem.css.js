@@ -1,10 +1,12 @@
+import palette from '../../misc/colorPalette';
+
 function getStyles(index) {
     let isEven = index%2 === 0;
 
     let styles = {
         wrapper: {
             display: 'flex',
-            backgroundColor: isEven? '#555' : '#333',
+            backgroundColor: isEven? palette.COLOR_LIGHT : palette.COLOR_DARK,
             padding: '50px',
             justifyContent: isEven? 'flex-end' : 'flex-start',
             textAlign: isEven? 'right' : 'left',
@@ -13,10 +15,10 @@ function getStyles(index) {
             order: isEven? 1 : 0
         },
         description: {
-            color: '#eee',
+            color: palette.FONT_WHITE,
         },
         descriptionEven: {
-            color: '#eee'
+            color: palette.FONT_WHITE
         }
     }
 

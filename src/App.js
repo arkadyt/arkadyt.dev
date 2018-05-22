@@ -24,8 +24,8 @@ class App extends Component {
     if (this.state.codingProjects) {
       return <div>
 {/*         <Greeter />
-        <List projectsList={this.state.codingProjects} /> */}
-        <EmailMe />
+        <List projectsList={this.state.codingProjects} /> 
+        <EmailMe /> */}
         <Footer />
       </div>;
     }

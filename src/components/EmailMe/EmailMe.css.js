@@ -1,6 +1,8 @@
+import palette from '../../misc/colorPalette';
+
 let styles = {
     container: {
-        backgroundColor: '#555',
+        backgroundColor: palette.COLOR_LIGHT,
         height: '100vh',
         display: 'flex',
         alignItems: 'center',
@@ -8,7 +10,7 @@ let styles = {
     },
     paragraph: {
         margin: 'auto',
-        color: '#eee',
+        color: palette.FONT_WHITE,
         fontSize: '1.6em',
     },
     forms: {
@@ -33,7 +35,7 @@ let styles = {
         height: '50px',
         width: '160px',
         fontSize: '1.6em',
-        color: '#eee',
+        color: palette.FONT_WHITE,
         border: '2px solid #070',
         backgroundColor: '#0b0',
         borderRadius: '10px',
