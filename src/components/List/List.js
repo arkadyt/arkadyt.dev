@@ -2,15 +2,14 @@ import React from 'react';
 import ListItem from '../ListItem/ListItem';
 
 class List extends React.Component {
-    state = {
-        showCodingProjects: true,
-        applyDarkStyle: true
-    }
-
     render() {
-        return this.props.projectsList.map((project, index) => {
-            return <ListItem key={index} id={index} {...project} />;
-        });
+        /* Div wrapper is required by getFracYPos() at NavBar.js 
+        /* to be able to read !whole! List dimensions. */
+        return <div>
+            {this.props.projectsList.map((project, index) => {
+                return <ListItem key={index} id={index} {...project} />;
+            })}
+        </div>;
     }
 }
 

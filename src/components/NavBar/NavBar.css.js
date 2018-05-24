@@ -1,15 +1,17 @@
 import palette from '../../misc/colorPalette';
 
+export const NAVBAR_HEIGHT = 55;
+
 export default {
     container: {
         position: 'fixed',
         top: 0, left: 0,
         
-        display: 'flex',
+        display: 'none',
         justifyContent: 'space-between',
         alignItems: 'center',
 
-        height: '55px',
+        height: NAVBAR_HEIGHT,
         width: '100%',
 
         backgroundColor: palette.COLOR_DARK,
@@ -24,14 +26,7 @@ export default {
         fontWeight: 'bold',
         color: palette.FONT_WHITE,
     },
-    name: {
-        marginLeft: '20px',
-        fontSize: '1.3em',
-
-        fontWeight: 'bold',
-        color: palette.FONT_WHITE,        
-    },
     smlinks: {
-        marginRight: '20px',
+        marginRight: 20,
     }
 }

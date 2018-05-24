@@ -1,9 +1,10 @@
 import palette from '../../misc/colorPalette';
+import { NAVBAR_HEIGHT } from '../NavBar/NavBar.css';
 
 let styles = {
     container: {
         backgroundColor: palette.COLOR_LIGHT,
-        height: '100vh',
+        height: window.innerHeight - NAVBAR_HEIGHT,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

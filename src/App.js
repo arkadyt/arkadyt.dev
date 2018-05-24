@@ -1,42 +1,32 @@
 import React, { Component } from 'react';
 import './App.css';
+
 import List from './components/List/List';
 import Footer from './components/Footer/Footer';
 import EmailMe from './components/EmailMe/EmailMe';
 import Greeter from './components/Greeter/Greeter';
 import NavBar from './components/NavBar/NavBar';
 
+import dummyData from './misc/dummyData';
+
 class App extends Component {
   state = {
-    codingProjects: undefined
-  }
-
-  fetchProjectsList() {
-    let xhr = new XMLHttpRequest();
-    xhr.responseType = 'json';
-    xhr.onload = () => {
-      this.setState({ codingProjects: xhr.response });
-    };
-    xhr.open('GET', 'https://raw.githubusercontent.com/arkadyt/json-content/master/react-p.json')
-    xhr.send();
+    projects: dummyData,
+    compReferences: new Array(3).fill().map(() => {
+      return React.createRef()
+    })
   }
 
   render() {
-    if (this.state.codingProjects) {
-      return <div>
-        <NavBar />
-        <Greeter />
-        <List projectsList={this.state.codingProjects} />
-        <EmailMe />
-        <Footer />
-      </div>;
-    }
+    return <div>
+      <NavBar refsList={this.state.compReferences} />
 
-    return null;
-  }
+      <Greeter ref={this.state.compReferences[0]} />
+      <List ref={this.state.compReferences[1]} projectsList={this.state.projects} />
+      <EmailMe ref={this.state.compReferences[2]} />
 
-  componentDidMount() {
-    this.fetchProjectsList();
+      <Footer />
+    </div>;
   }
 }
 
