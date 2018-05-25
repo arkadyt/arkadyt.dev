@@ -56,7 +56,7 @@ class NavBar extends React.Component {
                 // if top of an element becomes less than navbar height
                 // that element's top is at the viewport top.
                 if (ReactDOM.findDOMNode(this.props.refsList[i].current)
-                    .getBoundingClientRect().top <= NAVBAR_HEIGHT) {
+                    .getBoundingClientRect().top <= NAVBAR_HEIGHT + window.innerHeight / 4) {
                     itemId = i;
                 }
             }

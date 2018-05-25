@@ -3,7 +3,7 @@ import ListItem from '../ListItem/ListItem';
 
 class List extends React.Component {
     render() {
-        /* Div wrapper is required by getFracYPos() at NavBar.js 
+        /* Div wrapper is required at NavBar.js 
         /* to be able to read !whole! List dimensions. */
         return <div>
             {this.props.projectsList.map((project, index) => {
