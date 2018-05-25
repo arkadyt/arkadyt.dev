@@ -1,7 +1,6 @@
 import React from 'react';
 import styles from './Link.css';
-import Img from 'react-image';
-
+import { GoChevronRight } from 'react-icons/lib/go';
 
 class Link extends React.Component {
     render() {
@@ -9,7 +8,7 @@ class Link extends React.Component {
             <a style={styles.a} href={this.props.url}>
                 <div style={styles.wrapper}>
                     <span style={styles.text}>{this.props.title}</span>
-                    <Img style={styles.arrowImage} src={'http://icons.iconarchive.com/icons/icons8/android/256/Arrows-Right-icon.png'} />
+                    <GoChevronRight style={styles.arrow} />
                 </div>
             </a>
         );

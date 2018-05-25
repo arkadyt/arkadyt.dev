@@ -15,12 +15,10 @@ let styles = {
         alignItems: 'center'
     },
     text: {
-        marginLeft: '0.5em',
     },
-    arrowImage: {
+    arrow: {
         marginLeft: 'auto',
-        height: '2em',
-        width: '2em'
+        fontSize: '1.5em',
     }
 }
 

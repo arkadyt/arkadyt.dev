@@ -8,7 +8,7 @@ import MenuItem from './MenuItem';
 import styles from './NavBar.css';
 import { NAVBAR_HEIGHT } from './NavBar.css';
 
-import { GoShevronRight, GoMarkGithub } from 'react-icons/lib/go';
+import { GoMarkGithub } from 'react-icons/lib/go';
 import {
     FaTwitter, FaGooglePlus,
     FaLinkedinSquare, FaFacebookSquare
