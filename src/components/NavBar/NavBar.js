@@ -8,6 +8,13 @@ import MenuItem from './MenuItem';
 import styles from './NavBar.css';
 import { NAVBAR_HEIGHT } from './NavBar.css';
 
+import { GoShevronRight, GoMarkGithub } from 'react-icons/lib/go';
+import {
+    FaTwitter, FaGooglePlus,
+    FaLinkedinSquare, FaFacebookSquare
+} from 'react-icons/lib/fa';
+
+
 class NavBar extends React.Component {
     state = {
         highlightedItemId: 0,
@@ -27,7 +34,7 @@ class NavBar extends React.Component {
                 opacity: this.state.opacity,
                 display: this.state.display
             }}>
-                <div>{/* Dummy div to hold correct balance inside the flexbox. */}</div>
+                <div style={{ flex: 1 }}>{/* Dummy div to hold correct balance inside the flexbox. */}</div>
                 <ul style={styles.menu}>
                     {this.props.refsList.map((ref, index) => {
                         return <MenuItem
@@ -37,7 +44,13 @@ class NavBar extends React.Component {
                             onClick={this.handleMenuItemClick.bind(this)} />
                     })}
                 </ul>
-                <div style={styles.smlinks}></div>
+                <div style={styles.smlinks}>
+                    <GoMarkGithub style={styles.smlink} />
+                    <FaFacebookSquare style={styles.smlink} />
+                    <FaLinkedinSquare style={styles.smlink} />
+                    <FaTwitter style={styles.smlink} />
+                    <FaGooglePlus style={styles.smlink} />
+                </div>
             </nav>
         );
     }
@@ -46,7 +59,7 @@ class NavBar extends React.Component {
         window.addEventListener('scroll', () => {
             const opVal = window.scrollY / ((window.innerHeight / 4) * 3);
             this.setState({
-                opacity: opVal > 1 ? 1 : opVal, 
+                opacity: opVal > 1 ? 1 : opVal,
                 display: opVal === 0 ? 'none' : 'flex',
             });
 

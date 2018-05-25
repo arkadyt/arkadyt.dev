@@ -19,7 +19,12 @@ export default {
         opacity: 0,
     },
     menu: {
+        flex: 1,
+        flexBasis: '35%',
+
         display: 'flex',
+        justifyContent: 'center',
+        
         margin: 0, padding: 0,
         height: '100%',
 
@@ -27,6 +32,16 @@ export default {
         color: palette.FONT_WHITE,
     },
     smlinks: {
-        marginRight: 20,
+        flex: 1,
+        display: 'flex',
+        justifyContent: 'flex-end',
+
+        color: palette.FONT_WHITE,
+        fontSize: '1.6em',
+        
+        marginRight: 10
+    },
+    smlink: {
+        marginRight: 5
     }
 }
