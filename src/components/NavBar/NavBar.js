@@ -2,16 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import MenuItem from './MenuItem';
+import SMLinks from '../SMLinks/SMLinks';
 
 import styles from './NavBar.css';
 import { NAVBAR_HEIGHT } from './NavBar.css';
-
-import { GoMarkGithub } from 'react-icons/lib/go';
-import {
-    FaTwitter, FaGooglePlus,
-    FaLinkedinSquare, FaFacebookSquare
-} from 'react-icons/lib/fa';
-
 
 class NavBar extends React.Component {
     state = {
@@ -42,13 +36,7 @@ class NavBar extends React.Component {
                             onClick={this.handleItemClick.bind(this)} />
                     })}
                 </ul>
-                <div style={styles.smlinks}>
-                    <GoMarkGithub style={styles.smlink} />
-                    <FaFacebookSquare style={styles.smlink} />
-                    <FaLinkedinSquare style={styles.smlink} />
-                    <FaTwitter style={styles.smlink} />
-                    <FaGooglePlus style={styles.smlink} />
-                </div>
+                <SMLinks />
             </nav>
         );
     }

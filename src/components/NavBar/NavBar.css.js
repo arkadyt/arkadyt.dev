@@ -33,17 +33,4 @@ export default {
         fontWeight: 'bold',
         color: palette.FONT_WHITE,
     },
-    smlinks: {
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-end',
-
-        color: palette.FONT_WHITE,
-        fontSize: '1.6em',
-        
-        marginRight: 10
-    },
-    smlink: {
-        marginRight: 5
-    }
 }
