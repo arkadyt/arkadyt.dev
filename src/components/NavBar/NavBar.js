@@ -15,18 +15,18 @@ class NavBar extends React.Component {
             "My Works",
             "Contact Me",
         ],
-        opacity: 0,
-        display: 'none',
+        animatedStyle: {
+            opacity: 0,
+            display: 'none',
+        }
     }
 
     render() {
         return (
-            <nav style={{
-                ...styles.container,
-                opacity: this.state.opacity,
-                display: this.state.display
-            }}>
-                <div style={{ flex: 1 }}>{/* Dummy div to hold correct balance inside the flexbox. */}</div>
+            <nav style={{ ...styles.container, ...this.state.animatedStyle }}>
+                <div style={{ flex: 1 }}>
+                    {/* Dummy div to hold correct balance inside the flexbox. */}
+                </div>
                 <ul style={styles.menu}>
                     {this.props.refsList.map((ref, index) => {
                         return <MenuItem
@@ -54,8 +54,10 @@ class NavBar extends React.Component {
     updateOpacity() {
         const progress = window.scrollY / ((window.innerHeight / 4) * 3);
         this.setState({
-            opacity: progress > 1 ? 1 : progress,
-            display: progress === 0 ? 'none' : 'flex',
+            animatedStyle: {
+                opacity: progress > 1 ? 1 : progress,
+                display: progress === 0 ? 'none' : 'flex',
+            }
         });
     }
 
