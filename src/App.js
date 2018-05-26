@@ -4,8 +4,9 @@ import './App.css';
 import List from './components/List/List';
 import Footer from './components/Footer/Footer';
 import EmailMe from './components/EmailMe/EmailMe';
-import Greeter from './components/Greeter/Greeter';
+import Background from './components/Background/Background';
 import NavBar from './components/NavBar/NavBar';
+import AnimatedName from './components/AnimatedName/AnimatedName';
 
 import dummyData from './misc/dummyData';
 
@@ -19,13 +20,18 @@ class App extends Component {
 
   render() {
     return <div>
-      <NavBar refsList={this.state.compReferences} />
+      <Background ref={this.state.compReferences[0]} />
 
-      <Greeter ref={this.state.compReferences[0]} />
+      <NavBar refsList={this.state.compReferences} />
+      <AnimatedName />
+
+      <div style={{ height: '170vh' }}></div>
       <List ref={this.state.compReferences[1]} projectsList={this.state.projects} />
       <EmailMe ref={this.state.compReferences[2]} />
 
       <Footer />
+
+      
     </div>;
   }
 }

@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import scrollToComponent from 'react-scroll-to-component';
-
 import MenuItem from './MenuItem';
 
 import styles from './NavBar.css';
@@ -41,7 +39,7 @@ class NavBar extends React.Component {
                             key={index} id={index}
                             title={this.state.itemTitles[index]}
                             highlighted={this.state.highlightedItemId === index}
-                            onClick={this.handleMenuItemClick.bind(this)} />
+                            onClick={this.handleItemClick.bind(this)} />
                     })}
                 </ul>
                 <div style={styles.smlinks}>
@@ -57,31 +55,50 @@ class NavBar extends React.Component {
 
     componentDidMount() {
         window.addEventListener('scroll', () => {
-            const opVal = window.scrollY / ((window.innerHeight / 4) * 3);
-            this.setState({
-                opacity: opVal > 1 ? 1 : opVal,
-                display: opVal === 0 ? 'none' : 'flex',
-            });
-
-            // Get the ID of a currently displayed component at the viewport.
-            let itemId = 0;
-            for (let i = 0; i < this.props.refsList.length; i++) {
-                // if top of an element becomes less than navbar height
-                // that element's top is at the viewport top.
-                if (ReactDOM.findDOMNode(this.props.refsList[i].current)
-                    .getBoundingClientRect().top <= NAVBAR_HEIGHT + window.innerHeight / 4) {
-                    itemId = i;
-                }
-            }
-            // React will ignore consequent commands with similar values.
-            this.setState({ highlightedItemId: itemId });
+            this.updateOpacity();
+            this.updateHighlighted();
         });
     }
 
-    handleMenuItemClick(index) {
-        scrollToComponent(this.props.refsList[index].current, {
-            offset: -NAVBAR_HEIGHT,
-            align: 'top',
+    /**
+     * Update nav bar opacity.
+     */
+    updateOpacity() {
+        const progress = window.scrollY / ((window.innerHeight / 4) * 3);
+        this.setState({
+            opacity: progress > 1 ? 1 : progress,
+            display: progress === 0 ? 'none' : 'flex',
+        });
+    }
+
+    /**
+     * Update highlighted menu item depending on the Y scroll position.
+     */
+    updateHighlighted() {
+        let itemId = 0;
+        // detect currently displayed component.
+        for (let i = 0; i < this.props.refsList.length; i++) {
+            // if top of the component is less than navbar height + offset
+            // that element is taking enough screen space to highlight it
+            // in menu.
+            if (this.getComponentTop(this.props.refsList[i])
+                <= NAVBAR_HEIGHT + window.innerHeight / 4) {
+                itemId = i;
+            }
+        }
+        this.setState({ highlightedItemId: itemId });
+    }
+
+    getComponentTop(ref) {
+        return ReactDOM.findDOMNode(ref.current).getBoundingClientRect().top;
+    }
+
+    handleItemClick(index) {
+        const pos = index === 0 ? 0 :
+            this.getComponentTop(this.props.refsList[index]) + window.scrollY - NAVBAR_HEIGHT;
+        window.scrollTo({
+            top: pos,
+            behavior: "smooth"
         });
     }
 }
