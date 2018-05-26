@@ -3,20 +3,16 @@ import Img from 'react-image';
 import Link from '../Link/Link';
 import getStyles from './ListItem.css';
 
-class ListItem extends React.Component {
-    render() {
-        let styles = getStyles(this.props.id);
-        return (
-            <div style={styles.wrapper}>
-                <Img src={[this.props.picture]} style={styles.image}/>
-                <div style={styles.description}>
-                    <h2>{this.props.title}</h2>
-                    <p>{this.props.content}</p>
-                    <Link title='See project' url={this.props.link}/>
-                </div>
-            </div>
-        );
-    }
+function listItem(props) {
+    let styles = getStyles(props.id);
+    return <div style={styles.wrapper}>
+        <Img src={[props.picture]} style={styles.image} />
+        <div style={styles.description}>
+            <h2>{props.title}</h2>
+            <p>{props.content}</p>
+            <Link title='See project' url={props.link} />
+        </div>
+    </div>
 }
 
-export default ListItem;
+export default listItem;
