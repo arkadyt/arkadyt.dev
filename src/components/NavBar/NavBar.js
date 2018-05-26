@@ -84,10 +84,9 @@ class NavBar extends React.Component {
     }
 
     handleItemClick(index) {
-        const pos = index === 0 ? 0 :
-            this.getComponentTop(this.props.refsList[index]) + window.scrollY - NAVBAR_HEIGHT;
         window.scrollTo({
-            top: pos,
+            top: this.getComponentTop(this.props.refsList[index]) 
+            + window.scrollY - NAVBAR_HEIGHT, // top is relative value!
             behavior: "smooth"
         });
     }

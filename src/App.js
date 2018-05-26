@@ -13,25 +13,23 @@ import dummyData from './misc/dummyData';
 class App extends Component {
   state = {
     projects: dummyData,
-    compReferences: new Array(3).fill().map(() => {
+    references: new Array(3).fill().map(() => {
       return React.createRef()
     })
   }
 
   render() {
     return <div>
-      <Background ref={this.state.compReferences[0]} />
+      <Background />
 
-      <NavBar refsList={this.state.compReferences} />
+      <NavBar refsList={this.state.references} />
       <AnimatedName />
 
-      <div style={{ height: '170vh' }}></div>
-      <List ref={this.state.compReferences[1]} projectsList={this.state.projects} />
-      <EmailMe ref={this.state.compReferences[2]} />
+      <div style={{ height: '150vh' }} ref={this.state.references[0]}></div>
+      <List ref={this.state.references[1]} projectsList={this.state.projects} />
+      <EmailMe ref={this.state.references[2]} />
 
       <Footer />
-
-      
     </div>;
   }
 }
