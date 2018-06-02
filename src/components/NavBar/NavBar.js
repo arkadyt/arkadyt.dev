@@ -76,6 +76,7 @@ class NavBar extends React.Component {
                 itemId = i;
             }
         }
+        // TODO: Implement PureComponent logic.
         this.setState({ highlightedItemId: itemId });
     }
 
