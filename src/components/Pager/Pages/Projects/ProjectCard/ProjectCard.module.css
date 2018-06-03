@@ -1,0 +1,34 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vmax;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container p {
+    order: 0;
+    flex-basis: 45vw;
+    padding: 0 2vw;
+
+    color: #eee;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.header {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.image {
+    order: 1;
+    flex-basis: 45vw;
+
+    width: 45vw;
+    height: 60vh;
+    padding: 0 2vw;
+
+    object-fit: cover;
+}
