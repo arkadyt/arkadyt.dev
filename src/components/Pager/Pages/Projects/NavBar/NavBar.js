@@ -7,18 +7,18 @@ import { FaCircle } from 'react-icons/lib/fa';
 // eslint-disable-next-line
 import classes from './NavBar.module.css';
 
-const navBar = (props) => {
-    return (
-        <ul>
-            {props.urls.map(url => (
-                <li>
+class NavBar extends React.Component {
+    render() {
+        return <ul>
+            {this.props.urls.map(url => (
+                <li key={url}>
                     <Link to={url}>
-                        <FaCircle/>
+                        <FaCircle />
                     </Link>
                 </li>
             ))}
-        </ul>
-    );
+        </ul>;
+    }
 };
 
-export default navBar;
+export default NavBar;

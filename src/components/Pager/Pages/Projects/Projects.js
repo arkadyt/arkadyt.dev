@@ -49,7 +49,7 @@ class Projects extends Component {
                                 } />)
                     })}
 
-                    <NavBar urls={routes} />
+                    <NavBar urls={routes} className={classes.navBar} />
                 </div>
             </Router>
         );

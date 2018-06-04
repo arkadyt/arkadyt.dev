@@ -24,10 +24,9 @@
 
 .image {
     order: 1;
-    flex-basis: 45vw;
 
-    width: 45vw;
-    height: 60vh;
+    width: 45vmax;
+    height: 25vmax;
     padding: 0 2vw;
 
     object-fit: cover;
