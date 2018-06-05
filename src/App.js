@@ -1,16 +1,17 @@
 import React from 'react';
 
-// import Flap from './components/Flap/Flap';
-import Aux from './components/Aux/Aux';
+import Cover from './components/Cover/Cover';
 import Pager from './components/Pager/Pager';
+import withCoverCtx from './hocs/withCoverCtx';
 
-class App extends React.Component {
+class App extends React.PureComponent {
     render() {
-        return <Aux>
-            {/* <Flap /> */}
+        return <React.Fragment>
+            <Cover />
             <Pager />
-        </Aux>;
+        </React.Fragment>;
     }
 }
 
-export default App;
+export default withCoverCtx(App);
+

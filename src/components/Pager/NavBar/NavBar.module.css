@@ -1,12 +1,12 @@
 .list {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 
     margin: 0;
     padding: 0;
 
-    height: 30vh;
+    height: 20%;
     width: 100%;
 }
 
