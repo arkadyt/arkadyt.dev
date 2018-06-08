@@ -2,6 +2,17 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "coverageReporters": ["lcov"],
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/*.css.js",
+      "!**/node_modules/**",
+      "!**/vendor/**",
+      "!**/build/**",
+      "!**/coverage/**"
+    ]
+  },
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -13,7 +24,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "coverage": "react-scripts test --env=jsdom --coverage",
+    "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "devDependencies": {
     "enzyme": "^3.3.0",
