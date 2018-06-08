@@ -7,7 +7,7 @@ export const CoverCtx = React.createContext();
  * Provides context containing the state and handle to change it.
  * 
  * Supposed to wrap App component to allow for consuming at <Cover /> 
- * and for a button at Pager/NavBar.js.
+ * and at Pager/NavBar.js (for a HOME button).
  */
 export default (WrappedComponent) => {
     return class extends React.PureComponent {

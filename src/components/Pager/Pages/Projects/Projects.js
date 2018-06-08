@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 
 import ProjectCard from './ProjectCard/ProjectCard';
 import NavBar from './NavBar/NavBar';
@@ -30,9 +30,9 @@ class Projects extends Component {
 
         const routes = [];
 
-        return (
-            <Router>
-                <div className={classes.container}>
+        return <Router>
+            <div className={classes.container}>
+                <Switch>
                     {data.map((blob, index) => {
                         const route =
                             `${this.props.match.url}/${blob.header.replace(' ', '-').toLowerCase()}`;
@@ -48,11 +48,11 @@ class Projects extends Component {
                                     </ProjectCard>)
                                 } />)
                     })}
-
-                    <NavBar urls={routes} className={classes.navBar} />
-                </div>
-            </Router>
-        );
+                </Switch>
+                <NavBar urls={routes} className={classes.navBar} />
+                <Redirect to={routes[0]} />
+            </div>
+        </Router>;
     }
 }
 

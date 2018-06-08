@@ -11,8 +11,8 @@ class NavBar extends Component {
             <CoverCtx.Consumer>
                 {context => {
                     return <li>
-                        <a href='#' 
-                            onClick={() => { context.setCoverLifted(false) }}
+                        <a href='' 
+                            onClick={e => { e.preventDefault(); context.setCoverLifted(false); }}
                             className={classes.Link}>Home</a></li>
                 }}
             </CoverCtx.Consumer>
