@@ -48,9 +48,9 @@ class Projects extends Component {
                                     </ProjectCard>)
                                 } />)
                     })}
+                    <Redirect to={routes[0]} />
                 </Switch>
                 <NavBar urls={routes} className={classes.navBar} />
-                <Redirect to={routes[0]} />
             </div>
         </Router>;
     }
