@@ -3,7 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "jest": {
-    "coverageReporters": ["lcov"],
+    "coverageReporters": [
+      "lcov"
+    ],
     "collectCoverageFrom": [
       "**/*.{js,jsx}",
       "!**/*.css.js",
@@ -17,6 +19,7 @@
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-icons": "^2.2.7",
+    "react-router": "^4.3.1",
     "react-router-dom": "^4.2.2",
     "react-scripts-cssmodules": "^1.1.10"
   },
@@ -29,8 +32,9 @@
     "coveralls": "cat ./coverage/lcov.info | node node_modules/.bin/coveralls"
   },
   "devDependencies": {
+    "coveralls": "^3.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "coveralls": "^3.0.1"
+    "react-test-renderer": "^16.4.0"
   }
 }

@@ -6,15 +6,15 @@ import {
     FaLinkedinSquare, FaFacebookSquare
 } from 'react-icons/lib/fa';
 
-import styles from './SMLinks.css';
+import classes from './SMLinks.module.css';
 
 function sMLinks() {
-    return <div style={styles.smlinks}>
-        <GoMarkGithub style={styles.smlink} />
-        <FaFacebookSquare style={styles.smlink} />
-        <FaLinkedinSquare style={styles.smlink} />
-        <FaTwitter style={styles.smlink} />
-        <FaGooglePlus style={styles.smlink} />
+    return <div className={classes.smlinks}>
+        <GoMarkGithub className={classes.smlink} />
+        <FaFacebookSquare className={classes.smlink} />
+        <FaLinkedinSquare className={classes.smlink} />
+        <FaTwitter className={classes.smlink} />
+        <FaGooglePlus className={classes.smlink} />
     </div>;
 }
 

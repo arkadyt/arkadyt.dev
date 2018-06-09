@@ -1,0 +1,16 @@
+/* TODO: Use SASS */
+/* import palette from '../../../../../misc/colorPalette'; */
+
+.smlinks {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    color: #eeeeee;
+    font-size: 1.6em;
+    
+    margin-right: 10;
+}
+.smlink {
+    margin-right: 5;
+}
