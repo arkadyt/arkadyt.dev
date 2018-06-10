@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NavBar/> (at '/' route) matches snapshot. 1`] = `
+<ul
+  className="list"
+>
+  <li>
+    <a
+      className="Link"
+      href=""
+      onClick={[Function]}
+    >
+      Home
+    </a>
+  </li>
+  <li>
+    <a
+      aria-current={false}
+      className="Link"
+      href="/projects"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Projects
+    </a>
+  </li>
+  <li>
+    <a
+      aria-current={false}
+      className="Link"
+      href="/emailme"
+      onClick={[Function]}
+      style={undefined}
+    >
+      Email Me
+    </a>
+  </li>
+</ul>
+`;
