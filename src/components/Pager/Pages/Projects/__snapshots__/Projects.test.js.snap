@@ -33,8 +33,11 @@ exports[`matches snapshot. 1`] = `
   >
     <li>
       <a
+        aria-current="true"
+        className="active"
         href="//area-55"
         onClick={[Function]}
+        style={Object {}}
       >
         <svg
           fill="currentColor"

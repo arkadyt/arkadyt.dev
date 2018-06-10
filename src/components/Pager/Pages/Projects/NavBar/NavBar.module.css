@@ -19,3 +19,7 @@
 .list li {
     padding: 0 0.5vw;
 }
+
+.list .active {
+    background: orange;
+}

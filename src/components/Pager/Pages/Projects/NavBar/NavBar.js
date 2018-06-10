@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { FaCircle } from 'react-icons/lib/fa';
 
 import classes from './NavBar.module.css';
@@ -10,9 +10,9 @@ class NavBar extends React.Component {
         return <ul className={classes.list}>
             {this.props.urls.map(url => (
                 <li key={url}>
-                    <Link to={url}>
+                    <NavLink to={url} activeClassName={classes.active}>
                         <FaCircle />
-                    </Link>
+                    </NavLink>
                 </li>
             ))}
         </ul>;

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import { CoverCtx } from '../../../hocs/withCoverCtx';
 
@@ -8,6 +8,7 @@ import classes from './NavBar.module.css';
 class NavBar extends Component {
     render() {
         return <ul className={classes.list}>
+            {/* Home button */}
             <CoverCtx.Consumer>
                 {context => {
                     return <li>
@@ -16,11 +17,12 @@ class NavBar extends Component {
                             className={classes.Link}>Home</a></li>
                 }}
             </CoverCtx.Consumer>
+
             {Object.keys(this.props.routes).map(url => (
                 <li key={url}>
-                    <Link to={url} className={classes.Link}>
+                    <NavLink to={url} className={classes.Link} activeClassName={classes.active}>
                         {this.props.routes[url]}
-                    </Link>
+                    </NavLink>
                 </li>
             ))}
         </ul>;

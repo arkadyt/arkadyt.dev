@@ -6,8 +6,11 @@ exports[`matches snapshot. 1`] = `
 >
   <li>
     <a
+      aria-current={false}
+      className={undefined}
       href="/url1"
       onClick={[Function]}
+      style={undefined}
     >
       <svg
         fill="currentColor"
@@ -32,8 +35,11 @@ exports[`matches snapshot. 1`] = `
   </li>
   <li>
     <a
+      aria-current={false}
+      className={undefined}
       href="/url2"
       onClick={[Function]}
+      style={undefined}
     >
       <svg
         fill="currentColor"
