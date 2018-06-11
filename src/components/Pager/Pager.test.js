@@ -1,8 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { shallow, configure } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import Pager from './Pager';
 
-it('mounted with no errors.', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(<Pager/>, div);
-})
+configure({ adapter: new Adapter() });
+
+it('matches snapshot.', () => {
+    const tree = shallow(<Pager />);
+    expect(tree).toMatchSnapshot();
+});

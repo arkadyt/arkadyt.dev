@@ -13,9 +13,13 @@
       "!**/vendor/**",
       "!**/build/**",
       "!**/coverage/**"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
     ]
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-icons": "^2.2.7",
@@ -35,6 +39,7 @@
     "coveralls": "^3.0.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
     "react-test-renderer": "^16.4.0"
   }
 }

@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot. 1`] = `
+<BrowserRouter>
+  <div
+    className="container"
+  >
+    <NavBar
+      routes={
+        Object {
+          "/emailme": "Email Me",
+          "/projects": "Projects",
+        }
+      }
+    />
+    <Switch>
+      <Route
+        component={[Function]}
+        path="/projects"
+      />
+      <Route
+        component={[Function]}
+        path="/emailme"
+      />
+      <Redirect
+        push={false}
+        to="/projects"
+      />
+    </Switch>
+  </div>
+</BrowserRouter>
+`;

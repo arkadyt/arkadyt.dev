@@ -5,6 +5,7 @@ import ProjectCard from './ProjectCard/ProjectCard';
 import NavBar from './NavBar/NavBar';
 
 import classes from './Projects.module.css';
+import data from '../../../../projects.content';
 
 /**
  * /projects route.
@@ -12,12 +13,18 @@ import classes from './Projects.module.css';
  * Also has own NavBar for its router.
  */
 class Projects extends Component {
+    getData = () => {
+        // When testing, separate set of data is passed through props,
+        // to maintain snapshot integrity.
+        return this.props.data || data;
+    }
+
     render() {
         const routes = [];
 
         return <div className={classes.container}>
             <Switch>
-                {this.props.data.map((blob, index) => {
+                {this.getData().map((blob, index) => {
                     const route =
                         `${this.props.match.url}/${blob.header.replace(' ', '-').toLowerCase()}`;
                     routes.push(route);
