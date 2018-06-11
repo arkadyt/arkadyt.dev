@@ -11,15 +11,22 @@
     height: 20%;
 }
 
-.list a {
-    color: white;
-    font-size: 2em;
-}
-
 .list li {
-    padding: 0 0.5vw;
+    /* padding: 0 0.5vw; */
+    width: 35px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.list .active {
-    background: orange;
+.list a {
+    color: rgba(230, 230, 230, 0.8);
+    transition: font-size 0.3s ease-in-out;
+}
+
+.list a.active, .list a:hover {
+    color: #ffffff;
+    font-size: 1.5em;
 }

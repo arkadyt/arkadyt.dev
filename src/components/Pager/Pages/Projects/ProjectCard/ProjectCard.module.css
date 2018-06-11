@@ -9,7 +9,7 @@
 
 .container p {
     order: 0;
-    flex-basis: 45vw;
+    flex-basis: 550px;
     padding: 0 2vw;
 
     color: #eee;
@@ -18,13 +18,14 @@
 
 .container .header {
     font-weight: bold;
+    font-size: 2em;
 }
 
 .container img {
     order: 1;
 
-    width: 45vmax;
-    height: 25vmax;
+    width: 550px;
+    height: 300px;
     padding: 0 2vw;
 
     object-fit: cover;
