@@ -23,7 +23,7 @@ const pager = () => {
             <Switch>
                 <Route path='/projects' component={Projects} />
                 <Route path='/emailme' component={EmailMe} />
-                <Redirect to='/projects' />
+                <Redirect to='/emailme' />
             </Switch>
         </div>
     </Router>;
