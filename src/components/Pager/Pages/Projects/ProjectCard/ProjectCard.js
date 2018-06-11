@@ -11,7 +11,7 @@ const projectCard = (props) => {
                 <br/><br/>
                 <a>{props.url}</a>
             </p>
-            <img src={props.img} alt='' className={classes.image} />
+            <img src={props.img} alt='' />
         </div>
     );
 };

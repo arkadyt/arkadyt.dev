@@ -9,8 +9,8 @@ import data from '../../../../projects.content';
 
 /**
  * /projects route.
- * Presents projects as cards, one per route at local router.
- * Also has own NavBar for its router.
+ * List for ProjectCards.
+ * Has own NavBar.
  */
 class Projects extends Component {
     getData = () => {
