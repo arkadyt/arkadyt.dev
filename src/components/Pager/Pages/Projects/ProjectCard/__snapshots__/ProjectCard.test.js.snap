@@ -23,7 +23,6 @@ exports[`matches snapshot. 1`] = `
   </p>
   <img
     alt=""
-    className="image"
     src="/img-link"
   />
 </div>

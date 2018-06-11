@@ -24,7 +24,7 @@ exports[`matches snapshot. 1`] = `
       />
       <Redirect
         push={false}
-        to="/projects"
+        to="/emailme"
       />
     </Switch>
   </div>

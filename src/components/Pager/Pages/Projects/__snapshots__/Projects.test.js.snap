@@ -24,7 +24,6 @@ exports[`matches snapshot. 1`] = `
     </p>
     <img
       alt=""
-      className="image"
       src="https://picsum.photos/200/300/?random"
     />
   </div>
