@@ -9,3 +9,6 @@ Tests:
 
 Layout:
     Bring bottom NavBar out. Use Redux for cross component communication.
+
+TopNavBar:
+    Use li:after to add sizeable border. Can be easily animated.
