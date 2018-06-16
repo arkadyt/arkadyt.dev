@@ -5,14 +5,24 @@ exports[`matches snapshot. 1`] = `
   <div
     className="container"
   >
-    <NavBar
-      routes={
-        Object {
-          "/emailme": "Email Me",
-          "/projects": "Projects",
+    <div
+      className="navtop"
+    >
+      <navBar
+        routes={
+          Object {
+            "/emailme": "Email Me",
+            "/projects": "Projects",
+          }
         }
-      }
-    />
+      />
+    </div>
+    <a
+      className="arrowLeft"
+      href=""
+    >
+      <GoChevronLeft />
+    </a>
     <Switch>
       <Route
         component={[Function]}
@@ -27,6 +37,26 @@ exports[`matches snapshot. 1`] = `
         to="/emailme"
       />
     </Switch>
+    <a
+      className="arrowRight"
+      href=""
+    >
+      <GoChevronRight />
+    </a>
+    <div
+      className="navbottom"
+    >
+      <Switch>
+        <Route
+          path="/projects"
+          render={[Function]}
+        />
+        <Route
+          component={[Function]}
+          path="/emailme"
+        />
+      </Switch>
+    </div>
   </div>
 </BrowserRouter>
 `;

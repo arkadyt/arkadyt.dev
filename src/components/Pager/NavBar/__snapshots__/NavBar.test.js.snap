@@ -5,6 +5,7 @@ exports[`<NavBar/> (at '/' route) matches snapshot. 1`] = `
   className="list"
 >
   <li>
+     
     <a
       className="Link"
       href=""

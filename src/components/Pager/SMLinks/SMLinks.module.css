@@ -1,16 +1,17 @@
 /* TODO: Use SASS */
+
 /* import palette from '../../../../../misc/colorPalette'; */
 
 .smlinks {
-    flex: 1;
     display: flex;
-    justify-content: flex-end;
-
+    align-content: center;
     color: #eeeeee;
     font-size: 1.6em;
-    
-    margin-right: 10;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
 .smlinks .smlink {
-    margin-right: 5;
+    margin: 0px 3px;
 }
