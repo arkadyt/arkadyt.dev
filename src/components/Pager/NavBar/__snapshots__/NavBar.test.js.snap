@@ -16,7 +16,7 @@ exports[`<NavBar/> (at '/' route) matches snapshot. 1`] = `
   </li>
   <li>
     <a
-      aria-current={false}
+      aria-current={null}
       className="Link"
       href="/projects"
       onClick={[Function]}
@@ -27,7 +27,7 @@ exports[`<NavBar/> (at '/' route) matches snapshot. 1`] = `
   </li>
   <li>
     <a
-      aria-current={false}
+      aria-current={null}
       className="Link"
       href="/emailme"
       onClick={[Function]}

@@ -6,7 +6,7 @@ exports[`matches snapshot. 1`] = `
 >
   <li>
     <a
-      aria-current={false}
+      aria-current={null}
       className={undefined}
       href="/url1"
       onClick={[Function]}
@@ -35,7 +35,7 @@ exports[`matches snapshot. 1`] = `
   </li>
   <li>
     <a
-      aria-current={false}
+      aria-current={null}
       className={undefined}
       href="/url2"
       onClick={[Function]}
