@@ -4,12 +4,24 @@ exports[`matches snapshot. 1`] = `
 <div
   className="container"
 >
+  <p>
+    <span
+      className="header"
+    >
+      Hi,
+    </span>
+    <br />
+    <br />
+    
+            Sunt incididunt duis cillum aliquip deserunt amet adipisicing officia dolor sint laboris. Tempor culpa incididunt sint cillum laboris exercitation ullamco aliqua. Aliquip ipsum voluptate adipisicing dolore ex elit sint veniam adipisicing.
+        
+    <br />
+    <br />
+    <a />
+  </p>
   <div
     className="content"
   >
-    <p>
-      Aliquip est sit elit eiusmod quis consequat. Elit Lorem minim exercitation nulla ut reprehenderit ea. Ea ut aute Lorem sint dolor et nostrud qui non irure ullamco aliquip esse eiusmod. Laborum minim pariatur irure laborum ex minim consequat laboris esse proident est laboris. Laborum in minim ipsum consectetur cupidatat proident eu commodo voluptate enim. Qui aliquip ipsum excepteur sunt consectetur aliqua voluptate aliqua do officia duis anim.
-    </p>
     <form>
       <fieldset>
         <input

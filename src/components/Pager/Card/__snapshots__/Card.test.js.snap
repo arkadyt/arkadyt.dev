@@ -12,18 +12,14 @@ exports[`matches snapshot. 1`] = `
     </span>
     <br />
     <br />
-    <div
-      className="sampleDiv"
-    />
     <br />
     <br />
     <a>
       /url
     </a>
   </p>
-  <img
-    alt=""
-    src="/img-link"
+  <div
+    className="sampleDiv"
   />
 </div>
 `;
