@@ -8,7 +8,7 @@ import DotNav from './DotNav/DotNav';
 import SMLinks from './SMLinks/SMLinks';
 
 import classes from './Pager.module.css';
-import { connect } from 'react-redux';
+// import { connect } from 'react-redux';
 import { GoChevronLeft, GoChevronRight } from 'react-icons/lib/go/';
 
 
@@ -42,9 +42,9 @@ const pager = () => {
     </Router>;
 };
 
-const mapStateToProps = state => {
-    return {
-        projectsRoutes: state.projectsRoutes
-    }
-}
+// const mapStateToProps = state => {
+//     return {
+//         projectsRoutes: state.projectsRoutes
+//     }
+// }
 export default pager;
