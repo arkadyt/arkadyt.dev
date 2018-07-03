@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import * as actionTypes from '../../../../store/actions';
 import { Route, Redirect, Switch } from 'react-router-dom';
 
 import Card from '../../Card/Card';
@@ -10,29 +12,40 @@ import data from '../../../../projects.content';
  * /projects route.
  * Sets up routes individually for every project.
  */
-const projects = props => {
-    const routes = [];
+class Projects extends React.Component {
+    routes = [];
 
-    return <div className={classes.container}>
-        <Switch>
-            {/* When testing, separate set of data is passed through props,
+    render() {
+        return <div className={classes.container}>
+            <Switch>
+                {/* When testing, separate set of data is passed through props,
             to maintain snapshot integrity. */}
-            {(props.data || data).map((blob, index) => {
-                const route =
-                    `${props.match.url}/${blob.header.replace(' ', '-').toLowerCase()}`;
-                routes.push(route);
+                {(this.props.data || data).map((blob, index) => {
+                    const route =
+                        `${this.props.match.url}/${blob.header.replace(' ', '-').toLowerCase()}`;
+                    this.routes.push(route);
 
-                return <Route key={index} path={route}
-                    render={() => <Card header={blob.header}
-                        img={blob.img}
-                        url={blob.url}
-                        body={blob.body} />
-                    } />
-            })}
-            <Redirect to={routes[0]} />
-        </Switch>
-    </div>;
+                    return <Route key={index} path={route}
+                        render={() => <Card header={blob.header}
+                            img={blob.img}
+                            url={blob.url}
+                            body={blob.body} />
+                        } />
+                })}
+                <Redirect to={this.routes[0]} />
+            </Switch>
+        </div>;
+    }
 
+    componentDidMount() {
+        this.props.onProjectsFetched(this.routes);
+    }
 }
 
-export default projects;
+const mapDispatchToProps = dispatch => {
+    return {
+        onProjectsFetched: routes => dispatch({ type: actionTypes.UPDATE_ROUTES, payload: routes })
+    }
+}
+
+export default connect(null, mapDispatchToProps)(Projects);

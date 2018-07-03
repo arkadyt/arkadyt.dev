@@ -1,17 +1,27 @@
 .blinds {
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1;
-
     background-color: white;
-
     width: 100vw;
     height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 2s; */
+}
+
+@keyframes fade {
+    from {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    to {
+        background-color: rgba(255, 255, 255, 0)
+    }
 }
 
 .note {
