@@ -19,7 +19,7 @@ const pager = () => {
         '/emailme': 'Email Me',
     }
 
-    return <Router>
+    return <Router basename='/pf-webapp'>
         <div className={classes.container}>
             <div className={classes.navtop}>
                 <NavBar routes={routes} />
