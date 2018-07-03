@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect, Switch, Link } from 'react-router-dom';
 
 import Projects from './_Pages/Projects/Projects'; // /projects route component.
 import EmailMe from './_Pages/EmailMe/EmailMe'; // /emailme route component.
@@ -24,13 +24,23 @@ const pager = () => {
             <div className={classes.navtop}>
                 <NavBar routes={routes} />
             </div>
-            <a href='' className={classes.arrowLeft}><GoChevronLeft /></a>
             <Switch>
-                <Route path='/projects' component={Projects} />
-                <Route path='/emailme' component={EmailMe} />
+                <Route path='/projects' render={props => (
+                    <React.Fragment>
+                        <Link to='' className={classes.arrowLeft}><GoChevronLeft /></Link>                    
+                        <Projects {...props}/>
+                        <Link to='' className={classes.arrowRight}><GoChevronRight /></Link>
+                    </React.Fragment>
+                )} />
+                <Route path='/emailme' render={props => (
+                    <React.Fragment>
+                        <div/> 
+                        <EmailMe {...props}/>
+                        <div/>
+                    </React.Fragment>
+                )} />
                 <Redirect to='/emailme' />
             </Switch>
-            <a href='' className={classes.arrowRight}><GoChevronRight /></a>
             <div className={classes.navbottom}>
                 <Switch>
                     <Route path='/projects' render={

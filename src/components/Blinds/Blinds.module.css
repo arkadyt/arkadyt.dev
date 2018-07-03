@@ -1,0 +1,27 @@
+.blinds {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: white;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note {
+    margin: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+@media (min-width: 1000px) {
+    .note {
+        display: none;
+    }
+}
