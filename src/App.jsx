@@ -1,5 +1,4 @@
 import React from 'react';
-import { connect } from 'react-redux';
 
 import Cover from './components/Cover/Cover';
 import Pager from './components/Pager/Pager';
@@ -11,16 +10,9 @@ class App extends React.PureComponent {
         return <React.Fragment>
             <Cover />
             <Pager />
-            {(this.props.coverLoaded && this.props.pagerLoaded) ? null : <Blinds/>}
+            <Blinds />
         </React.Fragment>;
     }
 }
 
-const mapStateToProps = state => {
-    return {
-        coverLoaded: state.coverLoaded,
-        pagerLoaded: state.pagerLoaded
-    }
-}
-
-export default withCoverCtx(connect(mapStateToProps)(App));
+export default withCoverCtx(App);
