@@ -19,32 +19,20 @@ exports[`matches snapshot. 1`] = `
         }
       />
     </div>
-    <a
-      className="arrowLeft"
-      href=""
-    >
-      <GoChevronLeft />
-    </a>
     <Switch>
       <Route
-        component={[Function]}
         path="/projects"
+        render={[Function]}
       />
       <Route
-        component={[Function]}
         path="/emailme"
+        render={[Function]}
       />
       <Redirect
         push={false}
         to="/emailme"
       />
     </Switch>
-    <a
-      className="arrowRight"
-      href=""
-    >
-      <GoChevronRight />
-    </a>
     <div
       className="navbottom"
     >

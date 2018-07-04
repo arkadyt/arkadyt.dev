@@ -5,7 +5,7 @@ import * as actionTypes from '../../store/actions';
 import classes from './Cover.module.css';
 import { CoverCtx } from '../../hocs/withCoverCtx';
 
-class Cover extends React.Component {
+export class Cover extends React.Component {
     render() {
         return (
             <CoverCtx.Consumer>

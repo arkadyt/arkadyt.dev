@@ -10,9 +10,9 @@ import data from '../../../../projects.content';
 
 /**
  * /projects route.
- * Sets up routes individually for every project.
+ * Sets up individual project routes.
  */
-class Projects extends React.Component {
+export class Projects extends React.Component {
     routes = [];
 
     render() {

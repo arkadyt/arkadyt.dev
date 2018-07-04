@@ -13,7 +13,7 @@ import classes from './Pager.module.css';
 import { GoChevronLeft, GoChevronRight } from 'react-icons/lib/go/';
 
 
-class Pager extends React.Component {
+export class Pager extends React.Component {
     routes = { // address: uiLabel
         '/projects': 'Projects',
         '/emailme': 'Email Me',
