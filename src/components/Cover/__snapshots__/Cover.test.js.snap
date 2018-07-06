@@ -4,9 +4,15 @@ exports[`<Cover/> matches snapshot. 1`] = `
 <div
   className="container lifted"
 >
-  <img
-    alt=""
-    src="http://placehold.it/1920x1080"
-  />
+  <div
+    className="title"
+  >
+    <h1>
+      Arkady Titenko
+    </h1>
+    <p>
+      Software Engineer, Web Developer, Game Designer
+    </p>
+  </div>
 </div>
 `;
