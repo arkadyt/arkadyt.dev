@@ -6,7 +6,7 @@ import Pager from './components/Pager/Pager';
 class App extends React.PureComponent {
     render() {
         return <React.Fragment>
-            {/* <Cover /> */}
+            <Cover />
             <Pager />
         </React.Fragment>;
     }
