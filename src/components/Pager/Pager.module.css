@@ -1,7 +1,6 @@
 .container {
     display: grid;
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: 20% auto 20%;
+    grid-template-columns: 50px auto;
     width: 100vw;
     height: 100vh;
     background-image: url(./Pager-BG.jpg);
