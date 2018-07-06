@@ -12,7 +12,10 @@ export class Cover extends React.Component {
                 {context => {
                     const cls = [classes.container, context.coverLifted ? classes.lifted : ''].join(' ');
                     return <div className={cls}>
-                        <img src='http://placehold.it/1920x1080' alt="" />
+                        <div className={classes.title}>
+                            <h1>Arkady Titenko</h1>
+                            <p>Software Engineer, Web Developer, Game Designer</p>
+                        </div>
                     </div>;
                 }}
             </CoverCtx.Consumer>

@@ -2,17 +2,37 @@
     position: fixed;
     top: 0;
     left: 0;
-
+    width: 100vw;
+    height: 100vh;
     transition: top 1s;
+    background-image: url(./Cover-BG.jpg);
+    /* background: linear-gradient(to top, rgba(47,54,64,0.95), rgba(72,126,176,0.68)); */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container.lifted {
     top: -100vh;
 }
 
-.container img {
-    width: 100vw;
-    height: 100vh;
+.title {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 40px;
+}
 
-    object-fit: cover;
+.title h1 {
+    font-weight: 300;
+    font-size: 3.4em;
+    margin: 0;
+}
+
+.title p {
+    font-weight: 300;
+    margin: 0;
 }

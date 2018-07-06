@@ -30,7 +30,7 @@ export class Pager extends React.Component {
                         <React.Fragment>
                             <Link to='' className={classes.arrowLeft}><GoChevronLeft /></Link>
                             <Projects {...props} />
-                            <Link to='' className={classes.arrowRight}><GoChevronRight /></Link>
+                            <Link to='/emailme' className={classes.arrowRight}><GoChevronRight /></Link>
                         </React.Fragment>
                     )} />
                     <Route path='/emailme' render={props => (
@@ -40,7 +40,7 @@ export class Pager extends React.Component {
                             <div />
                         </React.Fragment>
                     )} />
-                    <Redirect to='/emailme' />
+                    <Redirect to='/projects' />
                 </Switch>
                 <div className={classes.navbottom}>
                     <Switch>

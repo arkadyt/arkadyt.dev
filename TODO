@@ -12,3 +12,6 @@ Layout:
 
 TopNavBar:
     Use li:after to add sizeable border. Can be easily animated.
+
+Pager:
+    Move css grid sidebars to Projects.jsx since he is the exclusive user.
