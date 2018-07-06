@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 
 import classes from './Blinds.module.css';
 
-const blinds = (props) => {
+const blinds = props => {
     return <div className={[
         classes.blinds,
         props.coverLoaded && props.pagerLoaded ? classes.fade : ''
