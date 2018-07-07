@@ -7,46 +7,28 @@ exports[`matches snapshot. 1`] = `
   <div
     className="container"
   >
-    <div
-      className="navtop"
-    >
-      <navBar
-        routes={
-          Object {
-            "/emailme": "Email Me",
-            "/projects": "Projects",
-          }
+    <Connect(navBar)
+      routes={
+        Object {
+          "/emailme": "E",
+          "/projects": <GoMarkGithub />,
         }
-      />
-    </div>
+      }
+    />
     <Switch>
       <Route
+        component={[Function]}
         path="/projects"
-        render={[Function]}
       />
       <Route
+        component={[Function]}
         path="/emailme"
-        render={[Function]}
       />
       <Redirect
         push={false}
         to="/projects"
       />
     </Switch>
-    <div
-      className="navbottom"
-    >
-      <Switch>
-        <Route
-          path="/projects"
-          render={[Function]}
-        />
-        <Route
-          component={[Function]}
-          path="/emailme"
-        />
-      </Switch>
-    </div>
   </div>
 </BrowserRouter>
 `;

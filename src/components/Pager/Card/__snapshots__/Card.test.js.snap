@@ -4,22 +4,22 @@ exports[`matches snapshot. 1`] = `
 <div
   className="container"
 >
-  <p>
-    <span
+  <img
+    alt=""
+    src="RD3CTFQ3_11.jpg"
+  />
+  <div
+    className="description"
+  >
+    <h1
       className="header"
     >
       Header
-    </span>
-    <br />
-    <br />
-    <br />
-    <br />
+    </h1>
+    <p />
     <a>
       /url
     </a>
-  </p>
-  <div
-    className="sampleDiv"
-  />
+  </div>
 </div>
 `;
