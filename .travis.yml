@@ -6,9 +6,9 @@ cache:
     - node_modules
 script:
   - npm run build
-  - npm test -- --coverage
-after_script: # Upload coverage reports 
-  - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
+#  - npm test -- --coverage
+#after_script: # Upload coverage reports 
+#  - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls
 after_failure:
   - cat *debug.log
 deploy:
