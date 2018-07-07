@@ -1,8 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import * as actionTypes from '../../store/actions';
-import Blinds from '../Blinds/Blinds';
-import Shadow from '../Shadow/Shadow';
+import Blinds from './Blinds/Blinds';
+import Shadow from './Shadow/Shadow';
 import classes from './Cover.module.css';
 
 export class Cover extends React.Component {
