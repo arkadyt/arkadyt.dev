@@ -6,6 +6,7 @@ exports[`matches snapshot. 1`] = `
 >
   <img
     alt=""
+    className="widget"
     src="RD3CTFQ3_11.jpg"
   />
   <div
@@ -16,9 +17,13 @@ exports[`matches snapshot. 1`] = `
     >
       Header
     </h1>
+    <br />
     <p />
-    <a>
-      /url
+    <br />
+    <a
+      href="/url"
+    >
+      See project
     </a>
   </div>
 </div>

@@ -18,22 +18,33 @@
     top: -100vh;
 }
 
+@font-face {
+    font-family: 'Cover Header';
+    src: url(../../fonts/engebrechtrebd.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Paragraph';
+    src: url(../../fonts/dustismo.ttf) format('truetype');
+}
+
 .title {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    font-family: "Josefin Sans", sans-serif;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 10px 40px;
 }
 
 .title h1 {
+    font-family: 'Cover Header', sans-serif;
     font-weight: 300;
-    font-size: 3.4em;
+    font-size: 4em;
     margin: 0;
 }
 
 .title p {
+    font-family: 'Paragraph', sans-serif;
     font-weight: 300;
     margin: 0;
 }

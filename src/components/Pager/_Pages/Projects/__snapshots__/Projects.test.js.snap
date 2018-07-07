@@ -9,6 +9,7 @@ exports[`matches snapshot. 1`] = `
   >
     <img
       alt=""
+      className="widget"
       src="RD3CTFQ3_11.jpg"
     />
     <div
@@ -17,13 +18,17 @@ exports[`matches snapshot. 1`] = `
       <h1
         className="header"
       >
-        Area 55
+        Demonstration of Physics Laws
       </h1>
+      <br />
       <p>
         Et dolore qui eiusmod ullamco ipsum nisi culpa in irure fugiat. Sint eiusmod reprehenderit anim cupidatat cupidatat aliquip esse. Cillum magna occaecat sunt cupidatat nisi magna nisi. Incididunt magna esse cupidatat reprehenderit irure et consectetur cillum. Nisi exercitation consequat quis non aliqua aliqua id excepteur velit qui consectetur cillum adipisicing.
       </p>
-      <a>
-        http://a.com
+      <br />
+      <a
+        href="http://a.com"
+      >
+        See project
       </a>
     </div>
   </div>
