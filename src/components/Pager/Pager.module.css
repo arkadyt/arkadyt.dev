@@ -15,6 +15,7 @@ img.background {
     height: 106%;
     object-fit: cover;
     filter: blur(5px) brightness(50%);
+    backface-visibility: hidden;
 }
 
 .arrowLeft,
@@ -39,7 +40,6 @@ img.background {
 .navbottom {
     grid-column: 1/4;
     align-self: center;
-    
     display: flex;
     justify-content: center;
     align-content: center;

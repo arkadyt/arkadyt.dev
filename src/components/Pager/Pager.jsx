@@ -14,7 +14,6 @@ import Works from 'react-icons/lib/fa/code';
 import image from './Card/RD3CTFQ3_11.jpg';
 import classes from './Pager.module.css';
 
-
 export class Pager extends React.Component {
     routes = { // URL: UI label
         'https://github.com/arkadyt': <GitHub />,
