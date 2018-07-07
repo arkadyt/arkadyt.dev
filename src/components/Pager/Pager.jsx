@@ -4,17 +4,19 @@ import * as actionTypes from '../../store/actions';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 
 import Projects from './_Pages/Projects/Projects';
-import EmailMe from './_Pages/EmailMe/EmailMe';
+import Contact from './_Pages/Contact/Contact';
 import NavBar from './NavBar/NavBar';
-import { GoMarkGithub } from 'react-icons/lib/go';
+import IoSocialGithub from 'react-icons/lib/io/social-github';
+import IoSocialLinkedin from 'react-icons/lib/io/social-linkedin';
 
 import classes from './Pager.module.css';
 
 
 export class Pager extends React.Component {
     routes = { // URL: UI label
-        '/projects': <GoMarkGithub/>,
-        '/emailme': 'E',
+        'https://github.com/arkadyt': <IoSocialGithub />,
+        'https://linkedin.com/in/arkadyt': <IoSocialLinkedin />,
+        '/contact': 'C',
     }
 
     render() {
@@ -23,7 +25,7 @@ export class Pager extends React.Component {
                 <NavBar routes={this.routes} />
                 <Switch>
                     <Route path='/projects' component={Projects} />
-                    <Route path='/emailme' component={EmailMe} />
+                    <Route path='/contact' component={Contact} />
                     <Redirect to='/projects' />
                 </Switch>
             </div>

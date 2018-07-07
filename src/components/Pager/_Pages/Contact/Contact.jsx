@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../../Card/Card';
 
-import classes from './contact.module.css';
+import classes from './Contact.module.css';
 
 const contact = () => {
     const text = `

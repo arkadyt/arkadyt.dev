@@ -10,7 +10,7 @@ exports[`matches snapshot. 1`] = `
     <Connect(navBar)
       routes={
         Object {
-          "/emailme": "E",
+          "/contact": "E",
           "/projects": <GoMarkGithub />,
         }
       }
@@ -22,7 +22,7 @@ exports[`matches snapshot. 1`] = `
       />
       <Route
         component={[Function]}
-        path="/emailme"
+        path="/contact"
       />
       <Redirect
         push={false}

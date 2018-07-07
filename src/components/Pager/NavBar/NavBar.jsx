@@ -1,37 +1,29 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { connect } from 'react-redux';
-import * as actionTypes from '../../../store/actions';
 import classes from './NavBar.module.css';
-import MdHome from 'react-icons/lib/md/home';
+
+const Link = props => {
+    return props.url.indexOf('http') > -1 ? 
+        <a href={props.url} className={classes.Link} target="_blank">
+            {props.children}
+        </a> :
+        <NavLink to={props.url} className={classes.Link} activeClassName={classes.active}>
+            {props.children}
+        </NavLink> 
+}
 
 const navBar = props => {
     return <ul className={classes.list}>
-        <li>
-            <a href=''
-                onClick={e => { e.preventDefault(); props.closeCover() }}
-                className={classes.Link}>
-                <span className={classes.content}>
-                    <MdHome />
-                </span>
-            </a>
-        </li>
         {Object.keys(props.routes).map(url => (
             <li key={url}>
-                <NavLink to={url} className={classes.Link} activeClassName={classes.active}>
+                <Link url={url}>
                     <span className={classes.content}>
                         {props.routes[url]}
                     </span>
-                </NavLink>
+                </Link>
             </li>
         ))}
     </ul>;
 }
 
-const mapDispatchToProps = dispatch => {
-    return {
-        closeCover: () => dispatch({ type: actionTypes.COVER_STATE_CHANGE, payload: false })
-    }
-}
-
-export default connect(null, mapDispatchToProps)(navBar);
+export default navBar;

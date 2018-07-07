@@ -3,10 +3,10 @@ import React from 'react';
 import Cover from './components/Cover/Cover';
 import Pager from './components/Pager/Pager';
 
-class App extends React.PureComponent {
+class App extends React.Component {
     render() {
         return <React.Fragment>
-            <Cover />
+            {/* <Cover /> */}
             <Pager />
         </React.Fragment>;
     }
