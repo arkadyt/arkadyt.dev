@@ -1,32 +1,43 @@
 .list {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-self: center;
+    justify-self: center;
     margin: 0;
     padding: 0;
     list-style: none;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     width: 100%;
     height: 20%;
 }
 
 .list li {
     /* padding: 0 0.5vw; */
-    width: 35px;
-    height: 35px;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .list a {
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: rgba(230, 230, 230, 0.8);
     transition: font-size 0.3s ease-in-out;
 }
 
-.list a.active, .list a:hover {
-    color: #ffffff;
-    font-size: 1.5em;
+.list .button {
+    width: 50px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #eee;
+}
+
+.list a.active,
+.list a:hover .button {
+    background-color: #888;
 }
