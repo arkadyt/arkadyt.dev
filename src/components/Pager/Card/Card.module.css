@@ -3,15 +3,6 @@
     width: 100%;
 }
 
-.container img.widget {
-    position: absolute;
-    top: 8%;
-    left: 10%;
-    max-height: 70%;
-    object-fit: cover;
-    box-shadow: 0 0 25px black;
-}
-
 .container img.background {
     position: fixed;
     z-index: -50;
@@ -24,11 +15,28 @@
     backface-visibility: hidden;
 }
 
+.container .grid {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 80% 20%;
+}
+
+.container img.widget {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 95%;
+    height: 95%;
+    margin: 5% 0 0 5%;
+    object-fit: cover;
+    box-shadow: 0 0 25px black;
+}
+
 .description {
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    width: 500px;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    align-self: end;
     text-align: right;
     color: #eee;
     margin: 25px;
