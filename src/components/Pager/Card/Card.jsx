@@ -5,12 +5,14 @@ import classes from './Card.module.css';
 
 const card = props => {
     return <div className={classes.container}>
-        <img src={props.images} alt='' className={classes.background} />
         <div className={classes.grid}>
             <Switch>
                 {props.images.map((url, index) => {
-                   return <Route key={index} path={`${props.match.url}/${index}`} render={() =>
-                        <img src={url} alt='' className={classes.widget} />
+                    return <Route key={index} path={`${props.match.url}/${index}`} render={() =>
+                        <React.Fragment>
+                            <img src={url} alt='' className={classes.background} />
+                            <img src={url} alt='' className={classes.widget} />
+                        </React.Fragment>
                     } />
                 })}
                 <Redirect to={`${props.match.url}/0`} />
