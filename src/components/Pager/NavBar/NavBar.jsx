@@ -14,14 +14,15 @@ const Link = props => {
 
 const navBar = props => {
     return <ul className={classes.list}>
-        {Object.keys(props.routes).map(url => {
-            if (url.indexOf('spacer') > -1) {
-                return <li className={classes.spacer}><hr/></li>
+        {props.routes.map((item, index) => {
+            // console.log('LOGG', typeof item.url);
+            if (item.url.indexOf('spacer') > -1) {
+                return <li key={-1} className={classes.spacer}><hr /></li>
             } else {
-                return <li key={url}>
-                    <Link url={url}>
+                return <li key={index}>
+                    <Link url={item.url}>
                         <span className={classes.content}>
-                            {props.routes[url]}
+                            {item.ico}
                         </span>
                     </Link>
                 </li>

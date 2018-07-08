@@ -3,19 +3,6 @@
     grid-template-columns: 50px auto;
     width: 100vw;
     height: 100vh;
-    background-size: cover;
-}
-
-img.background {
-    position: fixed;
-    z-index: -50;
-    top: -3%;
-    left: -3%;
-    width: 106%;
-    height: 106%;
-    object-fit: cover;
-    filter: blur(5px) brightness(50%);
-    backface-visibility: hidden;
 }
 
 .arrowLeft,

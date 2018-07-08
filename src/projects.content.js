@@ -1,14 +1,26 @@
 export default [
     {
         header: 'Demonstration of Physics Laws',
-        url: 'http://a.com',
-        img: 'https://picsum.photos/200/300/?random',
-        body: 'Et dolore qui eiusmod ullamco ipsum nisi culpa in irure fugiat. Sint eiusmod reprehenderit anim cupidatat cupidatat aliquip esse. Cillum magna occaecat sunt cupidatat nisi magna nisi. Incididunt magna esse cupidatat reprehenderit irure et consectetur cillum. Nisi exercitation consequat quis non aliqua aliqua id excepteur velit qui consectetur cillum adipisicing.'
+        url: 'http://github.com/arkadyt/phys-bund',
+        img: 'https://picsum.photos/1920/1080/?random',
+        body: 'Bundle of Demonstrations of Physics Phenomena. Has been developed in team of me and my classmate during our highschool physics curriculum renovation.'
     },
     {
-        header: 'Area 71',
-        url: 'http://a.com',
-        img: 'https://picsum.photos/200/500/?random',
-        body: 'Et dolore qui eiusmod ullamco ipsum nisi culpa in irure fugiat. Sint eiusmod reprehenderit anim cupidatat cupidatat aliquip esse. Cillum magna occaecat sunt cupidatat nisi magna nisi. Incididunt magna esse cupidatat reprehenderit irure et consectetur cillum. Nisi exercitation consequat quis non aliqua aliqua id excepteur velit qui consectetur cillum adipisicing.'
+        header: 'UP!',
+        url: 'http://github.com/arkadyt/UP',
+        img: 'https://picsum.photos/1920/1080/?random',
+        body: 'Mobile game which objective is to fly as high as you can whilst avoiding rapidly moving obstacles.'
+    },
+    {
+        header: 'zZloBot',
+        url: 'http://github.com/arkadyt/zzlobot',
+        img: 'https://picsum.photos/1920/1080/?random',
+        body: 'A bot for a mobile game \'Epic Might\'. Has been developed to automate all sorts of routine in-game tasks. Has been adopted by hundreds of players across the globe.'
+    },
+    {
+        header: 'Reddit Activity Monitor',
+        url: 'http://github.com/arkadyt/_UCSX_Reddit_Monitor',
+        img: 'https://picsum.photos/1920/1080/?random',
+        body: 'Solution written in JavaScript that collects information from selected subreddits and uses Plot.ly API to create graphical representations of this data. Program successfully solved the problem of misunderstanding of user activity patterns.'
     }
 ];

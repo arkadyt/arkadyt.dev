@@ -11,26 +11,23 @@ import LinkedIn from 'react-icons/lib/fa/linkedin';
 import MailTo from 'react-icons/lib/md/mail';
 import Works from 'react-icons/lib/fa/code';
 
-import image from './Card/RD3CTFQ3_11.jpg';
+// import image from './Card/RD3CTFQ3_11.jpg';
+import content from '../../projects.content';
+import { sentenceToURL } from '../../utils/utils';
 import classes from './Pager.module.css';
 
 export class Pager extends React.Component {
-    routes = { // URL: UI label
-        'https://github.com/arkadyt': <GitHub />,
-        'https://linkedin.com/in/arkadyt': <LinkedIn />,
-        'mailto:arkady.titenko@gmail.com': <MailTo />,
-        '[spacer]': '[spacer]',
-        '/projects': <Works />,
-        '/1': '•',
-        '/2': '•',
-        '/3': '•',
-        '/4': '•',
-    }
+    routes = [ // URL: UI label
+        { url: 'https://github.com/arkadyt', ico: <GitHub /> },
+        { url: 'https://linkedin.com/in/arkadyt', ico: <LinkedIn /> },
+        { url: 'mailto:arkady.titenko@gmail.com', ico: <MailTo /> },
+        { url: 'spacer' },
+        { url: '/projects', ico: <Works /> },
+    ];
 
     render() {
         return <Router basename='/pf-webapp'>
             <React.Fragment>
-                <img src={image} alt='' className={classes.background} />
                 <div className={classes.container}>
                     <NavBar routes={this.routes} />
                     <Switch>
@@ -43,6 +40,10 @@ export class Pager extends React.Component {
     }
 
     componentDidMount() {
+        for (let item of content) {
+            this.routes.push({ url: sentenceToURL(item.header), ico: '•' });
+        }
+
         if (!this.props.componentLoaded) {
             this.props.onComponentLoaded();
         }

@@ -6,7 +6,8 @@ import { Route, Redirect, Switch } from 'react-router-dom';
 import Card from '../../Card/Card';
 
 import classes from './Projects.module.css';
-import data from '../../../../projects.content';
+import content from '../../../../projects.content';
+import { sentenceToURL } from '../../../../utils/utils';
 
 /**
  * /projects route.
@@ -20,16 +21,16 @@ export class Projects extends React.Component {
             <Switch>
                 {/* When testing, separate set of data is passed through props,
             to maintain snapshot integrity. */}
-                {(this.props.data || data).map((blob, index) => {
+                {(this.props.data || content).map((item, index) => {
                     const route =
-                        `${this.props.match.url}/${blob.header.replace(' ', '-').toLowerCase()}`;
+                        `${this.props.match.url}/${sentenceToURL(item.header)}`;
                     this.routes.push(route);
 
                     return <Route key={index} path={route}
-                        render={() => <Card header={blob.header}
-                            img={blob.img}
-                            url={blob.url}
-                            body={blob.body} />
+                        render={() => <Card header={item.header}
+                            img={item.img}
+                            url={item.url}
+                            body={item.body} />
                         } />
                 })}
                 <Redirect to={this.routes[0]} />
