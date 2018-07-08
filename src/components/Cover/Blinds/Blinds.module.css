@@ -1,0 +1,37 @@
+.blinds {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: white;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.note {
+    margin: 2rem;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+@keyframes fade {
+    from {
+        background-color: rgba(255, 255, 255, 1);
+    }
+    to {
+        background-color: rgba(255, 255, 255, 0)
+    }
+}
+
+@media (min-width: 1000px) {
+    .fade {
+        animation: fade 2s ease-in-out 0s 1 normal forwards;
+        pointer-events: none;
+    }
+    .note {
+        display: none;
+    }
+}

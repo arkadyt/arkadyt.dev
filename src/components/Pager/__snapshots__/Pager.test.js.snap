@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot. 1`] = `
+<BrowserRouter
+  basename="/pf-webapp"
+>
+  <React.Fragment>
+    <img
+      alt=""
+      className="background"
+      src="RD3CTFQ3_11.jpg"
+    />
+    <div
+      className="container"
+    >
+      <navBar
+        routes={
+          Object {
+            "/1": "•",
+            "/2": "•",
+            "/3": "•",
+            "/4": "•",
+            "/projects": <FaCode />,
+            "[spacer]": "[spacer]",
+            "https://github.com/arkadyt": <FaGithubAlt />,
+            "https://linkedin.com/in/arkadyt": <FaLinkedin />,
+            "mailto:arkady.titenko@gmail.com": <MdMail />,
+          }
+        }
+      />
+      <Switch>
+        <Route
+          component={[Function]}
+          path="/projects"
+        />
+        <Redirect
+          push={false}
+          to="/projects"
+        />
+      </Switch>
+    </div>
+  </React.Fragment>
+</BrowserRouter>
+`;

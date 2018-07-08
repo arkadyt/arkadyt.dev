@@ -1,0 +1,17 @@
+Tests:
+    Use Enzyme serializer for snapshots. 
+    It allows to serialize ShallowWrapper's ergo to use shallow rendering for snapshots.
+
+    Projects.test.js has to be rewritten. I need to learn how to use React Router
+    with shallow rendering. It doesn't render component passed to <Route/>.
+    I will solve this jigsaw later, have to move on now, can't spend too much time on
+    single things, project has to grow.
+
+Layout:
+    Bring bottom NavBar out. Use Redux for cross component communication.
+
+TopNavBar:
+    Use li:after to add sizeable border. Can be easily animated.
+
+Pager:
+    Move css grid sidebars to Projects.jsx since he is the exclusive user.
