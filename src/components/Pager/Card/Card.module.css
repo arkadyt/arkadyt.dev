@@ -37,6 +37,7 @@
 .description p {
     font-family: 'Paragraph', sans-serif;
     font-size: 1.1em;
+    pointer-events: none;
 }
 
 .description .header {
@@ -44,6 +45,7 @@
     font-size: 3em;
     text-transform: uppercase;
     margin: 0;
+    pointer-events: none;
 }
 
 .description a {
@@ -53,6 +55,17 @@
     background-color: green;
     padding: 4px 32px;
     border-radius: 4px;
+}
+
+.description .tag {
+    display: inline-block;
+    font-family: 'Paragraph', sans-serif;
+    color: #eee;
+    background-color: darkcyan;
+    padding: 4px 32px;
+    margin: 0 0 15px 5px;
+    border-radius: 4px;
+    pointer-events: none;
 }
 
 @font-face {

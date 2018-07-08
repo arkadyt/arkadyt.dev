@@ -27,11 +27,7 @@ export class Projects extends React.Component {
                     this.routes.push(route);
 
                     return <Route key={index} path={route}
-                        render={() => <Card header={item.header}
-                            img={item.img}
-                            url={item.url}
-                            body={item.body} />
-                        } />
+                        render={() => <Card {...item} />} />
                 })}
                 <Redirect to={this.routes[0]} />
             </Switch>
