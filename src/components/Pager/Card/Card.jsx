@@ -1,13 +1,21 @@
 import React from 'react';
+import { Route, Switch, Redirect } from 'react-router-dom';
 import DotNav from '../DotNav/DotNav';
 import classes from './Card.module.css';
 
 const card = props => {
     return <div className={classes.container}>
-        <img src={props.img} alt='' className={classes.background} />
+        <img src={props.images} alt='' className={classes.background} />
         <div className={classes.grid}>
-            <img src={props.img} alt='' className={classes.widget} />
-            <DotNav urls={['0', '1', '2']} />
+            <Switch>
+                {props.images.map((url, index) => {
+                   return <Route key={index} path={`${props.match.url}/${index}`} render={() =>
+                        <img src={url} alt='' className={classes.widget} />
+                    } />
+                })}
+                <Redirect to={`${props.match.url}/0`} />
+            </Switch>
+            <DotNav images={props.images} />
             <div className={classes.description}>
                 <h1 className={classes.header}>{props.header}</h1><br />
                 <p>{props.body}</p><br />

@@ -41,7 +41,7 @@ export class Pager extends React.Component {
 
     componentDidMount() {
         for (let item of content) {
-            this.routes.push({ url: sentenceToURL(item.header), ico: '•' });
+            this.routes.push({ url: '/projects/' + sentenceToURL(item.header), ico: '•' });
         }
 
         if (!this.props.componentLoaded) {
