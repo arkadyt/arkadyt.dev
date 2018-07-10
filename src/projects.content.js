@@ -23,7 +23,7 @@ export default [
     {
         header: 'Reddit Activity Monitor',
         url: 'http://github.com/arkadyt/_UCSX_Reddit_Monitor',
-        images: ['https://i.imgur.com/1AffY2q.jpg'],
+        images: ['https://i.imgur.com/0fcsd0U.jpg'],
         body: 'Solution written in JavaScript that collects information from selected subreddits and uses Plot.ly API to create graphical representations of this data. Program successfully solved the problem of misunderstanding of user activity patterns.',
         tags: ['JavaScript'],
     }
