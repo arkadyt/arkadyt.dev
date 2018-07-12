@@ -3,7 +3,7 @@ import * as actionTypes from './actions';
 const initialState = {
     projectsRoutes: [],
     coverLoaded: false,
-    pagerLoaded: false,
+    layoutLoaded: false,
     coverLifted: false
 }
 
@@ -17,7 +17,7 @@ export default (state = initialState, action) => {
         case actionTypes.PAGER_LOADED:
             return {
                 ...state,
-                pagerLoaded: true
+                layoutLoaded: true
             }
         case actionTypes.COVER_STATE_CHANGE:
             return {

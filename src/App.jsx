@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Cover from './components/Cover/Cover';
-import Pager from './components/Pager/Pager';
+import Layout from './components/Layout/Layout';
 
 class App extends React.Component {
     render() {
         return <React.Fragment>
             <Cover />
-            <Pager />
+            <Layout />
         </React.Fragment>;
     }
 }
