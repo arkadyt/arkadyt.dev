@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-d
 
 import Projects from './_Pages/Projects/Projects';
 import RootPage from './_Pages/RootPage/RootPage';
+import Education from './_Pages/Education/Education';
+import Experience from './_Pages/Experience/Experience';
+import Contact from './_Pages/Contact/Contact';
 import NavBar from './NavBar/NavBar';
 
 import GitHub from 'react-icons/lib/fa/github-alt';
@@ -28,7 +31,7 @@ export class Layout extends React.Component {
 
     constructor(props) {
         super(props);
-        
+
         for (let item of content) {
             this.routes.push({ url: '/projects/' + sentenceToURL(item.header), ico: '•' });
         }
@@ -36,17 +39,16 @@ export class Layout extends React.Component {
 
     render() {
         return <Router basename='/pf-webapp'>
-                <div className={classes.container}>
-                    <Route path='/(\w+)' render={() => {
-                        return <NavBar routes={this.routes} />
-                    }} />
-                    <Route path='/' exact render={() => (
-                        <React.Fragment>
-                            <div /><RootPage />
-                        </React.Fragment>
-                    )} />
+            <div className={classes.container}>
+                <NavBar routes={this.routes} />
+                <Switch>
+                    <Route path='/' exact component={RootPage} />
                     <Route path='/projects' component={Projects} />
-                </div>
+                    <Route path='/education' component={Education} />
+                    <Route path='/experience' component={Experience} />
+                    <Route path='/contact' component={Contact} />
+                </Switch>
+            </div>
         </Router >;
     }
 
