@@ -26,6 +26,14 @@ export class Layout extends React.Component {
         { url: '/projects', ico: <Works /> },
     ];
 
+    constructor(props) {
+        super(props);
+        
+        for (let item of content) {
+            this.routes.push({ url: '/projects/' + sentenceToURL(item.header), ico: '•' });
+        }
+    }
+
     render() {
         return <Router basename='/pf-webapp'>
                 <div className={classes.container}>
@@ -43,10 +51,6 @@ export class Layout extends React.Component {
     }
 
     componentDidMount() {
-        for (let item of content) {
-            this.routes.push({ url: '/projects/' + sentenceToURL(item.header), ico: '•' });
-        }
-
         if (!this.props.componentLoaded) {
             this.props.onComponentLoaded();
         }

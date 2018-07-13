@@ -13,6 +13,7 @@ const Link = props => {
 }
 
 const navBar = props => {
+    console.log('NAVBAR RENDER');
     return <ul className={classes.list}>
         {props.routes.map((item, index) => {
             // console.log('LOGG', typeof item.url);
