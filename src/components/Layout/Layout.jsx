@@ -4,6 +4,7 @@ import * as actionTypes from '../../store/actions';
 import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
 
 import Projects from './_Pages/Projects/Projects';
+import RootPage from './_Pages/RootPage/RootPage';
 import NavBar from './NavBar/NavBar';
 
 import GitHub from 'react-icons/lib/fa/github-alt';
@@ -27,15 +28,17 @@ export class Layout extends React.Component {
 
     render() {
         return <Router basename='/pf-webapp'>
-            <React.Fragment>
                 <div className={classes.container}>
-                    <NavBar routes={this.routes} />
-                    <Switch>
-                        <Route path='/projects' component={Projects} />
-                        <Redirect to='/projects' />
-                    </Switch>
+                    <Route path='/(\w+)' render={() => {
+                        return <NavBar routes={this.routes} />
+                    }} />
+                    <Route path='/' exact render={() => (
+                        <React.Fragment>
+                            <div /><RootPage />
+                        </React.Fragment>
+                    )} />
+                    <Route path='/projects' component={Projects} />
                 </div>
-            </React.Fragment>
         </Router >;
     }
 
