@@ -1,35 +1,95 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link, Route, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+
+import * as actionTypes from '../../../store/actions';
+import { sentenceToURL } from '../../../utils/utils';
+import projects from '../../../projects.content';
+
+import GitHub from 'react-icons/lib/fa/github-alt';
+import LinkedIn from 'react-icons/lib/fa/linkedin';
+import MailTo from 'react-icons/lib/md/mail';
+import ArrowBack from 'react-icons/lib/md/arrow-back';
+import IconHome from 'react-icons/lib/go/home';
+
 import classes from './NavBar.module.css';
 
-const Link = props => {
-    return props.url.indexOf(':') > -1 ?
-        <a href={props.url} className={classes.Link} target="_blank">
+const MyLink = props => {
+    if (props.url === undefined) {
+        return <Link to='' className={classes.Link} onClick={props.onClick}>
             {props.children}
-        </a> :
-        <NavLink to={props.url} className={classes.Link} activeClassName={classes.active}>
+        </Link>;
+    } else if (props.url.indexOf(':') > -1) {
+        return <a href={props.url} className={classes.Link} target="_blank">
+            {props.children}
+        </a>;
+    } else {
+        return <NavLink to={props.url} className={classes.Link} activeClassName={classes.active}>
             {props.children}
         </NavLink>
+    }
 }
 
-const navBar = props => {
-    console.log('NAVBAR RENDER');
-    return <ul className={classes.list}>
-        {props.routes.map((item, index) => {
-            // console.log('LOGG', typeof item.url);
+class NavBar extends React.Component {
+    static get staticRoutes() {
+        return [ // URL: UI label
+            { url: 'https://github.com/arkadyt', ico: <GitHub /> },
+            { url: 'https://linkedin.com/in/arkadyt', ico: <LinkedIn /> },
+            { url: 'mailto:arkady.titenko@gmail.com', ico: <MailTo /> },
+            { url: 'spacer' },
+        ];
+    }
+
+    render() {
+        return <ul className={classes.list}>
+            {this.getItems(NavBar.staticRoutes)}
+            <li key={-2}>
+                <Route path='/(.+)' render={() => {
+                    return <MyLink onClick={() => { this.props.history.push('/'); }}>
+                        <span className={classes.content}>
+                            <ArrowBack />
+                        </span>
+                    </MyLink>
+                }} />
+                <Route path='/' exact render={() => {
+                    return <MyLink onClick={() => { this.props.closeAppCover(); }}>
+                        <span className={classes.content}>
+                            <IconHome />
+                        </span>
+                    </MyLink>
+                }} />
+            </li>
+            <Route path='/projects' render={() => {
+                let routes = [];
+                for (let item of projects) {
+                    routes.push({ url: '/projects/' + sentenceToURL(item.header), ico: '•' });
+                }
+                return this.getItems(routes);
+            }} />
+        </ul>;
+    }
+
+    getItems(routes) {
+        return routes.map((item, index) => {
             if (item.url.indexOf('spacer') > -1) {
                 return <li key={-1} className={classes.spacer}><hr /></li>
             } else {
-                return <li key={index}>
-                    <Link url={item.url}>
+                return <li key={`${index}-${item.url}`}>
+                    <MyLink url={item.url}>
                         <span className={classes.content}>
                             {item.ico}
                         </span>
-                    </Link>
+                    </MyLink>
                 </li>
             }
-        })}
-    </ul>;
+        });
+    }
 }
 
-export default navBar;
+const mapDispatchToProps = dispatch => {
+    return {
+        closeAppCover: () => dispatch({ type: actionTypes.SET_COVER_LIFTED, payload: false })
+    }
+}
+
+export default withRouter(connect(null, mapDispatchToProps)(NavBar));

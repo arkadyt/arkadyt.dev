@@ -19,7 +19,8 @@ export default (state = initialState, action) => {
                 ...state,
                 layoutLoaded: true
             }
-        case actionTypes.COVER_STATE_CHANGE:
+        case actionTypes.SET_COVER_LIFTED:
+            console.log('RECEIVEDDISP:', action)
             return {
                 ...state,
                 coverLifted: action.payload

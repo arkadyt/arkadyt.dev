@@ -27,7 +27,6 @@ const card = props => {
                 {'youtubeUrl' in props ? 
                     <a href={props.youtubeUrl} className={[classes.tag, classes.youtube].join(' ')}>
                         View on Youtube</a> : null}
-                {console.log(props)}
                 <a href={props.url} className={[classes.tag, classes.github].join(' ')}>
                     View on GitHub</a>
             </div>

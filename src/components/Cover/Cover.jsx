@@ -42,7 +42,7 @@ const mapDispatchToProps = dispatch => {
     return {
         onComponentLoaded: () => dispatch({ type: actionTypes.COVER_LOADED }),
         onCoverStateChange: coverLifted =>
-            dispatch({ type: actionTypes.COVER_STATE_CHANGE, payload: coverLifted })
+            dispatch({ type: actionTypes.SET_COVER_LIFTED, payload: coverLifted })
     }
 }
 
