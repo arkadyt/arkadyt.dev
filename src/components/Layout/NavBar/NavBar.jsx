@@ -1,8 +1,6 @@
 import React from 'react';
 import { NavLink, Link, Route, withRouter } from 'react-router-dom';
-import { connect } from 'react-redux';
 
-import * as actionTypes from '../../../store/actions';
 import { sentenceToURL } from '../../../utils/utils';
 import projects from '../../../projects.content';
 
@@ -10,7 +8,6 @@ import GitHub from 'react-icons/lib/fa/github-alt';
 import LinkedIn from 'react-icons/lib/fa/linkedin';
 import MailTo from 'react-icons/lib/md/mail';
 import ArrowBack from 'react-icons/lib/md/arrow-back';
-import IconHome from 'react-icons/lib/go/home';
 
 import classes from './NavBar.module.css';
 
@@ -36,30 +33,25 @@ class NavBar extends React.Component {
             { url: 'https://github.com/arkadyt', ico: <GitHub /> },
             { url: 'https://linkedin.com/in/arkadyt', ico: <LinkedIn /> },
             { url: 'mailto:arkady.titenko@gmail.com', ico: <MailTo /> },
-            { url: 'spacer' },
         ];
     }
 
     render() {
         return <ul className={classes.list}>
             {this.getItems(NavBar.staticRoutes)}
-            <li key={-2}>
-                <Route path='/(.+)' render={() => {
-                    return <MyLink onClick={() => { this.props.history.push('/'); }}>
-                        <span className={classes.content}
-                            style={{ animation: `${classes.spin} 1s ease-in-out` }}>
-                            <ArrowBack />
-                        </span>
-                    </MyLink>
-                }} />
-                <Route path='/' exact render={() => {
-                    return <MyLink onClick={() => { this.props.closeAppCover(); }}>
-                        <span className={classes.content}>
-                            <IconHome />
-                        </span>
-                    </MyLink>
-                }} />
-            </li>
+            <Route path='/(.+)' render={() => {
+                return <React.Fragment>
+                    {this.getItems([{ url: 'spacer' }])}
+                    <li key={-2}>
+                        <MyLink onClick={() => { this.props.history.push('/'); }}>
+                            <span className={classes.content}
+                                style={{ animation: `${classes.spin} 1s ease-in-out` }}>
+                                <ArrowBack />
+                            </span>
+                        </MyLink>
+                    </li>
+                </React.Fragment>
+            }} />
             <Route path='/projects' render={() => {
                 let routes = [];
                 for (let item of projects) {
@@ -88,10 +80,4 @@ class NavBar extends React.Component {
     }
 }
 
-const mapDispatchToProps = dispatch => {
-    return {
-        closeAppCover: () => dispatch({ type: actionTypes.SET_COVER_LIFTED, payload: false })
-    }
-}
-
-export default withRouter(connect(null, mapDispatchToProps)(NavBar));
+export default withRouter(NavBar);
