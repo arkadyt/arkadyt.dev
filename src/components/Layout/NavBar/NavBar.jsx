@@ -46,7 +46,8 @@ class NavBar extends React.Component {
             <li key={-2}>
                 <Route path='/(.+)' render={() => {
                     return <MyLink onClick={() => { this.props.history.push('/'); }}>
-                        <span className={classes.content}>
+                        <span className={classes.content}
+                            style={{ animation: `${classes.spin} 1s ease-in-out` }}>
                             <ArrowBack />
                         </span>
                     </MyLink>
@@ -64,19 +65,20 @@ class NavBar extends React.Component {
                 for (let item of projects) {
                     routes.push({ url: '/projects/' + sentenceToURL(item.header), ico: '•' });
                 }
-                return this.getItems(routes);
+                return this.getItems(routes, true);
             }} />
         </ul>;
     }
 
-    getItems(routes) {
+    getItems(routes, enableSlideIn = false) {
         return routes.map((item, index) => {
             if (item.url.indexOf('spacer') > -1) {
                 return <li key={-1} className={classes.spacer}><hr /></li>
             } else {
                 return <li key={`${index}-${item.url}`}>
                     <MyLink url={item.url}>
-                        <span className={classes.content}>
+                        <span style={{ animationDelay: `${index * 250}ms` }}
+                            className={[classes.content, enableSlideIn ? classes.slide : ''].join(' ')}>
                             {item.ico}
                         </span>
                     </MyLink>
