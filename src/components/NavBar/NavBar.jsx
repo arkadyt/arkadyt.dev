@@ -1,7 +1,8 @@
 import React from 'react';
+import './NavBar.css';
 
 const navBar = props => {
-    return <div>
+    return <div className="NavBar-container">
         {props.links.map((item, index) => {
             return <li key={index}>
                 <a href={item.href} target="_blank">{item.title}</a>
