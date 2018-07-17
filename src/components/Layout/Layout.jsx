@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from '../NavBar/NavBar';
 import Section from '../Section/Section';
+import Front from '../Front/Front';
 import './Layout.css';
 
 import IconGitHub from 'react-icons/lib/go/mark-github';
@@ -19,6 +20,7 @@ export default class Layout extends Component {
             <div className="Layout-content-background" />
             <NavBar links={testLinks} />
             <div className="Layout-content">
+                <Front />
                 <Section title="Personal Projects"></Section>
                 <Section title="Work Experience"></Section>
                 <Section title="Contact"></Section>
