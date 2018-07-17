@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './NavBar/NavBar';
+import Section from './Section/Section'
 
 export default class Layout extends Component {
     render() {
@@ -11,6 +12,9 @@ export default class Layout extends Component {
 
         return <div>
             <NavBar links={testLinks}/>
+            <Section title="Personal Projects"></Section>
+            <Section title="Work Experience"></Section>
+            <Section title="Contact"></Section>
         </div>
     }
 }

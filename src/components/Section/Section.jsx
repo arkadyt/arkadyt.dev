@@ -1,0 +1,10 @@
+import React from 'react';
+
+const section = props => {
+    return <div>
+        <h1>{props.title}</h1>
+        {props.children}
+    </div>;
+};
+
+export default section;
