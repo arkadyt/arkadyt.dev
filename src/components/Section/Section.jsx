@@ -1,9 +1,12 @@
 import React from 'react';
+import './Section.css';
 
 const section = props => {
-    return <div>
-        <h1>{props.title}</h1>
-        {props.children}
+    return <div className="Section-container">
+        <div className="Section-aligner">
+            <h1>{props.title}</h1>
+            {props.children}
+        </div>
     </div>;
 };
 
