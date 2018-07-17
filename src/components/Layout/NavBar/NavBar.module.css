@@ -3,13 +3,10 @@
     flex-direction: column;
     justify-content: flex-start;
     align-content: center;
-
     margin: 0;
     padding: 0;
-
     height: 100%;
     width: 100%;
-
     list-style: none;
     background-color: #212121;
 }
@@ -35,6 +32,7 @@
 }
 
 .list .spacer:hover {
+    /* dirty fix */
     background-color: #212121;
 }
 
@@ -47,24 +45,54 @@
     display: block;
     width: 100%;
     height: 100%;
-
     color: #eee;
     text-decoration: none;
     font-size: 2em;
-
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
     box-sizing: border-box;
 }
 
 .list .Link.active {
-    border-right-color: #eee;
+    border-right-color: #212121;
+    animation: appear 1s ease-in-out 1s 1 normal forwards;
 }
 
-.list .Link .content {
+@keyframes appear {
+    0% {
+        border-right-color: #212121
+    }
+    100% {
+        border-right-color: #eee
+    }
+}
+
+.list .Link span.content {
     display: flex;
     height: 100%;
     width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.list .Link span.slide {
+    transform: translateX(-50px);
+    animation: slide 1s ease-in-out 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide {
+    100% {
+        transform: translateX(0px)
+    }
+}
+
+@keyframes spin {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(-360deg)
+    }
 }

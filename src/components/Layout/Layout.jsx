@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import * as actionTypes from '../../store/actions';
-import { BrowserRouter as Router, Route, Redirect, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import Projects from './_Pages/Projects/Projects';
 import RootPage from './_Pages/RootPage/RootPage';
@@ -17,30 +17,19 @@ export class Layout extends React.Component {
         return <Router basename='/pf-webapp'>
             <div className={classes.container}>
                 <NavBar />
-                <Switch>
-                    <Route path='/' exact component={RootPage} />
-                    <Route path='/projects' component={Projects} />
-                    <Route path='/education' component={Education} />
-                    <Route path='/experience' component={Experience} />
-                    <Route path='/contact' component={Contact} />
-                </Switch>
+                <Route path='/' exact component={RootPage} />
+                <Route path='/projects' component={Projects} />
+                <Route path='/education' component={Education} />
+                <Route path='/experience' component={Experience} />
+                <Route path='/contact' component={Contact} />
             </div>
         </Router >;
     }
 
     componentDidMount() {
-        if (!this.props.componentLoaded) {
-            this.props.onComponentLoaded();
-        }
+        this.props.onComponentLoaded();
     }
 };
-
-const mapStateToProps = state => {
-    return {
-        componentLoaded: state.layoutLoaded,
-        projectsRoutes: state.projectsRoutes
-    }
-}
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -48,4 +37,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Layout);
+export default connect(null, mapDispatchToProps)(Layout);

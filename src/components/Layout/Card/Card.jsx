@@ -24,10 +24,12 @@ const card = props => {
                 {props.tags.map((item, index) => {
                     return <span key={index} className={classes.tag}>{item}</span>;
                 })}<br />
-                {'youtubeUrl' in props ? 
-                    <a href={props.youtubeUrl} className={[classes.tag, classes.youtube].join(' ')}>
+                {'youtubeUrl' in props ?
+                    <a href={props.youtubeUrl} target="_blank"
+                        className={[classes.tag, classes.youtube].join(' ')}>
                         View on Youtube</a> : null}
-                <a href={props.url} className={[classes.tag, classes.github].join(' ')}>
+                <a href={props.url} target='_blank'
+                    className={[classes.tag, classes.github].join(' ')}>
                     View on GitHub</a>
             </div>
         </div>
