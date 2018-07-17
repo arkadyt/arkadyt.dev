@@ -1,0 +1,14 @@
+.Layout-content {
+    margin: 0 0 0 50px;
+}
+
+div.Layout-content-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -5;
+    background-image: url(./mountains.jpg);
+    background-size: cover;
+}
