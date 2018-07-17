@@ -1,0 +1,40 @@
+.Card-container {
+    width: 400px;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: white;
+    box-shadow: 0 2px 20px 0 rgba(0,0,0,0.15);
+}
+
+.Card-container > a {
+    display: block;
+}
+
+.Card-container > a > img {
+    width: 100%;
+    height: auto;
+}
+
+.Card-content {
+    padding: 45px;
+}
+
+.Card-content > h3 {
+    margin: 0;
+}
+
+.Card-content > span {
+    display: block;
+    margin-top: 20px;
+}
+
+.Card-tags {
+    margin-top: 20px;
+}
+
+.Card-tag {
+    display: inline-block;
+    border: 3px solid black;
+    padding: 2px 5px;
+    margin-right: 10px;
+}

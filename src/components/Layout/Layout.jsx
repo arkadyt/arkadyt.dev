@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import NavBar from '../NavBar/NavBar';
 import Section from '../Section/Section';
+import Card from '../Card/Card';
 import Front from '../Front/Front';
 import './Layout.css';
 
@@ -16,14 +17,48 @@ export default class Layout extends Component {
             { title: <IconDOCX />, href: 'https://a.com/3' }
         ];
 
+        const testProjects = [
+            {
+                href: 'https://github.com/arkadyt/phys-bund',
+                image: 'https://i.imgur.com/y5Wb6eM.jpg',
+                title: 'Demos of Physics Phenomena',
+                description: 'A sample project description intended to inform the reader with more details.',
+                tags: ['Unity', 'C#', '3DSMax'],
+            },
+            {
+                href: 'https://github.com/arkadyt/phys-bund',
+                image: 'https://i.imgur.com/y5Wb6eM.jpg',
+                title: 'Demos of Physics Phenomena',
+                description: 'A sample project description intended to inform the reader with more details.',
+                tags: ['Unity', 'C#', '3DSMax'],
+            },
+            {
+                href: 'https://github.com/arkadyt/phys-bund',
+                image: 'https://i.imgur.com/y5Wb6eM.jpg',
+                title: 'Demos of Physics Phenomena',
+                description: 'A sample project description intended to inform the reader with more details.',
+                tags: ['Unity', 'C#', '3DSMax'],
+            },
+        ];
+
         return <React.Fragment>
             <div className="Layout-content-background" />
             <NavBar links={testLinks} />
             <div className="Layout-content">
                 <Front />
-                <Section title="Personal Projects"></Section>
-                <Section title="Work Experience"></Section>
-                <Section title="Contact"></Section>
+                <Section title="Personal Projects">
+                    <div className="Layout-card-view">
+                        {testProjects.map((item, index) => (
+                            <Card {...item} key={index} />
+                        ))}
+                    </div>
+                </Section>
+                <Section title="Work Experience">
+                    {/* WEXP Cards */}
+                </Section>
+                <Section title="Contact">
+                    {/* Links, Message form */}
+                </Section>
             </div>
         </React.Fragment>
     }

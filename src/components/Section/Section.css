@@ -1,6 +1,6 @@
 .Section-container {
     width: 100%;
-    background-color: #eee;
+    background: linear-gradient(to top, #F5F5F5, #fff);
     padding: 50px 0;
 }
 

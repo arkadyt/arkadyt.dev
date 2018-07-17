@@ -12,3 +12,13 @@ div.Layout-content-background {
     background-image: url(./mountains.jpg);
     background-size: cover;
 }
+
+.Layout-card-view {
+    margin-top: 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+    justify-items: center;
+    align-items: center;
+}
