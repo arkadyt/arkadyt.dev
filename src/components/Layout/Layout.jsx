@@ -27,18 +27,9 @@ export class Layout extends React.Component {
     }
 
     componentDidMount() {
-        if (!this.props.componentLoaded) {
-            this.props.onComponentLoaded();
-        }
+        this.props.onComponentLoaded();
     }
 };
-
-const mapStateToProps = state => {
-    return {
-        componentLoaded: state.layoutLoaded,
-        projectsRoutes: state.projectsRoutes
-    }
-}
 
 const mapDispatchToProps = dispatch => {
     return {
@@ -46,4 +37,4 @@ const mapDispatchToProps = dispatch => {
     }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Layout);
+export default connect(null, mapDispatchToProps)(Layout);
