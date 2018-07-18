@@ -1,16 +1,19 @@
 .Section-container {
     width: 100%;
     background: linear-gradient(to top, #F5F5F5, #fff);
+    background-color: white;
 }
 
 .Section-container h1 {
-    margin: 0;
-    font-size: 3em;
+    color: #212121;
+    margin: 0 0 80px 0;
+    line-height: 1.1em;
+    font-size: 5em;
     font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
 }
 
-.Section-aligner {
+.Section-content {
     width: 960px;
     padding: 100px 0 40px 0;
     margin: auto;

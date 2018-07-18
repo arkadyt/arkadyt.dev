@@ -46,7 +46,7 @@ export default class Layout extends Component {
             <NavBar links={testLinks} />
             <div className="Layout-content">
                 <Front />
-                <Section title="Personal Projects">
+                <Section title={<div>Personal<br/>Projects</div>}>
                     <div className="Layout-card-view">
                         {testProjects.map((item, index) => (
                             <Card {...item} key={index} />
