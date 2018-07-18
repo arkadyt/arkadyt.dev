@@ -1,15 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400');
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:300'); */
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300'); */
+
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-}
-
-@font-face {
-  font-family: 'Header';
-  src: url(./fonts/encode-thin.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'Paragraph';
-  src: url(./fonts/dustismo.ttf) format('truetype');
 }

@@ -15,11 +15,14 @@
 
 .Front-name-block h1 {
     margin: 0;
-    font-family: 'Header', sans-serif;
-    font-size: 6em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 100;
+    font-size: 12.5em;
+
 }
 
 .Front-name-block span {
-    font-family: 'Paragraph', sans-serif;
-    font-size: 1.73em;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.7em;
+    font-weight: 300;
 }

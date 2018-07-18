@@ -42,7 +42,7 @@ export default class Layout extends Component {
         ];
 
         return <React.Fragment>
-            <div className="Layout-content-background" />
+            <div className="Layout-background" />
             <NavBar links={testLinks} />
             <div className="Layout-content">
                 <Front />

@@ -2,7 +2,7 @@
     margin: 0 0 0 50px;
 }
 
-div.Layout-content-background {
+.Layout-background {
     position: fixed;
     top: 0;
     left: 0;
@@ -14,11 +14,10 @@ div.Layout-content-background {
 }
 
 .Layout-card-view {
-    margin-top: 50px;
-    width: 100%;
+    margin: 50px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 50px;
+    grid-gap: 25px;
     justify-items: center;
     align-items: center;
 }

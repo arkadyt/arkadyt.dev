@@ -1,17 +1,17 @@
 .Section-container {
     width: 100%;
     background: linear-gradient(to top, #F5F5F5, #fff);
-    padding: 50px 0;
 }
 
 .Section-container h1 {
     margin: 0;
-    margin-left: 50px;
     font-size: 3em;
-    font-family: 'Header', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
 }
 
 .Section-aligner {
-    width: 65vw;
+    width: 960px;
+    padding: 100px 0 40px 0;
     margin: auto;
 }
