@@ -1,15 +1,11 @@
-import React from 'react';
-
-import Cover from './components/Cover/Cover';
+import React, { Component } from 'react';
 import Layout from './components/Layout/Layout';
+import './App.css';
 
-class App extends React.Component {
-    render() {
-        return <React.Fragment>
-            <Cover />
-            <Layout />
-        </React.Fragment>;
-    }
+class App extends Component {
+  render() { 
+    return <Layout/>;
+  }
 }
 
 export default App;
