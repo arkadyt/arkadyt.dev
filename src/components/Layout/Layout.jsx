@@ -21,7 +21,7 @@ export default class Layout extends Component {
                 <Section title="About Me">
                     <div className="Layout-about-view">
                         {about.map((item, index) => {
-                            return <div className="Layout-about-item">
+                            return <div className="Layout-about-item" key={index}>
                                 <span>{item.title}</span><br />
                                 <span>{item.description}</span>
                             </div>;
