@@ -9,7 +9,7 @@
     width: 100vw;
     height: 100vh;
     z-index: -5;
-    background-image: url(./mountains.jpg);
+    background-image: url(../../images/mountains.jpg);
     background-size: cover;
 }
 

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import NavBar from '../NavBar/NavBar';
 import Section from '../Section/Section';
 import Card from '../Card/Card';
+import ExpCard from '../ExpCard/ExpCard';
 import Front from '../Front/Front';
 import Link from '../Link/Link';
 import './Layout.css';
@@ -12,6 +13,8 @@ import IconDOCX from 'react-icons/lib/fa/file-word-o';
 import IconCopyright from 'react-icons/lib/fa/copyright';
 import IconMail from 'react-icons/lib/go/mail-read';
 
+import ImgAmex from '../../images/amex.png';
+
 export default class Layout extends Component {
     render() {
         const testLinks = [
@@ -20,6 +23,27 @@ export default class Layout extends Component {
             { ico: <IconLinkedIn />, href: 'http://linkedin.com/in/arkadyt', title: 'linkedin.com/in/arkadyt' },
             { ico: <IconDOCX />, href: 'https://a.com/3', title: 'Download Resume' },
         ];
+
+        const testJobs = [
+            {
+                company: 'Sample Company',
+                title: 'Fullstack Web Developer',
+                date: 'September 2018 - January 2019 | 4 months',
+                image: ImgAmex
+            },
+            {
+                company: 'Sample Company',
+                title: 'Fullstack Web Developer',
+                date: 'September 2018 - January 2019 | 4 months',
+                image: ImgAmex
+            },
+            {
+                company: 'Sample Company',
+                title: 'Fullstack Web Developer',
+                date: 'September 2018 - January 2019 | 4 months',
+                image: ImgAmex
+            }
+        ]
 
         const testProjects = [
             {
@@ -57,8 +81,14 @@ export default class Layout extends Component {
                         ))}
                     </div>
                 </Section>
-                <Section title="Work Experience">
-                    {/* WEXP Cards */}
+                <Section title={<div>Work<br/>Experience</div>}>
+                    {testJobs.map((item, index) => {
+                        const position = {
+                            start: index === 0,
+                            end: index === testJobs.length - 1
+                        }
+                        return <ExpCard {...item} key={index} {...position} />
+                    })}
                 </Section>
                 <Section title="Contact" blue>
                     <div className="Layout-contact-view">

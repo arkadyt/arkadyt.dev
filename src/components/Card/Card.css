@@ -3,7 +3,6 @@
     margin-bottom: 60px;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    background-color: white;
     box-shadow: 0 2px 20px 0 rgba(0,0,0,0.15);
 }
 

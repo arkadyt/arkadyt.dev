@@ -1,16 +1,21 @@
 import React from 'react';
+import './ExpCard.css';
 
 /**
  * Work experience card.
  */
 const expCard = props => {
-    return <div>
-        <img src={props.image} alt='' />
-        <div id="separator"/>
-        <div>
-            <h5>{props.date}</h5>
-            <h3>{props.company}</h3>
-            <h4>{props.title}</h4>
+    const separatorClass = props.start ? 'Separator-stick-start' : props.end ? 'Separator-stick-end' : null;
+    return <div className="ExpCard-container">
+        <img src={props.image} alt='' className="ExpCard-image" />
+        <div className="Separator-container">
+            <div className={['Separator-stick', separatorClass].join(' ')} />
+            <div className="Separator-circle" />
+        </div>
+        <div className="ExpCard-text">
+            <h4>{props.date}</h4>
+            <h2>{props.company}</h2>
+            <h3>{props.title}</h3>
         </div>
     </div>;
 };
