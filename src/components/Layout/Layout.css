@@ -23,6 +23,8 @@
 }
 
 .Layout-contact-view {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .Layout-footer {

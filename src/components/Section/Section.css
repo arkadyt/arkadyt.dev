@@ -8,6 +8,7 @@
 .Section-blue {
     background: #487eb0 !important;
     color: #eee !important;
+    min-height: calc(100vh - 50px) !important;
 }
 
 .Section-container h1 {

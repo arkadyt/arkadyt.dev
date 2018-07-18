@@ -7,16 +7,18 @@ import Link from '../Link/Link';
 import './Layout.css';
 
 import IconGitHub from 'react-icons/lib/go/mark-github';
-import IconLinkedIn from 'react-icons/lib/io/social-linkedin';
+import IconLinkedIn from 'react-icons/lib/fa/linkedin-square';
 import IconDOCX from 'react-icons/lib/fa/file-word-o';
 import IconCopyright from 'react-icons/lib/fa/copyright';
+import IconMail from 'react-icons/lib/go/mail-read';
 
 export default class Layout extends Component {
     render() {
         const testLinks = [
-            { title: <IconGitHub />, href: 'https://a.com/1', },
-            { title: <IconLinkedIn />, href: 'https://a.com/2' },
-            { title: <IconDOCX />, href: 'https://a.com/3' }
+            { ico: <IconMail />, href: 'mailto:sample.email@mail.com', title: 'sample.email@mail.com' },
+            { ico: <IconGitHub />, href: 'http://github.com/arkadyt', title: 'github.com/arkadyt' },
+            { ico: <IconLinkedIn />, href: 'http://linkedin.com/in/arkadyt', title: 'linkedin.com/in/arkadyt' },
+            { ico: <IconDOCX />, href: 'https://a.com/3', title: 'Download Resume' },
         ];
 
         const testProjects = [

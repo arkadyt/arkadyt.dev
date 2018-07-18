@@ -1,9 +1,12 @@
 import React from 'react';
+import './Link.css';
 
 const link = props => {
-    return <div>
-        <div>{props.ico}</div>
-        <a href={props.href}>{props.href}</a>
+    return <div className="Link-container">
+        <a href={props.href} target="_blank">
+            {props.ico}
+            <span>{props.title}</span>
+        </a>
     </div>;
 };
 
