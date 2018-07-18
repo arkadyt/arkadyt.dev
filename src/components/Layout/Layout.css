@@ -27,6 +27,22 @@
     flex-wrap: wrap;
 }
 
+.Layout-about-view {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 60px;
+}
+
+.Layout-about-item > span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.4em;
+}
+
+.Layout-about-item > span:first-child {
+    color: #40739e;
+    font-size: 1.6em;
+}
+
 .Layout-footer {
     padding: 20px 0;
     background-color: #40739e;

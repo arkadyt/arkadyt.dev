@@ -9,7 +9,7 @@ import Front from '../Front/Front';
 import Link from '../Link/Link';
 
 import IconCopyright from 'react-icons/lib/fa/copyright';
-import { projects, jobs, links } from '../../content.js';
+import { projects, jobs, links, about } from '../../content.js';
 
 export default class Layout extends Component {
     render() {
@@ -18,6 +18,16 @@ export default class Layout extends Component {
             <NavBar links={links} />
             <div className="Layout-content">
                 <Front />
+                <Section title="About Me">
+                    <div className="Layout-about-view">
+                        {about.map((item, index) => {
+                            return <div className="Layout-about-item">
+                                <span>{item.title}</span><br />
+                                <span>{item.description}</span>
+                            </div>;
+                        })}
+                    </div>
+                </Section>
                 <Section title={<div>Personal<br />Projects</div>}>
                     <div className="Layout-card-view">
                         {projects.map((item, index) => (
