@@ -2,10 +2,15 @@
     width: 100%;
     background: linear-gradient(to top, #F5F5F5, #fff);
     background-color: white;
+    color: #212121;
+}
+
+.Section-blue {
+    background: #487eb0 !important;
+    color: #eee !important;
 }
 
 .Section-container h1 {
-    color: #212121;
     margin: 0 0 80px 0;
     line-height: 1.1em;
     font-size: 5em;

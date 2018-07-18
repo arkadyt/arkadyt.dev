@@ -3,16 +3,18 @@ import NavBar from '../NavBar/NavBar';
 import Section from '../Section/Section';
 import Card from '../Card/Card';
 import Front from '../Front/Front';
+import Link from '../Link/Link';
 import './Layout.css';
 
 import IconGitHub from 'react-icons/lib/go/mark-github';
 import IconLinkedIn from 'react-icons/lib/io/social-linkedin';
 import IconDOCX from 'react-icons/lib/fa/file-word-o';
+import IconCopyright from 'react-icons/lib/fa/copyright';
 
 export default class Layout extends Component {
     render() {
         const testLinks = [
-            { title: <IconGitHub />, href: 'https://a.com/1' },
+            { title: <IconGitHub />, href: 'https://a.com/1', },
             { title: <IconLinkedIn />, href: 'https://a.com/2' },
             { title: <IconDOCX />, href: 'https://a.com/3' }
         ];
@@ -46,7 +48,7 @@ export default class Layout extends Component {
             <NavBar links={testLinks} />
             <div className="Layout-content">
                 <Front />
-                <Section title={<div>Personal<br/>Projects</div>}>
+                <Section title={<div>Personal<br />Projects</div>}>
                     <div className="Layout-card-view">
                         {testProjects.map((item, index) => (
                             <Card {...item} key={index} />
@@ -56,9 +58,16 @@ export default class Layout extends Component {
                 <Section title="Work Experience">
                     {/* WEXP Cards */}
                 </Section>
-                <Section title="Contact">
-                    {/* Links, Message form */}
+                <Section title="Contact" blue>
+                    <div className="Layout-contact-view">
+                        {testLinks.map((item, index) => {
+                            return <Link {...item} key={index} />
+                        })}
+                    </div>
                 </Section>
+                <div className="Layout-footer">
+                    <div><IconCopyright /><span>Arkady Titenko 2018</span></div>
+                </div>
             </div>
         </React.Fragment>
     }
