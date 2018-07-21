@@ -1,6 +1,6 @@
 {
-  "name": "pf-webapp",
-  "homepage": "https://arkadyt.github.io/pf-webapp/",
+  "name": "pf2",
+  "homepage": "https://arkadyt.github.io/pf2",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,9 +13,9 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }
 }
