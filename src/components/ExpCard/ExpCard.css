@@ -5,7 +5,7 @@
 }
 
 .ExpCard-image {
-    width: 40%;
+    width: 60%;
     justify-self: end;
     align-self: center;
 }
@@ -50,6 +50,10 @@
 
 .Separator-stick-end {
     height: 50% !important;
+}
+
+.Separator-stick-hidden {
+    visibility: hidden;
 }
 
 .Separator-circle {

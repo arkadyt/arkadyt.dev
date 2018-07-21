@@ -1,6 +1,5 @@
 .Card-container {
     width: 470px;
-    margin-bottom: 60px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     box-shadow: 0 2px 20px 0 rgba(0,0,0,0.15);
@@ -11,8 +10,10 @@
 }
 
 .Card-container > a > img {
+    min-height: 250px;
+    max-height: 250px;
     width: 100%;
-    height: auto;
+    object-fit: cover;
 }
 
 .Card-content {
