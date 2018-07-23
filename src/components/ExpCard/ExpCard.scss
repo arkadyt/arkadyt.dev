@@ -9,21 +9,21 @@
     }
     .ExpCard-text {
         align-self: center;
-        h2 {
-            font-size: 3.2rem;
-        }
-        h3 {
-            font-size: 2rem;
-        }
-        h2,
-        h3 {
+        %header {
             font-family: 'Montserrat', sans-serif;
             margin: 0;
         }
+        h2 {
+            @extend %header;
+            font-size: 3.2rem;
+        }
+        h3 {
+            @extend %header;
+            font-size: 2rem;
+        }
         h4 {
-            font-family: 'Open Sans', sans-serif;
+            @extend %header;
             font-size: 1.6rem;
-            margin: 0;
             color: #40739e;
         }
     }

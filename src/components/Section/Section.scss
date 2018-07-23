@@ -15,12 +15,11 @@
         font-family: 'Josefin Sans', sans-serif;
         text-transform: uppercase;
     }
-}
-
-.Section-blue {
-    background: #487eb0 !important;
-    color: #eee !important;
-    .Section-content {
-        padding: 10rem 0;
+    &.Section-blue {
+        background: #487eb0 !important;
+        color: #eee !important;
+        .Section-content {
+            padding: 10rem 0;
+        }
     }
 }
