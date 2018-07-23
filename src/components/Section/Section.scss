@@ -1,0 +1,30 @@
+.Section-container {
+    width: 100%;
+    background: linear-gradient(to top, #F5F5F5, #fff);
+    background-color: white;
+    color: #212121;
+}
+
+.Section-blue {
+    background: #487eb0 !important;
+    color: #eee !important;
+    /* min-height: calc(100vh - 50px) !important; */
+}
+
+.Section-blue > .Section-content {
+    padding: 10rem 0;
+}
+
+.Section-container h1 {
+    margin: 0 0 8rem 0;
+    line-height: 1.1em;
+    font-size: 8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.Section-content {
+    width: 96rem;
+    padding: 10rem 0;
+    margin: auto;
+}
