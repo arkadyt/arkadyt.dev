@@ -1,7 +1,3 @@
-.Layout-content {
-    margin: 0 0 0 5rem;
-}
-
 .Layout-background {
     position: fixed;
     top: 0;
@@ -13,53 +9,51 @@
     background-size: cover;
 }
 
-.Layout-card-view {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 2.5rem;
-    grid-row-gap: 6rem;
-    justify-items: center;
-    align-items: center;
-}
-
-.Layout-contact-view {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.Layout-about-view {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 6rem;
-}
-
-.Layout-about-item > span {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 2.24rem;
-}
-
-.Layout-about-item > span:first-child {
-    color: #40739e;
-    font-size: 2.56rem;
-}
-
-.Layout-footer {
-    padding: 2rem 0;
-    background-color: #40739e;
-}
-
-.Layout-footer > div {
-    display: flex;
-    align-items: center;
-    width: 96rem;
-    margin: auto;
-    color: #eee;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-}
-
-.Layout-footer > div > span {
-    margin-left: .5rem;
+.Layout-content {
+    margin: 0 0 0 5rem;
+    .Layout-card-view {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 2.5rem;
+        grid-row-gap: 6rem;
+        justify-items: center;
+        align-items: center;
+    }
+    .Layout-contact-view {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .Layout-about-view {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 6rem;
+    }
+    .Layout-about-item {
+        span {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 2.24rem;
+            &:first-child {
+                color: #40739e;
+                font-size: 2.56rem;
+            }
+        }
+    }
+    .Layout-footer {
+        padding: 2rem 0;
+        background-color: #40739e;
+        div {
+            display: flex;
+            align-items: center;
+            width: 96rem;
+            margin: auto;
+            color: #eee;
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            >span {
+                margin-left: .5rem;
+            }
+        }
+    }
 }

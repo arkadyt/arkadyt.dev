@@ -10,9 +10,9 @@ const card = props => {
             <h3>{props.title}</h3>
             <span>{props.description}</span>
             <div className="Card-tags">
-            {props.tags.map((item, index) => (
-                <span key={index} className="Card-tag">{item}</span>
-            ))}
+                {props.tags.map((item, index) => (
+                    <span key={index}>{item}</span>
+                ))}
             </div>
         </div>
     </div>;
