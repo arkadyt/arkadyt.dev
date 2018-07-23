@@ -42,5 +42,5 @@ yarn-debug.log*
 yarn-error.log*
 meta.js
 
-# scss products
-src/**/*.css
+# now scss products
+/src/**/*.css
