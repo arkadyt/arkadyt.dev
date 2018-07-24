@@ -18,16 +18,8 @@ const card = props => {
         </a>
         <div className="backface">
             {props.links.map((item, index) => {
-                let className, title;
-                if (item.includes('youtu'))
-                    className = title = 'YouTube';
-                else if (item.includes('github'))
-                    className = title = 'GitHub';
-                else className = title = 'Link';
-                return <a key={index} href={item} target="_blank">
-                    <span className={className}>
-                        {title}&nbsp;&nbsp;<IconHref />
-                    </span>
+                return <a key={index} href={item.href} target="_blank">
+                    {item.title}&nbsp;&nbsp;<IconHref />
                 </a>
             })}
         </div>
