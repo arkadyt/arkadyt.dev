@@ -1,3 +1,5 @@
+@import 'variables';
+
 .Card-container {
     width: 47rem;
     display: grid;
@@ -12,32 +14,30 @@
             object-fit: cover;
         }
     }
-}
-
-.Card-content {
-    padding: 4.5rem;
-    h3 {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2rem;
-        margin: 0;
-    }
-    >span {
-        font-family: 'Open Sans', sans-serif;
-        font-size: 1.6rem;
-        display: block;
-        margin-top: 2rem;
-    }
-}
-
-.Card-tags {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
-    margin-top: 2rem;
-    span {
-        display: inline-block;
-        background-color: #487eb0;
-        color: white;
-        padding: .2rem 1.5rem;
-        margin-right: 1rem;
+    .description {
+        padding: 4.5rem;
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2rem;
+            margin: 0;
+        }
+        >span {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.6rem;
+            display: block;
+            margin-top: 2rem;
+        }
+        .tags {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 1.6rem;
+            margin-top: 2rem;
+            span {
+                display: inline-block;
+                background-color: $accent-primary;
+                color: $primary-white;
+                padding: .2rem 1.5rem;
+                margin-right: 1rem;
+            }
+        }
     }
 }

@@ -1,9 +1,10 @@
+@import 'variables';
+
 .Section-container {
     width: 100%;
-    background: linear-gradient(to top, #F5F5F5, #fff);
-    background-color: white;
-    color: #212121;
-    .Section-content {
+    background: $primary-white $gradient-section;
+    color: $primary-dark;
+    .content {
         width: 96rem;
         padding: 10rem 0;
         margin: auto;
@@ -16,9 +17,9 @@
         text-transform: uppercase;
     }
     &.Section-blue {
-        background: #487eb0 !important;
-        color: #eee !important;
-        .Section-content {
+        background: $accent-primary !important;
+        color: $primary-white !important;
+        .content {
             padding: 10rem 0;
         }
     }

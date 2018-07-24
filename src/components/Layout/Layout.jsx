@@ -19,9 +19,9 @@ export default class Layout extends Component {
             <div className="Layout-content">
                 <Front />
                 <Section title="About Me">
-                    <div className="Layout-about-view">
+                    <div className="about-view">
                         {about.map((item, index) => {
-                            return <div className="Layout-about-item" key={index}>
+                            return <div className="item" key={index}>
                                 <span>{item.title}</span><br />
                                 <span>{item.description}</span>
                             </div>;
@@ -29,7 +29,7 @@ export default class Layout extends Component {
                     </div>
                 </Section>
                 <Section title={<div>Personal<br />Projects</div>}>
-                    <div className="Layout-card-view">
+                    <div className="card-view">
                         {projects.map((item, index) => (
                             <Card {...item} key={index} />
                         ))}
@@ -45,13 +45,13 @@ export default class Layout extends Component {
                     })}
                 </Section>
                 <Section title="Contact" blue>
-                    <div className="Layout-contact-view">
+                    <div className="contact-view">
                         {links.map((item, index) => {
                             return <Link {...item} key={index} />
                         })}
                     </div>
                 </Section>
-                <div className="Layout-footer">
+                <div className="footer">
                     <div><IconCopyright /><span>Arkady Titenko 2018</span></div>
                 </div>
             </div>

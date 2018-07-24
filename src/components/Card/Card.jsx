@@ -6,10 +6,10 @@ const card = props => {
         <a href={props.href} target="_blank">
             <img src={props.image} alt='' />
         </a>
-        <div className="Card-content">
+        <div className="description">
             <h3>{props.title}</h3>
             <span>{props.description}</span>
-            <div className="Card-tags">
+            <div className="tags">
                 {props.tags.map((item, index) => (
                     <span key={index}>{item}</span>
                 ))}
