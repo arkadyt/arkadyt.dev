@@ -4,7 +4,7 @@
     width: 47rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
-    box-shadow: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 .2rem 2rem 0 $card-box-shadow;
     a {
         display: block;
         img {
