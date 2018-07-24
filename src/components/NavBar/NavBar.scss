@@ -8,7 +8,7 @@
     height: 100vh;
     display: flex;
     flex-wrap: wrap;
-    background-color: $primary-dark;
+    background-color: $color-primary-dark;
     justify-content: center;
     align-content: center;
     li {
@@ -19,10 +19,10 @@
         align-items: center;
         list-style: none;
         &:hover {
-            background-color: $accent-dark;
+            background-color: $color-accent-dark;
         }
         a {
-            color: $primary-white;
+            color: $color-primary-white;
             font-size: 3.2rem;
             width: 100%;
             height: 100%;

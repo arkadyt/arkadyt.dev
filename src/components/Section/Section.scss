@@ -2,8 +2,8 @@
 
 .Section-container {
     width: 100%;
-    background: $primary-white $gradient-section;
-    color: $primary-dark;
+    background: $color-primary-white $gradient-section;
+    color: $color-primary-dark;
     .content {
         width: 96rem;
         padding: 10rem 0;
@@ -17,8 +17,8 @@
         text-transform: uppercase;
     }
     &.Section-blue {
-        background: $accent-primary !important;
-        color: $primary-white !important;
+        background: $color-accent-primary !important;
+        color: $color-primary-white !important;
         .content {
             padding: 10rem 0;
         }
