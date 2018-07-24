@@ -13,12 +13,12 @@
         text-align: center;
         h1 {
             margin: 0;
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: $font-header-primary;
             font-weight: 100;
             font-size: 20rem;
         }
         span {
-            font-family: 'Josefin Sans', sans-serif;
+            font-family: $font-header-primary;
             font-weight: 300;
             font-size: 2.72rem;
         }

@@ -13,7 +13,7 @@
     .text {
         align-self: center;
         %header {
-            font-family: 'Montserrat', sans-serif;
+            font-family: $font-header-secondary;
             margin: 0;
         }
         h2 {

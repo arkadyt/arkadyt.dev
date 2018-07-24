@@ -17,18 +17,18 @@
     .description {
         padding: 4.5rem;
         h3 {
-            font-family: 'Montserrat', sans-serif;
+            font-family: $font-header-secondary;
             font-size: 2rem;
             margin: 0;
         }
         >span {
-            font-family: 'Open Sans', sans-serif;
+            font-family: $font-paragraph-primary;
             font-size: 1.6rem;
             display: block;
             margin-top: 2rem;
         }
         .tags {
-            font-family: 'Open Sans', sans-serif;
+            font-family: $font-paragraph-primary;
             font-size: 1.6rem;
             margin-top: 2rem;
             span {
