@@ -2,10 +2,11 @@
 
 .Card-container {
     width: 47rem;
+    height: 100%;
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 25rem auto;
     box-shadow: 0 .2rem 2rem 0 $card-box-shadow;
-    a {
+    >a {
         display: block;
         img {
             min-height: 25rem;
@@ -28,15 +29,24 @@
             margin-top: 2rem;
         }
         .tags {
-            font-family: $font-paragraph-primary;
+            font-family: $font-header-secondary;
             font-size: 1.6rem;
             margin-top: 2rem;
             span {
                 display: inline-block;
                 background-color: $color-accent-primary;
                 color: $color-primary-white;
-                padding: .2rem 1.5rem;
+                padding: .4rem 1.5rem;
                 margin-right: 1rem;
+            }
+        }
+        .links {
+            @extend .tags;
+            span.YouTube {
+                background-color: $color-youtube-link;
+            }
+            span.GitHub {
+                background-color: $color-github-link;
             }
         }
     }
