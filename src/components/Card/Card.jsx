@@ -4,7 +4,7 @@ import IconHref from 'react-icons/lib/fa/external-link';
 
 const card = props => {
     return <div className="Card-container">
-        <a href={props.href} target="_blank" className="Card-container">
+        <div className="frontface">
             <img src={props.image} alt='' />
             <div className="description">
                 <h3>{props.title}</h3>
@@ -15,7 +15,7 @@ const card = props => {
                     ))}
                 </div>
             </div>
-        </a>
+        </div>
         <div className="backface">
             {props.links.map((item, index) => {
                 return <a key={index} href={item.href} target="_blank">

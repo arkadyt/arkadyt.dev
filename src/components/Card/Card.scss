@@ -13,7 +13,7 @@
     perspective: 150rem;
     height: 100%;
     &:hover {
-        &>a {
+        & .frontface {
             transform: rotateY(180deg);
         }
         & .backface {
@@ -76,7 +76,7 @@
             }
         }
     }
-    >a {
+    .frontface {
         @include card_face;
         display: grid;
         grid-template-rows: 24rem auto;
