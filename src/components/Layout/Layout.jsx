@@ -36,13 +36,15 @@ export default class Layout extends Component {
                     </div>
                 </Section>
                 <Section title={<div>Work<br />Experience</div>}>
-                    {jobs.map((item, index) => {
-                        const position = {
-                            start: index === 0,
-                            end: index === jobs.length - 1
-                        }
-                        return <ExpCard {...item} key={index} {...position} />
-                    })}
+                    <div className="wexp-view">
+                        {jobs.map((item, index) => {
+                            const position = {
+                                start: index === 0,
+                                end: index === jobs.length - 1
+                            }
+                            return <ExpCard {...item} key={index} {...position} />
+                        })}
+                    </div>
                 </Section>
                 <Section title="Contact" blue>
                     <div className="contact-view">

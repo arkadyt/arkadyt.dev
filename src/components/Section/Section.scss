@@ -10,12 +10,17 @@
             width: 100%;
         }
         padding: 10rem 0;
-        margin: auto;
+        margin: 0 auto;
     }
     h1 {
         margin: 0 0 8rem 0;
         line-height: 1.1em;
         font-size: 8rem;
+        @media only screen and (orientation: portrait) {
+            font-size: 6rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
         font-family: $font-header-primary;
         text-transform: uppercase;
     }
