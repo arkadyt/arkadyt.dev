@@ -11,6 +11,9 @@
         transform: translateX(-50%);
         height: 100%;
         border-left: .4rem solid $color-primary-dark;
+        @media only screen and (orientation: portrait) {
+            border-width: .2rem;
+        }
         &.stick-start {
             height: 50% !important;
             top: 50% !important;
@@ -27,6 +30,10 @@
         align-self: center;
         width: 2rem;
         height: 2rem;
+        @media only screen and (orientation: portrait) {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
         border: .3rem solid $color-primary-dark;
         border-radius: 100%;
         background-color: $color-primary-white;
