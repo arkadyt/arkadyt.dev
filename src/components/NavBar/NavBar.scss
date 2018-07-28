@@ -1,0 +1,46 @@
+@import 'variables';
+.NavBar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 5rem;
+    height: 100vh;
+    @media only screen and (orientation: portrait) {
+        height: $v-scr-nav-thickness;
+        width: 100vw;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-primary-dark;
+    justify-content: center;
+    @media only screen and (orientation: portrait) {
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
+    align-content: center;
+    z-index: 5;
+    li {
+        flex-basis: 5rem;
+        height: 5rem;
+        @media only screen and (orientation: portrait) {
+            height: 100%;
+            flex-basis: $v-scr-nav-thickness;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        &:hover {
+            background-color: $color-accent-dark;
+        }
+        a {
+            color: $color-primary-white;
+            font-size: 3.2rem;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

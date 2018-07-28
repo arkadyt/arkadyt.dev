@@ -1,11 +1,15 @@
 import React from 'react';
 import './Front.css';
+import avatar from '../../images/avatar.png';
 
 const front = () => {
     return <div className="Front-container">
-        <div className="Front-name-block">
-            <h1>Arkady</h1>
-            <span>Software Engineer, Web Developer, Level Designer</span>
+        <img src={avatar} alt='' className="photo" />
+        <div className="name-block">
+            <h1>Andrew</h1><h3>Jefferson</h3><br />
+            <span>Software Engineer</span>
+            <span>Web Developer</span>
+            <span>Level Designer</span>
         </div>
     </div>;
 };

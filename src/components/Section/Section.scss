@@ -1,0 +1,34 @@
+@import 'variables';
+
+.Section-container {
+    width: 100%;
+    background: $color-primary-white $gradient-section;
+    color: $color-primary-dark;
+    .content {
+        width: 96rem;
+        @media only screen and (orientation: portrait) {
+            width: 100%;
+        }
+        padding: 10rem 0;
+        margin: 0 auto;
+    }
+    h1 {
+        margin: 0 0 8rem 0;
+        line-height: 1.1em;
+        font-size: 8rem;
+        @media only screen and (orientation: portrait) {
+            font-size: 6rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+        }
+        font-family: $font-header-primary;
+        text-transform: uppercase;
+    }
+    &.Section-blue {
+        background: $color-accent-primary !important;
+        color: $color-primary-white !important;
+        .content {
+            padding: 10rem 0;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import './separator';
+@import 'variables';
+
+.ExpCard-container {
+    display: grid;
+    grid-template-columns: 0.95fr 0.1fr 0.95fr;
+    grid-template-rows: 20rem;
+    img {
+        width: 60%;
+        @media only screen and (orientation: portrait) {
+            width: 100%;
+        }
+        justify-self: end;
+        align-self: center;
+    }
+    .text {
+        align-self: center;
+        %header {
+            font-family: $font-header-secondary;
+            margin: 0;
+        }
+        h2 {
+            @extend %header;
+            font-size: 3.2rem;
+        }
+        h3 {
+            @extend %header;
+            font-size: 2rem;
+        }
+        h4 {
+            @extend %header;
+            font-size: 1.6rem;
+            color: $color-accent-primary;
+        }
+    }
+}

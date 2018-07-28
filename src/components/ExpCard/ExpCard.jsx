@@ -5,17 +5,17 @@ import './ExpCard.css';
  * Work experience card.
  */
 const expCard = props => {
-    const separatorClass = props.start && props.end ? 'Separator-stick-hidden' :
-        props.start ? 'Separator-stick-start' :
-            props.end ? 'Separator-stick-end' :
-                null;
+    const separatorClass = props.start && props.end ? 'stick-hidden' :
+        props.start ? 'stick-start' :
+            props.end ? 'stick-end' :
+                '';
     return <div className="ExpCard-container">
-        <img src={props.image} alt='' className="ExpCard-image" />
+        <img src={props.image} alt='' />
         <div className="Separator-container">
-            <div className={['Separator-stick', separatorClass].join(' ')} />
-            <div className="Separator-circle" />
+            <div className={['stick', separatorClass].join(' ')} />
+            <div className="circle" />
         </div>
-        <div className="ExpCard-text">
+        <div className="text">
             <h4>{props.date}</h4>
             <h2>{props.company}</h2>
             <h3>{props.title}</h3>
