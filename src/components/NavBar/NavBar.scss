@@ -6,18 +6,26 @@
     width: 5rem;
     height: 100vh;
     @media only screen and (orientation: portrait) {
-        height: 5rem;
+        height: 6.5rem;
         width: 100vw;
     }
     display: flex;
     flex-wrap: wrap;
     background-color: $color-primary-dark;
     justify-content: center;
+    @media only screen and (orientation: portrait) {
+        justify-content: flex-start;
+        padding-left: 1rem;
+    }
     align-content: center;
     z-index: 5;
     li {
         flex-basis: 5rem;
         height: 5rem;
+        @media only screen and (orientation: portrait) {
+            height: 100%;
+            flex-basis: 6.5rem;
+        }
         display: flex;
         justify-content: center;
         align-items: center;
