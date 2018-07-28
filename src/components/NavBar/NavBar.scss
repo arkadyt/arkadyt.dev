@@ -6,7 +6,7 @@
     width: 5rem;
     height: 100vh;
     @media only screen and (orientation: portrait) {
-        height: 6.5rem;
+        height: $v-scr-nav-thickness;
         width: 100vw;
     }
     display: flex;
@@ -24,7 +24,7 @@
         height: 5rem;
         @media only screen and (orientation: portrait) {
             height: 100%;
-            flex-basis: 6.5rem;
+            flex-basis: $v-scr-nav-thickness;
         }
         display: flex;
         justify-content: center;
