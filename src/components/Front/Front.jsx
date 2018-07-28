@@ -4,7 +4,7 @@ import './Front.css';
 const front = () => {
     return <div className="Front-container">
         <div className="name-block">
-            <h1>Arkady</h1>
+            <h1>Andrew Jefferson</h1>
             <span>Software Engineer, Web Developer, Level Designer</span>
         </div>
     </div>;

@@ -52,7 +52,7 @@ export default class Layout extends Component {
                     </div>
                 </Section>
                 <div className="footer">
-                    <div><IconCopyright /><span>Arkady Titenko 2018</span></div>
+                    <div><IconCopyright /><span>Andrew Jefferson 2018</span></div>
                 </div>
             </div>
         </React.Fragment>

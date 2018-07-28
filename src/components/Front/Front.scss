@@ -12,15 +12,18 @@
         text-transform: uppercase;
         text-align: center;
         h1 {
+            display: block;
             margin: 0;
             font-family: $font-header-primary;
             font-weight: 100;
-            font-size: 20rem;
+            font-size: 9rem;
         }
         span {
+            display: block;
+            margin-top: 1rem;
             font-family: $font-header-primary;
             font-weight: 300;
-            font-size: 2.72rem;
+            font-size: 3.15rem;
         }
     }
 }
