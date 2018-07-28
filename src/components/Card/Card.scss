@@ -1,6 +1,7 @@
 @import 'variables';
 @mixin card_face {
     height: 100%;
+    width: 100%;
     border-radius: .5rem;
     overflow: hidden;
     transition: all .8s ease;
@@ -30,7 +31,6 @@
         align-items: center;
         justify-content: flex-end;
         padding: 2rem;
-        width: 100%;
         transform: rotateY(-180deg);
         background: $color-primary-dark $gradient-card-backface;
         a {
@@ -80,7 +80,6 @@
         @include card_face;
         display: grid;
         grid-template-rows: 24rem auto;
-        width: 47rem;
         text-decoration: none;
         color: $color-primary-dark;
         >img {
