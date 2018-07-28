@@ -13,10 +13,16 @@
 
 .Layout-content {
     margin: 0 0 0 5rem;
+    @media only screen and (orientation: portrait) {
+        margin: 5rem 0 0 0;
+    }
     .card-view {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        @media only screen and (orientation: portrait) {
+            grid-template-columns: unset;
+        }
         grid-column-gap: 2.5rem;
         grid-row-gap: 6rem;
         justify-items: center;
@@ -48,6 +54,9 @@
             display: flex;
             align-items: center;
             width: 96rem;
+            @media only screen and (orientation: portrait) {
+                width: 100%;
+            }
             margin: auto;
             color: $color-primary-white;
             font-family: $font-header-primary;

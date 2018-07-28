@@ -6,6 +6,9 @@
     color: $color-primary-dark;
     .content {
         width: 96rem;
+        @media only screen and (orientation: portrait) {
+            width: 100%;
+        }
         padding: 10rem 0;
         margin: auto;
     }
