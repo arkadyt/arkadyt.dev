@@ -2,6 +2,9 @@
 
 .Link-container {
     flex-basis: 50%;
+    @media only screen and (orientation: portrait) {
+        flex-basis: 100%;
+    }
     margin: 2rem 0;
     font-size: 2.72rem;
     font-family: $font-paragraph-primary;
