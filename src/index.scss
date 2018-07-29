@@ -1,43 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400|Open+Sans:300|Josefin+Sans:100,300,400');
 html {
-    @media only screen and (min-width: 1801px) and (orientation: landscape) {
-        font-size: 60%;
+    @media all and (orientation: landscape) {
+        font-size: .6vw;
     }
-    @media only screen and (max-width: 1800px) and (orientation: landscape) {
-        font-size: 55%;
-    }
-    @media only screen and (max-width: 1500px) and (orientation: landscape)  {
-        font-size: 50%;
-    }
-    @media only screen and (max-width: 1200px) and (orientation: landscape)  {
-        font-size: 45%;
-    }
-    @media only screen and (max-width: 900px) and (orientation: landscape)  {
-        font-size: 40%;
-    }
-    @media only screen and (max-width: 600px) and (orientation: landscape)  {
-        font-size: 35%;
-    }
-    @media only screen and (min-width: 1801px) and (orientation: portrait) {
-        font-size: 200%;
-    }
-    @media only screen and (max-width: 1800px) and (orientation: portrait) {
-        font-size: 170%;
-    }
-    @media only screen and (max-width: 1500px) and (orientation: portrait)  {
-        font-size: 140%;
-    }
-    @media only screen and (max-width: 1200px) and (orientation: portrait)  {
-        font-size: 110%;
-    }
-    @media only screen and (max-width: 900px) and (orientation: portrait)  {
-        font-size: 80%;
-    }
-    @media only screen and (max-width: 600px) and (orientation: portrait)  {
-        font-size: 50%;
-    }
-    @media only screen and (max-width: 300px) and (orientation: portrait)  {
-        font-size: 40%;
+    @media all and (orientation: portrait) {
+        font-size: 2vw;
     }
 }
 
