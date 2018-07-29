@@ -7,7 +7,7 @@
     grid-template-rows: 20rem;
     img {
         width: 60%;
-        @media only screen and (orientation: portrait) {
+        @media (orientation: portrait) {
             width: 100%;
         }
         justify-self: end;

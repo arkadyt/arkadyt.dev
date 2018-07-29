@@ -5,7 +5,7 @@
     left: 0;
     width: 5rem;
     height: 100vh;
-    @media only screen and (orientation: portrait) {
+    @media (orientation: portrait) {
         height: $v-scr-nav-thickness;
         width: 100vw;
     }
@@ -13,7 +13,7 @@
     flex-wrap: wrap;
     background-color: $color-primary-dark;
     justify-content: center;
-    @media only screen and (orientation: portrait) {
+    @media (orientation: portrait) {
         justify-content: flex-start;
         padding-left: 1rem;
     }
@@ -22,7 +22,7 @@
     li {
         flex-basis: 5rem;
         height: 5rem;
-        @media only screen and (orientation: portrait) {
+        @media (orientation: portrait) {
             height: 100%;
             flex-basis: $v-scr-nav-thickness;
         }

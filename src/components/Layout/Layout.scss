@@ -12,14 +12,14 @@
 
 .Layout-content {
     margin: 0 0 0 5rem;
-    @media only screen and (orientation: portrait) {
+    @media (orientation: portrait) {
         margin: 0;
         overflow: hidden;
     }
     .about-view {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        @media only screen and (orientation: portrait) {
+        @media (orientation: portrait) {
             grid-template-columns: 1fr 1fr;
             padding: 0 2rem;
         }
@@ -39,7 +39,7 @@
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        @media only screen and (orientation: portrait) {
+        @media (orientation: portrait) {
             padding: 0 2rem;
             grid-template-columns: unset;
         }
@@ -49,14 +49,14 @@
         align-items: center;
     }
     .wexp-view {
-        @media only screen and (orientation: portrait) {
+        @media (orientation: portrait) {
             padding: 0 2rem;
         }
     }
     .contact-view {
         display: flex;
         flex-wrap: wrap;
-        @media only screen and (orientation: portrait) {
+        @media (orientation: portrait) {
             padding: 0 2rem;
         }
     }
@@ -67,7 +67,7 @@
             display: flex;
             align-items: center;
             width: 96rem;
-            @media only screen and (orientation: portrait) {
+            @media (orientation: portrait) {
                 width: 100%;
                 padding-left: 2rem;
             }

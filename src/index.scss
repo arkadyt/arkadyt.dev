@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400|Open+Sans:300|Josefin+Sans:100,300,400');
 html {
-    @media all and (orientation: landscape) {
+    @media (orientation: landscape) {
         font-size: .6vw;
     }
-    @media all and (orientation: portrait) {
+    @media (orientation: portrait) {
         font-size: 2vw;
     }
 }
