@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import './Layout.css';
 
-import NavBar from '../NavBar/NavBar';
-import Section from '../Section/Section';
-import Card from '../Card/Card';
-import ExpCard from '../ExpCard/ExpCard';
-import Front from '../Front/Front';
-import Link from '../Link/Link';
+import NavBar from '../NavBar/NavBar.jsx';
+import Section from '../Section/Section.jsx';
+import Card from '../Card/Card.jsx';
+import ExpCard from '../ExpCard/ExpCard.jsx';
+import Front from '../Front/Front.jsx';
+import Link from '../Link/Link.jsx';
 
 import IconCopyright from 'react-icons/lib/fa/copyright';
 import { projects, jobs, links, about } from '../../content.js';

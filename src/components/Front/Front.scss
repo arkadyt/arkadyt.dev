@@ -8,7 +8,7 @@
     flex-direction: column;
     background: $gradient-front-page;
     img {
-        @media only screen and (orientation: landscape) {
+        @media (orientation: landscape) {
             display: none;
         }
         width: 20rem;
@@ -28,13 +28,13 @@
             font-family: $font-header-primary;
             font-weight: 100;
             font-size: 9rem;
-            @media only screen and (orientation: portrait) {
+            @media (orientation: portrait) {
                 font-size: 7.4rem;
             }
         }
         h3 {
             margin-left: 2rem;
-            @media only screen and (orientation: portrait) {
+            @media (orientation: portrait) {
                 margin-left: 0;
                 display: block;
                 font-size: 6rem;
@@ -51,7 +51,7 @@
             &:last-child::after {
                 content: unset;
             }
-            @media only screen and (orientation: portrait) {
+            @media (orientation: portrait) {
                 &::after {
                     content: unset;
                 }

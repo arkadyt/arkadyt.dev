@@ -1,6 +1,6 @@
 import React from 'react';
 import './Front.css';
-import avatar from '../../images/avatar.png';
+import avatar from '../../images/avatar.jpg';
 
 const front = () => {
     return <div className="Front-container">
