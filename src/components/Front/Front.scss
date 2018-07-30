@@ -8,6 +8,7 @@
     flex-direction: column;
     background: $gradient-front-page;
     img {
+        content: $front-page-avatar;
         @media (orientation: landscape) {
             display: none;
         }
