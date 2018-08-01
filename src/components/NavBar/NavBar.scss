@@ -50,6 +50,8 @@
         transform: translateY(-50%);
         height: $v-scr-nav-thickness;
         width: 8rem;
+    }
+    .bars, .backdrop, .drawer {
         @media (orientation: landscape) {
             visibility: hidden;
         }
