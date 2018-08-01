@@ -43,4 +43,49 @@
             align-items: center;
         }
     }
+    .bars {
+        position: fixed;
+        top: $v-scr-nav-thickness / 2;
+        right: 0;
+        transform: translateY(-50%);
+        height: $v-scr-nav-thickness;
+        width: 8rem;
+        @media (orientation: landscape) {
+            visibility: hidden;
+        }
+    }
+    @media (orientation: portrait) {
+        .backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .drawer {
+            z-index: 1;
+            position: fixed;
+            right: 1rem;
+            top: $v-scr-nav-thickness;
+            margin-top: 1rem;
+            list-style: none;
+            background-color: $color-primary-dark;
+            box-shadow: $shadow-nav-dropdown;
+            border-radius: 1rem;
+            width: 25rem;
+            overflow: hidden;
+            a {
+                display: block;
+                color: $color-primary-white;
+                font-size: 2.5rem;
+                text-transform: uppercase;
+                padding: 3rem 2rem;
+                font-family: $font-header-primary;
+                cursor: pointer;
+                &:hover {
+                    background-color: $color-accent-primary;
+                }
+            }
+        }
+    }
 }
