@@ -5,8 +5,5 @@ Visit at [https://arkadyt.com](https://arkadyt.com) or [www.arkadyt.com](https:/
 
 ## To run locally
 ```
-git clone https://github.com/arkadyt/arkadyt.com.git
-cd ./arkadyt.com
-npm install
-npm start
+git clone https://github.com/arkadyt/arkadyt.com.git && cd ./arkadyt.com && npm install && npm start
 ```
