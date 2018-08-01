@@ -120,5 +120,13 @@
                 }
             }
         }
+        .hint {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            font-size: 3rem;
+            color: $color-primary-white;
+            opacity: .4;
+        }
     }
 }

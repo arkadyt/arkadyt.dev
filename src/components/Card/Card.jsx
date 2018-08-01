@@ -15,6 +15,7 @@ const card = props => {
                     ))}
                 </div>
             </div>
+            <div className="hint"><IconHref /></div>
         </div>
         <div className="backface">
             {props.links.map((item, index) => {
