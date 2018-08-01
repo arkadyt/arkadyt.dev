@@ -29,15 +29,15 @@ class NavBar extends React.Component {
             <li className='bars' key={-1}>
                 <a onClick={this.toggleDropdown}><FaBars /></a>
             </li>
-            {this.state.showDropdown ? <React.Fragment>
-                <div className="drawer">
-                    <a onClick={() => this.jumpTo("about-me")}>About Me</a>
-                    <a onClick={() => this.jumpTo("personal-projects")}>Personal Projects</a>
-                    <a onClick={() => this.jumpTo("work-experience")}>Work Experience</a>
-                    <a onClick={() => this.jumpTo("contact")}>Contact</a>
-                </div>
+            <div className={['drawer', this.state.showDropdown ? 'drawer-open' : ''].join(' ')}>
+                <a onClick={() => this.jumpTo("about-me")}>About Me</a>
+                <a onClick={() => this.jumpTo("personal-projects")}>Personal Projects</a>
+                <a onClick={() => this.jumpTo("work-experience")}>Work Experience</a>
+                <a onClick={() => this.jumpTo("contact")}>Contact</a>
+            </div>
+            {this.state.showDropdown ?
                 <div className="backdrop" onClick={this.toggleDropdown} />
-            </React.Fragment> : null}
+                : null}
         </div>;
     }
 };
