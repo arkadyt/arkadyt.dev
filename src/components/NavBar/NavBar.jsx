@@ -15,7 +15,7 @@ class NavBar extends React.Component {
     }
 
     jumpTo = (id) => {
-        document.getElementById(id).scrollIntoView();
+        document.getElementById(id).scrollIntoView({ block: "start", inline: "nearest", behavior: "smooth" });
         this.toggleDropdown(false);
     }
 
