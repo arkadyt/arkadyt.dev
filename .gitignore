@@ -44,3 +44,6 @@ meta.js
 
 # now scss products
 /src/**/*.css
+
+# private data
+/src/content.js
