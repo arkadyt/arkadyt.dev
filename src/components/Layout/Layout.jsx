@@ -22,7 +22,7 @@ export default class Layout extends Component {
                     <div className="about-view">
                         {about.map((item, index) => {
                             return <div className="item" key={index}>
-                                <span>{item.title}</span><br />
+                                {item.title && <span className="header">{item.title}</span>}
                                 <span>{item.description}</span>
                             </div>;
                         })}
