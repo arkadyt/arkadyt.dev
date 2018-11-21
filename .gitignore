@@ -46,6 +46,6 @@ meta.js
 # now scss products
 /src/**/*.css
 
-# private data
+# private info
 /src/content.js
-/src/docs/andrew.jefferson.resume.docx
+/src/docs/
