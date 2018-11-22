@@ -8,8 +8,16 @@ import ExpCard from '../ExpCard/ExpCard.jsx';
 import Front from '../Front/Front.jsx';
 import Link from '../Link/Link.jsx';
 
-import IconCopyright from 'react-icons/lib/fa/copyright';
-import { projects, jobs, links, about } from '../../content.js';
+import { 
+  FaRegCopyright as IconCopyright 
+} from 'react-icons/fa';
+
+import { 
+  projects, 
+  jobs, 
+  links, 
+  about 
+} from '../../content.js';
 
 export default class Layout extends Component {
     render() {

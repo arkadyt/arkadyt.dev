@@ -1,6 +1,8 @@
 import React from 'react';
 import './NavBar.css';
-import FaBars from 'react-icons/lib/fa/bars';
+import {
+  FaBars
+} from 'react-icons/fa';
 
 class NavBar extends React.Component {
     state = {
@@ -23,7 +25,7 @@ class NavBar extends React.Component {
         return <div className="NavBar-container">
             {this.props.links.map((item, index) => {
                 return <li key={index}>
-                    <a href={item.href} target="_blank">{item.ico}</a>
+                    <a href={item.href} target="_blank" rel="noopener noreferrer">{item.ico}</a>
                 </li>
             })}
             <li className='bars' key={-1}>

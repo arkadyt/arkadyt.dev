@@ -1,6 +1,8 @@
 import React from 'react';
 import './Card.css';
-import IconHref from 'react-icons/lib/fa/external-link';
+import {
+  FaExternalLinkAlt as IconHref 
+} from 'react-icons/fa';
 
 const card = props => {
     return <div className="Card-container">
@@ -19,7 +21,7 @@ const card = props => {
         </div>
         <div className="backface">
             {props.links.map((item, index) => {
-                return <a key={index} href={item.href} target="_blank">
+                return <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">
                     {item.title}&nbsp;&nbsp;<IconHref />
                 </a>
             })}
