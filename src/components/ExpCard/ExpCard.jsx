@@ -10,7 +10,9 @@ const expCard = props => {
             props.end ? 'stick-end' :
                 '';
     return <div className="ExpCard-container">
-        <img src={props.image} alt='' />
+        <img src={props.image} 
+             style={{ width: `${props.imgWidth}%` }} 
+             alt='' />
         <div className="Separator-container">
             <div className={['stick', separatorClass].join(' ')} />
             <div className="circle" />
