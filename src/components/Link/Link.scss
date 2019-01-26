@@ -8,6 +8,9 @@
     margin: 2rem 0;
     font-size: 2.72rem;
     font-family: $font-paragraph-primary;
+    svg {
+      margin-bottom: -.5rem;
+    }
     a {
         text-decoration: none;
         color: $color-primary-white;
