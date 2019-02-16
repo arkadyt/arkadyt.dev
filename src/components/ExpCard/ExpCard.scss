@@ -4,11 +4,15 @@
 .ExpCard-container {
     display: grid;
     grid-template-columns: 0.95fr 0.1fr 0.95fr;
+    @media (orientation: portrait) {
+      grid-template-columns: 1fr;
+    }
     grid-template-rows: 20rem;
     img {
-        width: 60%;
+        width: 100%;
         @media (orientation: portrait) {
-            width: 100%;
+            // width: 60%;
+            display: none;
         }
         justify-self: end;
         align-self: center;

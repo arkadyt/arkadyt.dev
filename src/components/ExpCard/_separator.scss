@@ -5,6 +5,9 @@
     display: flex;
     justify-content: center;
     position: relative;
+    @media (orientation: portrait) {
+      display: none;
+    }
     .stick {
         position: absolute;
         left: 50%;
