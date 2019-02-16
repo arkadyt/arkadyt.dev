@@ -8,6 +8,9 @@ package-lock.json
 # production
 /build
 
+# vim plugin byproducts
+.tern-port
+
 # firebase
 /.firebase
 
