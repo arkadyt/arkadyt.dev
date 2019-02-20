@@ -3,6 +3,7 @@
 .NavBar-container.hidden {
   @media(orientation: portrait) {
     opacity: 0;
+    pointer-events: none;
   }
 }
 .NavBar-container {

@@ -43,7 +43,7 @@ class NavBar extends React.Component {
           </li>
         })}
         <li className='bars' key={-1}>
-          <a onClick={this.toggleDropdown}><FaBars /></a>
+          <a onClick={() => this.toggleDropdown()}><FaBars /></a>
         </li>
         <div className={['drawer', this.state.showDropdown ? 'drawer-open' : ''].join(' ')}>
           <a onClick={() => this.jumpTo("about-me")}>About Me</a>
@@ -52,7 +52,7 @@ class NavBar extends React.Component {
           <a onClick={() => this.jumpTo("contact")}>Contact</a>
         </div>
         {this.state.showDropdown
-          ? <div className="backdrop" onClick={this.toggleDropdown} />
+          ? <div className="backdrop" onClick={() => this.toggleDropdown()} />
           : null}
       </div>
     )
