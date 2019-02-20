@@ -1,14 +1,17 @@
 @import 'variables';
+
+.NavBar-container.hidden {
+  @media(orientation: portrait) {
+    opacity: 0;
+  }
+}
 .NavBar-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 5rem;
     height: 100vh;
-    @media (orientation: portrait) {
-        height: $v-scr-nav-thickness;
-        width: 100vw;
-    }
+    transition: opacity .5s ease;
     display: flex;
     flex-wrap: wrap;
     background-color: $color-primary-dark;
@@ -16,6 +19,8 @@
     @media (orientation: portrait) {
         justify-content: flex-start;
         padding-left: 1rem;
+        height: $v-scr-nav-thickness;
+        width: 100vw;
     }
     align-content: center;
     z-index: 5;
