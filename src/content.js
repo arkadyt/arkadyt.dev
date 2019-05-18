@@ -9,14 +9,12 @@ import {
   GoMarkGithub as IconGitHub
 } from 'react-icons/go'
 import ImgDL from './images/dollar.svg';
-import CV from './docs/arkadyt.andrew.hendrix.resume.pdf';
 
 export const links = [
     { ico: <IconMail />, href: 'mailto:andrew@arkadyt.com', title: 'andrew@arkadyt.com' },
     { ico: <IconGitHub />, href: 'https://github.com/arkadyt', title: 'github.com/arkadyt' },
     { ico: <IconLinkedIn />, href: 'https://linkedin.com/in/arkadyt', title: 'linkedin.com/in/arkadyt' },
     { ico: <IconMedium />, href: 'https://medium.com/@arkadyt', title: 'medium.com/@arkadyt' },
-    //{ ico: <IconResume />, href: CV, title: 'Download Resume' },
 ];
 
 export const jobs = [
