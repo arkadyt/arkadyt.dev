@@ -18,5 +18,5 @@ package-lock.json
 /src/**/*.css
 
 # private info
-/src/content.js
-/src/docs/
+# /src/content.js
+# /src/docs/
