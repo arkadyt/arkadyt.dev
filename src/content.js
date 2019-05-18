@@ -42,17 +42,6 @@ export const projects = [
         ],
     },
     {
-        href: 'https://github.com/arkadyt/arkadyt.com',
-        image: 'https://i.imgur.com/rczKEkgh.png',
-        title: 'ARKADYT.COM',
-        description: 'Personal portfolio website built with JavaScript, React and others. Using React here might\'ve been an overkill, but it\'s just so awesome it was impossible to resist. =)',
-        tags: ['JavaScript', 'HTML', 'CSS / SCSS', 'React'],
-        links: [
-            { title: 'Website', href: 'http://arkadyt.com' },
-            { title: 'GitHub', href: 'https://github.com/arkadyt/arkadyt.com' },
-        ],
-    },
-    {
         href: 'https://github.com/arkadyt/phys-bund',
         image: 'https://i.imgur.com/y5Wb6eMh.jpg',
         title: 'Demonstrations of Physics Phenomena',
