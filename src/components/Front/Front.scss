@@ -38,14 +38,14 @@
             @media (orientation: portrait) {
                 margin-left: 0;
                 display: block;
-                font-size: 7.5rem;
+                font-size: 7rem;
             }
         }
         span {
             margin-top: 1rem;
             font-family: $font-header-primary;
             font-weight: 300;
-            font-size: 3.15rem;
+            font-size: 3.35rem;
             &::after {
                 content: ", ";
             }

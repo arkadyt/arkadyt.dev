@@ -26,23 +26,6 @@ export default class Layout extends Component {
             <NavBar links={links} />
             <div className="Layout-content">
                 <Front />
-                <Section id="about-me" title="About Me">
-                    <div className="about-view">
-                        {about.map((item, index) => {
-                            return <div className="item" key={index}>
-                                {item.title && <span className="header">{item.title}</span>}
-                                <span>{item.description}</span>
-                            </div>;
-                        })}
-                    </div>
-                </Section>
-                <Section id="personal-projects" title={<div>Personal<br />Projects</div>}>
-                    <div className="card-view">
-                        {projects.map((item, index) => (
-                            <Card {...item} key={index} />
-                        ))}
-                    </div>
-                </Section>
                 <Section id="work-experience" title={<div>Work<br />Experience</div>}>
                     <div className="wexp-view">
                         {jobs.map((item, index) => {
@@ -54,6 +37,13 @@ export default class Layout extends Component {
                         })}
                     </div>
                 </Section>
+                <Section id="personal-projects" title={<div>Personal<br />Projects</div>}>
+                    <div className="card-view">
+                        {projects.map((item, index) => (
+                            <Card {...item} key={index} />
+                        ))}
+                    </div>
+                </Section>
                 <Section id="contact" title="Contact" blue>
                     <div className="contact-view">
                         {links.map((item, index) => {
@@ -62,7 +52,7 @@ export default class Layout extends Component {
                     </div>
                 </Section>
                 <div className="footer">
-                    <div><IconCopyright /><span>Andrew Hendrix 2019</span></div>
+                    <div><IconCopyright /><span>Arkady Titenko 2019</span></div>
                 </div>
             </div>
         </React.Fragment>
