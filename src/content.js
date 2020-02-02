@@ -20,9 +20,9 @@ export const links = [
 
 export const jobs = [
     {
-        company: 'Full-Stack React Developer',
+        company: 'Full Stack Software Engineer',
         title: 'HP Inc.',
-        date: 'April 2019 - Present (8 mos)',
+        date: 'April 2019 - Present (10 mos)',
         image: ImgHP,
         imgWidth: 18
     }
