@@ -26,7 +26,7 @@ export default class Layout extends Component {
             <NavBar links={links} />
             <div className="Layout-content">
                 <Front />
-                <Section id="work-experience" title={<div>Work<br />Experience</div>}>
+                <Section id="work-experience" title="Experience">
                     <div className="wexp-view">
                         {jobs.map((item, index) => {
                             const position = {
@@ -37,7 +37,7 @@ export default class Layout extends Component {
                         })}
                     </div>
                 </Section>
-                <Section id="personal-projects" title={<div>Personal<br />Projects</div>}>
+                <Section id="personal-projects" title="Projects">
                     <div className="card-view">
                         {projects.map((item, index) => (
                             <Card {...item} key={index} />

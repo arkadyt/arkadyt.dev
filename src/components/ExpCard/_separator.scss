@@ -13,7 +13,7 @@
         left: 50%;
         transform: translateX(-50%);
         height: 100%;
-        border-left: .4rem solid $color-primary-dark;
+        border-left: .4rem solid $color-wexp-stick-dark;
         @media (orientation: portrait) {
             border-width: .2rem;
         }
@@ -37,7 +37,7 @@
             width: 1.5rem;
             height: 1.5rem;
         }
-        border: .3rem solid $color-primary-dark;
+        border: .3rem solid $color-wexp-circle-dark;
         border-radius: 100%;
         background-color: $color-primary-white;
     }

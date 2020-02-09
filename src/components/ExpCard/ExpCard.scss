@@ -3,13 +3,13 @@
 
 .ExpCard-container {
     display: grid;
-    grid-template-columns: 0.95fr 0.1fr 0.95fr;
+    grid-template-columns: 0.45fr 0.1fr 0.95fr;
     @media (orientation: portrait) {
       grid-template-columns: 1fr;
     }
     grid-template-rows: 20rem;
     img {
-        width: 100%;
+        width: 40%;
         @media (orientation: portrait) {
             // width: 60%;
             display: none;
