@@ -10,13 +10,16 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 5rem;
+    width: 7rem;
     height: 100vh;
     transition: opacity .5s ease;
     display: flex;
     flex-wrap: wrap;
     background-color: $color-primary-dark;
     justify-content: center;
+    @media (orientation: landscape) {
+      border-right: 0.3rem solid darken($color-primary-dark, 4);
+    }
     @media (orientation: portrait) {
         justify-content: flex-start;
         padding-left: 1rem;
