@@ -1,15 +1,30 @@
 import React from 'react';
+
 import {
   FaFilePdf as IconResume,
   FaLinkedinIn as IconLinkedIn,
   FaMediumM as IconMedium,
   FaPaperPlane as IconMail
 } from 'react-icons/fa'
+
 import {
   GoMarkGithub as IconGitHub
 } from 'react-icons/go'
-import ImgHP from './images/hp.svg';
 
+import ImgHP from './images/hp.svg';
+import ImgFreelance from './images/freelance.svg';
+import ImgReact from './images/react.svg';
+
+export const skills = [
+  {
+    icon: ImgReact,
+    tooltip: 'React.js'
+  },
+  {
+    icon: ImgReact,
+    tooltip: 'Node.js'
+  }
+];
 
 export const links = [
     {
@@ -42,10 +57,17 @@ export const jobs = [
     {
         company: 'Full-Stack Software Engineer',
         title: 'Hewlett-Packard Inc',
-        date: 'April 2019 - Present (1 year)',
+        date: 'April 2019 — Present (1 year)',
         image: ImgHP,
-        imgWidth: 40
-    }
+        imgWidth: 45
+    },
+    {
+        company: 'Freelance Web Developer',
+        title: 'Self-Employed',
+        date: 'June 2018 — April 2019 (10 months)',
+        image: ImgFreelance,
+        imgWidth: 45
+    },
 ]
 
 export const projects = [

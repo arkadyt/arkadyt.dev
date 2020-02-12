@@ -1,0 +1,21 @@
+@import 'variables';
+
+.tooltiptext {
+    width: 120px;
+    background-color: lighten($color-primary-dark, 10);
+    color: $color-primary-white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    box-shadow: $shadow-tooltip;
+    font-size: 2rem;
+    pointer-events: none;
+
+    // set hidden by default
+    opacity: 0;
+    transition: opacity .3s;
+
+    // position the tooltip
+    position: absolute;
+    z-index: 10;
+}

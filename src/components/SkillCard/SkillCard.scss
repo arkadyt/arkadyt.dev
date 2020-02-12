@@ -1,0 +1,14 @@
+.SkillCard-container {
+    display: inline-block;
+    width: 12.5rem;
+
+    img {
+        width: 100%;
+    }
+
+    &:hover {
+        .tooltiptext {
+            opacity: 1;
+        }
+    }
+}

@@ -7,6 +7,7 @@ import Card from '../Card/Card.jsx';
 import ExpCard from '../ExpCard/ExpCard.jsx';
 import Front from '../Front/Front.jsx';
 import Link from '../Link/Link.jsx';
+import SkillCard from '../SkillCard/SkillCard.jsx';
 
 import { 
   FaRegCopyright as IconCopyright 
@@ -15,7 +16,8 @@ import {
 import { 
   projects, 
   jobs, 
-  links, 
+  skills,
+  links,
   about 
 } from '../../content.js';
 
@@ -35,6 +37,13 @@ export default class Layout extends Component {
                             }
                             return <ExpCard {...item} key={index} {...position} />
                         })}
+                    </div>
+                </Section>
+                <Section id="skills" title="Skills">
+                    <div className="skills-view">
+                        {skills.map((item, index) => (
+                            <SkillCard {...item} />
+                        ))}
                     </div>
                 </Section>
                 <Section id="personal-projects" title="Projects">
