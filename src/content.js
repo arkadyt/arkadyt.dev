@@ -12,10 +12,30 @@ import ImgHP from './images/hp.svg';
 
 
 export const links = [
-    { ico: <IconMail />, href: 'mailto:ark@arkadyt.com', title: 'ark@arkadyt.com' },
-    { ico: <IconGitHub />, href: 'https://github.com/arkadyt', title: 'github.com/arkadyt' },
-    { ico: <IconLinkedIn />, href: 'https://linkedin.com/in/arkadyt', title: 'linkedin.com/in/arkadyt' },
-    { ico: <IconMedium />, href: 'https://medium.com/@arkadyt', title: 'medium.com/@arkadyt' },
+    {
+        ico: <IconMail />,
+        href: 'mailto:ark@arkadyt.com',
+        readableLink: 'ark@arkadyt.com',
+        title: 'Contact',
+    },
+    {
+        ico: <IconGitHub />,
+        href: 'https://github.com/arkadyt',
+        readableLink: 'github.com/arkadyt',
+        title: 'GitHub',
+    },
+    {
+        ico: <IconLinkedIn />,
+        href: 'https://linkedin.com/in/arkadyt',
+        readableLink: 'linkedin.com/in/arkadyt',
+        title: 'LinkedIn',
+    },
+    {
+        ico: <IconMedium />,
+        href: 'https://medium.com/@arkadyt',
+        readableLink: 'medium.com/@arkadyt',
+        title: 'Blog',
+    },
 ];
 
 export const jobs = [

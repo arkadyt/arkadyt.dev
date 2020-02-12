@@ -47,12 +47,17 @@ export default class Layout extends Component {
                 <Section id="contact" title="Contact" blue>
                     <div className="contact-view">
                         {links.map((item, index) => {
-                            return <Link {...item} key={index} />
+                            const data = {
+                              href: item.href,
+                              title: item.readableLink,
+                              ico: item.ico
+                            }
+                            return <Link {...data} key={index} />
                         })}
                     </div>
                 </Section>
                 <div className="footer">
-                    <div><IconCopyright /><span>Arkady Titenko 2019</span></div>
+                    <div><IconCopyright /><span>Arkady Titenko 2020</span></div>
                 </div>
             </div>
         </React.Fragment>
