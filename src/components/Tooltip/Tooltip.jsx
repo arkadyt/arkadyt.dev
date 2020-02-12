@@ -3,8 +3,9 @@ import './Tooltip.css';
 
 const Tooltip = props => {
   return (
-    <div class="Tooltip-container">
-      <span class="tooltiptext">{props.text}</span>
+    <div className="Tooltip-container">
+      <div className="arrow-box top tooltip-elements" />
+      <span className="tooltip-body tooltip-elements">{props.text}</span>
     </div>
   )
 }

@@ -1,20 +1,40 @@
 @import 'variables';
 
-.tooltiptext {
+$tooltip-bg-color: lighten($color-primary-dark, 10);
+
+.tooltip-body {
     min-width: 10rem;
     max-width: 30rem;
     white-space: pre;
 
     display: inline-block;
-    background-color: lighten($color-primary-dark, 10);
+    background-color: $tooltip-bg-color;
     color: $color-primary-white;
     text-align: center;
     border-radius: 6px;
     padding: .5rem 4rem;
     box-shadow: $shadow-tooltip;
     font-size: 2rem;
-    pointer-events: none;
+}
 
+.arrow-box {
+    box-sizing: border-box;
+    width: 2rem;
+    height: 2rem;
+    border: 1rem solid transparent;
+
+    &.top, &.bottom {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &.top {
+        border-bottom-color: $tooltip-bg-color;
+    }
+}
+
+.tooltip-elements {
     // set hidden by default
     opacity: 0;
     transition: opacity .3s;
@@ -26,4 +46,6 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
+
+    pointer-events: none;
 }
