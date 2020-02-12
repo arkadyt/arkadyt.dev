@@ -18,6 +18,34 @@ import ImgReact from './images/react.svg';
 export const skills = [
   {
     icon: ImgReact,
+    tooltip: 'Elastic Container\nRegistry'
+  },
+  {
+    icon: ImgReact,
+    tooltip: 'LA'
+  },
+  {
+    icon: ImgReact,
+    tooltip: 'React.js'
+  },
+  {
+    icon: ImgReact,
+    tooltip: 'React.js'
+  },
+  {
+    icon: ImgReact,
+    tooltip: 'React.js'
+  },
+  {
+    icon: ImgReact,
+    tooltip: 'React.js'
+  },
+  {
+    icon: ImgReact,
+    tooltip: 'React.js'
+  },
+  {
+    icon: ImgReact,
     tooltip: 'React.js'
   },
   {

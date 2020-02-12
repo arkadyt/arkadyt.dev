@@ -1,6 +1,6 @@
 import React from 'react';
 import Tooltip from '../Tooltip/Tooltip.jsx';
-import './SkillCard.scss';
+import './SkillCard.css';
 
 const SkillCard = props => {
   return (
