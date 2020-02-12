@@ -10,35 +10,59 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 7rem;
+    width: 6.5rem;
     height: 100vh;
     transition: opacity .5s ease;
     display: flex;
     flex-wrap: wrap;
     background-color: $color-primary-dark;
     justify-content: center;
+    align-content: flex-start;
+    z-index: 5;
+
     @media (orientation: landscape) {
       border-right: 0.3rem solid darken($color-primary-dark, 4);
+
+      // on desktop rotate the sidebar buttons vertically
+      ul#sidebar-buttons {
+        display: flex;
+        transform: rotate(-90deg);
+      }
     }
+
     @media (orientation: portrait) {
         justify-content: flex-start;
         padding-left: 1rem;
         height: $v-scr-nav-thickness;
         width: 100vw;
     }
-    align-content: center;
-    z-index: 5;
+
     li {
-        flex-basis: 5rem;
-        height: 5rem;
+        height: 6.5rem;
+        padding: 2rem;
+
         @media (orientation: portrait) {
             height: 100%;
             flex-basis: $v-scr-nav-thickness;
+            span.link-text {
+              display: none;
+            }
         }
+
         display: flex;
         justify-content: center;
         align-items: center;
         list-style: none;
+
+        @media (orientation: landscape) {
+            span.link-text {
+              color: $color-primary-white;
+              font-size: 2.5rem;
+              margin-left: 1.5rem;
+              white-space: nowrap;
+            }
+        }
+
         &:hover {
             background-color: $color-accent-dark;
         }
@@ -65,6 +89,7 @@
             visibility: hidden;
         }
     }
+
     @media (orientation: portrait) {
         .backdrop {
             position: fixed;

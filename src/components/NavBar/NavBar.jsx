@@ -37,11 +37,14 @@ class NavBar extends React.Component {
   render() {
     return (
       <div className={['NavBar-container', this.state.showNavBar ? '' : 'hidden'].join(' ')}>
-        {this.props.links.map((item, index) => {
-          return <li key={index}>
-            <a href={item.href} target="_blank" rel="noopener noreferrer">{item.ico}</a>
-          </li>
-        })}
+        <ul id="sidebar-buttons">
+          {this.props.links.map((item, index) => {
+            return <li key={index}>
+              <a href={item.href} target="_blank" rel="noopener noreferrer">{item.ico}</a>
+              <span class="link-text">{item.title}</span>
+            </li>
+          })}
+        </ul>
         <li className='bars' key={-1}>
           <a onClick={() => this.toggleDropdown()}><FaBars /></a>
         </li>
