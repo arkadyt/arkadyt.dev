@@ -19,7 +19,7 @@ import {
   skills,
   links,
   about 
-} from '../../content.js';
+} from '../../content';
 
 export default class Layout extends Component {
     render() {

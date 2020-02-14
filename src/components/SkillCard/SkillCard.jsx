@@ -6,7 +6,7 @@ const SkillCard = props => {
   return (
     <div class="SkillCard-container">
       <img alt='' src={props.icon} />
-      <Tooltip text={props.tooltip} />
+      <Tooltip text={props.title} />
     </div>
   );
 }
