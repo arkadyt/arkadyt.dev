@@ -46,54 +46,67 @@
     }
 
     li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        cursor: pointer;
-        user-select: none;
-
-        span.link-text {
-          font-family: "Open Sans";
+        &:hover {
+            background-color: $color-accent-dark;
         }
 
         @media (orientation: portrait) {
           height: 100%;
           padding: 1.5rem;
-
           flex-basis: $v-scr-nav-thickness;
-          span.link-text {
-            display: none;
-          }
         }
 
         @media (orientation: landscape) {
           height: 6.5rem;
-          padding: 2rem;
-
-          span.link-text {
-            color: $color-primary-white;
-            font-size: 2.5rem;
-            margin-left: 1.5rem;
-            white-space: nowrap;
-          }
+          padding: 0;
+          margin: 0;
 
           &:last-child {
-            padding-right: 3.8rem;
+            // it looks better when last element that is touching the
+            // viewport edge is padded a little bit more on that side.
+            a {
+              padding-right: 3.8rem;
+            }
           }
         }
 
-        &:hover {
-            background-color: $color-accent-dark;
-        }
         a {
-            color: $color-primary-white;
-            font-size: 3.2rem;
+            display: flex;
             width: 100%;
             height: 100%;
-            display: flex;
             justify-content: center;
             align-items: center;
+
+            list-style: none;
+            cursor: pointer;
+            user-select: none;
+            text-decoration: none;
+
+            color: $color-primary-white;
+            font-size: 3.2rem;
+
+            @media (orientation: landscape) {
+              padding: 2rem;
+            }
+
+            span.link-text {
+              font-family: "Open Sans";
+
+              @media (orientation: landscape) {
+                color: $color-primary-white;
+                font-size: 2.5rem;
+                margin-left: 1.5rem;
+                white-space: nowrap;
+              }
+
+              @media (orientation: portrait) {
+                display: none;
+              }
+            }
+
+            span.link-icon {
+              margin-bottom: -0.75rem;
+            }
         }
     }
     .bars {

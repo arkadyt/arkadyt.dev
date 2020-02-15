@@ -40,8 +40,10 @@ class NavBar extends React.Component {
         <ul id="sidebar-buttons">
           {this.props.links.map((item, index) => {
             return <li key={index}>
-              <a href={item.href} target="_blank" rel="noopener noreferrer">{item.ico}</a>
-              <span class="link-text">{item.title}</span>
+              <a href={item.href} target="_blank" rel="noopener noreferrer">
+                <span class="link-icon">{item.ico}</span>
+                <span className="link-text">{item.title}</span>
+              </a>
             </li>
           })}
         </ul>
