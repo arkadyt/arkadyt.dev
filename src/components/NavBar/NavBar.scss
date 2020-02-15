@@ -27,9 +27,9 @@
 
       // on desktop rotate the sidebar buttons vertically
       ul#sidebar-buttons {
-        transform: rotate(-90deg);
+        transform: rotate(90deg);
         position: relative;
-        top: 63.2rem;
+        top: 0;
       }
     }
 
@@ -46,6 +46,8 @@
     }
 
     li {
+        transform: scale(-1);
+
         &:hover {
             background-color: $color-accent-dark;
         }
@@ -61,7 +63,7 @@
           padding: 0;
           margin: 0;
 
-          &:last-child {
+          &:first-child {
             // it looks better when last element that is touching the
             // viewport edge is padded a little bit more on that side.
             a {
