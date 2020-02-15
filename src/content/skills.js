@@ -106,12 +106,12 @@ export default [
   },
   {
     icon: AWS,
-    title: `AWS Cloud`,
+    title: `AWS Cloud Services`,
     megaWide: true
   },
   {
     icon: AwsCLI,
-    title: 'w'
+    title: 'AWS\nCommand Line Utils'
   },
   {
     icon: MongoDB,
@@ -130,7 +130,7 @@ export default [
   },
   {
     icon: Workbox,
-    title: 'Webpack'
+    title: 'Workbox.js'
   },
   {
     icon: PWA,
@@ -205,7 +205,7 @@ export default [
   },
   {
     icon: LoadBalancers,
-    title: `AWS Elastic Load Balancing`
+    title: `AWS Elastic\nLoad Balancing`
   },
   {
     icon: Lambda,

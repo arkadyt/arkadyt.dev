@@ -46,6 +46,7 @@ $tooltip-bg-color: lighten($color-primary-dark, 10);
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
+    top: 8.75rem;
 
     pointer-events: none;
 }
