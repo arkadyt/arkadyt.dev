@@ -1,14 +1,23 @@
 .SkillCard-container {
     position: relative;
-    width: 100%;
 
     img {
-        width: 100%;
+        height: 100%;
+        filter: grayscale(100%);
+        transition: filter .15s;
+
+        &:hover {
+            filter: grayscale(0%);
+        }
     }
 
     &:hover {
         .tooltip-elements {
             opacity: 1;
         }
+    }
+
+    &.two-cell {
+        grid-column: auto / span 2;
     }
 }

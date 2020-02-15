@@ -14,7 +14,8 @@ export default [
   },
   {
     icon: ImgNode,
-    title: 'React.js'
+    title: 'NodeJS',
+    wide: true,
   },
   {
     icon: ImgJS,

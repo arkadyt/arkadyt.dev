@@ -3,10 +3,16 @@ import Tooltip from '../Tooltip/Tooltip.jsx';
 import './SkillCard.css';
 
 const SkillCard = props => {
+  const { icon, title, wide } = props;
+  const classes = [
+    "SkillCard-container",
+    wide ? "two-cell" : ""
+  ];
+
   return (
-    <div class="SkillCard-container">
-      <img alt='' src={props.icon} />
-      <Tooltip text={props.title} />
+    <div className={classes.join(" ")}>
+      <img alt='' src={icon} />
+      <Tooltip text={title} />
     </div>
   );
 }
