@@ -37,7 +37,6 @@ $tooltip-bg-color: lighten($color-primary-dark, 10);
 .tooltip-elements {
     // set hidden by default
     opacity: 0;
-    transition: opacity .3s;
 }
 
 .Tooltip-container {
