@@ -1,13 +1,18 @@
 .SkillCard-container {
     position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
 
     img {
         height: 100%;
         filter: grayscale(100%);
-        transition: filter .15s;
+        opacity: 0.5;
+        transition: all .15s;
 
         &:hover {
             filter: grayscale(0%);
+            opacity: 1;
         }
     }
 
@@ -19,5 +24,13 @@
 
     &.two-cell {
         grid-column: auto / span 2;
+    }
+
+    &.three-cell {
+        grid-column: auto / span 3;
+    }
+
+    &.four-cell {
+        grid-column: auto / span 4;
     }
 }

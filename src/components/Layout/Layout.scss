@@ -59,8 +59,9 @@
     }
     .skills-view {
         display: grid;
-        grid-template-columns: repeat(10, 9rem);
-        grid-template-rows: 9rem;
+        grid-template-columns: repeat(10, 8.75rem);
+        grid-template-rows: 8.75rem;
+        grid-auto-rows: 8.75rem;
         grid-gap: 2.5rem 1rem;
         justify-items: center;
     }
