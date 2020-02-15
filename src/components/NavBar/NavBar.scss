@@ -51,6 +51,11 @@
         align-items: center;
         list-style: none;
         cursor: pointer;
+        user-select: none;
+
+        span.link-text {
+          font-family: "Open Sans";
+        }
 
         @media (orientation: portrait) {
           height: 100%;
