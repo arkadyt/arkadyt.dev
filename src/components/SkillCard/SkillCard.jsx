@@ -11,7 +11,7 @@ const SkillCard = props => {
 
   return (
     <div className={classes.join(" ")}>
-      <img alt='' src={icon} style={{ height: `${height}%` }} />
+      <img alt={title} src={icon} style={{ height: `${height}%` }} />
       <Tooltip text={title} />
     </div>
   );

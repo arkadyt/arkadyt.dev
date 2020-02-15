@@ -13,10 +13,7 @@
         left: 50%;
         transform: translateX(-50%);
         height: 100%;
-        border-left: .4rem solid $color-wexp-stick-dark;
-        @media (orientation: portrait) {
-            border-width: .2rem;
-        }
+        border-left: .2rem solid $color-wexp-circle-dark;
         &.stick-start {
             height: 50% !important;
             top: 50% !important;
