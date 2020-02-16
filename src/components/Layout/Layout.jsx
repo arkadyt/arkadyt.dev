@@ -35,6 +35,8 @@ export default class Layout extends Component {
         <NavBar links={links} />
         <div className="Layout-content">
             <Front />
+            <Section id="about-me" title="About Me">
+            </Section>
             <Section id="work-experience" title="Experience">
                 <div className="wexp-view">
                     {jobs.map((item, index) => {
@@ -45,6 +47,8 @@ export default class Layout extends Component {
                         return <ExpCard {...item} key={index} {...position} />
                     })}
                 </div>
+            </Section>
+            <Section id="certs" title="Certifications">
             </Section>
             <Section id="skills" title="Skills">
                 <div className="skills-view">
@@ -59,6 +63,8 @@ export default class Layout extends Component {
                         <Card {...item} key={index} />
                     ))}
                 </div>
+            </Section>
+            <Section id="recent-from-blog" title="Publications">
             </Section>
             <Section id="contact" title="Contact" blue>
                 <div className="contact-view">
