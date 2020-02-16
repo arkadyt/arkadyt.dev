@@ -284,19 +284,19 @@ export default [
     title: `AWS CloudWatch`
   },
   {
-    icon: CodeBuild,
-    title: `AWS CodeBuild`
-  },
-  {
     icon: ECR,
     title: `AWS ECR`
   },
   {
-    icon: CodeCommit,
-    title: `AWS CodeCommit`
+    icon: CodeBuild,
+    title: `AWS CodeBuild`
   },
   {
     icon: CodeDeploy,
     title: `AWS CodeDeploy`
+  },
+  {
+    icon: CodePipeline,
+    title: `AWS CodePipeline`
   },
 ];
