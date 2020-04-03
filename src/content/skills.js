@@ -1,3 +1,12 @@
+import StorageGateway from '../images/skills/aws/storagegateway.svg';
+import EKS from '../images/skills/aws/eks.svg';
+import DirectConnect from '../images/skills/aws/directconnect.svg';
+import SWF from '../images/skills/aws/swf.svg';
+import WAF from '../images/skills/aws/waf.svg';
+import Shield from '../images/skills/aws/shield.svg';
+import KMS from '../images/skills/aws/ad.svg';
+import Batch from '../images/skills/aws/batch.svg';
+
 import React from '../images/skills/reactbig.svg';
 import NodeJS from '../images/skills/node2.svg';
 import JS from '../images/skills/js.svg';
@@ -43,7 +52,7 @@ import CodePipeline from '../images/skills/aws/codepipeline.svg';
 import DynamoDB from '../images/skills/aws/dynamodb.svg';
 import Cognito from '../images/skills/aws/cognito.svg';
 import EC2 from '../images/skills/aws/ec2.svg';
-import ECR from '../images/skills/aws/ecr.svg';
+import ECS from '../images/skills/aws/ecs.svg';
 import ElastiCache from '../images/skills/aws/elasticache.svg';
 import EFS from '../images/skills/aws/efs.svg';
 import ElasticSearch from '../images/skills/aws/elasticsearch.svg';
@@ -284,8 +293,8 @@ export default [
     title: `AWS CloudWatch`
   },
   {
-    icon: ECR,
-    title: `AWS ECR`
+    icon: ECS,
+    title: `AWS ECS`
   },
   {
     icon: CodeBuild,
@@ -298,5 +307,37 @@ export default [
   {
     icon: CodePipeline,
     title: `AWS CodePipeline`
+  },
+  {
+    icon: Batch,
+    title: `AWS Batch`
+  },
+  {
+    icon: SWF,
+    title: `AWS SWF`
+  },
+  {
+    icon: KMS,
+    title: `AWS KMS`
+  },
+  {
+    icon: EKS,
+    title: `AWS EKS`
+  },
+  {
+    icon: Shield,
+    title: `AWS Shield`
+  },
+  {
+    icon: WAF,
+    title: `AWS WAF`
+  },
+  {
+    icon: DirectConnect,
+    title: `AWS Direct Connect`
+  },
+  {
+    icon: StorageGateway,
+    title: `AWS Storage Gateway`
   },
 ];
