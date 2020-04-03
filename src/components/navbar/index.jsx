@@ -1,5 +1,5 @@
 import React from 'react'
-import './NavBar.css'
+import './styles.scss'
 import { FaBars } from 'react-icons/fa'
 
 class NavBar extends React.Component {

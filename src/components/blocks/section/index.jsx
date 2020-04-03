@@ -1,5 +1,5 @@
 import React from 'react';
-import './Section.css';
+import './styles.scss';
 
 const section = props => {
     return <div id={props.id} className={`Section-container ${props.blue ? 'Section-blue' : ''}`}>

@@ -1,8 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import './index.css'
-import App from './App.jsx'
-import * as serviceWorker from './serviceWorker'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Main from 'components/main';
+import './index.scss';
+import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'))
-serviceWorker.unregister()
+const app = () => {
+  return (
+    <div className="App-container">
+      <Main />
+      <div className="blinds" />
+    </div>
+  );
+};
+
+ReactDOM.render(app, document.getElementById('root'));
+serviceWorker.unregister();

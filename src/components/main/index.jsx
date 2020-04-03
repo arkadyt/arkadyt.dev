@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
-import './Layout.css';
+import './styles.scss';
 
-import NavBar from '../NavBar/NavBar.jsx';
-import Section from '../Section/Section.jsx';
-import Card from '../Card/Card.jsx';
-import ExpCard from '../ExpCard/ExpCard.jsx';
-import Front from '../Front/Front.jsx';
-import Link from '../Link/Link.jsx';
-import SkillCard from '../SkillCard/SkillCard.jsx';
+import NavBar from 'components/navbar';
+import Section from 'components/blocks/section';
+import Card from 'components/cards/project';
+import ExpCard from 'components/cards/job';
+import Front from 'components/blocks/intro';
+import Link from 'components/utils/link';
+import SkillCard from 'components/cards/skill';
 
 import { 
   FaRegCopyright as IconCopyright 
 } from 'react-icons/fa';
 
-import bgImgWebp from '../../images/backgrounds/bg4.webp';
-import bgImgJpg from '../../images/backgrounds/bg4_fallback.jpg';
+import bgImgWebp from 'images/backgrounds/bg4.webp';
+import bgImgJpg from 'images/backgrounds/bg4_fallback.jpg';
 
 import { 
   projects, 

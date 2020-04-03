@@ -1,5 +1,5 @@
 import React from 'react';
-import './Front.css';
+import './styles.scss';
 
 const front = () => {
     return <div className="Front-container">

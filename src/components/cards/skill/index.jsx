@@ -1,6 +1,6 @@
 import React from 'react';
 import Tooltip from '../Tooltip/Tooltip.jsx';
-import './SkillCard.css';
+import './styles.scss';
 
 const SkillCard = props => {
   const { icon, title, wide, megaWide, ultraWide, height } = props;

@@ -1,5 +1,5 @@
 import React from 'react';
-import './ExpCard.css';
+import './styles.scss';
 
 /**
  * Work experience card.

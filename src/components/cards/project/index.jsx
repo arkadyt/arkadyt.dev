@@ -1,8 +1,6 @@
 import React from 'react';
-import './Card.css';
-import {
-  FaExternalLinkAlt as IconHref 
-} from 'react-icons/fa';
+import { FaExternalLinkAlt as IconHref } from 'react-icons/fa';
+import './styles.scss';
 
 const card = props => {
     return <div className="Card-container">
