@@ -1,5 +1,5 @@
 import React from 'react';
-import Tooltip from '../Tooltip/Tooltip.jsx';
+import Tooltip from 'components/utils/tooltip';
 import './styles.scss';
 
 const SkillCard = props => {
