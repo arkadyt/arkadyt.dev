@@ -1,6 +1,8 @@
-import React from 'react'
-import './styles.scss'
-import { FaBars } from 'react-icons/fa'
+import React from 'react';
+import ThemeContext from 'state/context/theme';
+import './styles.scss';
+import { FaBars, FaMoon } from 'react-icons/fa';
+import { IoMdSunny } from 'react-icons/io';
 
 class NavBar extends React.Component {
   state = {
@@ -35,17 +37,28 @@ class NavBar extends React.Component {
   }
 
   render() {
+    const { theme, toggleTheme } = this.context;
+
     return (
       <div className={['NavBar-container', this.state.showNavBar ? '' : 'hidden'].join(' ')}>
         <ul id="sidebar-buttons">
           {this.props.links.map((item, index) => {
-            return <li key={index}>
-              <a href={item.href} target="_blank" rel="noopener noreferrer">
-                <span class="link-icon">{item.ico}</span>
-                <span className="link-text">{item.title}</span>
-              </a>
-            </li>
+            return (
+              <li key={index} className="sidebar-link">
+                <a href={item.href} target="_blank" rel="noopener noreferrer">
+                  <span class="link-icon">{item.ico}</span>
+                  <span className="link-text">{item.title}</span>
+                </a>
+              </li>
+            );
           })}
+        </ul>
+        <ul id="sidebar-buttons-btm">
+          <li className="sidebar-button">
+            <button onClick={toggleTheme}>
+              {theme === 'dark' ? <IoMdSunny /> : <FaMoon /> }
+            </button>
+          </li>
         </ul>
         <li className='bars' key={-1}>
           <a onClick={() => this.toggleDropdown()}><FaBars /></a>
@@ -67,5 +80,7 @@ class NavBar extends React.Component {
     window.addEventListener('scroll', this.handleScroll)
   }
 }
+
+NavBar.contextType = ThemeContext;
 
 export default NavBar
