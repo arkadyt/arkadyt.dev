@@ -1,15 +1,11 @@
 @import '_variables';
 
-$tooltip-bg-color: lighten($color-primary-dark, 10);
-
 .tooltip-body {
     min-width: 10rem;
     max-width: 30rem;
     white-space: pre;
 
     display: inline-block;
-    background-color: $tooltip-bg-color;
-    color: $color-primary-white;
     text-align: center;
     border-radius: 10rem;
     padding: .5rem 4rem;
@@ -28,10 +24,6 @@ $tooltip-bg-color: lighten($color-primary-dark, 10);
         left: 50%;
         transform: translateX(-50%);
     }
-
-    &.top {
-        border-bottom-color: $tooltip-bg-color;
-    }
 }
 
 .tooltip-elements {
@@ -48,4 +40,19 @@ $tooltip-bg-color: lighten($color-primary-dark, 10);
     top: 8.75rem;
 
     pointer-events: none;
+}
+
+
+/**
+ * Theme and colors.
+ */
+
+.tooltip-body {
+    background-color: $l-theme--clr--bg--tooltip;
+    color: $l-theme--clr--txt--tooltip;
+}
+.arrow-box {
+    &.top {
+        border-bottom-color: $l-theme--clr--bg--tooltip;
+    }
 }

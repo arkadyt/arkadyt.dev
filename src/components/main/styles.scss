@@ -31,7 +31,6 @@
                 font-family: $font-paragraph-primary;
                 font-size: 2.24rem;
                 &.header {
-                    color: $color-accent-primary;
                     font-size: 2.56rem;
                 }
             }
@@ -72,7 +71,6 @@
     }
     .footer {
         padding: 2rem 0;
-        background-color: $color-accent-secondary;
         div {
             display: flex;
             align-items: center;
@@ -82,13 +80,26 @@
                 padding-left: 2rem;
             }
             margin: auto;
-            color: $color-primary-white;
             font-family: $font-header-primary;
             font-size: 1.6rem;
             text-transform: uppercase;
             >span {
                 margin-left: .5rem;
             }
+        }
+    }
+}
+
+
+/**
+ * Theme and colors.
+ */
+
+.Layout-content {
+    .footer {
+        background-color: $l-theme--clr--bg--footer;
+        div {
+            color: $l-theme--clr--txt--footer;
         }
     }
 }

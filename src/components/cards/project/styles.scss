@@ -1,11 +1,11 @@
 @import '_variables';
-@mixin card_face {
+@mixin projcard_face {
     height: 100%;
     width: 100%;
     border-radius: .5rem;
     overflow: hidden;
     transition: all .8s ease;
-    box-shadow: 0 .2rem 2rem 0 $card-box-shadow;
+    box-shadow: 0 .2rem 2rem 0 $projcard-box-shadow;
     backface-visibility: hidden;
 }
 
@@ -22,7 +22,7 @@
         }
     }
     .backface {
-        @include card_face;
+        @include projcard_face;
         position: absolute;
         top: 0;
         left: 0;
@@ -32,7 +32,6 @@
         justify-content: flex-end;
         padding: 2rem;
         transform: rotateY(-180deg);
-        background: $color-primary-dark $gradient-card-backface;
         a {
             position: relative;
             display: inline-block;
@@ -43,11 +42,9 @@
             font-size: 1.8rem;
             font-family: $font-header-primary;
             font-weight: 400;
-            color: $color-primary-dark;
             text-decoration: none;
             text-align: center;
             text-transform: uppercase;
-            background-color: $color-primary-white;
             transition: all .2s ease;
             &:hover {
                 transform: translateY(-.4rem);
@@ -66,7 +63,6 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
-                background-color: $color-primary-white;
                 border-radius: 8rem;
             }
             &:hover::after {
@@ -77,11 +73,10 @@
         }
     }
     .frontface {
-        @include card_face;
+        @include projcard_face;
         display: grid;
         grid-template-rows: 24rem auto;
         text-decoration: none;
-        color: $color-primary-dark;
         >img {
             min-height: 25rem;
             max-height: 25rem;
@@ -116,8 +111,6 @@
                     margin-left: 1rem;
                     margin-top: 1rem;
                     border-radius: .3rem;
-                    background-color: $color-accent-light;
-                    color: $color-accent-dark;
                 }
             }
         }
@@ -126,8 +119,39 @@
             top: 1rem;
             right: 1rem;
             font-size: 3rem;
-            color: $color-primary-white;
             opacity: .4;
+        }
+    }
+}
+
+
+/**
+ * Themes and colors.
+ */
+
+.Card-container {
+    .backface {
+        background: $l-theme--clr--bg--projcard-backface $l-theme--grd--projcard-backface;
+        a {
+            color:                $l-theme--clr--txt--regular;
+            background-color:     $l-theme--clr--bg--projcard-backface-link;
+            &::after {
+                background-color: $l-theme--clr--bg--projcard-backface-link;
+            }
+        }
+    }
+    .frontface {
+        color: $l-theme--clr--txt--regular;
+        .description {
+            .tags {
+                span {
+                    background-color: $l-theme--clr--bg--projcard-tag;
+                    color:            $l-theme--clr--txt--projcard-tag;
+                }
+            }
+        }
+        .hint {
+            color: $l-theme--clr--txt--projcard-hint;
         }
     }
 }

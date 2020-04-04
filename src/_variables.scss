@@ -1,6 +1,31 @@
-$color-primary-dark: #212121;
-$color-primary-white: white;
+$d-theme--clr--txt--regular: #e5e5e5;
+$d-theme--clr--bg--section: darkgrey;
 
+$l-theme--clr--txt--headline: #212121;
+$l-theme--clr--txt--regular: #212121;
+$l-theme--clr--txt--accent: #487eb0;
+$l-theme--clr--txt--frontpage: white;
+$l-theme--clr--txt--footer: white;
+$l-theme--clr--txt--tooltip: white;
+$l-theme--clr--txt--projcard-tag: #313131;
+$l-theme--clr--txt--projcard-hint: #313131;
+$l-theme--clr--txt--sidebar: white;
+$l-theme--clr--bg--sidebar: #212121;
+$l-theme--clr--bg--sidebar-link: #313131;
+$l-theme--clr--bg--tooltip: #212121;
+$l-theme--clr--bg--section: white;
+$l-theme--clr--bg--footer: #40739e;
+$l-theme--clr--bg--accent: #487eb0;
+$l-theme--clr--bg--projcard-backface: #212121;
+$l-theme--clr--bg--projcard-backface-link: white;
+$l-theme--clr--bg--projcard-tag: #e5e5e5;
+$l-theme--clr--bg--wexpcard-circle: rgba(black, .65);
+$l-theme--grd--projcard-backface: linear-gradient(to bottom right, #999, #444);
+$l-theme--grd--frontpage: linear-gradient(to top, rgba(47, 54, 64, 0.95), rgba(72, 126, 176, 0.68));
+$l-theme--grd--section: linear-gradient(to top, #F5F5F5, transparent);
+$l-theme--sdw--mbl--menu-box: 0px 4px 15px 0px rgba(0,0,0,0.5);
+
+$color-primary-white: white;
 $color-wexp-circle-dark: rgba(black, .65);
 
 $color-accent-primary: #487eb0;
@@ -11,15 +36,10 @@ $color-accent-light: #e5e5e5;
 $color-youtube-link: #d22d2d;
 $color-github-link: #1f6b1f;
 
-$gradient-front-page: linear-gradient(to top, rgba(47, 54, 64, 0.95), rgba(72, 126, 176, 0.68));
-$gradient-section: linear-gradient(to top, #F5F5F5, transparent);
-$gradient-card-backface: linear-gradient(to bottom right, #999, #444);
-
 $background: url('../../images/backgrounds/bg4.webp');
 $front-page-avatar: url('https://i.imgur.com/PIb2o3Xh.jpg');
 $card-box-shadow: rgba(0, 0, 0, 0.15);
 
-$shadow-nav-dropdown: 0px 4px 15px 0px rgba(0,0,0,0.5);
 $shadow-tooltip: 0px 4px 15px 0px rgba(0,0,0,0.75);
 
 $font-header-primary: 'Josefin Sans', sans-serif;

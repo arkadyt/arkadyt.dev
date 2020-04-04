@@ -13,9 +13,9 @@
         left: 50%;
         transform: translateX(-50%);
         height: 100%;
-        border-left: .4rem solid $color-wexp-circle-dark;
+        border-left: .4rem solid;
         @media (orientation: portrait) {
-            border-left: .2rem solid $color-wexp-circle-dark;
+            border-left: .2rem solid;
         }
         &.stick-start {
             height: 50% !important;
@@ -37,8 +37,22 @@
             width: 1.5rem;
             height: 1.5rem;
         }
-        border: .3rem solid $color-wexp-circle-dark;
+        border: .3rem solid;
         border-radius: 100%;
-        background-color: $color-primary-white;
+    }
+}
+
+
+/**
+ * Theme and colors.
+ */
+
+.Separator-container {
+    .stick {
+        border-left-color: $l-theme--clr--bg--wexpcard-circle;
+    }
+    .circle {
+        border-color: $l-theme--clr--bg--wexpcard-circle;
+        // background-color: ;
     }
 }

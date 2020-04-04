@@ -3,12 +3,9 @@
 .Section-container {
     position: relative; // for gradient shadow box
     width: 100%;
-    background: $color-primary-white;
-    color: $color-primary-dark;
     transition: all .5s;
 
     .gradient-shadow {
-        background: $gradient-section;
         width: 100%;
         height: 100%;
         position: absolute; // get out of the regular element flow
@@ -41,18 +38,35 @@
     }
 
     &.blue {
-        background: $color-accent-primary !important;
-        color: $color-primary-white !important;
         .content {
             padding: 10rem 0;
         }
     }
 
     &.dark {
-        background: grey !important;
-        color: $color-primary-white !important;
         .content {
             padding: 10rem 0;
         }
+    }
+}
+
+
+/**
+ * Theme and colors.
+ */
+
+.Section-container {
+    background:         $l-theme--clr--bg--section;
+    color:              $l-theme--clr--txt--regular;
+    .gradient-shadow {
+        background:     $l-theme--grd--section;
+    }
+    &.footer {
+        background:     $l-theme--clr--bg--footer;
+        color:          $l-theme--clr--txt--footer;
+    }
+    &.dark {
+        background:     $d-theme--clr--bg--section;
+        color:          $d-theme--clr--txt--regular;
     }
 }

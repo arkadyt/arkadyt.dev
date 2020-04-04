@@ -37,7 +37,18 @@
         h4 {
             @extend %header;
             font-size: 1.6rem;
-            color: $color-accent-primary;
+        }
+    }
+}
+
+
+/**
+ * Theme and colors.
+ */
+.ExpCard-container {
+    .text {
+        h4 {
+            color: $l-theme--clr--txt--accent;
         }
     }
 }
