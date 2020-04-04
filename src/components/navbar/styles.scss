@@ -17,7 +17,7 @@
     width: 6.5rem;
     height: 100vh;
     background-color: $color-primary-dark;
-    z-index: 5;
+    z-index: 50;
 
     ul#sidebar-buttons {
       display: flex;
@@ -38,7 +38,7 @@
     }
 
     ul#sidebar-buttons-btm {
-      height: 7rem;
+      height: 9.25rem;
       width: 100%;
       display: flex;
       padding: 0;
