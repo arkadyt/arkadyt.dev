@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import Main from 'components/main';
+import ThemeContext from 'state/context/theme';
 import './index.scss';
 import * as serviceWorker from './serviceWorker';
 
-const app = () => {
+const App = () => {
+  const [theme, setTheme] = useState('light');
+
   return (
-    <div className="App-container">
-      <Main />
-      <div className="blinds" />
-    </div>
+    <ThemeContext.Provider value={{ theme, setTheme }}>
+      <div className="App-container">
+        <Main />
+        <div className="blinds" />
+      </div>
+    </ThemeContext.Provider>
   );
 };
 
-ReactDOM.render(app(), document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 serviceWorker.unregister();
