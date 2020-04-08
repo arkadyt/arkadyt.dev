@@ -16,7 +16,7 @@ const ExpCard = props => {
         <img src={props.image} 
              style={{ width: `${props.imgWidth}%` }} 
              alt='' />
-        <div className="Separator-container">
+        <div className={clsx("Separator-container", theme)}>
             <div className={['stick', separatorClass].join(' ')} />
             <div className="circle" />
         </div>
