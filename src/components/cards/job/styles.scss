@@ -46,9 +46,18 @@
  * Theme and colors.
  */
 .ExpCard-container {
-    .text {
-        h4 {
-            color: $l-theme--clr--txt--accent;
+    &.l-theme {
+        .text {
+            h4 {
+                color: $l-theme--clr--txt--accent;
+            }
+        }
+    }
+    &.d-theme {
+        .text {
+            h4 {
+                color: $d-theme--clr--txt--accent;
+            }
         }
     }
 }

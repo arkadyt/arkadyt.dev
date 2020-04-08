@@ -1,4 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component, useContext } from 'react';
+import ThemeContext from 'state/context/theme';
+import clsx from 'clsx';
 import './styles.scss';
 
 import NavBar from 'components/navbar';
@@ -24,16 +26,18 @@ import {
   about 
 } from '../../content';
 
-export default class Layout extends Component {
+class Layout extends Component {
   render() {
+    const { theme } = this.context;
+
     return (
       <React.Fragment>
-        <picture className="Layout-background">
+        <picture className={clsx("Layout-background", theme)}>
           <source type="image/webp" srcset={bgImgWebp} />
           <img src={bgImgJpg} alt="Snowy Mountains" />
         </picture>
         <NavBar links={links} />
-        <div className="Layout-content">
+        <div className={clsx("Layout-content", theme)}>
             <Front />
             <Section id="about-me" title="About Me">
             </Section>
@@ -86,3 +90,7 @@ export default class Layout extends Component {
     )
   }
 }
+
+Layout.contextType = ThemeContext;
+
+export default Layout;

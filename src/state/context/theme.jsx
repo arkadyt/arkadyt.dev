@@ -1,6 +1,6 @@
 import React from 'react';
 
 export default React.createContext({
-  theme: 'light',
+  theme: 'l-theme',
   toggleTheme: () => {}
 });

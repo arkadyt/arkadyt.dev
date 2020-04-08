@@ -56,24 +56,48 @@
  */
 
 .Section-container {
-    background:         $l-theme--clr--bg--section;
-    color:              $l-theme--clr--txt--regular;
-    .gradient-shadow {
-        background:     $l-theme--grd--section;
-    }
-    &.accent {
-        background:     $l-theme--clr--bg--accent;
-        color:          $l-theme--clr--txt--on-accent;
+    &.l-theme {
+        background:         $l-theme--clr--bg--section;
+        color:              $l-theme--clr--txt--regular;
         .gradient-shadow {
-            visibility: hidden;
+            background:     $l-theme--grd--section;
+        }
+        &.accent {
+            background:     $l-theme--clr--bg--accent;
+            color:          $l-theme--clr--txt--on-accent;
+            .gradient-shadow {
+                visibility: hidden;
+            }
+        }
+        &.footer {
+            background:     $l-theme--clr--bg--footer;
+            color:          $l-theme--clr--txt--footer;
+        }
+        &.dark {
+            background:     $d-theme--clr--bg--section;
+            color:          $d-theme--clr--txt--regular;
         }
     }
-    &.footer {
-        background:     $l-theme--clr--bg--footer;
-        color:          $l-theme--clr--txt--footer;
-    }
-    &.dark {
-        background:     $d-theme--clr--bg--section;
-        color:          $d-theme--clr--txt--regular;
+    &.d-theme {
+        background:         $d-theme--clr--bg--section;
+        color:              $d-theme--clr--txt--regular;
+        .gradient-shadow {
+            background:     $d-theme--grd--section;
+        }
+        &.accent {
+            background:     $d-theme--clr--bg--accent;
+            color:          $d-theme--clr--txt--on-accent;
+            .gradient-shadow {
+                visibility: hidden;
+            }
+        }
+        &.footer {
+            background:     $d-theme--clr--bg--footer;
+            color:          $d-theme--clr--txt--footer;
+        }
+        &.dark {
+            background:     $d-theme--clr--bg--section;
+            color:          $d-theme--clr--txt--regular;
+        }
     }
 }

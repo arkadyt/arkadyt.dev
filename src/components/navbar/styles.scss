@@ -196,39 +196,80 @@
  */
 
 .NavBar-container {
-    background-color: $l-theme--clr--bg--sidebar;
-    @media (orientation: landscape) {
-      border-right-color: darken($l-theme--clr--bg--sidebar, 4);
-    }
-    ul#sidebar-buttons-btm {
-      button {
-        color: $l-theme--clr--txt--sidebar;
-      }
-    }
-    @media (orientation: portrait) {
-      border-bottom-color: darken($l-theme--clr--bg--sidebar, 4);
-    }
-    li.sidebar-link {
-        &:hover {
-            background-color: $l-theme--clr--bg--sidebar-link;
+    &.l-theme {
+        background-color: $l-theme--clr--bg--sidebar;
+        @media (orientation: landscape) {
+          border-right-color: darken($l-theme--clr--bg--sidebar, 4);
         }
-        a {
+        ul#sidebar-buttons-btm {
+          button {
             color: $l-theme--clr--txt--sidebar;
-            span.link-text {
-              @media (orientation: landscape) {
+          }
+        }
+        @media (orientation: portrait) {
+          border-bottom-color: darken($l-theme--clr--bg--sidebar, 4);
+        }
+        li.sidebar-link {
+            &:hover {
+                background-color: $l-theme--clr--bg--sidebar-link;
+            }
+            a {
                 color: $l-theme--clr--txt--sidebar;
-              }
+                span.link-text {
+                  @media (orientation: landscape) {
+                    color: $l-theme--clr--txt--sidebar;
+                  }
+                }
+            }
+        }
+        @media (orientation: portrait) {
+            .drawer {
+                background-color: $l-theme--clr--bg--sidebar;
+                box-shadow: $l-theme--sdw--mbl--menu-box;
+                a {
+                    color: $l-theme--clr--txt--sidebar;
+                    &:hover {
+                        background-color: $l-theme--clr--bg--accent;
+                    }
+                }
             }
         }
     }
-    @media (orientation: portrait) {
-        .drawer {
-            background-color: $l-theme--clr--bg--sidebar;
-            box-shadow: $l-theme--sdw--mbl--menu-box;
+    &.d-theme {
+        background-color: $d-theme--clr--bg--sidebar;
+        @media (orientation: landscape) {
+          border-right-color: darken($d-theme--clr--bg--sidebar, 4);
+        }
+        ul#sidebar-buttons-btm {
+          button {
+            color: $d-theme--clr--txt--sidebar;
+          }
+        }
+        @media (orientation: portrait) {
+          border-bottom-color: darken($d-theme--clr--bg--sidebar, 4);
+        }
+        li.sidebar-link {
+            &:hover {
+                background-color: $d-theme--clr--bg--sidebar-link;
+            }
             a {
-                color: $l-theme--clr--txt--sidebar;
-                &:hover {
-                    background-color: $l-theme--clr--bg--accent;
+                color: $d-theme--clr--txt--sidebar;
+                span.link-text {
+                  @media (orientation: landscape) {
+                    color: $d-theme--clr--txt--sidebar;
+                  }
+                }
+            }
+        }
+        @media (orientation: portrait) {
+            .drawer {
+                background-color: $d-theme--clr--bg--sidebar;
+                box-shadow: $d-theme--sdw--mbl--menu-box;
+                a {
+                    color: $d-theme--clr--txt--sidebar;
+                    &:hover {
+                        background-color: $d-theme--clr--bg--accent;
+                    }
                 }
             }
         }

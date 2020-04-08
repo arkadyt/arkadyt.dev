@@ -47,12 +47,27 @@
  * Theme and colors.
  */
 
-.tooltip-body {
-    background-color: $l-theme--clr--bg--tooltip;
-    color: $l-theme--clr--txt--tooltip;
-}
-.arrow-box {
-    &.top {
-        border-bottom-color: $l-theme--clr--bg--tooltip;
+.Tooltip-container {
+    &.l-theme {
+        .tooltip-body {
+            background-color: $l-theme--clr--bg--tooltip;
+            color: $l-theme--clr--txt--tooltip;
+        }
+        .arrow-box {
+            &.top {
+                border-bottom-color: $l-theme--clr--bg--tooltip;
+            }
+        }
+    }
+    &.d-theme {
+        .tooltip-body {
+            background-color: $d-theme--clr--bg--tooltip;
+            color: $d-theme--clr--txt--tooltip;
+        }
+        .arrow-box {
+            &.top {
+                border-bottom-color: $d-theme--clr--bg--tooltip;
+            }
+        }
     }
 }

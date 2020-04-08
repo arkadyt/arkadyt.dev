@@ -1,6 +1,7 @@
 $d-theme--clr--txt--headline: #212121;
 $d-theme--clr--txt--regular: #212121;
 $d-theme--clr--txt--accent: #487eb0;
+$d-theme--clr--txt--on-accent: white;
 $d-theme--clr--txt--frontpage: white;
 $d-theme--clr--txt--footer: white;
 $d-theme--clr--txt--tooltip: white;
@@ -17,7 +18,10 @@ $d-theme--clr--bg--accent: #487eb0;
 $d-theme--clr--bg--projcard-backface: #212121;
 $d-theme--clr--bg--projcard-backface-link: white;
 $d-theme--clr--bg--projcard-tag: #e5e5e5;
-$d-theme--clr--bg--wexpcard-circle: rgba(black, .65);
+$d-theme--clr--bg--wexpcard-circle: white;
+
+$d-theme--clr--brdr--wexpcard-circle: rgba(black, .85);
+$d-theme--clr--brdr--wexpcard-stick: rgba(black, .65);
 
 $d-theme--grd--projcard-backface: linear-gradient(to bottom right, #999, #444);
 $d-theme--grd--frontpage: linear-gradient(to top, rgba(47, 54, 64, 0.95), rgba(72, 126, 176, 0.68));

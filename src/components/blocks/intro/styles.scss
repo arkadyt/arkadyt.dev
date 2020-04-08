@@ -57,8 +57,16 @@
  */
 
 .Front-container {
-    background: $l-theme--grd--frontpage;
-    .name-block {
-        color:  $l-theme--clr--txt--frontpage;
+    &.l-theme {
+        background: $l-theme--grd--frontpage;
+        .name-block {
+            color:  $l-theme--clr--txt--frontpage;
+        }
+    }
+    &.d-theme {
+        background: $d-theme--grd--frontpage;
+        .name-block {
+            color:  $d-theme--clr--txt--frontpage;
+        }
     }
 }

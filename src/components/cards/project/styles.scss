@@ -130,28 +130,56 @@
  */
 
 .Card-container {
-    .backface {
-        background: $l-theme--clr--bg--projcard-backface $l-theme--grd--projcard-backface;
-        a {
-            color:                $l-theme--clr--txt--regular;
-            background-color:     $l-theme--clr--bg--projcard-backface-link;
-            &::after {
-                background-color: $l-theme--clr--bg--projcard-backface-link;
-            }
-        }
-    }
-    .frontface {
-        color: $l-theme--clr--txt--regular;
-        .description {
-            .tags {
-                span {
-                    background-color: $l-theme--clr--bg--projcard-tag;
-                    color:            $l-theme--clr--txt--projcard-tag;
+    &.l-theme {
+        .backface {
+            background: $l-theme--clr--bg--projcard-backface $l-theme--grd--projcard-backface;
+            a {
+                color:                $l-theme--clr--txt--regular;
+                background-color:     $l-theme--clr--bg--projcard-backface-link;
+                &::after {
+                    background-color: $l-theme--clr--bg--projcard-backface-link;
                 }
             }
         }
-        .hint {
-            color: $l-theme--clr--txt--projcard-hint;
+        .frontface {
+            color: $l-theme--clr--txt--regular;
+            .description {
+                .tags {
+                    span {
+                        background-color: $l-theme--clr--bg--projcard-tag;
+                        color:            $l-theme--clr--txt--projcard-tag;
+                    }
+                }
+            }
+            .hint {
+                color: $l-theme--clr--txt--projcard-hint;
+            }
+        }
+    }
+    &.d-theme {
+        .backface {
+            background: $d-theme--clr--bg--projcard-backface $d-theme--grd--projcard-backface;
+            a {
+                color:                $d-theme--clr--txt--regular;
+                background-color:     $d-theme--clr--bg--projcard-backface-link;
+                &::after {
+                    background-color: $d-theme--clr--bg--projcard-backface-link;
+                }
+            }
+        }
+        .frontface {
+            color: $d-theme--clr--txt--regular;
+            .description {
+                .tags {
+                    span {
+                        background-color: $d-theme--clr--bg--projcard-tag;
+                        color:            $d-theme--clr--txt--projcard-tag;
+                    }
+                }
+            }
+            .hint {
+                color: $d-theme--clr--txt--projcard-hint;
+            }
         }
     }
 }

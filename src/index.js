@@ -6,11 +6,10 @@ import './index.scss';
 import * as serviceWorker from './serviceWorker';
 
 const App = () => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('l-theme');
 
   const toggleTheme = () => {
-    console.log('invoked')
-    const map = { light: 'dark', dark: 'light' };
+    const map = { "l-theme": "d-theme", "d-theme": "l-theme" };
     setTheme(map[theme]);
   }
 

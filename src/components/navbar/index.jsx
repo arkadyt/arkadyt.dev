@@ -1,5 +1,6 @@
 import React from 'react';
 import ThemeContext from 'state/context/theme';
+import clsx from 'clsx';
 import './styles.scss';
 import { FaBars, FaMoon } from 'react-icons/fa';
 import { IoMdSunny } from 'react-icons/io';
@@ -40,7 +41,7 @@ class NavBar extends React.Component {
     const { theme, toggleTheme } = this.context;
 
     return (
-      <div className={['NavBar-container', this.state.showNavBar ? '' : 'hidden'].join(' ')}>
+      <div className={clsx('NavBar-container', !this.state.showNavBar && 'hidden', theme)}>
         <ul id="sidebar-buttons">
           {this.props.links.map((item, index) => {
             return (

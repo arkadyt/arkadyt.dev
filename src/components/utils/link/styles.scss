@@ -26,10 +26,20 @@
  */
 
 .Link-container {
-    a {
-        color: $l-theme--clr--txt--footer;
-        &:hover {
-            color: $l-theme--clr--txt--regular;
+    &.l-theme {
+        a {
+            color: $l-theme--clr--txt--footer;
+            &:hover {
+                color: $l-theme--clr--txt--regular;
+            }
+        }
+    }
+    &.d-theme {
+        a {
+            color: $d-theme--clr--txt--footer;
+            &:hover {
+                color: $d-theme--clr--txt--regular;
+            }
         }
     }
 }

@@ -1,15 +1,18 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import ThemeContext from 'state/context/theme';
+import clsx from 'clsx';
 import './styles.scss';
 
 /**
  * Work experience card.
  */
-const expCard = props => {
+const ExpCard = props => {
     const separatorClass = props.start && props.end ? 'stick-hidden' :
         props.start ? 'stick-start' :
             props.end ? 'stick-end' :
                 '';
-    return <div className="ExpCard-container">
+    const { theme } = useContext(ThemeContext);
+    return <div className={clsx("ExpCard-container", theme)}>
         <img src={props.image} 
              style={{ width: `${props.imgWidth}%` }} 
              alt='' />
@@ -25,4 +28,4 @@ const expCard = props => {
     </div>;
 };
 
-export default expCard;
+export default ExpCard;

@@ -96,10 +96,20 @@
  */
 
 .Layout-content {
-    .footer {
-        background-color: $l-theme--clr--bg--footer;
-        div {
-            color: $l-theme--clr--txt--footer;
+    &.l-theme {
+        .footer {
+            background-color: $l-theme--clr--bg--footer;
+            div {
+                color: $l-theme--clr--txt--footer;
+            }
+        }
+    }
+    &.d-theme {
+        .footer {
+            background-color: $d-theme--clr--bg--footer;
+            div {
+                color: $d-theme--clr--txt--footer;
+            }
         }
     }
 }
