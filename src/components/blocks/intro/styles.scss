@@ -7,17 +7,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    img {
-        content: $front-page-avatar;
-        @media (orientation: landscape) {
-            display: none;
-        }
-        width: 20rem;
-        height: 20rem;
-        border-radius: 20rem;
-        box-sizing: unset;
-        margin: 0 0 5rem 0;
-    }
     .name-block {
         text-transform: uppercase;
         text-align: center;
