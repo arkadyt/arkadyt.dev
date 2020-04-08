@@ -37,7 +37,7 @@
         text-transform: uppercase;
     }
 
-    &.blue {
+    &.accent {
         .content {
             padding: 10rem 0;
         }
@@ -60,6 +60,13 @@
     color:              $l-theme--clr--txt--regular;
     .gradient-shadow {
         background:     $l-theme--grd--section;
+    }
+    &.accent {
+        background:     $l-theme--clr--bg--accent;
+        color:          $l-theme--clr--txt--on-accent;
+        .gradient-shadow {
+            visibility: hidden;
+        }
     }
     &.footer {
         background:     $l-theme--clr--bg--footer;

@@ -66,7 +66,7 @@ export default class Layout extends Component {
             </Section>
             <Section id="recent-from-blog" title="Publications">
             </Section>
-            <Section id="contact" title="Contact" blue>
+            <Section id="contact" title="Contact" accent>
                 <div className="contact-view">
                     {links.map((item, index) => {
                         const data = {

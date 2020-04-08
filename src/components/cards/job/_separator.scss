@@ -49,10 +49,10 @@
 
 .Separator-container {
     .stick {
-        border-left-color: $l-theme--clr--bg--wexpcard-circle;
+        border-left-color: $l-theme--clr--brdr--wexpcard-stick;
     }
     .circle {
-        border-color: $l-theme--clr--bg--wexpcard-circle;
-        // background-color: ;
+        border-color: $l-theme--clr--brdr--wexpcard-circle;
+        background-color: $l-theme--clr--bg--wexpcard-circle;
     }
 }

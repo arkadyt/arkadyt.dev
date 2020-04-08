@@ -4,7 +4,7 @@ import './styles.scss';
 
 const Section = props => {
     const { theme } = useContext(ThemeContext);
-    const sectionBg = props.blue ? 'blue' : theme === 'dark' ? 'dark' : '';
+    const sectionBg = props.accent ? 'accent' : theme === 'dark' ? 'dark' : '';
 
     return (
         <div id={props.id} className={`Section-container ${sectionBg}`}>
