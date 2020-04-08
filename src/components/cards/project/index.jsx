@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import ThemeContext from 'state/context/theme';
+import Image from 'components/utils/image';
 import clsx from 'clsx';
 import { FaExternalLinkAlt as IconHref } from 'react-icons/fa';
 import './styles.scss';
@@ -8,7 +9,7 @@ const Card = props => {
     const { theme } = useContext(ThemeContext);
     return <div className={clsx("Card-container", theme)}>
         <div className="frontface">
-            <img src={props.image} alt='' />
+            <Image image={props.image} imgProps={{ alt: "Project Image" }} />
             <div className="description">
                 <h3>{props.title}</h3>
                 <span>{props.description}</span>

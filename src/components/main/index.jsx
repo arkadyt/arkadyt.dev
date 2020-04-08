@@ -1,5 +1,6 @@
 import React, { Component, useContext } from 'react';
 import ThemeContext from 'state/context/theme';
+import Image from 'components/utils/image';
 import clsx from 'clsx';
 import './styles.scss';
 
@@ -15,15 +16,13 @@ import {
   FaRegCopyright as IconCopyright 
 } from 'react-icons/fa';
 
-import bgImgWebp from 'images/backgrounds/bg4.webp';
-import bgImgJpg from 'images/backgrounds/bg4_fallback.jpg';
-
 import { 
   projects, 
   jobs, 
   skills,
   links,
-  about 
+  about,
+  intro
 } from '../../content';
 
 class Layout extends Component {
@@ -32,10 +31,11 @@ class Layout extends Component {
 
     return (
       <React.Fragment>
-        <picture className={clsx("Layout-background", theme)}>
-          <source type="image/webp" srcset={bgImgWebp} />
-          <img src={bgImgJpg} alt="Snowy Mountains" />
-        </picture>
+        <Image
+          image={intro.image}
+          imgProps={{ alt: "Website background image" }}
+          containerProps={{ className: clsx("Layout-background", theme) }}
+        />
         <NavBar links={links} />
         <div className={clsx("Layout-content", theme)}>
             <Front />

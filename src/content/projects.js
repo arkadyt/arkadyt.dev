@@ -8,7 +8,7 @@ export default [
     {
         href: 'https://github.com/arkadyt/wework',
         image: {
-            src: weworkWEBP,
+            webp: weworkWEBP,
             fallback: weworkJPG,
         },
         title: 'WeWork',
