@@ -3,7 +3,6 @@
 .Section-container {
     position: relative; // for gradient shadow box
     width: 100%;
-    transition: all .5s;
 
     .gradient-shadow {
         width: 100%;
@@ -69,14 +68,6 @@
                 visibility: hidden;
             }
         }
-        &.footer {
-            background:     $l-theme--clr--bg--footer;
-            color:          $l-theme--clr--txt--footer;
-        }
-        &.dark {
-            background:     $d-theme--clr--bg--section;
-            color:          $d-theme--clr--txt--regular;
-        }
     }
     &.d-theme {
         background:         $d-theme--clr--bg--section;
@@ -90,14 +81,6 @@
             .gradient-shadow {
                 visibility: hidden;
             }
-        }
-        &.footer {
-            background:     $d-theme--clr--bg--footer;
-            color:          $d-theme--clr--txt--footer;
-        }
-        &.dark {
-            background:     $d-theme--clr--bg--section;
-            color:          $d-theme--clr--txt--regular;
         }
     }
 }

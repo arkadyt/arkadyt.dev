@@ -57,7 +57,7 @@ class NavBar extends React.Component {
         <ul id="sidebar-buttons-btm">
           <li className="sidebar-button">
             <button onClick={toggleTheme}>
-              {theme === 'dark' ? <IoMdSunny /> : <FaMoon /> }
+              {theme === 'd-theme' ? <IoMdSunny /> : <FaMoon /> }
             </button>
           </li>
         </ul>

@@ -14,18 +14,23 @@ $l-theme--clr--bg--sidebar-link: #313131;
 $l-theme--clr--bg--tooltip: #212121;
 $l-theme--clr--bg--section: white;
 $l-theme--clr--bg--footer: #40739e;
-$l-theme--clr--bg--accent: #487eb0;
+$l-theme--clr--bg--accent: lighten($l-theme--clr--bg--footer, 4);
 $l-theme--clr--bg--projcard-backface: #212121;
 $l-theme--clr--bg--projcard-backface-link: white;
-$l-theme--clr--bg--projcard-tag: #e5e5e5;
+$l-theme--clr--bg--projcard-frontface: lighten($l-theme--clr--bg--section, 5);
+$l-theme--clr--bg--projcard-tag: darken($l-theme--clr--bg--projcard-frontface, 10);
 $l-theme--clr--bg--wexpcard-circle: white;
 
 $l-theme--clr--brdr--wexpcard-circle: rgba(black, .85);
 $l-theme--clr--brdr--wexpcard-stick: rgba(black, .65);
 
-$l-theme--grd--projcard-backface: linear-gradient(to bottom right, #999, #444);
+$l-theme--grd--projcard-backface: linear-gradient(
+    to bottom right,
+    lighten($l-theme--clr--bg--projcard-backface, 35),
+    lighten($l-theme--clr--bg--projcard-backface, 15)
+);
 $l-theme--grd--frontpage: linear-gradient(to top, rgba(47, 54, 64, 0.95), rgba(72, 126, 176, 0.68));
-$l-theme--grd--section: linear-gradient(to top, #F5F5F5, transparent);
+$l-theme--grd--section: linear-gradient(to top, darken($l-theme--clr--bg--section, 3), transparent);
 
 $l-theme--sdw--mbl--menu-box: 0px 4px 15px 0px rgba(0,0,0,0.5);
 $l-theme--sdw--projcard: rgba(0, 0, 0, 0.15);

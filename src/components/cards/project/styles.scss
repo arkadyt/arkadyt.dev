@@ -4,7 +4,7 @@
     width: 100%;
     border-radius: .5rem;
     overflow: hidden;
-    transition: all .8s ease;
+    transition: transform .8s ease;
     box-shadow: 0 .2rem 2rem 0 $l-theme--sdw--projcard;
     backface-visibility: hidden;
 }
@@ -143,6 +143,7 @@
         }
         .frontface {
             color: $l-theme--clr--txt--regular;
+            background: $l-theme--clr--bg--projcard-frontface;
             .description {
                 .tags {
                     span {
@@ -168,6 +169,7 @@
             }
         }
         .frontface {
+            background: $d-theme--clr--bg--projcard-frontface;
             color: $d-theme--clr--txt--regular;
             .description {
                 .tags {
