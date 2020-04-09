@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import clsx from 'clsx';
+import ThemeContext from 'state/context/theme';
 import Tooltip from 'components/utils/tooltip';
 import './styles.scss';
 
 const SkillCard = props => {
-  const { icon, title, wide, megaWide, ultraWide, height } = props;
-  const classes = [
+  const { icon, iconDark, title, wide, megaWide, ultraWide, height } = props;
+  const { theme } = useContext(ThemeContext);
+  const skillIcon = theme === "d-theme" && iconDark ? iconDark : icon;
+  const classes = clsx(
     "SkillCard-container",
     wide ? "two-cell" : megaWide ? "three-cell" : ultraWide ? "four-cell" : "",
-  ];
+  );
 
   return (
-    <div className={classes.join(" ")}>
-      <img alt={title} src={icon} style={{ height: `${height}%` }} />
+    <div className={classes}>
+      <img alt={title} src={skillIcon} style={{ height: `${height}%` }} />
       <Tooltip text={title} />
     </div>
   );

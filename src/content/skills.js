@@ -8,31 +8,41 @@ import KMS from 'images/skills/aws/ad.svg';
 import Batch from 'images/skills/aws/batch.svg';
 
 import React from 'images/skills/reactbig.svg';
+import React_dt from 'images/skills/reactbig.d-theme.svg';
 import NodeJS from 'images/skills/node2.svg';
-import JS from 'images/skills/js.svg';
-import HTML from 'images/skills/html5.svg';
-import CSS from 'images/skills/css3.svg';
-
-import Docker from 'images/skills/docker.svg';
-import MongoDB from 'images/skills/mongodb.svg';
-
+import NodeJS_dt from 'images/skills/node2.d-theme.svg';
 import AWS from 'images/skills/aws.svg';
+import AWS_dt from 'images/skills/aws.d-theme.svg';
+import HTML from 'images/skills/html5.svg';
+import HTML_dt from 'images/skills/html5.d-theme.svg';
+import CSS from 'images/skills/css3.svg';
+import CSS_dt from 'images/skills/css3.d-theme.svg';
+import MongoDB from 'images/skills/mongodb.svg';
+import MongoDB_dt from 'images/skills/mongodb.d-theme.svg';
+import Apollo from 'images/skills/apollo.svg';
+import Apollo_dt from 'images/skills/apollo.d-theme.svg';
+import Git from 'images/skills/git.svg';
+import Git_dt from 'images/skills/git.d-theme.svg';
+import Linux from 'images/skills/linux.svg';
+import Linux_dt from 'images/skills/linux.d-theme.svg';
+import Bash from 'images/skills/bash.svg';
+import Bash_dt from 'images/skills/bash.d-theme.svg';
+import Docker from 'images/skills/docker.svg';
+import Docker_dt from 'images/skills/docker.d-theme.svg';
+
+import JS from 'images/skills/js.svg';
 import GraphQL from 'images/skills/graphql.svg';
 import Webpack from 'images/skills/webpack.svg';
 import Redis from 'images/skills/redis.svg';
 import PWA from 'images/skills/pwa.svg';
 
-import Git from 'images/skills/git.svg';
 import Redux from 'images/skills/redux.svg';
 import Sass from 'images/skills/sass.svg';
 import Less from 'images/skills/less.svg';
 import Java from 'images/skills/java.svg';
 import Python from 'images/skills/python.svg';
 import Kubernetes from 'images/skills/kubernetes.svg';
-import Apollo from 'images/skills/apollo.svg';
 
-import Linux from 'images/skills/linux.svg';
-import Bash from 'images/skills/bash.svg';
 import TravisCI from 'images/skills/travisci.svg';
 import CircleCI from 'images/skills/circleci.svg';
 import GulpJS from 'images/skills/gulp.svg';
@@ -77,10 +87,12 @@ const emDash = '—';
 export default [
   {
     icon: HTML,
+    iconDark: HTML_dt,
     title: 'HTML'
   },
   {
     icon: CSS,
+    iconDark: CSS_dt,
     title: 'CSS'
   },
   {
@@ -89,11 +101,13 @@ export default [
   },
   {
     icon: React,
+    iconDark: React_dt,
     title: 'React.js',
     megaWide: true
   },
   {
     icon: NodeJS,
+    iconDark: NodeJS_dt,
     title: 'NodeJS',
     wide: true,
   },
@@ -111,10 +125,12 @@ export default [
   },
   {
     icon: Docker,
+    iconDark: Docker_dt,
     title: 'Docker'
   },
   {
     icon: AWS,
+    iconDark: AWS_dt,
     title: `AWS Cloud Services`,
     megaWide: true
   },
@@ -124,6 +140,7 @@ export default [
   },
   {
     icon: MongoDB,
+    iconDark: MongoDB_dt,
     title: 'MongoDB',
     megaWide: true,
     height: 90
@@ -149,6 +166,7 @@ export default [
   },
   {
     icon: Git,
+    iconDark: Git_dt,
     title: 'Git',
     megaWide: true
   },
@@ -158,6 +176,7 @@ export default [
   },
   {
     icon: Apollo,
+    iconDark: Apollo_dt,
     title: 'Apollo'
   },
   {
@@ -177,11 +196,13 @@ export default [
   },
   {
     icon: Bash,
+    iconDark: Bash_dt,
     title: "Bash",
     megaWide: true
   },
   {
     icon: Linux,
+    iconDark: Linux_dt,
     title: "Linux Systems\nAdministration"
   },
   {

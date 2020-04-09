@@ -14,7 +14,7 @@ const ExpCard = props => {
     const { theme } = useContext(ThemeContext);
     return <div className={clsx("ExpCard-container", theme)}>
         <img src={props.image} 
-             style={{ width: `${props.imgWidth}%` }} 
+             style={{ width: `${props.imgWidth}%`, color: 'white' }} 
              alt='' />
         <div className={clsx("Separator-container", theme)}>
             <div className={['stick', separatorClass].join(' ')} />
