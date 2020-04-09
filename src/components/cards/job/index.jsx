@@ -12,8 +12,10 @@ const ExpCard = props => {
             props.end ? 'stick-end' :
                 '';
     const { theme } = useContext(ThemeContext);
+    const { image, imageDark } = props;
+    const jobIcon = theme === 'd-theme' && imageDark ? imageDark : image;
     return <div className={clsx("ExpCard-container", theme)}>
-        <img src={props.image} 
+        <img src={jobIcon}
              style={{ width: `${props.imgWidth}%`, color: 'white' }} 
              alt='' />
         <div className={clsx("Separator-container", theme)}>

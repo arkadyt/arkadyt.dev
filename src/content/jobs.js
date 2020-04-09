@@ -1,6 +1,7 @@
 import React from 'react';
 import ImgHP from 'images/hp.svg';
 import ImgFreelance from 'images/freelance.svg';
+import ImgFreelance_dt from 'images/freelance.d-theme.svg';
 
 export default [
     {
@@ -15,6 +16,7 @@ export default [
         title: 'Self-Employed',
         date: 'June 2018 — April 2019 (10 months)',
         image: ImgFreelance,
+        imageDark: ImgFreelance_dt,
         imgWidth: 45
     },
 ]
