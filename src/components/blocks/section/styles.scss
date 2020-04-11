@@ -13,7 +13,7 @@
         pointer-events: none;
     }
 
-    .content {
+    > .content {
         position: relative; // to create new z-context
         width: 96rem;
         @media (orientation: portrait) {

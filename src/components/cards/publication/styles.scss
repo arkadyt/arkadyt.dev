@@ -1,0 +1,80 @@
+@import "_variables";
+
+.PublicationCard-container {
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    border-radius: .5rem;
+    overflow: hidden;
+
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    > .card-image img {
+        height: 100%;
+        width: 25rem;
+        object-fit: cover;
+    }
+
+    > .content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 2rem;
+
+        .href-icon {
+            opacity: .5;
+        }
+
+        .website-str {
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .title, .snippet {
+            display: block;
+            width: 67rem;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            font-family: $font-header-secondary;
+        }
+
+        .snippet {
+            font-size: 2rem;
+            font-family: $font-paragraph-primary;
+        }
+    }
+}
+
+
+/**
+ * Theme colors
+ */
+
+.PublicationCard-container {
+    &.l-theme {
+        box-shadow: 0 .2rem 2rem 0 $l-theme--sdw--publcard;
+        background-color: $l-theme--clr--bg--publcard-frontface;
+        > .card-image img {
+            filter: $l-theme--fltr--publcard-img;
+        }
+    }
+    &.d-theme {
+        box-shadow: 0 .2rem 2rem 0 $d-theme--sdw--publcard;
+        background-color: $d-theme--clr--bg--publcard-frontface;
+        > .card-image img {
+            filter: $d-theme--fltr--publcard-img;
+        }
+    }
+}
