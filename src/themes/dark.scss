@@ -5,6 +5,7 @@ $d-theme--clr--txt--on-accent: white;
 $d-theme--clr--txt--frontpage: white;
 $d-theme--clr--txt--footer: white;
 $d-theme--clr--txt--tooltip: white;
+$d-theme--clr--txt--projcard-backface-link: #212121;
 $d-theme--clr--txt--projcard-tag: white;
 $d-theme--clr--txt--projcard-hint: rgba(white, .8);
 $d-theme--clr--txt--sidebar: white;
@@ -17,7 +18,7 @@ $d-theme--clr--bg--footer: #353535;
 $d-theme--clr--bg--accent: lighten($d-theme--clr--bg--footer, 4);
 $d-theme--clr--bg--projcard-backface: #212121;
 $d-theme--clr--bg--projcard-backface-link: white;
-$d-theme--clr--bg--projcard-frontface: lighten($d-theme--clr--bg--section, 5);
+$d-theme--clr--bg--projcard-frontface: lighten($d-theme--clr--bg--section, 7);
 $d-theme--clr--bg--projcard-tag: lighten($d-theme--clr--bg--projcard-frontface, 10);
 $d-theme--clr--bg--wexpcard-circle: $d-theme--clr--bg--section;
 
@@ -26,8 +27,8 @@ $d-theme--clr--brdr--wexpcard-stick: rgba(white, .6);
 
 $d-theme--grd--projcard-backface: linear-gradient(
     to bottom right,
-    lighten($d-theme--clr--bg--projcard-backface, 15),
-    lighten($d-theme--clr--bg--projcard-backface, 5)
+    lighten($d-theme--clr--bg--projcard-backface, 20),
+    lighten($d-theme--clr--bg--projcard-backface, 12)
 );
 $d-theme--grd--frontpage: linear-gradient(to top, rgba(47, 54, 64, 0.95), rgba(72, 126, 176, 0.68));
 $d-theme--grd--section: transparent;
