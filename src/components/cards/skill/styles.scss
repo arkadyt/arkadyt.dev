@@ -1,3 +1,5 @@
+@import "_variables";
+
 .SkillCard-container {
     position: relative;
     display: flex;
@@ -7,7 +9,6 @@
     img {
         height: 100%;
         filter: grayscale(100%);
-        opacity: 0.5;
 
         &:hover {
             filter: grayscale(0);
@@ -31,5 +32,22 @@
 
     &.four-cell {
         grid-column: auto / span 4;
+    }
+}
+
+/**
+ * Theme and colors
+ */
+
+.SkillCard-container {
+    &.l-theme {
+        img {
+            opacity: $l-theme--prop--skillcard-opacity;
+        }
+    }
+    &.d-theme {
+        img {
+            opacity: $d-theme--prop--skillcard-opacity;
+        }
     }
 }

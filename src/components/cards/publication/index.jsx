@@ -8,7 +8,7 @@ import "./styles.scss";
 const PublicationCard = props => {
   const { image, title, snippet, href } = props;
   const { theme } = useContext(ThemeContext);
-  const websiteStr = href.match(/^https?:\/\/[a-z]+\.[a-z]+/)[0];
+  // const websiteStr = href.match(/^https?:\/\/([a-z]+\.[a-z]+/)[0];
 
   return (
     <div className={clsx("PublicationCard-container", theme)}>
@@ -24,7 +24,7 @@ const PublicationCard = props => {
           {title}
         </span>
         <span className="snippet">
-          <span className="website-str">{websiteStr}</span>
+          <span className="website-str">www.medium.com</span>
           &nbsp;
           •
           &nbsp;

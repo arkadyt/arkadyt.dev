@@ -11,6 +11,7 @@ const SkillCard = props => {
   const classes = clsx(
     "SkillCard-container",
     wide ? "two-cell" : megaWide ? "three-cell" : ultraWide ? "four-cell" : "",
+    theme
   );
 
   return (
