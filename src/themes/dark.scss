@@ -39,4 +39,4 @@ $d-theme--sdw--projcard: rgba(0, 0, 0, 0.15);
 $d-theme--sdw--publcard: rgba(0, 0, 0, 0.15);
 $d-theme--sdw--tooltip: 0px 4px 15px 0px rgba(0,0,0,0.75);
 
-$d-theme--fltr--publcard-img: contrast(50%) brightness(50%) grayscale(100%);
+$d-theme--fltr--publcard-img: invert(100%) contrast(50%) brightness(110%) grayscale(100%);
