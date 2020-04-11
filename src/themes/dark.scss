@@ -30,7 +30,7 @@ $d-theme--grd--projcard-backface: linear-gradient(
     lighten($d-theme--clr--bg--projcard-backface, 5)
 );
 $d-theme--grd--frontpage: linear-gradient(to top, rgba(47, 54, 64, 0.95), rgba(72, 126, 176, 0.68));
-$d-theme--grd--section: linear-gradient(to top, darken($d-theme--clr--bg--section, 2), transparent);
+$d-theme--grd--section: transparent;
 
 $d-theme--sdw--mbl--menu-box: 0px 4px 15px 0px rgba(0,0,0,0.5);
 $d-theme--sdw--projcard: rgba(0, 0, 0, 0.15);
