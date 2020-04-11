@@ -134,7 +134,7 @@
         .backface {
             background: $l-theme--clr--bg--projcard-backface $l-theme--grd--projcard-backface;
             a {
-                color:                $l-theme--clr--txt--regular;
+                color:                $l-theme--clr--txt--projcard-backface-link;
                 background-color:     $l-theme--clr--bg--projcard-backface-link;
                 &::after {
                     background-color: $l-theme--clr--bg--projcard-backface-link;
@@ -161,7 +161,7 @@
         .backface {
             background: $d-theme--clr--bg--projcard-backface $d-theme--grd--projcard-backface;
             a {
-                color:                $d-theme--clr--txt--regular;
+                color:                $d-theme--clr--txt--projcard-backface-link;
                 background-color:     $d-theme--clr--bg--projcard-backface-link;
                 &::after {
                     background-color: $d-theme--clr--bg--projcard-backface-link;
