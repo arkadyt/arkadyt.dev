@@ -6,10 +6,9 @@
     justify-items: center;
     align-items: center;
 
-    img {
+    img.skill-img {
         height: 100%;
         filter: grayscale(100%);
-
         &:hover {
             filter: grayscale(0);
             opacity: 1;

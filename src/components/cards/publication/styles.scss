@@ -17,6 +17,9 @@
             .content {
                 text-align: right;
             }
+            .card-image img {
+                clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
+            }
         }
     }
 
@@ -43,6 +46,7 @@
             height: 100%;
             width: 25rem;
             object-fit: cover;
+            clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 0% 100%);
         }
 
         > .content {
@@ -72,14 +76,9 @@
             }
 
             .title {
-                font-size: 2.5rem;
+                font-size: 2rem;
                 font-weight: bold;
                 font-family: $font-header-secondary;
-            }
-
-            .snippet {
-                font-size: 2rem;
-                font-family: $font-paragraph-primary;
             }
         }
     }
