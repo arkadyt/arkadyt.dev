@@ -20,10 +20,10 @@ const PublicationCard = props => {
         />
         <div className="content">
           <span className="title">
-            <span className="href-icon"><IconHref /></span>
-            &nbsp;
-            &nbsp;
             {title}
+            &nbsp;
+            &nbsp;
+            <span className="href-icon"><IconHref /></span>
           </span>
         </div>
       </div>
