@@ -26,7 +26,7 @@ const PublicationCard = props => {
             {title}
           </span>
           <span className="snippet">
-            <span className="website-str">www.medium.com</span>
+            <span className="website-str">medium.com</span>
             &nbsp;
             •
             &nbsp;
