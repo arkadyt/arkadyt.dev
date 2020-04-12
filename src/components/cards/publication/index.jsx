@@ -25,13 +25,6 @@ const PublicationCard = props => {
             &nbsp;
             {title}
           </span>
-          <span className="snippet">
-            <span className="website-str">medium.com</span>
-            &nbsp;
-            •
-            &nbsp;
-            {snippet}
-          </span>
         </div>
       </div>
       <div className="backface">
