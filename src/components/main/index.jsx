@@ -45,7 +45,7 @@ class Layout extends Component {
                             </p>
                             <p>
                                 When I am not at work or hacking away at my personal hobby projects, I like to go out and shoot some NERF guns with my friends, go for a long stroll, hit the gym,
-                                shoot some hoops at the local basketball court, bike around the city at dawn, with nice tunes on, or go city hiking with my sister :).
+                                shoot some hoops at the local basketball court, bike around the city at dawn, with nice tunes on, or go city hiking with my sister :)
                             </p>
                             <p>
                                 What brought me into technology? Many things! I have been coding since middle school and have been absolutely fascinated by computers and how much I could do with them.
@@ -88,7 +88,7 @@ class Layout extends Component {
                             </div>
                             <div className="regular-text">
                                 <p>
-                                    At my job I actively work with a wide range of AWS services to design new or support the existing cloud solutions.
+                                    At my job I also actively work with a wide range of AWS services to design new or support the existing cloud solutions.
                                     Ones that I am most proficient at include: AWS Lambda, Step Functions,
                                     ApiGateway, VPC, IAM, Cognito, EC2, DynamoDB, Route53, CloudFront, Elastic Load Balancers, SES, S3, SQS and SNS.
                                 </p>
@@ -128,8 +128,8 @@ class Layout extends Component {
                                 I publish them on Medium.
                             </p>
                             <p>
-                                I post rather rarely when I have some spare time, so there aren't many articles yet. But more are on the way!
-                                Would also appreciate a follow and a like :-)
+                                I post rather rarely, when I have some spare time, so there aren't many articles yet. But more are on the way!
+                                I'd also appreciate a follow and a like :-)
                             </p>
                         </div>
                         <div className="publications-view">
