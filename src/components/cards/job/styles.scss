@@ -1,43 +1,63 @@
 @import './separator';
 @import '_variables';
+@import 'styles/mixins/3d';
+
+%wexp_card_face {
+    @include card_face;
+    background: white;
+    box-shadow: $l-theme--sdw--wexpcard;
+}
 
 .ExpCard-container {
-    display: grid;
-    grid-template-columns: 0.35fr 0.1fr 0.95fr;
-    @media (orientation: portrait) {
-      grid-template-columns: 1fr;
-    }
-    grid-template-rows: 20rem;
-    img {
-        width: 40%;
+    .frontface {
+        @extend %wexp_card_face;
+
+        display: grid;
+        grid-template-columns: 0.35fr 0.1fr 0.95fr;
+
+
         @media (orientation: portrait) {
-            // width: 60%;
-            display: none;
+          grid-template-columns: 1fr;
         }
-        justify-self: end;
-        align-self: center;
+
+        grid-template-rows: 20rem;
+
+        img {
+            width: 40%;
+            @media (orientation: portrait) {
+                // width: 60%;
+                display: none;
+            }
+            justify-self: end;
+            align-self: center;
+        }
+
+        .text {
+            align-self: center;
+            @media (orientation: portrait) {
+                margin-left: .5rem;
+            }
+            %header {
+                font-family: $font-header-secondary;
+                margin: 0;
+            }
+            h2 {
+                @extend %header;
+                font-size: 3.2rem;
+            }
+            h3 {
+                @extend %header;
+                font-size: 2rem;
+            }
+            h4 {
+                @extend %header;
+                font-size: 1.6rem;
+            }
+        }
     }
-    .text {
-        align-self: center;
-        @media (orientation: portrait) {
-            margin-left: .5rem;
-        }
-        %header {
-            font-family: $font-header-secondary;
-            margin: 0;
-        }
-        h2 {
-            @extend %header;
-            font-size: 3.2rem;
-        }
-        h3 {
-            @extend %header;
-            font-size: 2rem;
-        }
-        h4 {
-            @extend %header;
-            font-size: 1.6rem;
-        }
+    
+    .backface {
+
     }
 }
 

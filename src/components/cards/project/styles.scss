@@ -106,11 +106,11 @@
 .ProjectCard-container {
     &.l-theme {
         .backface {
-            box-shadow: 0 .2rem 2rem 0 $l-theme--sdw--projcard;
+            box-shadow: $l-theme--sdw--projcard;
             background: $l-theme--clr--bg--projcard-backface $l-theme--grd--projcard-backface;
         }
         .frontface {
-            box-shadow: 0 .2rem 2rem 0 $l-theme--sdw--projcard;
+            box-shadow: $l-theme--sdw--projcard;
             color: $l-theme--clr--txt--regular;
             background: $l-theme--clr--bg--projcard-frontface;
             .description {
@@ -128,11 +128,11 @@
     }
     &.d-theme {
         .backface {
-            box-shadow: 0 .2rem 2rem 0 $d-theme--sdw--projcard;
+            box-shadow: $d-theme--sdw--projcard;
             background: $d-theme--clr--bg--projcard-backface $d-theme--grd--projcard-backface;
         }
         .frontface {
-            box-shadow: 0 .2rem 2rem 0 $d-theme--sdw--projcard;
+            box-shadow: $d-theme--sdw--projcard;
             background: $d-theme--clr--bg--projcard-frontface;
             color: $d-theme--clr--txt--regular;
             .description {

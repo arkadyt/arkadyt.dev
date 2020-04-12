@@ -41,8 +41,9 @@ $d-theme--grd--frontpage: linear-gradient(to top, rgba(47, 54, 64, 0.95), rgba(7
 $d-theme--grd--section: transparent;
 
 $d-theme--sdw--mbl--menu-box: 0px 4px 15px 0px rgba(0,0,0,0.5);
-$d-theme--sdw--projcard: rgba(0, 0, 0, 0.15);
-$d-theme--sdw--publcard: rgba(0, 0, 0, 0.15);
+$d-theme--sdw--projcard: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
+$d-theme--sdw--publcard: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
+$d-theme--sdw--wexpcard: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
 $d-theme--sdw--tooltip: 0px 4px 15px 0px rgba(0,0,0,0.75);
 
 $d-theme--fltr--publcard-img: invert(100%) contrast(50%) brightness(110%) grayscale(100%);

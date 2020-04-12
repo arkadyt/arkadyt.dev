@@ -14,20 +14,27 @@ const ExpCard = props => {
     const { theme } = useContext(ThemeContext);
     const { image, imageDark } = props;
     const jobIcon = theme === 'd-theme' && imageDark ? imageDark : image;
-    return <div className={clsx("ExpCard-container", theme)}>
-        <img src={jobIcon}
-             style={{ width: `${props.imgWidth}%`, color: 'white' }} 
-             alt='' />
-        <div className={clsx("Separator-container", theme)}>
-            <div className={['stick', separatorClass].join(' ')} />
-            <div className="circle" />
+
+    return (
+        <div className={clsx("ExpCard-container", theme)}>
+            <div className="frontface">
+                <img src={jobIcon}
+                     style={{ width: `${props.imgWidth}%`, color: 'white' }} 
+                     alt='' />
+                <div className={clsx("Separator-container", theme)}>
+                    <div className={['stick', separatorClass].join(' ')} />
+                    <div className="circle" />
+                </div>
+                <div className="text">
+                    <h4>{props.date}</h4>
+                    <h2>{props.company}</h2>
+                    <h3>{props.title}</h3>
+                </div>
+            </div>
+            <div className="backface">
+            </div>
         </div>
-        <div className="text">
-            <h4>{props.date}</h4>
-            <h2>{props.company}</h2>
-            <h3>{props.title}</h3>
-        </div>
-    </div>;
+    );
 };
 
 export default ExpCard;
