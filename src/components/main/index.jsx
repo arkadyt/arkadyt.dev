@@ -54,6 +54,16 @@ class Layout extends Component {
                     </Section>
                     <Section id="skills" title="Skills">
                         <div className="skills-view">
+                            <div className="regular-text">
+                                <p>
+                                    My areas of expertise include frameworks, languages and operating systems surrounding the development of cloud based,
+                                    distributed web applications powered by MERN stack and AWS.
+                                </p>
+                                <p>
+                                    They include (in no particular order) JavaScript, Python, Java, React.js, SCSS, LESS, CSS, HTML, Redux, Node.js, MongoDB,
+                                    mongoose.js, Redis, GraphQL, Apollo, Docker, Kubernetes, AWS, Linux OS management, BASH and others.
+                                </p>
+                            </div>
                             <div className="grid">
                                 {skills.map((item, index) => (
                                     <SkillCard {...item} />
@@ -63,8 +73,6 @@ class Layout extends Component {
                                 <p>
                                     At my job I am also actively working with a wide range of AWS services when implementing new cloud solutions
                                     or supporting the existing ones.
-                                </p>
-                                <p>
                                     Ones that I am most proficient at include: AWS Lambda, Step Functions,
                                     ApiGateway, VPC, IAM, Cognito, EC2, DynamoDB, Route53, CloudFront, Elastic Load Balancers, SES, S3, SQS and SNS.
                                 </p>
@@ -83,7 +91,7 @@ class Layout extends Component {
                     <Section id="personal-projects" title="Projects">
                         <div className="regular-text">
                             <p>
-                                Following are the solo projects of mine that I consider most relevant in the context of frontend and backend engineering,
+                                Below are the solo projects of mine that I consider most relevant in the context of frontend and backend engineering,
                                 development of cloud solutions and working with MERN development stack.
                             </p>
                             <p>
