@@ -48,9 +48,9 @@ class Layout extends Component {
                                 shoot some hoops at the local basketball court, bike around the city at dawn, with nice tunes on, or go city hiking with my sister :)
                             </p>
                             <p>
-                                What brought me into technology? Many things! I have been coding since middle school and have been absolutely fascinated by computers and how much I could do with them.
+                                What brought me into technology? Many things! I have been coding since middle school and have been absolutely fascinated by computers and how much I could do with them!
                                 Level Design, 3D Art, Digital Sculpting, Audio Engineering, Shader Programming, Digital Art, Building Games on Unity, I did many things. Just for fun!
-                                Nowadays I am into big Software Engineering, Web Development and Building Resilient Cloud Solutions. I also love Machine Learning and Robotics! Yes! Robotics and AI
+                                Nowadays I am into big Software Engineering, Web Development and building Cloud Solutions. I also love Machine Learning and Robotics! Yes! Robotics and AI
                                 are one of the most fascinating areas of technology. Ever since I saw early videos of Boston Dynamics, their robots Atlas and Spot,
                                 I saw how much technology means for the world and how much we can achieve with it's help!
                             </p>
@@ -66,8 +66,6 @@ class Layout extends Component {
                                 return <ExpCard {...item} key={index} {...position} />
                             })}
                         </div>
-                    </Section>
-                    <Section id="certs" title="Certifications">
                     </Section>
                     <Section id="skills" title="Skills">
                         <div className="skills-view">
@@ -151,7 +149,7 @@ class Layout extends Component {
                         </div>
                     </Section>
                     <div className="footer">
-                        <div><IconCopyright /><span>Arkady Titenko 2020</span></div>
+                        <div><IconCopyright /><span>Andrew Titenko 2020</span></div>
                     </div>
                 </div>
             </React.Fragment>

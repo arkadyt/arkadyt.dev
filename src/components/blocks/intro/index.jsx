@@ -8,7 +8,7 @@ const Front = (props) => {
     return (
         <div className={clsx("Front-container", theme)}>
             <div className="name-block">
-                <h1>Arkady</h1><h3>Titenko</h3><br />
+                <h1>Andrew</h1><h3>Titenko</h3><br />
                 <span>Software Developer</span>
                 <span>Cloud Solutions Architect</span>
             </div>
