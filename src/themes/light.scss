@@ -17,6 +17,7 @@ $l-theme--clr--bg--section: white;
 $l-theme--clr--bg--footer: #40739e;
 $l-theme--clr--bg--accent: lighten($l-theme--clr--bg--footer, 4);
 $l-theme--clr--bg--projcard-backface: #212121;
+$l-theme--clr--bg--publcard-backface: #212121;
 $l-theme--clr--bg--projcard-backface-link: white;
 $l-theme--clr--bg--projcard-frontface: lighten($l-theme--clr--bg--section, 5);
 $l-theme--clr--bg--projcard-tag: darken($l-theme--clr--bg--projcard-frontface, 10);
@@ -27,6 +28,11 @@ $l-theme--clr--brdr--wexpcard-circle: rgba(black, .85);
 $l-theme--clr--brdr--wexpcard-stick: rgba(black, .65);
 
 $l-theme--grd--projcard-backface: linear-gradient(
+    to bottom right,
+    lighten($l-theme--clr--bg--projcard-backface, 35),
+    lighten($l-theme--clr--bg--projcard-backface, 15)
+);
+$l-theme--grd--publcard-backface: linear-gradient(
     to bottom right,
     lighten($l-theme--clr--bg--projcard-backface, 35),
     lighten($l-theme--clr--bg--projcard-backface, 15)

@@ -1,59 +1,90 @@
 @import "_variables";
+@import "styles/mixins/3d";
+
+%publ_card_face {
+    @include card_face;
+    transition: transform .2s ease-out;
+}
 
 .PublicationCard-container {
-    display: flex;
-    width: 100%;
-    height: 10rem;
-    border-radius: .5rem;
-    overflow: hidden;
+    position: relative;
+    perspective: 150rem;
+    height: 100%;
 
     &:nth-child(even) {
-        flex-direction: row-reverse;
+        .frontface {
+            flex-direction: row-reverse;
+        }
     }
 
     &:hover {
-        cursor: pointer;
+        & .frontface {
+            transform: rotateX(180deg);
+        }
+        & .backface {
+            transform: rotateX(0deg);
+        }
     }
 
-    > .card-image img {
-        height: 100%;
-        width: 25rem;
-        object-fit: cover;
-    }
+    .frontface {
+        @extend %publ_card_face;
 
-    > .content {
         display: flex;
-        flex-direction: column;
-        height: 100%;
-        padding: 2rem;
+        transition: transform .3s ease;
 
-        .href-icon {
-            opacity: .5;
+        &:hover {
+            cursor: pointer;
         }
 
-        .website-str {
-            font-weight: bold;
-            font-style: italic;
+        > .card-image img {
+            height: 100%;
+            width: 25rem;
+            object-fit: cover;
         }
 
-        .title, .snippet {
-            display: block;
-            width: 67rem;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
+        > .content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 2rem;
 
-        .title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            font-family: $font-header-secondary;
-        }
+            .href-icon {
+                opacity: .5;
+            }
 
-        .snippet {
-            font-size: 2rem;
-            font-family: $font-paragraph-primary;
+            .website-str {
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            .title, .snippet {
+                display: block;
+                width: 67rem;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+            }
+
+            .title {
+                font-size: 2.5rem;
+                font-weight: bold;
+                font-family: $font-header-secondary;
+            }
+
+            .snippet {
+                font-size: 2rem;
+                font-family: $font-paragraph-primary;
+            }
         }
+    }
+
+    .backface {
+        @extend %publ_card_face;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: rotateX(-180deg);
     }
 }
 
@@ -64,17 +95,27 @@
 
 .PublicationCard-container {
     &.l-theme {
-        box-shadow: 0 .2rem 2rem 0 $l-theme--sdw--publcard;
-        background-color: $l-theme--clr--bg--publcard-frontface;
-        > .card-image img {
-            filter: $l-theme--fltr--publcard-img;
+        .frontface {
+            box-shadow: 0 .2rem 2rem 0 $l-theme--sdw--publcard;
+            background-color: $l-theme--clr--bg--publcard-frontface;
+            > .card-image img {
+                filter: $l-theme--fltr--publcard-img;
+            }
+        }
+        .backface {
+            background: $l-theme--clr--bg--publcard-backface $l-theme--grd--publcard-backface;
         }
     }
     &.d-theme {
-        box-shadow: 0 .2rem 2rem 0 $d-theme--sdw--publcard;
-        background-color: $d-theme--clr--bg--publcard-frontface;
-        > .card-image img {
-            filter: $d-theme--fltr--publcard-img;
+        .frontface {
+            box-shadow: 0 .2rem 2rem 0 $d-theme--sdw--publcard;
+            background-color: $d-theme--clr--bg--publcard-frontface;
+            > .card-image img {
+                filter: $d-theme--fltr--publcard-img;
+            }
+        }
+        .backface {
+            background: $d-theme--clr--bg--publcard-backface $d-theme--grd--publcard-backface;
         }
     }
 }
