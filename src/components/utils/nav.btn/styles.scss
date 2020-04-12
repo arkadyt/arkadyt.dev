@@ -1,0 +1,35 @@
+.NavButton-container {
+    width: 100%;
+
+    button {
+        width: 100%;
+        height: 100%;
+        padding-bottom: 10rem;
+
+        background: transparent;
+        font-size: 3rem;
+
+        cursor: pointer;
+        outline: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+/**
+ * Theme and colors
+ */
+
+.NavButton-container {
+    &.l-theme {
+        button {
+            color: $l-theme--clr--txt--sidebar;
+        }
+    }
+    &.d-theme {
+        button {
+            color: $d-theme--clr--txt--sidebar;
+        }
+    }
+}
