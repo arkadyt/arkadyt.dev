@@ -59,7 +59,7 @@ class Layout extends Component {
                                     <SkillCard {...item} />
                                 ))}
                             </div>
-                            <div className="text">
+                            <div className="regular-text">
                                 <p>
                                     At my job I am also actively working with a wide range of AWS services when implementing new cloud solutions
                                     or supporting the existing ones.
@@ -81,6 +81,16 @@ class Layout extends Component {
                         </div>
                     </Section>
                     <Section id="personal-projects" title="Projects">
+                        <div className="regular-text">
+                            <p>
+                                Following are the solo projects of mine that I consider most relevant in the context of frontend and backend engineering,
+                                development of cloud solutions and working with MERN development stack.
+                            </p>
+                            <p>
+                                There are however many other projects that I've worked on throughout the years.
+                                Majority of them is hosted on my GitHub profile, so if you're interested, click on the "See Other Projects" button below!
+                            </p>
+                        </div>
                         <div className="card-view">
                             {projects.map((item, index) => (
                                 <Card {...item} key={index} />
@@ -88,6 +98,15 @@ class Layout extends Component {
                         </div>
                     </Section>
                     <Section id="recent-from-blog" title="Publications">
+                        <div className="regular-text">
+                            <p>
+                                Also check out the articles I list below. I write on different topics surrounding software engineering, computers and networking.
+                            </p>
+                            <p>
+                                I post rather rarely, when I have some spare time, so there aren't many articles yet, but more are on the way!
+                                Would also appreciate a follow and a like! :-)
+                            </p>
+                        </div>
                         <div className="publications-view">
                             {publications.map((item, index) => (
                                 <PublicationCard {...item} />

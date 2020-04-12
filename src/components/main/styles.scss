@@ -15,26 +15,13 @@
         margin: 0;
         overflow: hidden;
     }
+    .regular-text {
+        display: block;
+        font-size: 2rem;
+        font-family: $font-paragraph-primary;
+        margin: 5rem 1rem;
+    }
     .about-view {
-        display: grid;
-        grid-template-columns: 1fr;
-        @media (orientation: portrait) {
-            padding: 0 2rem;
-        }
-        grid-row-gap: 2rem;
-        margin-bottom: 6rem;
-        p {
-            margin: 0;
-        }
-        .item {
-            span {
-                font-family: $font-paragraph-primary;
-                font-size: 2.24rem;
-                &.header {
-                    font-size: 2.56rem;
-                }
-            }
-        }
     }
     .card-view {
         margin: 0 auto;
@@ -62,13 +49,6 @@
             grid-auto-rows: 8.75rem;
             grid-gap: 2.5rem 1rem;
             justify-items: center;
-        }
-
-        .text {
-            display: block;
-            font-size: 2rem;
-            font-family: $font-paragraph-primary;
-            margin: 5rem 1rem;
         }
     }
     .publications-view {
