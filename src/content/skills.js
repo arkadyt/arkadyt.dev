@@ -84,7 +84,7 @@ import Kinesis from 'images/skills/aws/kinesis.svg';
 
 const emDash = '—';
 
-export default [
+export const skills = [
   {
     icon: HTML,
     iconDark: HTML_dt,
@@ -209,41 +209,12 @@ export default [
     icon: Redis,
     title: 'Redis'
   },
-  {
-    icon: IAM,
-    title: `AWS IAM`
-  },
-  {
-    icon: Cognito,
-    title: `AWS Cognito`
-  },
-  {
-    icon: VPC,
-    title: `AWS VPC`
-  },
-  {
-    icon: EC2,
-    title: `AWS EC2`
-  },
-  {
-    icon: Beanstalk,
-    title: `AWS Elastic Beanstalk`
-  },
-  {
-    icon: CloudFormation,
-    title: `AWS CloudFormation`
-  },
-  {
-    icon: LoadBalancers,
-    title: `AWS Elastic\nLoad Balancing`
-  },
+];
+
+export const awsSkills = [
   {
     icon: Lambda,
     title: `AWS Lambda`
-  },
-  {
-    icon: XRay,
-    title: `AWS X-Ray`
   },
   {
     icon: StepFunctions,
@@ -254,36 +225,92 @@ export default [
     title: `AWS ApiGateway`
   },
   {
-    icon: Kinesis,
-    title: `AWS Kinesis`
+    icon: VPC,
+    title: `AWS VPC`
   },
   {
-    icon: CloudFront,
-    title: `AWS CloudFront`
+    icon: IAM,
+    title: `AWS IAM`
   },
   {
-    icon: Route53,
-    title: `AWS Route53`
+    icon: Cognito,
+    title: `AWS Cognito`
   },
   {
-    icon: S3,
-    title: `AWS S3`
-  },
-  {
-    icon: EFS,
-    title: `AWS EFS`
-  },
-  {
-    icon: RDS,
-    title: `AWS RDS`
+    icon: EC2,
+    title: `AWS EC2`
   },
   {
     icon: DynamoDB,
     title: `AWS DynamoDB`
   },
   {
+    icon: Route53,
+    title: `AWS Route53`
+  },
+  {
+    icon: CloudFront,
+    title: `AWS CloudFront`
+  },
+  {
+    icon: LoadBalancers,
+    title: `AWS Elastic\nLoad Balancing`
+  },
+  {
+    icon: SES,
+    title: `AWS SES`
+  },
+  {
+    icon: S3,
+    title: `AWS S3`
+  },
+  {
+    icon: SQS,
+    title: `AWS SQS`
+  },
+  {
+    icon: SNS,
+    title: `AWS SNS`
+  },
+  {
+    icon: RDS,
+    title: `AWS RDS`
+  },
+  {
     icon: Redshift,
     title: `AWS Redshift`
+  },
+  {
+    icon: Beanstalk,
+    title: `AWS Elastic Beanstalk`
+  },
+  {
+    icon: CloudFormation,
+    title: `AWS CloudFormation`
+  },
+  {
+    icon: EFS,
+    title: `AWS EFS`
+  },
+  {
+    icon: KMS,
+    title: `AWS KMS`
+  },
+  {
+    icon: Shield,
+    title: `AWS Shield`
+  },
+  {
+    icon: WAF,
+    title: `AWS WAF`
+  },
+  {
+    icon: DirectConnect,
+    title: `AWS Direct Connect`
+  },
+  {
+    icon: StorageGateway,
+    title: `AWS Storage Gateway`
   },
   {
     icon: ElastiCache,
@@ -292,18 +319,6 @@ export default [
   {
     icon: ElasticSearch,
     title: `AWS Elasticsearch`
-  },
-  {
-    icon: SES,
-    title: `AWS SES`
-  },
-  {
-    icon: SNS,
-    title: `AWS SNS`
-  },
-  {
-    icon: SQS,
-    title: `AWS SQS`
   },
   {
     icon: CloudTrail,
@@ -338,27 +353,15 @@ export default [
     title: `AWS SWF`
   },
   {
-    icon: KMS,
-    title: `AWS KMS`
-  },
-  {
     icon: EKS,
     title: `AWS EKS`
   },
   {
-    icon: Shield,
-    title: `AWS Shield`
+    icon: Kinesis,
+    title: `AWS Kinesis`
   },
   {
-    icon: WAF,
-    title: `AWS WAF`
-  },
-  {
-    icon: DirectConnect,
-    title: `AWS Direct Connect`
-  },
-  {
-    icon: StorageGateway,
-    title: `AWS Storage Gateway`
+    icon: XRay,
+    title: `AWS X-Ray`
   },
 ];

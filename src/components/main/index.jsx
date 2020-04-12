@@ -18,13 +18,9 @@ import {
 } from 'react-icons/fa';
 
 import { 
-    publications,
-    projects, 
-    jobs, 
-    skills,
-    links,
-    about,
-    intro
+    publications, projects, jobs, 
+    skills, awsSkills, links,
+    about, intro
 } from '../../content';
 
 class Layout extends Component {
@@ -58,9 +54,30 @@ class Layout extends Component {
                     </Section>
                     <Section id="skills" title="Skills">
                         <div className="skills-view">
-                            {skills.map((item, index) => (
-                                <SkillCard {...item} />
-                            ))}
+                            <div className="grid">
+                                {skills.map((item, index) => (
+                                    <SkillCard {...item} />
+                                ))}
+                            </div>
+                            <div className="text">
+                                <p>
+                                    At my job I am also actively working with a wide range of AWS services when implementing new cloud solutions
+                                    or supporting the existing ones.
+                                </p>
+                                <p>
+                                    Ones that I am most proficient at include: AWS Lambda, Step Functions,
+                                    ApiGateway, VPC, IAM, Cognito, EC2, DynamoDB, Route53, CloudFront, Elastic Load Balancers, SES, S3, SQS and SNS.
+                                </p>
+                                <p>
+                                    Following below is the full list of AWS services I've been intensively working with and have developed a quite deep understanding of.
+                                    Services are sorted by my proficiency level in them (in descending order).
+                                </p>
+                            </div>
+                            <div className="grid">
+                                {awsSkills.map((item, index) => (
+                                    <SkillCard {...item} />
+                                ))}
+                            </div>
                         </div>
                     </Section>
                     <Section id="personal-projects" title="Projects">
