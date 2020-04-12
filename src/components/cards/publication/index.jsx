@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import clsx from "clsx";
 import { FaExternalLinkAlt as IconHref } from 'react-icons/fa';
 import ThemeContext from 'state/context/theme';
+import RippleLink from 'components/utils/rpl.link';
 import { goTo } from 'tools';
 import Image from 'components/utils/image';
 import "./styles.scss";
@@ -34,9 +35,7 @@ const PublicationCard = props => {
         </div>
       </div>
       <div className="backface">
-        <a href={href} target="_blank" rel="noopener noreferrer">
-          GO TO THE ARTICLE <IconHref />
-        </a>
+        <RippleLink href={href} title="Go to the Article" />
       </div>
     </div>
   );

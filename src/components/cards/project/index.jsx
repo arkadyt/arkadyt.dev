@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import ThemeContext from 'state/context/theme';
 import Image from 'components/utils/image';
+import RippleLink from 'components/utils/rpl.link';
 import { goTo } from 'tools';
 import clsx from 'clsx';
 import { FaExternalLinkAlt as IconHref } from 'react-icons/fa';
@@ -26,11 +27,9 @@ const Card = props => {
                 <div className="hint"><IconHref /></div>
             </div>
             <div className="backface">
-                {links.map((item, index) => {
-                    return <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">
-                        {item.title}&nbsp;&nbsp;<IconHref />
-                    </a>
-                })}
+                {links.map((item, index) => (
+                    <RippleLink key={index} {...item}/>
+                ))}
             </div>
         </div>
     );
