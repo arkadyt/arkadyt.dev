@@ -12,6 +12,14 @@
 .Layout-content {
     margin: 0 0 0 5rem;
 
+    .view-more-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        margin-top: 4rem;
+    }
+
     .regular-text {
         display: block;
         text-align: justify;
@@ -20,7 +28,7 @@
         margin: 5rem 1rem;
     }
 
-    .card-view {
+    .projcard-view {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -30,24 +38,22 @@
         align-items: center;
     }
 
-    .wexp-view {
+    .wexpcard-view {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2.5rem;
     }
 
     .skills-view {
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(10, 8.75rem);
-            grid-template-rows: 8.75rem;
-            grid-auto-rows: 8.75rem;
-            grid-gap: 2.5rem 1rem;
-            justify-items: center;
-        }
+        display: grid;
+        grid-template-columns: repeat(10, 8.75rem);
+        grid-template-rows: 8.75rem;
+        grid-auto-rows: 8.75rem;
+        grid-gap: 2.5rem 1rem;
+        justify-items: center;
     }
 
-    .publications-view {
+    .publcard-view {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2.5rem;

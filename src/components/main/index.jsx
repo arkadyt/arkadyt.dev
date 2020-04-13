@@ -1,6 +1,7 @@
 import React, { Component, useContext } from 'react';
 import ThemeContext from 'state/context/theme';
 import Image from 'components/shared/image';
+import BigButton from 'components/shared/bigbutton';
 import clsx from 'clsx';
 import './styles.scss';
 
@@ -57,7 +58,7 @@ class Layout extends Component {
                         </div>
                     </Section>
                     <Section id="work-experience" title="Experience">
-                        <div className="wexp-view">
+                        <div className="wexpcard-view">
                             {jobs.map((item, index) => {
                                 const position = {
                                     start: index === 0,
@@ -68,38 +69,36 @@ class Layout extends Component {
                         </div>
                     </Section>
                     <Section id="skills" title="Skills">
+                        <div className="regular-text">
+                            <p>
+                                My areas of expertise include frameworks, languages and operating systems surrounding the development of cloud based,
+                                distributed web applications powered by MERN stack and AWS.
+                            </p>
+                            <p>
+                                They include (in no particular order) JavaScript, Python, Java, React.js, SCSS, LESS, CSS, HTML, Redux, Node.js, MongoDB,
+                                mongoose.js, Redis, GraphQL, Apollo, Docker, Kubernetes, AWS, Linux OS management, BASH and others.
+                            </p>
+                        </div>
                         <div className="skills-view">
-                            <div className="regular-text">
-                                <p>
-                                    My areas of expertise include frameworks, languages and operating systems surrounding the development of cloud based,
-                                    distributed web applications powered by MERN stack and AWS.
-                                </p>
-                                <p>
-                                    They include (in no particular order) JavaScript, Python, Java, React.js, SCSS, LESS, CSS, HTML, Redux, Node.js, MongoDB,
-                                    mongoose.js, Redis, GraphQL, Apollo, Docker, Kubernetes, AWS, Linux OS management, BASH and others.
-                                </p>
-                            </div>
-                            <div className="grid">
-                                {skills.map((item, index) => (
-                                    <SkillCard {...item} />
-                                ))}
-                            </div>
-                            <div className="regular-text">
-                                <p>
-                                    At my job I also actively work with a wide range of AWS services to design new or support the existing cloud solutions.
-                                    Ones that I am most proficient at include: AWS Lambda, Step Functions,
-                                    ApiGateway, VPC, IAM, Cognito, EC2, DynamoDB, Route53, CloudFront, Elastic Load Balancers, SES, S3, SQS and SNS.
-                                </p>
-                                <p>
-                                    Following below is the full list of AWS services I've been intensively working with and have developed a quite deep understanding of.
-                                    Services are sorted by my proficiency level in them (in descending order).
-                                </p>
-                            </div>
-                            <div className="grid">
-                                {awsSkills.map((item, index) => (
-                                    <SkillCard {...item} />
-                                ))}
-                            </div>
+                            {skills.map((item, index) => (
+                                <SkillCard {...item} />
+                            ))}
+                        </div>
+                        <div className="regular-text">
+                            <p>
+                                At my job I also actively work with a wide range of AWS services to design new or support the existing cloud solutions.
+                                Ones that I am most proficient at include: AWS Lambda, Step Functions,
+                                ApiGateway, VPC, IAM, Cognito, EC2, DynamoDB, Route53, CloudFront, Elastic Load Balancers, SES, S3, SQS and SNS.
+                            </p>
+                            <p>
+                                Following below is the full list of AWS services I've been intensively working with and have developed a quite deep understanding of.
+                                Services are sorted by my proficiency level in them (in descending order).
+                            </p>
+                        </div>
+                        <div className="skills-view">
+                            {awsSkills.map((item, index) => (
+                                <SkillCard {...item} />
+                            ))}
                         </div>
                     </Section>
                     <Section id="personal-projects" title="Projects">
@@ -113,10 +112,13 @@ class Layout extends Component {
                                 Majority of them is hosted on my GitHub profile, so if you're interested, click on the "See Other Projects" button below!
                             </p>
                         </div>
-                        <div className="card-view">
+                        <div className="projcard-view">
                             {projects.map((item, index) => (
                                 <Card {...item} key={index} />
                             ))}
+                        </div>
+                        <div className="view-more-row">
+                            <BigButton title="View more projects" href="https://github.com/arkadyt?tab=repositories" />
                         </div>
                     </Section>
                     <Section id="recent-from-blog" title="Publications">
@@ -130,10 +132,13 @@ class Layout extends Component {
                                 I'd also appreciate a follow and a like :-)
                             </p>
                         </div>
-                        <div className="publications-view">
+                        <div className="publcard-view">
                             {publications.map((item, index) => (
                                 <PublicationCard {...item} />
                             ))}
+                        </div>
+                        <div className="view-more-row">
+                            <BigButton title="View all articles" href="https://medium.com/@arkadyt" />
                         </div>
                     </Section>
                     <Section id="contact" title="Contact" accent>
