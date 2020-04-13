@@ -18,55 +18,15 @@
       display: flex;
       padding: 0;
       margin: 0;
-      list-style: none;
     }
 
     .sidebar-links {
       display: flex;
       padding: 0;
       margin: 0;
-      list-style: none;
       transform: rotate(90deg);
       position: relative;
       top: 0;
-
-      .link-text {
-        font-family: "Open Sans";
-        font-size: 2.5rem;
-        margin-left: 1.5rem;
-        white-space: nowrap;
-      }
-
-      .link-icon {
-        margin-bottom: -0.75rem;
-      }
-    }
-
-    .sidebar-link {
-        transform: scale(-1);
-        height: 6.5rem;
-        padding: 0;
-        margin: 0;
-
-        &:first-child a {
-            padding-right: 3.8rem;
-        }
-
-        a {
-            display: flex;
-            width: 100%;
-            height: 100%;
-            justify-content: center;
-            align-items: center;
-
-            list-style: none;
-            cursor: pointer;
-            user-select: none;
-            text-decoration: none;
-
-            font-size: 3.2rem;
-            padding: 2rem;
-        }
     }
 }
 
@@ -79,33 +39,9 @@
     &.l-theme {
         background-color: $l-theme--clr--bg--sidebar;
         border-right-color: darken($l-theme--clr--bg--sidebar, 4);
-        .sidebar-link {
-            &:hover {
-                background-color: $l-theme--clr--bg--sidebar-link;
-            }
-            a {
-                color: $l-theme--clr--txt--sidebar;
-            }
-            .link-text {
-                color: $l-theme--clr--txt--sidebar;
-            }
-        }
     }
     &.d-theme {
         background-color: $d-theme--clr--bg--sidebar;
         border-right-color: darken($d-theme--clr--bg--sidebar, 4);
-        .sidebar-link {
-            &:hover {
-                background-color: $d-theme--clr--bg--sidebar-link;
-            }
-            a {
-                color: $d-theme--clr--txt--sidebar;
-            }
-            .link-text {
-              @media (orientation: landscape) {
-                color: $d-theme--clr--txt--sidebar;
-              }
-            }
-        }
     }
 }

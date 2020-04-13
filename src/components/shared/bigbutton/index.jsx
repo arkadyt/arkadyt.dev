@@ -4,7 +4,7 @@ import ThemeContext from 'state/context/theme';
 import { FaExternalLinkAlt as IconHref } from 'react-icons/fa';
 import './styles.scss';
 
-const RippleLink = props => {
+const BigButton = props => {
   const { title, href } = props;
   const { theme } = useContext(ThemeContext);
 
@@ -15,4 +15,4 @@ const RippleLink = props => {
   );
 };
 
-export default RippleLink;
+export default BigButton;

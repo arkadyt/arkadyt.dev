@@ -8,6 +8,6 @@ const Image = props => {
           {image.fallback && <img src={image.fallback} {...imgProps} />}
         </picture>
     );
-}
+};
 
 export default Image;

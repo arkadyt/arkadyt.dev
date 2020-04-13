@@ -10,7 +10,7 @@ const Tooltip = props => {
       <div className="arrow-box top tooltip-elements" />
       <span className="tooltip-body tooltip-elements">{props.text}</span>
     </div>
-  )
-}
+  );
+};
 
 export default Tooltip;

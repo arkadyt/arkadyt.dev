@@ -1,6 +1,6 @@
 import React, { Component, useContext } from 'react';
 import ThemeContext from 'state/context/theme';
-import Image from 'components/utils/image';
+import Image from 'components/shared/image';
 import clsx from 'clsx';
 import './styles.scss';
 
@@ -10,7 +10,7 @@ import Card from 'components/cards/project';
 import PublicationCard from 'components/cards/publication';
 import ExpCard from 'components/cards/job';
 import Front from 'components/blocks/intro';
-import Link from 'components/utils/link';
+import Link from 'components/shared/link';
 import SkillCard from 'components/cards/skill';
 
 import { 

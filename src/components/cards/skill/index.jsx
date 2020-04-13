@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import clsx from 'clsx';
 import ThemeContext from 'state/context/theme';
-import Tooltip from 'components/utils/tooltip';
+import Tooltip from 'components/shared/tooltip';
 import './styles.scss';
 
 const SkillCard = props => {
