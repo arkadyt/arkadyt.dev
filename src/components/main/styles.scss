@@ -18,6 +18,10 @@
         align-items: center;
         padding: 2rem;
         margin-top: 4rem;
+
+        .BigButton-container button {
+            width: 50rem;
+        }
     }
 
     .regular-text {

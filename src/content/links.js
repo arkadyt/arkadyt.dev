@@ -9,29 +9,29 @@ import {
   GoMarkGithub as IconGitHub
 } from 'react-icons/go'
 
-export default [
-    {
+export default {
+    email: {
         ico: <IconMail />,
-        href: 'mailto:ark@arkadyt.com',
-        readableLink: 'ark@arkadyt.com',
+        href: 'mailto:admin@arkadyt.com',
+        readableLink: 'admin@arkadyt.com',
         title: 'Contact',
     },
-    {
+    github: {
         ico: <IconGitHub />,
         href: 'https://github.com/arkadyt',
         readableLink: 'github.com/arkadyt',
         title: 'GitHub',
     },
-    {
+    linkedin: {
         ico: <IconLinkedIn />,
         href: 'https://linkedin.com/in/arkadyt',
         readableLink: 'linkedin.com/in/arkadyt',
         title: 'LinkedIn',
     },
-    {
+    blog: {
         ico: <IconMedium />,
         href: 'https://medium.com/@arkadyt',
         readableLink: 'medium.com/@arkadyt',
         title: 'Blog',
     },
-];
+};

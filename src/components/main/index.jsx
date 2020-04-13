@@ -35,7 +35,7 @@ class Layout extends Component {
                     imgProps={{ alt: "Website background image" }}
                     containerProps={{ className: clsx("Layout-background", theme) }}
                 />
-                <NavBar links={links} />
+                <NavBar links={Object.values(links)} />
                 <div className={clsx("Layout-content", theme)}>
                     <Front />
                     <Section id="about-me" title="About Me">
@@ -109,7 +109,7 @@ class Layout extends Component {
                             </p>
                             <p>
                                 There are however many other projects that I've worked on throughout the years.
-                                Majority of them is hosted on my GitHub profile, so if you're interested, click on the "See Other Projects" button below!
+                                Majority of them is hosted on my GitHub profile, so if you're interested, click on the "VIEW MORE PROJECTS" button below!
                             </p>
                         </div>
                         <div className="projcard-view">
@@ -118,7 +118,12 @@ class Layout extends Component {
                             ))}
                         </div>
                         <div className="view-more-row">
-                            <BigButton title="View more projects" href="https://github.com/arkadyt?tab=repositories" />
+                            <BigButton
+                                title="View more projects"
+                                href={links.github.href}
+                                theme="d-theme"
+                                showShadow
+                            />
                         </div>
                     </Section>
                     <Section id="recent-from-blog" title="Publications">
@@ -138,12 +143,17 @@ class Layout extends Component {
                             ))}
                         </div>
                         <div className="view-more-row">
-                            <BigButton title="View all articles" href="https://medium.com/@arkadyt" />
+                            <BigButton
+                                title="View more articles" 
+                                href={links.blog.href}
+                                theme="d-theme"
+                                showShadow
+                            />
                         </div>
                     </Section>
                     <Section id="contact" title="Contact" accent>
                         <div className="contact-view">
-                            {links.map((item, index) => {
+                            {Object.values(links).map((item, index) => {
                                 const data = {
                                     href: item.href,
                                     title: item.readableLink,
