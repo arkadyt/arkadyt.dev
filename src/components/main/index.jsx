@@ -8,7 +8,7 @@ import NavBar from 'components/navbar';
 import Section from 'components/blocks/section';
 import Card from 'components/cards/project';
 import PublicationCard from 'components/cards/publication';
-import ExpCard from 'components/cards/job';
+import ExpCard from 'components/cards/experience';
 import Front from 'components/blocks/intro';
 import Link from 'components/shared/link';
 import SkillCard from 'components/cards/skill';

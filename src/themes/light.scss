@@ -18,10 +18,12 @@ $l-theme--clr--bg--footer: #40739e;
 $l-theme--clr--bg--accent: lighten($l-theme--clr--bg--footer, 4);
 $l-theme--clr--bg--projcard-backface: #212121;
 $l-theme--clr--bg--publcard-backface: #212121;
+$l-theme--clr--bg--wexpcard-backface: #212121;
 $l-theme--clr--bg--projcard-backface-link: white;
 $l-theme--clr--bg--projcard-frontface: lighten($l-theme--clr--bg--section, 5);
 $l-theme--clr--bg--projcard-tag: darken($l-theme--clr--bg--projcard-frontface, 10);
 $l-theme--clr--bg--publcard-frontface: lighten($l-theme--clr--bg--section, 7);
+$l-theme--clr--bg--wexpcard-frontface: lighten($l-theme--clr--bg--section, 7);
 $l-theme--clr--bg--wexpcard-circle: white;
 
 $l-theme--clr--brdr--wexpcard-circle: rgba(black, .85);
@@ -34,8 +36,13 @@ $l-theme--grd--projcard-backface: linear-gradient(
 );
 $l-theme--grd--publcard-backface: linear-gradient(
     to bottom right,
-    lighten($l-theme--clr--bg--projcard-backface, 35),
-    lighten($l-theme--clr--bg--projcard-backface, 15)
+    lighten($l-theme--clr--bg--publcard-backface, 35),
+    lighten($l-theme--clr--bg--publcard-backface, 15)
+);
+$l-theme--grd--wexpcard-backface: linear-gradient(
+    to bottom right,
+    lighten($l-theme--clr--bg--wexpcard-backface, 35),
+    lighten($l-theme--clr--bg--wexpcard-backface, 15)
 );
 $l-theme--grd--frontpage: linear-gradient(to top, rgba(47, 54, 64, 0.95), rgba(72, 126, 176, 0.68));
 $l-theme--grd--section: transparent;

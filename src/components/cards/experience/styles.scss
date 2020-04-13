@@ -2,41 +2,43 @@
 @import '_variables';
 @import 'styles/mixins/3d';
 
+$card-height: 15rem;
+
 %wexp_card_face {
     @include card_face;
-    background: white;
+    transition: transform .3s ease-out;
     box-shadow: $l-theme--sdw--wexpcard;
 }
 
 .ExpCard-container {
+    position: relative;
+    perspective: 150rem;
+
+    &:hover {
+        & .frontface {
+            transform: rotateX(180deg);
+        }
+        & .backface {
+            transform: rotateX(0deg);
+        }
+    }
+
     .frontface {
         @extend %wexp_card_face;
 
         display: grid;
         grid-template-columns: 0.35fr 0.1fr 0.95fr;
-
-
-        @media (orientation: portrait) {
-          grid-template-columns: 1fr;
-        }
-
-        grid-template-rows: 20rem;
+        grid-template-rows: $card-height;
+        grid-gap: 2.5rem;
 
         img {
             width: 40%;
-            @media (orientation: portrait) {
-                // width: 60%;
-                display: none;
-            }
             justify-self: end;
             align-self: center;
         }
 
         .text {
             align-self: center;
-            @media (orientation: portrait) {
-                margin-left: .5rem;
-            }
             %header {
                 font-family: $font-header-secondary;
                 margin: 0;
@@ -57,7 +59,17 @@
     }
     
     .backface {
+        @extend %wexp_card_face;
 
+        position: absolute;
+        top: 0; left: 0;
+        transform: rotateX(-180deg);
+
+        display: flex;
+        width: 100%;
+        height: $card-height;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -67,6 +79,12 @@
  */
 .ExpCard-container {
     &.l-theme {
+        .frontface {
+            background-color: $l-theme--clr--bg--wexpcard-frontface;
+        }
+        .backface {
+            background: $l-theme--clr--bg--wexpcard-backface $l-theme--grd--wexpcard-backface;
+        }
         .text {
             h4 {
                 color: $l-theme--clr--txt--accent;
@@ -74,6 +92,12 @@
         }
     }
     &.d-theme {
+        .frontface {
+            background-color: $d-theme--clr--bg--wexpcard-frontface;
+        }
+        .backface {
+            background: $d-theme--clr--bg--wexpcard-backface $l-theme--grd--wexpcard-backface;
+        }
         .text {
             h4 {
                 color: $d-theme--clr--txt--accent;

@@ -5,25 +5,23 @@
     display: flex;
     justify-content: center;
     position: relative;
-    @media (orientation: portrait) {
-      display: none;
-    }
+
     .stick {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
         height: 100%;
         border-left: .4rem solid;
-        @media (orientation: portrait) {
-            border-left: .2rem solid;
-        }
+
         &.stick-start {
             height: 50% !important;
             top: 50% !important;
         }
+
         &.stick-end {
             height: 50% !important;
         }
+        
         &.stick-hidden {
             visibility: hidden;
         }
@@ -33,10 +31,6 @@
         align-self: center;
         width: 2rem;
         height: 2rem;
-        @media (orientation: portrait) {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
         border: .3rem solid;
         border-radius: 100%;
     }

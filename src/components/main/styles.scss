@@ -11,10 +11,7 @@
 
 .Layout-content {
     margin: 0 0 0 5rem;
-    @media (orientation: portrait) {
-        margin: 0;
-        overflow: hidden;
-    }
+
     .regular-text {
         display: block;
         text-align: justify;
@@ -22,26 +19,23 @@
         font-family: $font-paragraph-primary;
         margin: 5rem 1rem;
     }
-    .about-view {
-    }
+
     .card-view {
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        @media (orientation: portrait) {
-            padding: 0 2rem;
-            grid-template-columns: unset;
-        }
         grid-column-gap: 2.5rem;
         grid-row-gap: 6rem;
         justify-items: center;
         align-items: center;
     }
+
     .wexp-view {
-        @media (orientation: portrait) {
-            padding: 0 2rem;
-        }
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2.5rem;
     }
+
     .skills-view {
         .grid {
             display: grid;
@@ -52,33 +46,31 @@
             justify-items: center;
         }
     }
+
     .publications-view {
         display: grid;
         grid-template-columns: 1fr;
         grid-gap: 2.5rem;
     }
+
     .contact-view {
         display: flex;
         flex-wrap: wrap;
-        @media (orientation: portrait) {
-            padding: 0 2rem;
-        }
     }
+
     .footer {
         padding: 2rem 0;
+
         div {
             display: flex;
             align-items: center;
             width: 96rem;
-            @media (orientation: portrait) {
-                width: 100%;
-                padding-left: 2rem;
-            }
             margin: auto;
             font-family: $font-header-primary;
             font-size: 1.6rem;
             text-transform: uppercase;
-            >span {
+
+            > span {
                 margin-left: .5rem;
             }
         }

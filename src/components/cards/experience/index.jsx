@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import ThemeContext from 'state/context/theme';
+import BigButton from 'components/shared/bigbutton';
 import clsx from 'clsx';
 import './styles.scss';
 
@@ -32,6 +33,7 @@ const ExpCard = props => {
                 </div>
             </div>
             <div className="backface">
+                <BigButton title="View more" onClick={() => {}} />
             </div>
         </div>
     );

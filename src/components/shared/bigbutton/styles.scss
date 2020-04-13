@@ -1,44 +1,50 @@
 @import '_variables';
 
-.RippleLink-link {
-    position: relative;
-    display: inline-block;
-    padding: 1.6rem 6rem;
-    min-width: 24rem;
-    border-radius: 8rem;
-    font-size: 1.8rem;
-    font-family: $font-header-primary;
-    font-weight: 400;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    transition: all .2s ease;
+$border-radius: 80rem;
 
-    &:hover {
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-    }
-    
-    &:active {
-        transform: translateY(.4rem);
-        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-    }
-    
-    &::after {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        border-radius: 8rem;
-    }
-    
-    &:hover::after {
-        transition: all .4s ease;
-        transform: scaleX(1.2) scaleY(1.6);
-        opacity: 0;
+.BigButton-container {
+    button {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 6rem;
+        height: 5.5rem;
+        min-width: 24rem;
+        border-radius: $border-radius;
+        font-size: 1.8rem;
+        font-family: $font-header-primary;
+        font-weight: 400;
+        text-transform: uppercase;
+        transition: all .2s ease;
+        border: 0; outline: none;
+
+        &:hover {
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
+        }
+        
+        &:active {
+            transform: translateY(.4rem);
+            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        }
+        
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            border-radius: $border-radius;
+        }
+        
+        &:hover::after {
+            transition: all .4s ease;
+            transform: scaleX(1.2) scaleY(1.6);
+            opacity: 0;
+        }
     }
 }
 
@@ -46,19 +52,23 @@
  * Theme and colors
  */
 
-.RippleLink-link {
+.BigButton-container {
     &.l-theme {
-        color:                $l-theme--clr--txt--projcard-backface-link;
-        background-color:     $l-theme--clr--bg--projcard-backface-link;
-        &::after {
-            background-color: $l-theme--clr--bg--projcard-backface-link;
+        button {
+            color:                $l-theme--clr--txt--projcard-backface-link;
+            background-color:     $l-theme--clr--bg--projcard-backface-link;
+            &::after {
+                background-color: $l-theme--clr--bg--projcard-backface-link;
+            }
         }
     }
     &.d-theme {
-        color:                $d-theme--clr--txt--projcard-backface-link;
-        background-color:     $d-theme--clr--bg--projcard-backface-link;
-        &::after {
-            background-color: $d-theme--clr--bg--projcard-backface-link;
+        button {
+            color:                $d-theme--clr--txt--projcard-backface-link;
+            background-color:     $d-theme--clr--bg--projcard-backface-link;
+            &::after {
+                background-color: $d-theme--clr--bg--projcard-backface-link;
+            }
         }
     }
 }
