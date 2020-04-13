@@ -7,12 +7,12 @@ import { goTo } from 'tools';
 import Image from 'components/shared/image';
 import "./styles.scss";
 
-const PublicationCard = props => {
+const PublCard = props => {
   const { image, title, snippet, href } = props;
   const { theme } = useContext(ThemeContext);
 
   return (
-    <div className={clsx("PublicationCard-container", theme)}>
+    <div className={clsx("PublCard-container", theme)}>
       <div className="frontface" onClick={() => goTo(href)}>
         <Image
           image={image}
@@ -28,10 +28,10 @@ const PublicationCard = props => {
         </div>
       </div>
       <div className="backface">
-        <BigButton href={href} title="Go to the Article" />
+        <BigButton href={href} title="Go to the Article" theme="l-theme" />
       </div>
     </div>
   );
 }
 
-export default PublicationCard;
+export default PublCard;

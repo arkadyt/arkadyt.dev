@@ -7,9 +7,9 @@ import './styles.scss';
 
 import NavBar from 'components/navbar';
 import Section from 'components/blocks/section';
-import Card from 'components/cards/project';
-import PublicationCard from 'components/cards/publication';
-import ExpCard from 'components/cards/experience';
+import ProjCard from 'components/cards/project';
+import PublCard from 'components/cards/publication';
+import WexpCard from 'components/cards/experience';
 import Front from 'components/blocks/intro';
 import Link from 'components/shared/link';
 import SkillCard from 'components/cards/skill';
@@ -64,7 +64,7 @@ class Layout extends Component {
                                     start: index === 0,
                                     end: index === jobs.length - 1
                                 }
-                                return <ExpCard {...item} key={index} {...position} />
+                                return <WexpCard {...item} key={index} {...position} />
                             })}
                         </div>
                     </Section>
@@ -114,16 +114,11 @@ class Layout extends Component {
                         </div>
                         <div className="projcard-view">
                             {projects.map((item, index) => (
-                                <Card {...item} key={index} />
+                                <ProjCard {...item} key={index} />
                             ))}
                         </div>
                         <div className="view-more-row">
-                            <BigButton
-                                title="View more projects"
-                                href={links.github.href}
-                                theme="d-theme"
-                                showShadow
-                            />
+                            <BigButton title="View more projects" href={links.github.href} showShadow />
                         </div>
                     </Section>
                     <Section id="recent-from-blog" title="Publications">
@@ -139,16 +134,11 @@ class Layout extends Component {
                         </div>
                         <div className="publcard-view">
                             {publications.map((item, index) => (
-                                <PublicationCard {...item} />
+                                <PublCard {...item} />
                             ))}
                         </div>
                         <div className="view-more-row">
-                            <BigButton
-                                title="View more articles" 
-                                href={links.blog.href}
-                                theme="d-theme"
-                                showShadow
-                            />
+                            <BigButton title="View more articles" href={links.blog.href} showShadow />
                         </div>
                     </Section>
                     <Section id="contact" title="Contact" accent>

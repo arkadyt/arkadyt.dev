@@ -6,7 +6,7 @@
     transition: transform .4s ease;
 }
 
-.ProjectCard-container {
+.ProjCard-container {
     position: relative;
     perspective: 150rem;
     height: 100%;
@@ -103,7 +103,7 @@
  * Themes and colors.
  */
 
-.ProjectCard-container {
+.ProjCard-container {
     &.l-theme {
         .backface {
             box-shadow: $l-theme--sdw--projcard;

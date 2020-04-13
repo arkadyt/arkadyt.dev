@@ -6,7 +6,7 @@
     transition: transform .2s ease-out;
 }
 
-.PublicationCard-container {
+.PublCard-container {
     position: relative;
     perspective: 150rem;
     height: 10rem;
@@ -103,7 +103,7 @@
  * Theme colors
  */
 
-.PublicationCard-container {
+.PublCard-container {
     &.l-theme {
         .frontface {
             box-shadow: $l-theme--sdw--publcard;

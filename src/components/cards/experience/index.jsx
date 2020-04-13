@@ -7,7 +7,7 @@ import './styles.scss';
 /**
  * Work experience card.
  */
-const ExpCard = props => {
+const WexpCard = props => {
     const separatorClass = props.start && props.end ? 'stick-hidden' :
         props.start ? 'stick-start' :
             props.end ? 'stick-end' :
@@ -17,7 +17,7 @@ const ExpCard = props => {
     const jobIcon = theme === 'd-theme' && imageDark ? imageDark : image;
 
     return (
-        <div className={clsx("ExpCard-container", theme)}>
+        <div className={clsx("WexpCard-container", theme)}>
             <div className="frontface">
                 <img src={jobIcon}
                      style={{ width: `${props.imgWidth}%`, color: 'white' }} 
@@ -33,10 +33,10 @@ const ExpCard = props => {
                 </div>
             </div>
             <div className="backface">
-                <BigButton title="View more" onClick={() => {}} />
+                <BigButton title="View more" onClick={() => {}} theme="l-theme" />
             </div>
         </div>
     );
 };
 
-export default ExpCard;
+export default WexpCard;

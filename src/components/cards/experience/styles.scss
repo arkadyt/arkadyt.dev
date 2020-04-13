@@ -10,7 +10,7 @@ $card-height: 15rem;
     box-shadow: $l-theme--sdw--wexpcard;
 }
 
-.ExpCard-container {
+.WexpCard-container {
     position: relative;
     perspective: 150rem;
 
@@ -77,7 +77,7 @@ $card-height: 15rem;
 /**
  * Theme and colors.
  */
-.ExpCard-container {
+.WexpCard-container {
     &.l-theme {
         .frontface {
             background-color: $l-theme--clr--bg--wexpcard-frontface;

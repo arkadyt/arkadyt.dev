@@ -7,12 +7,12 @@ import clsx from 'clsx';
 import { FaExternalLinkAlt as IconHref } from 'react-icons/fa';
 import './styles.scss';
 
-const Card = props => {
+const ProjCard = props => {
     const { title, description, tags, image, links } = props;
     const { theme } = useContext(ThemeContext);
 
     return (
-        <div className={clsx("ProjectCard-container", theme)}>
+        <div className={clsx("ProjCard-container", theme)}>
             <div className="frontface" onClick={() => goTo(links[0].href)}>
                 <Image image={props.image} imgProps={{ alt: "Project Image" }} />
                 <div className="description">
@@ -28,11 +28,11 @@ const Card = props => {
             </div>
             <div className="backface">
                 {links.map((item, index) => (
-                    <BigButton key={index} {...item}/>
+                    <BigButton key={index} {...item} theme="l-theme" />
                 ))}
             </div>
         </div>
     );
 };
 
-export default Card;
+export default ProjCard;

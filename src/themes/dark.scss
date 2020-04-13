@@ -5,7 +5,7 @@ $d-theme--clr--txt--on-accent: white;
 $d-theme--clr--txt--frontpage: white;
 $d-theme--clr--txt--footer: white;
 $d-theme--clr--txt--tooltip: white;
-$d-theme--clr--txt--projcard-backface-link: #212121;
+$d-theme--clr--txt--bigbutton: white;
 $d-theme--clr--txt--projcard-tag: white;
 $d-theme--clr--txt--projcard-hint: rgba(white, .8);
 $d-theme--clr--txt--sidebar: white;
@@ -19,7 +19,8 @@ $d-theme--clr--bg--accent: lighten($d-theme--clr--bg--footer, 4);
 $d-theme--clr--bg--projcard-backface: #212121;
 $d-theme--clr--bg--publcard-backface: #212121;
 $d-theme--clr--bg--wexpcard-backface: #212121;
-$d-theme--clr--bg--projcard-backface-link: white;
+$d-theme--clr--bg--bigbutton: lighten($d-theme--clr--bg--section, 7);
+$d-theme--clr--bg--bigbutton-ripple: lighten($d-theme--clr--bg--section, 7);
 $d-theme--clr--bg--projcard-frontface: lighten($d-theme--clr--bg--section, 7);
 $d-theme--clr--bg--projcard-tag: lighten($d-theme--clr--bg--projcard-frontface, 10);
 $d-theme--clr--bg--publcard-frontface: lighten($d-theme--clr--bg--section, 7);
@@ -52,6 +53,9 @@ $d-theme--sdw--projcard: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
 $d-theme--sdw--publcard: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
 $d-theme--sdw--wexpcard: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
 $d-theme--sdw--tooltip: 0px 4px 15px 0px rgba(0,0,0,0.75);
+$d-theme--sdw--bigbutton--initial: 0 .5rem 1rem rgba(0, 0, 0, .15);
+$d-theme--sdw--bigbutton--onhover: 0 1rem 2rem rgba(0, 0, 0, .2);
+$d-theme--sdw--bigbutton--pressed: 0 .5rem 1rem rgba(0, 0, 0, .2);
 
 $d-theme--fltr--publcard-img: invert(100%) contrast(50%) brightness(110%) grayscale(100%);
 

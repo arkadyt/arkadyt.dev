@@ -21,18 +21,8 @@ $border-radius: 80rem;
         transition: all .2s ease;
         border: 0; outline: none;
 
-        // show initial shadow?
-        &.show-shadow {
-            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
-        }
-
-        &:hover {
-            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
-        }
-        
         &:active {
             transform: translateY(.4rem);
-            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
         }
         
         &::after {
@@ -62,19 +52,37 @@ $border-radius: 80rem;
 .BigButton-container {
     &.l-theme {
         button {
-            color:                $l-theme--clr--txt--projcard-backface-link;
-            background-color:     $l-theme--clr--bg--projcard-backface-link;
+            color:                $l-theme--clr--txt--bigbutton;
+            background-color:     $l-theme--clr--bg--bigbutton;
             &::after {
-                background-color: $l-theme--clr--bg--projcard-backface-link;
+                background-color: $l-theme--clr--bg--bigbutton-ripple;
+            }
+            &.show-shadow {
+                box-shadow: $l-theme--sdw--bigbutton--initial;
+            }
+            &:hover {
+                box-shadow: $l-theme--sdw--bigbutton--onhover;
+            }
+            &:active {
+                box-shadow: $l-theme--sdw--bigbutton--pressed; 
             }
         }
     }
     &.d-theme {
         button {
-            color:                $d-theme--clr--txt--projcard-backface-link;
-            background-color:     $d-theme--clr--bg--projcard-backface-link;
+            color:                $d-theme--clr--txt--bigbutton;
+            background-color:     $d-theme--clr--bg--bigbutton;
             &::after {
-                background-color: $d-theme--clr--bg--projcard-backface-link;
+                background-color: $d-theme--clr--bg--bigbutton-ripple;
+            }
+            &.show-shadow {
+                box-shadow: $d-theme--sdw--bigbutton--initial;
+            }
+            &:hover {
+                box-shadow: $d-theme--sdw--bigbutton--onhover;
+            }
+            &:active {
+                box-shadow: $d-theme--sdw--bigbutton--pressed; 
             }
         }
     }
