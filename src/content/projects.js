@@ -1,8 +1,13 @@
 import React from 'react';
+
 import weworkWEBP from 'images/projects/wework.webp';
 import weworkJPG from 'images/projects/wework.jpg';
+
 import vspaceWEBP from 'images/projects/vspace.webp';
 import vspaceJPG from 'images/projects/vspace.jpg';
+
+import arkadytWEBP from 'images/projects/arkadyt.webp';
+import arkadytJPG from 'images/projects/arkadyt.jpg';
 
 export default [
     {
@@ -34,10 +39,10 @@ export default [
         ],
     },
     {
-        href: 'https://github.com/arkadyt/vspace',
+        href: 'https://github.com/arkadyt/arkadyt.com',
         image: {
-            webp: vspaceWEBP,
-            fallback: vspaceJPG,
+            webp: arkadytWEBP,
+            fallback: arkadytJPG,
         },
         title: 'arkadyt.com',
         description: 'Fully-fledged eCommerce platform. Built with JavaScript, React, Redux, Node.js, Express and others.',
