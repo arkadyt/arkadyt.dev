@@ -27,6 +27,7 @@ import {
 class Layout extends Component {
     render() {
         const { theme } = this.context;
+        const isProjCountOdd = projects.length % 2 > 0;
 
         return (
             <React.Fragment>
@@ -112,9 +113,19 @@ class Layout extends Component {
                                 Majority of them is hosted on my GitHub profile, so if you're interested, click on the "VIEW MORE PROJECTS" button below!
                             </p>
                         </div>
-                        <div className="projcard-view">
-                            {projects.map((item, index) => (
+                        <div className={clsx("projcard-view")}>
+                            {(isProjCountOdd ? projects.slice(0, -1) : projects).map((item, index) => (
                                 <ProjCard {...item} key={index} />
+                            ))}
+                        </div>
+                        <div className={clsx("projcard-view", "horizontal")}>
+                            {/* 
+                                If project card count is not odd, this div must still render,
+                                but must make no visual effects on the page, and should have no padding and/or margins.
+                                A ghost!
+                            */}
+                            {!isProjCountOdd ? null : projects.slice(-1).map((item, index) => (
+                                <ProjCard {...item} key={index} horizontal />
                             ))}
                         </div>
                         <div className="view-more-row">

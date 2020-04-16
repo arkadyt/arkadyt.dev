@@ -8,11 +8,11 @@ import { FaExternalLinkAlt as IconHref } from 'react-icons/fa';
 import './styles.scss';
 
 const ProjCard = props => {
-    const { title, description, tags, image, links } = props;
+    const { title, description, tags, image, links, horizontal } = props;
     const { theme } = useContext(ThemeContext);
 
     return (
-        <div className={clsx("ProjCard-container", theme)}>
+        <div className={clsx("ProjCard-container", theme, horizontal && 'horizontal')}>
             <div className="frontface" onClick={() => goTo(links[0].href)}>
                 <Image image={props.image} imgProps={{ alt: "Project Image" }} />
                 <div className="description">

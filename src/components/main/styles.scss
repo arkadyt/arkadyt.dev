@@ -40,6 +40,14 @@
         grid-row-gap: 6rem;
         justify-items: center;
         align-items: center;
+
+        &.horizontal {
+            grid-template-columns: 1fr;
+        }
+
+        & + .projcard-view {
+            margin-top: 2.5rem;
+        }
     }
 
     .wexpcard-view {
