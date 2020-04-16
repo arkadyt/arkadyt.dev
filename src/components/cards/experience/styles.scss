@@ -96,7 +96,7 @@ $card-height: 15rem;
             background-color: $d-theme--clr--bg--wexpcard-frontface;
         }
         .backface {
-            background: $d-theme--clr--bg--wexpcard-backface $l-theme--grd--wexpcard-backface;
+            background: $d-theme--clr--bg--wexpcard-backface $d-theme--grd--wexpcard-backface;
         }
         .text {
             h4 {

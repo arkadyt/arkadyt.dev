@@ -37,13 +37,13 @@ $d-theme--grd--projcard-backface: linear-gradient(
 );
 $d-theme--grd--publcard-backface: linear-gradient(
     to bottom right,
-    lighten($d-theme--clr--bg--projcard-backface, 20),
-    lighten($d-theme--clr--bg--projcard-backface, 12)
+    lighten($d-theme--clr--bg--publcard-backface, 20),
+    lighten($d-theme--clr--bg--publcard-backface, 12)
 );
 $d-theme--grd--wexpcard-backface: linear-gradient(
     to bottom right,
-    lighten($d-theme--clr--bg--projcard-backface, 20),
-    lighten($d-theme--clr--bg--projcard-backface, 12)
+    lighten($d-theme--clr--bg--wexpcard-backface, 20),
+    lighten($d-theme--clr--bg--wexpcard-backface, 12)
 );
 $d-theme--grd--frontpage: linear-gradient(to top, rgba(47, 54, 64, 0.95), rgba(72, 126, 176, 0.68));
 $d-theme--grd--section: transparent;

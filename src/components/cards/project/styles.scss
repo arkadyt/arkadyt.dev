@@ -170,6 +170,10 @@
             box-shadow: $d-theme--sdw--projcard;
             background: $d-theme--clr--bg--projcard-frontface;
             color: $d-theme--clr--txt--regular;
+
+            > picture > img {
+                filter: grayscale(1) brightness(1.08);
+            }
         }
         .description {
             .tags {
