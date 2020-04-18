@@ -8,10 +8,7 @@ import './styles.scss';
  * Work experience card.
  */
 const WexpCard = props => {
-    const separatorClass = props.start && props.end ? 'stick-hidden' :
-        props.start ? 'stick-start' :
-            props.end ? 'stick-end' :
-                '';
+    const { imgWidth, date, company, title } = props;
     const { theme } = useContext(ThemeContext);
     const { image, imageDark } = props;
     const jobIcon = theme === 'd-theme' && imageDark ? imageDark : image;
@@ -19,17 +16,14 @@ const WexpCard = props => {
     return (
         <div className={clsx("WexpCard-container", theme)}>
             <div className="frontface">
+                <div className="colored-chunk" />
                 <img src={jobIcon}
-                     style={{ width: `${props.imgWidth}%`, color: 'white' }} 
+                     style={{ width: `${imgWidth}%`, color: 'white' }} 
                      alt='' />
-                <div className={clsx("Separator-container", theme)}>
-                    <div className={['stick', separatorClass].join(' ')} />
-                    <div className="circle" />
-                </div>
                 <div className="text">
-                    <h4>{props.date}</h4>
-                    <h2>{props.company}</h2>
-                    <h3>{props.title}</h3>
+                    <h4>{date}</h4>
+                    <h2>{company}</h2>
+                    <h3>{title}</h3>
                 </div>
             </div>
             <div className="backface">
