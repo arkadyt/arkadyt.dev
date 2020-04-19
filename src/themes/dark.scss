@@ -26,8 +26,8 @@ $d-theme--clr--bg--projcard-tag: lighten($d-theme--clr--bg--projcard-frontface, 
 $d-theme--clr--bg--publcard-frontface: lighten($d-theme--clr--bg--section, 7);
 $d-theme--clr--bg--wexpcard-frontface: lighten($d-theme--clr--bg--section, 7);
 $d-theme--clr--bg--wexpcard-circle: $d-theme--clr--bg--section;
-$d-theme--clr--bg--wexpcard-clchunk: lighten($d-theme--clr--bg--wexpcard-frontface, 5);
-$d-theme--clr--bg--wexpcard-number-disk: lighten($d-theme--clr--bg--wexpcard-clchunk, 15);
+$d-theme--clr--bg--wexpcard-clchunk: lighten($d-theme--clr--bg--wexpcard-frontface, 2.5);
+$d-theme--clr--bg--wexpcard-number-disk: lighten($d-theme--clr--bg--wexpcard-clchunk, 7.5);
 
 $d-theme--clr--brdr--wexpcard-circle: rgba(white, .6);
 $d-theme--clr--brdr--wexpcard-stick: rgba(white, .6);
