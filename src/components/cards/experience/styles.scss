@@ -72,7 +72,6 @@ $card-height: 15rem;
             font-weight: bolder;
             font-family: $font-header-primary;
             margin-top: 1rem;
-            color: rgba(black, .4);
         }
 
         img {
@@ -141,6 +140,9 @@ $card-height: 15rem;
             background: $l-theme--clr--bg--wexpcard-number-disk;
             box-shadow: $l-theme--sdw--wexpcard-number-disk;
         }
+        .number {
+            color: $l-theme--clr--txt--wexpcard-number;
+        }
     }
     &.d-theme {
         .frontface {
@@ -160,6 +162,9 @@ $card-height: 15rem;
         .number-base {
             background: $d-theme--clr--bg--wexpcard-number-disk;
             box-shadow: $d-theme--sdw--wexpcard-number-disk;
+        }
+        .number {
+            color: $d-theme--clr--txt--wexpcard-number;
         }
     }
 }
