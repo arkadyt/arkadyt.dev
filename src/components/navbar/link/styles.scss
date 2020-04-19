@@ -43,6 +43,9 @@
         &:hover {
             background-color: $l-theme--clr--bg--sidebar-link;
         }
+        &:active {
+            background-color: $l-theme--clr--bg--sidebar-link--active;
+        }
         a {
             color: $l-theme--clr--txt--sidebar;
         }
@@ -53,6 +56,9 @@
     &.d-theme {
         &:hover {
             background-color: $d-theme--clr--bg--sidebar-link;
+        }
+        &:active {
+            background-color: $d-theme--clr--bg--sidebar-link--active;
         }
         a {
             color: $d-theme--clr--txt--sidebar;
