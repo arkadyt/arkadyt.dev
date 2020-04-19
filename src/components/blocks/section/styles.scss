@@ -19,7 +19,7 @@
         @media (orientation: portrait) {
             width: 100%;
         }
-        padding: 10rem 0;
+        padding: $section--padding--top 0;
         margin: 0 auto;
     }
 
@@ -34,18 +34,6 @@
         }
         font-family: $font-header-primary;
         text-transform: uppercase;
-    }
-
-    &.accent {
-        .content {
-            padding: 10rem 0;
-        }
-    }
-
-    &.dark {
-        .content {
-            padding: 10rem 0;
-        }
     }
 }
 

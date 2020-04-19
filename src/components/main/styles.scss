@@ -23,4 +23,13 @@
         font-family: $font-paragraph-primary;
         margin: 5rem 1rem;
     }
+
+    .content-body {
+        >*:first-child {
+            margin-top: $section--padding--top;
+        }
+        >*:last-child {
+            margin-bottom: $section--padding--top;
+        }
+    }
 }
