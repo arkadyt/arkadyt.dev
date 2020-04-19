@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from 'components/blocks/section';
+import Section from 'components/shared/section';
 
 const AboutMe = props => {
   return (

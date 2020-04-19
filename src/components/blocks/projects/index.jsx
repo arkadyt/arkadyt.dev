@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from 'components/blocks/section';
+import Section from 'components/shared/section';
 import ProjCard from 'components/cards/project';
 import BigButton from 'components/shared/bigbutton';
 import { projects, links } from 'content';

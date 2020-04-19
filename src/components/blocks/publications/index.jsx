@@ -1,5 +1,5 @@
 import React from 'react';
-import Section from 'components/blocks/section';
+import Section from 'components/shared/section';
 import PublCard from 'components/cards/publication';
 import BigButton from 'components/shared/bigbutton';
 import { publications, links } from 'content';
