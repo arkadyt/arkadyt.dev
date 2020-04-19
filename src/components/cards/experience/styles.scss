@@ -89,6 +89,7 @@ $card-height: 15rem;
             h2 {
                 @extend %header;
                 font-size: 3.2rem;
+                margin: .5rem 0;
             }
             h3 {
                 @extend %header;
@@ -97,6 +98,8 @@ $card-height: 15rem;
             h4 {
                 @extend %header;
                 font-size: 1.6rem;
+                letter-spacing: .2rem;
+                text-transform: uppercase;
             }
         }
     }
@@ -130,7 +133,7 @@ $card-height: 15rem;
         }
         .text {
             h4 {
-                color: $l-theme--clr--txt--accent;
+                color: $l-theme--clr--txt--wexpcard-date;
             }
         }
         .colored-chunk {
@@ -153,7 +156,7 @@ $card-height: 15rem;
         }
         .text {
             h4 {
-                color: $d-theme--clr--txt--accent;
+                color: $d-theme--clr--txt--wexpcard-date;
             }
         }
         .colored-chunk {
