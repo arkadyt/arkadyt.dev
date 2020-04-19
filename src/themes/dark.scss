@@ -9,7 +9,7 @@ $d-theme--clr--txt--bigbutton: white;
 $d-theme--clr--txt--projcard-tag: white;
 $d-theme--clr--txt--projcard-hint: rgba(white, .8);
 $d-theme--clr--txt--sidebar: white;
-$d-theme--clr--txt--wexpcard-number: rgba(white, .4);
+$d-theme--clr--txt--wexpcard-number: rgba(white, .3);
 
 $d-theme--clr--bg--sidebar: #212121;
 $d-theme--clr--bg--sidebar-link: #313131;
@@ -28,7 +28,7 @@ $d-theme--clr--bg--publcard-frontface: lighten($d-theme--clr--bg--section, 7);
 $d-theme--clr--bg--wexpcard-frontface: lighten($d-theme--clr--bg--section, 7);
 $d-theme--clr--bg--wexpcard-circle: $d-theme--clr--bg--section;
 $d-theme--clr--bg--wexpcard-clchunk: lighten($d-theme--clr--bg--wexpcard-frontface, 2.5);
-$d-theme--clr--bg--wexpcard-number-disk: lighten($d-theme--clr--bg--wexpcard-clchunk, 7.5);
+$d-theme--clr--bg--wexpcard-number-disk: unset; // lighten($d-theme--clr--bg--wexpcard-clchunk, 7.5);
 
 $d-theme--clr--brdr--wexpcard-circle: rgba(white, .6);
 $d-theme--clr--brdr--wexpcard-stick: rgba(white, .6);
@@ -59,7 +59,7 @@ $d-theme--sdw--tooltip: 0px 4px 15px 0px rgba(0,0,0,0.75);
 $d-theme--sdw--bigbutton--initial: 0 .5rem 1rem rgba(0, 0, 0, .15);
 $d-theme--sdw--bigbutton--onhover: 0 1rem 2rem rgba(0, 0, 0, .2);
 $d-theme--sdw--bigbutton--pressed: 0 .5rem 1rem rgba(0, 0, 0, .2);
-$d-theme--sdw--wexpcard-number-disk: 0 .5rem 1rem 0 rgba(black, .125);
+$d-theme--sdw--wexpcard-number-disk: unset; // 0 .5rem 1rem 0 rgba(black, .125);
 
 $d-theme--fltr--publcard-img: invert(100%) contrast(50%) brightness(110%) grayscale(100%);
 

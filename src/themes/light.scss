@@ -9,7 +9,7 @@ $l-theme--clr--txt--bigbutton: #212121;
 $l-theme--clr--txt--projcard-tag: #313131;
 $l-theme--clr--txt--projcard-hint: rgba(white, .8);
 $l-theme--clr--txt--sidebar: white;
-$l-theme--clr--txt--wexpcard-number: rgba(black, .4);
+$l-theme--clr--txt--wexpcard-number: rgba(black, .2);
 
 $l-theme--clr--bg--sidebar: #212121;
 $l-theme--clr--bg--sidebar-link: #313131;
@@ -28,7 +28,7 @@ $l-theme--clr--bg--publcard-frontface: lighten($l-theme--clr--bg--section, 7);
 $l-theme--clr--bg--wexpcard-frontface: lighten($l-theme--clr--bg--section, 7);
 $l-theme--clr--bg--wexpcard-circle: white;
 $l-theme--clr--bg--wexpcard-clchunk: darken($l-theme--clr--bg--wexpcard-frontface, 3);
-$l-theme--clr--bg--wexpcard-number-disk: white;
+$l-theme--clr--bg--wexpcard-number-disk: unset; // white;
 
 $l-theme--clr--brdr--wexpcard-circle: rgba(black, .85);
 $l-theme--clr--brdr--wexpcard-stick: rgba(black, .65);
@@ -59,7 +59,7 @@ $l-theme--sdw--tooltip: 0px 4px 15px 0px rgba(0,0,0,0.75);
 $l-theme--sdw--bigbutton--initial: 0 .5rem 1rem rgba(0, 0, 0, .15);
 $l-theme--sdw--bigbutton--onhover: 0 1rem 2rem rgba(0, 0, 0, .2);
 $l-theme--sdw--bigbutton--pressed: 0 .5rem 1rem rgba(0, 0, 0, .2);
-$l-theme--sdw--wexpcard-number-disk: 0 .5rem 1rem 0 rgba(black, .125);
+$l-theme--sdw--wexpcard-number-disk: unset; // 0 .5rem 1rem 0 rgba(black, .125);
 
 $l-theme--fltr--publcard-img: contrast(50%) brightness(160%) grayscale(100%);
 
