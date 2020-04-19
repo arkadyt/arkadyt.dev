@@ -23,6 +23,7 @@
         grid-template-columns: 0.4fr 0.6fr;
 
         > picture > img {
+            min-height: 100%;
             clip-path: polygon(0% 0%, 100% 0%, 92% 100%, 0% 100%);
         }
     }
