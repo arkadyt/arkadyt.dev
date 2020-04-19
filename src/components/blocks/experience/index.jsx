@@ -2,6 +2,7 @@ import React from 'react';
 import { jobs } from 'content';
 import WexpCard from 'components/cards/experience';
 import Section from 'components/blocks/section';
+import './styles.scss';
 
 const Experience = props => {
   return (

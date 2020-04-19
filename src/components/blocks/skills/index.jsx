@@ -2,6 +2,7 @@ import React from 'react';
 import { skills, awsSkills } from 'content';
 import SkillCard from 'components/cards/skill';
 import Section from 'components/blocks/section';
+import './styles.scss';
 
 const Skills = props => {
   return (

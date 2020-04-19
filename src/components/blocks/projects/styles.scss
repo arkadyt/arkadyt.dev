@@ -1,0 +1,17 @@
+.projcard-view {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2.5rem;
+    grid-row-gap: 6rem;
+    justify-items: center;
+    align-items: center;
+
+    &.horizontal {
+        grid-template-columns: 1fr;
+    }
+
+    & + .projcard-view {
+        margin-top: 2.5rem;
+    }
+}

@@ -3,6 +3,7 @@ import Section from 'components/blocks/section';
 import PublCard from 'components/cards/publication';
 import BigButton from 'components/shared/bigbutton';
 import { publications, links } from 'content';
+import './styles.scss';
 
 const Publications = props => {
   return (

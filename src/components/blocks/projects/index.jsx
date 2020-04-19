@@ -4,6 +4,7 @@ import ProjCard from 'components/cards/project';
 import BigButton from 'components/shared/bigbutton';
 import { projects, links } from 'content';
 import clsx from 'clsx';
+import './styles.scss';
 
 const Projects = props => {
   const isProjCountOdd = projects.length % 2 > 0;

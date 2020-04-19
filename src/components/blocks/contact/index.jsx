@@ -2,6 +2,7 @@ import React from 'react';
 import Section from 'components/blocks/section';
 import Link from 'components/shared/link';
 import { links } from 'content';
+import './styles.scss';
 
 const Contact = props => {
   return (
