@@ -9,9 +9,8 @@ $card-height: 15rem;
     box-shadow: $l-theme--sdw--wexpcard;
 }
 
-.WexpCard-container /*:nth-child(even)*/ {
+.WexpCard-container:nth-child(even) {
     .frontface .colored-chunk {
-//        clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 0% 100%);
         clip-path: polygon(0% 0%, 100% 0%, 88% 100%, 0% 100%);
     }
 }
@@ -52,18 +51,6 @@ $card-height: 15rem;
             top: 0; left: 0;
             height: 100%;
             width: 100%;
-
-            &:nth-child(even) { background-color: white; }
-
-            &:nth-child(2) { width: 100% - 5%; }
-            &:nth-child(3) { width: 100% - 10%; }
-            &:nth-child(4) { width: 100% - 15%; }
-            &:nth-child(5) { width: 100% - 40%; }
-            &:nth-child(6) { width: 100% - 50%; }
-            &:nth-child(7) { width: 100% - 60%; }
-            &:nth-child(8) { width: 100% - 70%; }
-            &:nth-child(9) { width: 100% - 80%; }
-            &:nth-child(10) { width: 100% - 90%; }
         }
 
         img {
