@@ -1,19 +1,21 @@
 @import '_variables';
 
 .Footer-container {
-    padding: 2rem 0;
+    .footer {
+        padding: 2rem 0;
 
-    div {
-        display: flex;
-        align-items: center;
-        width: 96rem;
-        margin: auto;
-        font-family: $font-header-primary;
-        font-size: 1.6rem;
-        text-transform: uppercase;
+        div {
+            display: flex;
+            align-items: center;
+            width: 96rem;
+            margin: auto;
+            font-family: $font-header-primary;
+            font-size: 1.6rem;
+            text-transform: uppercase;
 
-        > span {
-            margin-left: .5rem;
+            > span {
+                margin-left: .5rem;
+            }
         }
     }
 }
@@ -24,15 +26,19 @@
  */
 .Footer-container {
     &.l-theme {
-        background-color: $l-theme--clr--bg--footer;
-        div {
-            color: $l-theme--clr--txt--footer;
-        }
+        .footer {
+            background-color: $l-theme--clr--bg--footer;
+            div {
+                color: $l-theme--clr--txt--footer;
+            }
+        }       
     }
     &.d-theme {
-        background-color: $d-theme--clr--bg--footer;
-        div {
-            color: $d-theme--clr--txt--footer;
-        }
+        .footer {
+            background-color: $d-theme--clr--bg--footer;
+            div {
+                color: $d-theme--clr--txt--footer;
+            }
+        }       
     }
 }

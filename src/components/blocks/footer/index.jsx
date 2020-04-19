@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { FaRegCopyright as IconCopyright } from 'react-icons/fa';
 import ThemeContext from 'state/context/theme';
+import Contact from 'components/blocks/contact';
 import clsx from 'clsx';
 import './styles.scss';
 
@@ -9,7 +10,10 @@ const Footer = props => {
 
   return (
     <div className={clsx("Footer-container", theme)}>
-        <div><IconCopyright /><span>Andrew Titenko 2020</span></div>
+        <Contact />
+        <div className="footer">
+          <div><IconCopyright /><span>Andrew Titenko 2020</span></div>
+        </div>
     </div>
   );
 };
