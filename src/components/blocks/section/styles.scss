@@ -4,26 +4,6 @@
     position: relative; // for gradient shadow box
     width: 100%;
 
-    .view-more-row {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-        margin-top: 4rem;
-
-        .BigButton-container button {
-            width: 50rem;
-        }
-    }
-
-    .regular-text {
-        display: block;
-        text-align: justify;
-        font-size: 2rem;
-        font-family: $font-paragraph-primary;
-        margin: 5rem 1rem;
-    }
-
     .gradient-shadow {
         width: 100%;
         height: 100%;
