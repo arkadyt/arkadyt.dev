@@ -1,20 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400|Open+Sans:300|Josefin+Sans:100,300,400');
 @import 'variables';
 
-/**
- * It's important to set background on the outermost parent element since sometimes
- * <Section /> rendering could be slow, and if background is not set, content would flicker
- * before rendering and chunks of background image would be seen.
- */
-.App-container {
-    &.l-theme {
-        background: $l-theme--clr--bg--section;
-    }
-    &.d-theme {
-        background: $d-theme--clr--bg--section;
-    }
-}
-
 html {
     /**
      * Setting the root font-size relative to the viewport width makes the layout

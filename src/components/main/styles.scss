@@ -26,10 +26,23 @@
 
     .content-body {
         >*:first-child {
-            margin-top: $section--padding--top;
+            padding-top: $section--padding--top;
         }
         >*:last-child {
-            margin-bottom: $section--padding--top;
+            padding-bottom: $section--padding--top;
+        }
+    }
+}
+
+.Layout-content {
+    &.l-theme {
+        .content-body {
+            background: $l-theme--clr--bg--section;
+        }
+    }
+    &.d-theme {
+        .content-body {
+            background: $d-theme--clr--bg--section;
         }
     }
 }
