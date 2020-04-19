@@ -4,9 +4,9 @@ import projects from './projects';
 import publications from './publications'; 
 import { skills, awsSkills } from './skills';
 import links from './links';
-import intro from './intro';
+import header from './header';
 
 export {
     about, jobs, projects, publications,
-    skills, awsSkills, links, intro
+    skills, awsSkills, links, header
 };

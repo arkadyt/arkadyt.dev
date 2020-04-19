@@ -1,18 +1,18 @@
 import React, { useContext } from 'react';
 import ThemeContext from 'state/context/theme';
 import Image from 'components/shared/image';
-import { intro } from 'content';
+import { header } from 'content';
 import clsx from 'clsx';
 import './styles.scss';
 
-const Intro = (props) => {
+const Header = (props) => {
     const { theme } = useContext(ThemeContext);
     return (
-        <div className={clsx("Intro-container", theme)}>
+        <div className={clsx("Header-container", theme)}>
             <Image
-                image={intro.image}
+                image={header.image}
                 imgProps={{ alt: "Website background image" }}
-                containerProps={{ className: clsx("Intro-background", theme) }}
+                containerProps={{ className: clsx("Header-background", theme) }}
             />
             <div className="name-block">
                 <h1>Andrew</h1><h3>Titenko</h3><br />
@@ -23,4 +23,4 @@ const Intro = (props) => {
     );
 };
 
-export default Intro;
+export default Header;
