@@ -1,13 +1,4 @@
 @import '_variables';
-.Layout-background * {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -5;
-    object-fit: cover;
-}
 
 .Layout-content {
     margin: 0 0 0 5rem;

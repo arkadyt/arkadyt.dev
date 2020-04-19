@@ -5,17 +5,17 @@ import { IoMdSunny } from 'react-icons/io';
 import NavButton from './button';
 import NavLink from './link';
 import clsx from 'clsx';
+import { links } from 'content';
 import './styles.scss';
 
 const NavBar = props => {
-  const { links } = props;
   const { theme, toggleTheme } = useContext(ThemeContext);
   const classes = clsx('NavBar-container', theme);
 
   return (
     <div className={classes}>
       <ul className="sidebar-links">
-        {links.map((item, index) => (
+        {Object.values(links).map((item, index) => (
           <NavLink key={index} {...item} />
         ))}
       </ul>
