@@ -20,7 +20,7 @@ const appendLongevity = str => {
             split[1] = new Date(split[1]);
         }
 
-        let longevity = Math.round((split[1] - split[0]) / 1000 / 60 / 60 / 24 / 30);
+        let longevity = Math.ceil((split[1] - split[0]) / 1000 / 60 / 60 / 24 / 30);
         if (longevity > 12) {
             let years = Math.floor(longevity / 12);
             return `${str} (${ensurePlural(years, 'yr')}. and ${ensurePlural(longevity % 12, 'mo')}.)`;
