@@ -26,7 +26,8 @@ $d-theme--clr--bg--projcard-tag: lighten($d-theme--clr--bg--projcard-frontface, 
 $d-theme--clr--bg--publcard-frontface: lighten($d-theme--clr--bg--section, 7);
 $d-theme--clr--bg--wexpcard-frontface: lighten($d-theme--clr--bg--section, 7);
 $d-theme--clr--bg--wexpcard-circle: $d-theme--clr--bg--section;
-$d-theme--clr--bg--clchunk: lighten($d-theme--clr--bg--wexpcard-frontface, 5);
+$d-theme--clr--bg--wexpcard-clchunk: lighten($d-theme--clr--bg--wexpcard-frontface, 5);
+$d-theme--clr--bg--wexpcard-number-disk: lighten($d-theme--clr--bg--wexpcard-clchunk, 10);
 
 $d-theme--clr--brdr--wexpcard-circle: rgba(white, .6);
 $d-theme--clr--brdr--wexpcard-stick: rgba(white, .6);
@@ -57,7 +58,7 @@ $d-theme--sdw--tooltip: 0px 4px 15px 0px rgba(0,0,0,0.75);
 $d-theme--sdw--bigbutton--initial: 0 .5rem 1rem rgba(0, 0, 0, .15);
 $d-theme--sdw--bigbutton--onhover: 0 1rem 2rem rgba(0, 0, 0, .2);
 $d-theme--sdw--bigbutton--pressed: 0 .5rem 1rem rgba(0, 0, 0, .2);
-$d-theme--sdw--wexpcard-clchunk: unset; // 0 0 1rem rgba(0, 0, 0, .2);
+$d-theme--sdw--wexpcard-number-disk: 0 .5rem 1rem 0 rgba(black, .125);
 
 $d-theme--fltr--publcard-img: invert(100%) contrast(50%) brightness(110%) grayscale(100%);
 

@@ -8,7 +8,7 @@ import './styles.scss';
  * Work experience card.
  */
 const WexpCard = props => {
-    const { imgWidth, date, company, title } = props;
+    const { imgWidth, date, company, title, number } = props;
     const { theme } = useContext(ThemeContext);
     const { image, imageDark } = props;
     const jobIcon = theme === 'd-theme' && imageDark ? imageDark : image;
@@ -18,6 +18,9 @@ const WexpCard = props => {
             <div className="frontface">
                 <div className="colored-block">
                     <div className="colored-chunk" />
+                    <div className="number-base">
+                        <span className="number">{number}</span>
+                    </div>
                 </div>
                 <img src={jobIcon}
                      style={{ width: `${imgWidth}%`, color: 'white' }} 

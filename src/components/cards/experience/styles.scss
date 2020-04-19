@@ -44,6 +44,9 @@ $card-height: 15rem;
 
         .colored-block {
             position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .colored-chunk {
@@ -51,6 +54,25 @@ $card-height: 15rem;
             top: 0; left: 0;
             height: 100%;
             width: 100%;
+        }
+
+        .number-base {
+            width: 10rem;
+            height: 10rem;
+            border-radius: 20rem;
+            z-index: 10;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .number {
+            font-size: 4rem;
+            font-weight: bolder;
+            font-family: $font-header-primary;
+            margin-top: 1rem;
+            color: rgba(black, .4);
         }
 
         img {
@@ -112,11 +134,12 @@ $card-height: 15rem;
                 color: $l-theme--clr--txt--accent;
             }
         }
-        .colored-block {
-            filter: drop-shadow($l-theme--sdw--wexpcard-clchunk);
-        }
         .colored-chunk {
-            background-color: $l-theme--clr--bg--clchunk;
+            background-color: $l-theme--clr--bg--wexpcard-clchunk;
+        }
+        .number-base {
+            background: $l-theme--clr--bg--wexpcard-number-disk;
+            box-shadow: $l-theme--sdw--wexpcard-number-disk;
         }
     }
     &.d-theme {
@@ -131,11 +154,12 @@ $card-height: 15rem;
                 color: $d-theme--clr--txt--accent;
             }
         }
-        .colored-block {
-            filter: drop-shadow($d-theme--sdw--wexpcard-clchunk);
-        }
         .colored-chunk {
-            background-color: $d-theme--clr--bg--clchunk;
+            background-color: $d-theme--clr--bg--wexpcard-clchunk;
+        }
+        .number-base {
+            background: $d-theme--clr--bg--wexpcard-number-disk;
+            box-shadow: $d-theme--sdw--wexpcard-number-disk;
         }
     }
 }

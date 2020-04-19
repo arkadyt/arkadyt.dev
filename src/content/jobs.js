@@ -8,7 +8,7 @@ export default [
         company: 'Full-Stack Software Engineer',
         title: 'Hewlett-Packard Inc',
         date: 'April 2019 — Present (1 year)',
-        image: ImgFreelance,
+        image: ImgHP,
         imgWidth: 100
     },
     {

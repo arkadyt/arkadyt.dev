@@ -65,7 +65,7 @@ class Layout extends Component {
                                     start: index === 0,
                                     end: index === jobs.length - 1
                                 }
-                                return <WexpCard {...item} key={index} {...position} />
+                                return <WexpCard {...item} key={index} {...position} number={jobs.length - index} />
                             })}
                         </div>
                     </Section>
