@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Main from 'components/main';
 import ThemeContext from 'state/context/theme';
 import './index.scss';
+import clsx from 'clsx';
 import * as serviceWorker from './serviceWorker';
 
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <div className="App-container">
+      <div className={clsx("App-container", theme)}>
         <Main />
         <div className="blinds" />
       </div>
