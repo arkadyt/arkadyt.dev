@@ -16,7 +16,9 @@ const WexpCard = props => {
     return (
         <div className={clsx("WexpCard-container", theme)}>
             <div className="frontface">
-                <div className="colored-chunk" />
+                <div className="colored-block">
+                    {Array(1).fill(null).map(() => <div className="colored-chunk" />)}
+                </div>
                 <img src={jobIcon}
                      style={{ width: `${imgWidth}%`, color: 'white' }} 
                      alt='' />
