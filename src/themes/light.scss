@@ -53,16 +53,14 @@ $l-theme--grd--wexpcard-backface: linear-gradient(
 $l-theme--grd--frontpage: linear-gradient(to top, rgba(47, 54, 64, 0.95), rgba(72, 126, 176, 0.68));
 $l-theme--grd--section: transparent;
 
-$l-theme--sdw--mbl--menu-box: 0px 4px 15px 0px rgba(0,0,0,0.5);
-$l-theme--sdw--projcard: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
-$l-theme--sdw--publcard: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
-$l-theme--sdw--wexpcard: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
-$l-theme--sdw--tooltip: 0px 4px 15px 0px rgba(0,0,0,0.75);
+$l-theme--sdw--generic--card: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
+$l-theme--sdw--projcard: $l-theme--sdw--generic--card;
+$l-theme--sdw--publcard: $l-theme--sdw--generic--card;
+$l-theme--sdw--wexpcard: $l-theme--sdw--generic--card;
+$l-theme--sdw--tooltip: 0 .4rem 1.5rem 0 rgba(0,0,0,0.75);
 $l-theme--sdw--bigbutton--initial: 0 .5rem 1rem rgba(0, 0, 0, .15);
 $l-theme--sdw--bigbutton--onhover: 0 1rem 2rem rgba(0, 0, 0, .2);
 $l-theme--sdw--bigbutton--pressed: 0 .5rem 1rem rgba(0, 0, 0, .2);
-$l-theme--sdw--wexpcard-number-disk: unset; // 0 .5rem 1rem 0 rgba(black, .125);
 
 $l-theme--fltr--publcard-img: contrast(50%) brightness(160%) grayscale(100%);
-
 $l-theme--prop--skillcard-opacity: 0.5;

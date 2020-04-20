@@ -139,10 +139,6 @@ $card-height: 15rem;
         .colored-chunk {
             background-color: $l-theme--clr--bg--wexpcard-clchunk;
         }
-        .number-base {
-            background: $l-theme--clr--bg--wexpcard-number-disk;
-            box-shadow: $l-theme--sdw--wexpcard-number-disk;
-        }
         .number {
             color: $l-theme--clr--txt--wexpcard-number;
         }
@@ -161,10 +157,6 @@ $card-height: 15rem;
         }
         .colored-chunk {
             background-color: $d-theme--clr--bg--wexpcard-clchunk;
-        }
-        .number-base {
-            background: $d-theme--clr--bg--wexpcard-number-disk;
-            box-shadow: $d-theme--sdw--wexpcard-number-disk;
         }
         .number {
             color: $d-theme--clr--txt--wexpcard-number;
