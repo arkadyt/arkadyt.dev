@@ -1,5 +1,4 @@
 import StorageGateway from 'images/skills/aws/storagegateway.svg';
-import EKS from 'images/skills/aws/eks.svg';
 import DirectConnect from 'images/skills/aws/directconnect.svg';
 import SWF from 'images/skills/aws/swf.svg';
 import WAF from 'images/skills/aws/waf.svg';
@@ -351,10 +350,6 @@ export const awsSkills = [
   {
     icon: SWF,
     title: `AWS SWF`
-  },
-  {
-    icon: EKS,
-    title: `AWS EKS`
   },
   {
     icon: Kinesis,

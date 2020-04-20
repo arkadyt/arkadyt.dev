@@ -4,7 +4,7 @@ import ThemeContext from 'state/context/theme';
 import Tooltip from 'components/shared/tooltip';
 import './styles.scss';
 
-const IMG_HEIGHT = 8;
+const IMG_HEIGHT = 9;
 
 const SkillCard = props => {
   const { icon, iconDark, title, wide, megaWide, ultraWide, height } = props;
