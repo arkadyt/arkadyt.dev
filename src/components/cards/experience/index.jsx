@@ -12,12 +12,12 @@ const ensurePlural = (count, singularForm) => {
 const appendLongevity = str => {
     try {
         const split = str.split('—').map(el => el.trim());
-        split[0] = new Date(split[0]);
+        split[0] = new Date(`1 ${split[0]}`);
 
         if (split[1].toLowerCase() === "present") {
             split[1] = new Date();
         } else {
-            split[1] = new Date(split[1]);
+            split[1] = new Date(`1 ${split[1]}`);
         }
 
         let longevity = Math.ceil((split[1] - split[0]) / 1000 / 60 / 60 / 24 / 30);
