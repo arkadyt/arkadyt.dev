@@ -21,6 +21,10 @@ $border-radius: 80rem;
         transition: all .2s ease;
         border: 0; outline: none;
 
+        &::-moz-focus-inner {
+            border: 0;
+        }
+
         &:active {
             transform: translateY(.4rem);
         }
