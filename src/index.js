@@ -2,15 +2,17 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import Main from 'components/main';
 import ThemeContext from 'state/context/theme';
+import { getLastUsedTheme, setLastUsedTheme } from 'tools';
 import './index.scss';
 import clsx from 'clsx';
 import * as serviceWorker from './serviceWorker';
 
 const App = () => {
-  const [theme, setTheme] = useState('l-theme');
+  const [theme, setTheme] = useState(getLastUsedTheme() || 'l-theme');
 
   const toggleTheme = () => {
     const map = { "l-theme": "d-theme", "d-theme": "l-theme" };
+    setLastUsedTheme(map[theme]);
     setTheme(map[theme]);
   }
 
