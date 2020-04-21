@@ -5,7 +5,7 @@ const Image = props => {
     return (
         <picture {...containerProps}>
           {image.webp && <source type="image/webp" srcSet={image.webp} />}
-          {image.fallback && <img src={image.fallback} {...imgProps} />}
+          {image.fallback && <img src={image.fallback} {...imgProps} alt="" />}
         </picture>
     );
 };

@@ -1,4 +1,3 @@
-import React from 'react';
 import ImgHP from 'images/hp.svg';
 import ImgFreelance from 'images/freelance.svg';
 

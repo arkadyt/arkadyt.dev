@@ -1,5 +1,3 @@
-import React from 'react';
-
 import weworkWEBP from 'images/projects/wework.webp';
 import weworkJPG from 'images/projects/wework.jpg';
 

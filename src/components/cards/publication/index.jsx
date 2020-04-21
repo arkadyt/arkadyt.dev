@@ -8,7 +8,7 @@ import Image from 'components/shared/image';
 import "./styles.scss";
 
 const PublCard = props => {
-  const { image, title, snippet, href } = props;
+  const { image, title, href } = props;
   const { theme } = useContext(ThemeContext);
 
   return (

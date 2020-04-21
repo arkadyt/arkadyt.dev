@@ -42,8 +42,6 @@ import Java from 'images/skills/java.svg';
 import Python from 'images/skills/python.svg';
 import Kubernetes from 'images/skills/kubernetes.svg';
 
-import TravisCI from 'images/skills/travisci.svg';
-import CircleCI from 'images/skills/circleci.svg';
 import GulpJS from 'images/skills/gulp.svg';
 import Workbox from 'images/skills/workbox.svg';
 
@@ -55,7 +53,6 @@ import CloudFormation from 'images/skills/aws/cloudformation.svg';
 import CloudTrail from 'images/skills/aws/cloudtrail.svg';
 import CloudWatch from 'images/skills/aws/cloudwatch.svg';
 import CodeBuild from 'images/skills/aws/codebuild.svg';
-import CodeCommit from 'images/skills/aws/codecommit.svg';
 import CodeDeploy from 'images/skills/aws/codedeploy.svg';
 import CodePipeline from 'images/skills/aws/codepipeline.svg';
 import DynamoDB from 'images/skills/aws/dynamodb.svg';
@@ -72,7 +69,6 @@ import RDS from 'images/skills/aws/rds.svg';
 import Redshift from 'images/skills/aws/redshift.svg';
 import Route53 from 'images/skills/aws/route53.svg';
 import S3 from 'images/skills/aws/s3.svg';
-import S3Glacier from 'images/skills/aws/s3glacier.svg';
 import SES from 'images/skills/aws/ses.svg';
 import SNS from 'images/skills/aws/sns.svg';
 import SQS from 'images/skills/aws/sqs.svg';
@@ -81,7 +77,6 @@ import VPC from 'images/skills/aws/vpc.svg';
 import XRay from 'images/skills/aws/xray.svg';
 import Kinesis from 'images/skills/aws/kinesis.svg';
 
-const emDash = '—';
 
 export const skills = [
   {

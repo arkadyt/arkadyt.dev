@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-  FaFilePdf as IconResume,
   FaLinkedin as IconLinkedIn,
   FaMediumM as IconMedium,
   FaPaperPlane as IconMail
