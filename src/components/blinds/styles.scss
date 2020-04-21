@@ -1,18 +1,17 @@
-    .blinds {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: white;
-        z-index: 5;
-        animation: fadeOut .5s ease-out 1s;
-        animation-fill-mode: forwards;
-        pointer-events: none;
-    }
-    @keyframes fadeOut {
-        100% {
-            opacity: 0;
-        }
-    }
+.Blinds-container {
+    position: fixed;
+    top: 0; left: 0;
+    opacity: 1;
 
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+
+    background-color: white;
+    pointer-events: none;
+    transition: opacity .25s;
+
+    &.transparent {
+        opacity: 0;
+    }
+}

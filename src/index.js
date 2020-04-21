@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import Main from 'components/main';
+import Blinds from 'components/blinds';
 import ThemeContext from 'state/context/theme';
 import { getLastUsedTheme, setLastUsedTheme } from 'tools';
 import './index.scss';
@@ -20,7 +21,7 @@ const App = () => {
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
       <div className={clsx("App-container", theme)}>
         <Main />
-        <div className="blinds" />
+        <Blinds />
       </div>
     </ThemeContext.Provider>
   );
