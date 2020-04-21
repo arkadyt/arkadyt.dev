@@ -34,13 +34,13 @@ const appendLongevity = str => {
 };
 
 const WexpCard = props => {
-    const { imgWidth, date, company, title, number } = props;
+    const { imgWidth, date, company, title, number, noflip } = props;
     const { theme } = useContext(ThemeContext);
     const { image, imageDark } = props;
     const jobIcon = theme === 'd-theme' && imageDark ? imageDark : image;
 
     return (
-        <div className={clsx("WexpCard-container", theme)}>
+        <div className={clsx("WexpCard-container", theme, noflip && 'noflip')}>
             <div className="frontface">
                 <div className="colored-block">
                     <div className="colored-chunk" />

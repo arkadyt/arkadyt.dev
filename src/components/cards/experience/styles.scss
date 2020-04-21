@@ -26,12 +26,16 @@ $card-height: 15rem;
     perspective: 150rem;
 
     &:hover {
-        & .frontface {
+        .frontface {
             transform: rotateX(180deg);
         }
-        & .backface {
+        .backface {
             transform: rotateX(0deg);
         }
+    }
+
+    &.noflip {
+        pointer-events: none;
     }
 
     .frontface {
