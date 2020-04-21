@@ -20,7 +20,7 @@ const Publications = props => {
         </div>
         <div className="publcard-view">
             {publications.map((item, index) => (
-                <PublCard {...item} />
+                <PublCard {...item} key={index} />
             ))}
         </div>
         <div className="view-more-row">

@@ -19,7 +19,7 @@ const Skills = props => {
         </div>
         <div className="skills-view">
             {skills.map((item, index) => (
-                <SkillCard {...item} />
+                <SkillCard key={index} {...item} />
             ))}
         </div>
         <div className="regular-text">
@@ -35,7 +35,7 @@ const Skills = props => {
         </div>
         <div className="skills-view">
             {awsSkills.map((item, index) => (
-                <SkillCard {...item} />
+                <SkillCard key={index} {...item} />
             ))}
         </div>
     </Section>
