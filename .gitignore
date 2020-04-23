@@ -20,3 +20,6 @@ package-lock.json
 # private info
 # /src/content.js
 # /src/docs/
+
+# .env file
+.env

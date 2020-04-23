@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://arkadyt.com/",
+  "homepage": "https://arkadyt.dev",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "predeploy": "npm run build",
-    "deploy": "firebase deploy",
+    "deploy": "sh ./deploy.sh",
     "eject": "react-scripts eject"
   },
   "browserslist": [
