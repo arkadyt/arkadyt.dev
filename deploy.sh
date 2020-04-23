@@ -5,13 +5,14 @@
 # import variables from .env file
 export $(xargs < ./.env)
 
-s3-deploy ./build/** \
-  --cwd build/ \
+deploy-aws-s3-cloudfront \
+  --acl private \
   --bucket apphost-7 \
-  --region us-west-2 \
-  --private \
-  --distId E31KW26N7Q3LX8 \
-  --filePrefix arkadyt \
-  --cache 31536000 \
-  --invalidate / \
-  --gzip
+  --cache-control index.html:no-cache \
+  --delete \
+  --source ./build \
+  --destination arkadyt \
+  --distribution E31KW26N7Q3LX8 \
+  --invalidation-path "/*" \
+  --non-interactive
+
