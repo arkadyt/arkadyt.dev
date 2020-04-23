@@ -1,8 +1,8 @@
 #
-# https://www.npmjs.com/package/s3-deploy
+# https://github.com/apancutt/deploy-aws-s3-cloudfront
 #
 
-# import variables from .env file
+# import aws key variables from .env file
 export $(xargs < ./.env)
 
 deploy-aws-s3-cloudfront \

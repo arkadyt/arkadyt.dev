@@ -1,7 +1,7 @@
 {
-  "name": "portfolio",
-  "homepage": "https://arkadyt.dev",
-  "version": "0.1.0",
+  "name": "arkadyt.dev",
+  "homepage": "www.arkadyt.dev",
+  "version": "2.0.0",
   "private": true,
   "dependencies": {
     "clsx": "1.1.0",
