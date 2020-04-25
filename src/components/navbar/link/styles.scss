@@ -2,7 +2,7 @@
 
 .NavLink-container {
     transform: scale(-1);
-    height: 6.5rem;
+    height: $navbar--thickness;
     padding: 0;
     margin: 0;
 
@@ -23,13 +23,13 @@
         user-select: none;
         text-decoration: none;
 
-        font-size: 3.2rem;
+        font-size: calc(#{$navbar--thickness * .5});
         padding: 2rem;
     }
 
     .link-text {
         font-family: "Open Sans";
-        font-size: 2.5rem;
+        font-size: calc(#{$navbar--thickness * .42});
         margin-left: 1.5rem;
         white-space: nowrap;
     }
