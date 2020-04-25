@@ -2,27 +2,29 @@
 @import 'variables';
 
 html {
+    @media (orientation: landscape) {
+        font-size: 9px;
+        @media (max-width: 1800px) {
+            font-size: 8px;
+        }
+        @media (max-width: 1600px) {
+            font-size: 7px;
+        }
+        @media (max-width: 1200px) {
+            font-size: 6px;
+        }
+        @media (max-width: 900px) {
+            font-size: 5px;
+        }
+        @media (max-width: 600px) {
+            font-size: 4px;
+        }
+    }
     /**
      * Setting the root font-size relative to the viewport width makes the layout
      * 'stretchy', since sizes of all elements on the website are set with 'rems'.
+     * This helps achive same proportion ratios on all sorts of mobile screens.
      */
-    @media (orientation: landscape) {
-        font-size: .45vw;
-        // but zooming should work too:
-        @media (max-width: 1800px) {
-            font-size: .50vw;
-        }
-        @media (max-width: 1200px) {
-            font-size: .55vw;
-        }
-        @media (max-width: 900px) {
-            font-size: .575vw;
-        }
-        @media (max-width: 750px) {
-            // back to 'stretchy' mode:
-            font-size: .6vw;
-        }
-    }
     @media (orientation: portrait) {
         font-size: 2vw;
     }
