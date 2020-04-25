@@ -15,6 +15,8 @@
 
     > .content {
         position: relative; // to create new z-context
+        z-index: 10;
+
         width: 96rem;
         @media (orientation: portrait) {
             width: 100%;

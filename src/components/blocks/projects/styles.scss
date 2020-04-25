@@ -1,5 +1,7 @@
 .projcard-view {
+    position: relative;
     margin: 0 auto;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 2.5rem;
@@ -9,6 +11,7 @@
 
     &.horizontal {
         grid-template-columns: 1fr;
+        z-index: -10;
     }
 
     & + .projcard-view {
