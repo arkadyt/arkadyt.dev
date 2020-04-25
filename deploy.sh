@@ -8,7 +8,7 @@ export $(xargs < ./.env)
 deploy-aws-s3-cloudfront \
   --acl private \
   --bucket apphost-7 \
-  --cache-control "/index.html:no-cache" "**/*.svg:max-age=31536000" "**:max-age=604800" \
+  --cache-control "index.html:no-cache" "**.svg:max-age=31536000" "**:max-age=604800" \
   --delete \
   --source ./build \
   --destination arkadyt \
