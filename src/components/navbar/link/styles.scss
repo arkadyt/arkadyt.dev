@@ -23,15 +23,17 @@
         user-select: none;
         text-decoration: none;
 
-        font-size: calc(#{$navbar--thickness * .5});
+        font-size: $navbar--thickness * .5;
         padding: 2rem;
     }
 
     .link-text {
         font-family: "Open Sans";
-        font-size: calc(#{$navbar--thickness * .42});
+        font-size: $navbar--thickness * .42;
         margin-left: 1.5rem;
         white-space: nowrap;
+
+        // hide text if window is shorter than 1900px
     }
 
     .link-icon {
