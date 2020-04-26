@@ -2,12 +2,20 @@
 @import 'variables';
 
 html {
+    /**
+     * Setting the root font-size relative to the viewport width makes the layout
+     * 'stretchy', since sizes of all elements on the website are set with 'rems'.
+     */
     @media (orientation: landscape) {
+        /**
+         * Do not apply 'stretchy' layout for screens above Full-HD, since it could be a 32:9 screen,
+         * or a high-res retina screen where people often have zoom-in setting cranked up in their browsers.
+         */
         font-size: 9px;
         @media (max-width: 1800px) {
             font-size: 8px;
         }
-        @media (max-width: 1600px) {
+        @media (max-width: 1500px) {
             font-size: 7px;
         }
         @media (max-width: 1200px) {
@@ -17,13 +25,16 @@ html {
             font-size: 5px;
         }
         @media (max-width: 600px) {
-            font-size: 4px;
+            /**
+             * If for whatewer reason webpage is viewed in landscape mode with width smaller that 600px,
+             * (could be a zoom-in side effect) switch to 'stretchy' mode to avoid blowout of page elements.
+             */
+            font-size: .8vw;
         }
     }
     /**
-     * Setting the root font-size relative to the viewport width makes the layout
-     * 'stretchy', since sizes of all elements on the website are set with 'rems'.
-     * This helps achive same proportion ratios on all sorts of mobile screens.
+     * Switch to 'stretchy' layout when in portrait mode to keep proportion ratios of all elements
+     * the same across all kinds of screen sizes of all sorts of mobile devices.
      */
     @media (orientation: portrait) {
         font-size: 2vw;
