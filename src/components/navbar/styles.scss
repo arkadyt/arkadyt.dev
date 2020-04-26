@@ -13,20 +13,20 @@
     z-index: 50;
 
     .sidebar-buttons {
-      height: $navbar--thickness * 1.38;
-      width: 100%;
-      display: flex;
-      padding: 0;
-      margin: 0;
+        height: $navbar--thickness * 1.38;
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
     }
 
     .sidebar-links {
-      display: flex;
-      padding: 0;
-      margin: 0;
-      transform: rotate(90deg);
-      position: relative;
-      top: 0;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        transform: rotate(90deg);
+        position: relative;
+        top: 0;
     }
 }
 
