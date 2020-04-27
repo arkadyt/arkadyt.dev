@@ -1,3 +1,5 @@
+import React from 'react';
+
 import weworkWEBP from 'images/projects/wework.webp';
 import weworkJPG from 'images/projects/wework.jpg';
 
@@ -15,11 +17,14 @@ export default [
             fallback: weworkJPG,
         },
         title: 'WeWork',
-        description: 'Fully-fledged social networking platform built with JavaScript, React, Redux, Node.js, Express and others. Not a full Twitter copy, but a close one!',
-        tags: ['JavaScript', 'React', 'Redux', 'Node', 'Express', 'MongoDB', 'AWS'],
+        description: <span>
+            Fully-fledged social networking platform built with JS, React, Redux, Node.js, Express and others.<br />
+            Not a full Twitter copy, but a close one!
+        </span>,
+        tags: ['JS', 'React.js', 'Redux', 'Node.js', 'Express', 'MongoDB', 'AWS'],
         links: [
-            { title: 'Website', href: 'http://socnet.arkadyt.com' },
-            { title: 'GitHub', href: 'https://github.com/arkadyt/ww.net' },
+            { title: 'Website', href: 'https://wework.arkadyt.dev' },
+            { title: 'GitHub', href: 'https://github.com/arkadyt/wework' },
         ],
     },
     {
@@ -29,25 +34,27 @@ export default [
             fallback: vspaceJPG,
         },
         title: 'vSpace',
-        description: 'Fully-fledged eCommerce platform. Built with JavaScript, React, Redux, Node.js, Express and others.',
-        tags: ['JavaScript', 'React', 'Redux', 'Node', 'Express', 'MongoDB', 'AWS'],
+        description: <span>
+            An eCommerce platform built on MERN stack. Application is hosted on AWS. No free shipping! :)
+        </span>,
+        tags: ['JS', 'React', 'Redux.js', 'Node', 'Express.js', 'MongoDB', 'AWS'],
         links: [
-            { title: 'Website', href: 'http://socnet.arkadyt.com' },
-            { title: 'GitHub', href: 'https://github.com/arkadyt/ww.net' },
+            { title: 'Website', href: 'https://vspace.arkadyt.dev' },
+            { title: 'GitHub', href: 'https://github.com/arkadyt/vspace' },
         ],
     },
     {
-        href: 'https://github.com/arkadyt/arkadyt.com',
+        href: 'https://github.com/arkadyt/arkadyt.dev',
         image: {
             webp: arkadytWEBP,
             fallback: arkadytJPG,
         },
-        title: 'arkadyt.com',
-        description: 'Fully-fledged eCommerce platform. Built with JavaScript, React, Redux, Node.js, Express and others.',
-        tags: ['JavaScript', 'React', 'Redux', 'Node', 'Express', 'MongoDB', 'AWS'],
+        title: 'arkadyt.dev',
+        description: 'My personal portfolio website arkadyt.dev. And actually you\'re looking at it right now! Check out the source code at GitHub!',
+        tags: ['JavaScript', 'HTML', 'CSS', 'React', 'AWS', 'S3', 'CloudFront', 'Lambda@Edge'],
         links: [
-            { title: 'Website', href: 'http://socnet.arkadyt.com' },
-            { title: 'GitHub', href: 'https://github.com/arkadyt/ww.net' },
+            { title: 'Website', href: 'https://arkadyt.dev' },
+            { title: 'GitHub', href: 'https://github.com/arkadyt/arkadyt.dev' },
         ],
     },
 ]
