@@ -23,3 +23,15 @@ export const setLastUsedTheme = theme => {
     }
   }
 }
+
+export const getPreferredTheme = () => {
+  console.log('?')
+  if (window.matchMedia('(prefers-color-scheme: light)').matches) {
+    console.log('ml')
+    return "l-theme";
+  }
+  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    console.log('md')
+    return "d-theme";
+  }
+}

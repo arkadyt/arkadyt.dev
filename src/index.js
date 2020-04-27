@@ -3,13 +3,17 @@ import ReactDOM from 'react-dom';
 import Main from 'components/main';
 import Blinds from 'components/blinds';
 import ThemeContext from 'state/context/theme';
-import { getLastUsedTheme, setLastUsedTheme } from 'tools';
+import {
+  getPreferredTheme, getLastUsedTheme, setLastUsedTheme
+} from 'tools';
 import './index.scss';
 import clsx from 'clsx';
 import * as serviceWorker from './serviceWorker';
 
 const App = () => {
-  const [theme, setTheme] = useState(getLastUsedTheme() || 'l-theme');
+  const [theme, setTheme] = useState(
+    getLastUsedTheme(), getPreferredTheme() || 'l-theme'
+  );
 
   const toggleTheme = () => {
     const map = { "l-theme": "d-theme", "d-theme": "l-theme" };

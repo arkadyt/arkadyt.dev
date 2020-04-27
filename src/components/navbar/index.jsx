@@ -1,4 +1,4 @@
-import React, { Fragment, useContext } from 'react';
+import React, { useContext } from 'react';
 import ProximityDetector from 'components/shared/proximity-detector';
 import ThemeContext from 'state/context/theme';
 import { FaMoon } from 'react-icons/fa';
