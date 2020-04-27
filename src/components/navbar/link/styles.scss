@@ -14,6 +14,9 @@
 
     &.notext {
         border-radius: 25rem;
+        width: $navbar--thickness;
+        margin-left: 2rem;
+
         &:first-child a {
             margin-right: 3.8rem;
         }
