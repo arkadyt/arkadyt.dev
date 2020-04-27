@@ -79,130 +79,31 @@ import Kinesis from 'images/skills/aws/kinesis.svg';
 
 
 export const skills = [
-  {
-    icon: HTML,
-    iconDark: HTML_dt,
-    title: 'HTML'
-  },
-  {
-    icon: CSS,
-    iconDark: CSS_dt,
-    title: 'CSS'
-  },
-  {
-    icon: JS,
-    title: 'JavaScript'
-  },
-  {
-    icon: React,
-    iconDark: React_dt,
-    title: 'React.js',
-    megaWide: true
-  },
-  {
-    icon: NodeJS,
-    iconDark: NodeJS_dt,
-    title: 'NodeJS',
-    wide: true,
-  },
-  {
-    icon: Java,
-    title: 'Java'
-  },
-  {
-    icon: Python,
-    title: 'Python'
-  },
-  {
-    icon: Kubernetes,
-    title: 'Kubernetes'
-  },
-  {
-    icon: Docker,
-    iconDark: Docker_dt,
-    title: 'Docker'
-  },
-  {
-    icon: AWS,
-    iconDark: AWS_dt,
-    title: `AWS Cloud Services`,
-    megaWide: true
-  },
-  {
-    icon: AwsCLI,
-    title: 'AWS\nCommand Line Utils'
-  },
-  {
-    icon: MongoDB,
-    iconDark: MongoDB_dt,
-    title: 'MongoDB',
-    megaWide: true,
-    height: 90
-  },
-  {
-    icon: Redux,
-    title: 'Redux.js',
-    height: 90
-  },
-  {
-    icon: Webpack,
-    title: 'Webpack'
-  },
-  {
-    icon: Workbox,
-    title: 'Workbox.js'
-  },
-  {
-    icon: PWA,
-    title: `Progressive Web Apps`,
-    megaWide: true,
-    height: 80,
-  },
-  {
-    icon: Git,
-    iconDark: Git_dt,
-    title: 'Git',
-    megaWide: true
-  },
-  {
-    icon: GraphQL,
-    title: 'GraphQL'
-  },
-  {
-    icon: Apollo,
-    iconDark: Apollo_dt,
-    title: 'Apollo'
-  },
-  {
-    icon: GulpJS,
-    title: "Gulp.js"
-  },
-  {
-    icon: Sass,
-    title: `SASS / SCSS`,
-    wide: true
-  },
-  {
-    icon: Less,
-    title: `LESS`,
-    wide: true,
-    height: 88,
-  },
-  {
-    icon: Bash,
-    iconDark: Bash_dt,
-    title: "Bash",
-    megaWide: true
-  },
-  {
-    icon: Linux,
-    iconDark: Linux_dt,
-    title: "Linux Systems\nAdministration"
-  },
-  {
-    icon: Redis,
-    title: 'Redis'
-  },
+  { icon: HTML,         title: 'HTML',                             mobileOrder: 1000,     iconDark: HTML_dt                                   },
+  { icon: CSS,          title: 'CSS',                              mobileOrder: 1010,     iconDark: CSS_dt                                    },
+  { icon: JS,           title: 'JavaScript',                       mobileOrder: 1020,                                                         },
+  { icon: React,        title: 'React.js',                         mobileOrder: 1030,     iconDark: React_dt, megaWide: true                  },
+  { icon: NodeJS,       title: 'NodeJS',                           mobileOrder: 1040,     iconDark: NodeJS_dt, wide: true                     },
+  { icon: Java,         title: 'Java',                             mobileOrder: 1050,                                                         },
+  { icon: Python,       title: 'Python',                           mobileOrder: 1060,                                                         },
+  { icon: Kubernetes,   title: 'Kubernetes',                       mobileOrder: 1070,                                                         },
+  { icon: Docker,       title: 'Docker',                           mobileOrder: 1080,     iconDark: Docker_dt                                 },
+  { icon: AWS,          title: `AWS Cloud Services`,               mobileOrder: 1090,     iconDark: AWS_dt, megaWide: true                    },
+  { icon: AwsCLI,       title: 'AWS\nCommand Line Utils',          mobileOrder: 1190,                                                         },
+  { icon: MongoDB,      title: 'MongoDB',                          mobileOrder: 1100,     iconDark: MongoDB_dt, megaWide: true, height: 90    },
+  { icon: Redux,        title: 'Redux.js',                         mobileOrder: 1110,     height: 90                                          },
+  { icon: Webpack,      title: 'Webpack',                          mobileOrder: 1130,                                                         },
+  { icon: Workbox,      title: 'Workbox.js',                       mobileOrder: 1140,                                                         },
+  { icon: PWA,          title: `Progressive Web Apps`,             mobileOrder: 1120,     megaWide: true, height: 80                          },
+  { icon: Git,          title: 'Git',                              mobileOrder: 1160,     iconDark: Git_dt, megaWide: true                    },
+  { icon: GraphQL,      title: 'GraphQL',                          mobileOrder: 1170,                                                         },
+  { icon: Apollo,       title: 'Apollo',                           mobileOrder: 1180,     iconDark: Apollo_dt                                 },
+  { icon: GulpJS,       title: "Gulp.js",                          mobileOrder: 1150,                                                         },
+  { icon: Sass,         title: `SASS / SCSS`,                      mobileOrder: 1200,     wide: true                                          },
+  { icon: Less,         title: `LESS`,                             mobileOrder: 1210,     wide: true, height: 88                              },
+  { icon: Bash,         title: "Bash",                             mobileOrder: 1240,     iconDark: Bash_dt, megaWide: true                   },
+  { icon: Linux,        title: "Linux Systems\nAdministration",    mobileOrder: 1230,     iconDark: Linux_dt                                  },
+  { icon: Redis,        title: 'Redis',                            mobileOrder: 1220,                                                         },
 ];
 
 export const awsSkills = [

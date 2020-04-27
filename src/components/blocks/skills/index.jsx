@@ -7,6 +7,10 @@ import './styles.scss';
 import './styles.mobile.scss';
 
 const Skills = props => {
+  const _skills = isMobile()
+    ? skills.sort((a, b) => a.mobileOrder - b.mobileOrder)
+    : skills;
+
   return (
     <Section id="skills" title="Skills">
         <div className="regular-text">
@@ -20,7 +24,7 @@ const Skills = props => {
             </p>
         </div>
         <div className="skills-view">
-            {skills.map((item, index) => (
+            {_skills.map((item, index) => (
                 <SkillCard key={index} {...item} />
             ))}
         </div>
