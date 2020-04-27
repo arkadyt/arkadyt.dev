@@ -18,24 +18,22 @@ const NavBar = props => {
   ];
 
   return (
-    <div className={classes}>
-      <ProximityDetector lip={1.10} selectors={proximitySelectors}>
-        {areOverlapping => (
-          <Fragment>
-            <div className="sidebar-links">
-              {Object.values(links).map((item, index) => (
-                <NavLink key={index} {...item} notext={areOverlapping} />
-              ))}
-            </div>
-            <div className="sidebar-buttons">
-              <NavButton onClick={() => toggleTheme()}>
-                {theme === 'd-theme' ? <IoMdSunny /> : <FaMoon />}
-              </NavButton>
-            </div>
-          </Fragment>
-        )}
-      </ProximityDetector>
-    </div>
+    <ProximityDetector lip={1.10} selectors={proximitySelectors}>
+      {areOverlapping => (
+        <div className={classes}>
+          <div className="sidebar-links">
+            {Object.values(links).map((item, index) => (
+              <NavLink key={index} {...item} notext={areOverlapping} />
+            ))}
+          </div>
+          <div className="sidebar-buttons">
+            <NavButton onClick={() => toggleTheme()}>
+              {theme === 'd-theme' ? <IoMdSunny /> : <FaMoon />}
+            </NavButton>
+          </div>
+        </div>
+      )}
+    </ProximityDetector>
   )
 };
 
