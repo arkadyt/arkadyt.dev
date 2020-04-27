@@ -47,6 +47,12 @@ $border-radius: 80rem;
             opacity: 0;
         }
     }
+
+    &.no-explosion {
+        button::after {
+            display: none;
+        }
+    }
 }
 
 /**

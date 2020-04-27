@@ -37,7 +37,7 @@ const Projects = props => {
             ))}
         </div>
         <div className="view-more-row">
-            <BigButton title="View more projects" href={links.github.href} showShadow />
+            <BigButton title="View more projects" href={links.github.href} showShadow noExplosion />
         </div>
     </Section>
   );
