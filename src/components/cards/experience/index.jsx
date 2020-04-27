@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import ThemeContext from 'state/context/theme';
-import BigButton from 'components/shared/bigbutton';
+import BigButton from 'components/shared/big-button';
 import clsx from 'clsx';
 import './styles.scss';
 

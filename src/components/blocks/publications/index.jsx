@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from 'components/shared/section';
 import PublCard from 'components/cards/publication';
-import BigButton from 'components/shared/bigbutton';
+import BigButton from 'components/shared/big-button';
 import { publications, links } from 'content';
 import './styles.scss';
 
