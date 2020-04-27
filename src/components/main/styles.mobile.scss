@@ -3,5 +3,9 @@
 @media (orientation: portrait) {
     .Layout-content {
         margin: 0;
+
+        .regular-text {
+            font-size: 1.8rem;
+        }
     }
 }
