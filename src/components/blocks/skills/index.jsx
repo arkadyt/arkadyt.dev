@@ -1,13 +1,14 @@
 import React from 'react';
 import { skills, awsSkills } from 'content';
-import { isMobile } from 'tools';
+import { useMobileDetector } from 'hooks';
 import SkillCard from 'components/cards/skill';
 import Section from 'components/shared/section';
 import './styles.scss';
 import './styles.mobile.scss';
 
 const Skills = props => {
-  const _skills = isMobile()
+  const isMobile = useMobileDetector();
+  const _skills = isMobile
     ? skills.sort((a, b) => a.mobileOrder - b.mobileOrder)
     : skills;
 

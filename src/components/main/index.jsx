@@ -1,6 +1,6 @@
 import React, { useContext, Fragment } from 'react';
 import ThemeContext from 'state/context/theme';
-import { isMobile } from 'tools';
+import { useMobileDetector } from 'hooks';
 import clsx from 'clsx';
 import './styles.scss';
 import './styles.mobile.scss';
@@ -16,9 +16,10 @@ import Footer from 'components/blocks/footer';
 
 const Layout = props => {
     const { theme } = useContext(ThemeContext);
+    const isMobile = useMobileDetector();
     return (
         <Fragment>
-            {isMobile() ? null : <NavBar />}
+            {isMobile ? null : <NavBar />}
             <div className={clsx("Layout-content", theme)}>
                 <Header />
                 <div className="content-body">
