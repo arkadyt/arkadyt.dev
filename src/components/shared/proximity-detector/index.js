@@ -43,7 +43,6 @@ class ProximityDetector extends Component {
 
   handleResize = () => {
     const overlapping = this.areOverlapping();
-    console.log({ state: this.state.areOverlapping, overlapping });
     if (!this.state.areOverlapping && overlapping) {
       this.setState({ areOverlapping: true });
     } else if (this.state.areOverlapping && !overlapping) {
