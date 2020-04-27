@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import ThemeContext from 'state/context/theme';
 import clsx from 'clsx';
 import './styles.scss';
+import './styles.mobile.scss';
 
 const Section = props => {
     const { theme } = useContext(ThemeContext);

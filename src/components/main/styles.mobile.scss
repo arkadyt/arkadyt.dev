@@ -7,5 +7,14 @@
         .regular-text {
             font-size: 1.8rem;
         }
+
+        .content-body {
+            >*:first-child {
+                padding-top: 0;
+            }
+            >*:last-child {
+                padding-bottom: 0;
+            }
+        }
     }
 }

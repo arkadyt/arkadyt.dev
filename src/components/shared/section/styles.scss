@@ -18,9 +18,6 @@
         z-index: 10;
 
         width: 96rem;
-        @media (orientation: portrait) {
-            width: 100%;
-        }
         padding: $section--padding--top 0;
         margin: 0 auto;
     }
@@ -29,11 +26,6 @@
         margin: 0 0 8rem 0;
         line-height: 1.1em;
         font-size: 8rem;
-        @media (orientation: portrait) {
-            font-size: 6rem;
-            margin-left: 2rem;
-            margin-right: 2rem;
-        }
         font-family: $font-header-primary;
         text-transform: uppercase;
     }

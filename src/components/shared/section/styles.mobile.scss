@@ -1,0 +1,32 @@
+@import "_variables";
+
+$l-theme--sdw--section: 0 .5rem 1.5rem .5rem rgba(black, .1);
+$d-theme--sdw--section: 0 .5rem 1.5rem .5rem rgba(black, .1);
+
+@media (orientation: portrait) {
+    .Section-container {
+        width: 92%;
+        margin: 3rem 2rem;
+        padding: 0 2rem;
+        border-radius: 2rem;
+
+        > .content {
+            width: 100%;
+            padding: 5rem 0;
+        }
+
+        h1 {
+            font-size: 5rem;
+            margin: 0 1rem 0 1rem;
+        }
+    }
+
+    .Section-container {
+        &.l-theme {
+            box-shadow: $l-theme--sdw--section;
+        }
+        &.d-theme {
+            box-shadow: $d-theme--sdw--section;
+        }
+    }
+}
