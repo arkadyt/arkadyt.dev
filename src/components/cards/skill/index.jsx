@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
 import clsx from 'clsx';
+import { isMobile } from 'tools';
 import ThemeContext from 'state/context/theme';
 import Tooltip from 'components/shared/tooltip';
 import './styles.scss';
 
-const IMG_HEIGHT = 9;
+const IMG_HEIGHT = isMobile() ? 6 : 9;
 
 const SkillCard = props => {
   const { icon, iconDark, title, wide, megaWide, ultraWide, height } = props;

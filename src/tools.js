@@ -1,3 +1,7 @@
+export const isMobile = () => {
+  return window.matchMedia("(orientation: portrait)").matches;
+}
+
 export const goTo = href => {
   window.open(href, '_blank');
 }

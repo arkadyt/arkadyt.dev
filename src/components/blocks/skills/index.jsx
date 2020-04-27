@@ -1,8 +1,10 @@
 import React from 'react';
 import { skills, awsSkills } from 'content';
+import { isMobile } from 'tools';
 import SkillCard from 'components/cards/skill';
 import Section from 'components/shared/section';
 import './styles.scss';
+import './styles.mobile.scss';
 
 const Skills = props => {
   return (

@@ -1,5 +1,6 @@
 import React, { useContext, Fragment } from 'react';
 import ThemeContext from 'state/context/theme';
+import { isMobile } from 'tools';
 import clsx from 'clsx';
 import './styles.scss';
 import './styles.mobile.scss';
@@ -15,11 +16,9 @@ import Footer from 'components/blocks/footer';
 
 const Layout = props => {
     const { theme } = useContext(ThemeContext);
-    const isLandscape = window.matchMedia("(orientation: landscape)").matches;
-
     return (
         <Fragment>
-            {isLandscape ? <NavBar /> : null}
+            {isMobile() ? null : <NavBar />}
             <div className={clsx("Layout-content", theme)}>
                 <Header />
                 <div className="content-body">
