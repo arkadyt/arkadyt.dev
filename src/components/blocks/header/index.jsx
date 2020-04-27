@@ -4,6 +4,7 @@ import Image from 'components/shared/image';
 import { header } from 'content';
 import clsx from 'clsx';
 import './styles.scss';
+import './styles.mobile.scss';
 
 const Header = (props) => {
     const { theme } = useContext(ThemeContext);

@@ -1,6 +1,6 @@
 @import '_variables';
 
-.Header-background * {
+.Header-background img {
     position: fixed;
     top: 0;
     left: 0;
@@ -27,17 +27,9 @@
             font-family: $font-header-primary;
             font-weight: 100;
             font-size: 11rem;
-            @media (orientation: portrait) {
-                font-size: 7.4rem;
-            }
         }
         h3 {
             margin-left: 2rem;
-            @media (orientation: portrait) {
-                margin-left: 0;
-                display: block;
-                font-size: 7rem;
-            }
         }
         span {
             margin-top: 1rem;
@@ -50,13 +42,6 @@
             &:last-child::after {
                 content: unset;
             }
-            @media (orientation: portrait) {
-                &::after {
-                    content: unset;
-                }
-                display: block;
-                font-size: 2.6rem;
-            }
         }
     }
 }
@@ -65,7 +50,6 @@
 /**
  * Theme and colors.
  */
-
 .Header-container {
     &.l-theme {
         background: $l-theme--grd--frontpage;

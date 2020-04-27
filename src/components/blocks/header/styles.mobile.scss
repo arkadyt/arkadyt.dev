@@ -1,0 +1,25 @@
+@import "_variables";
+
+$header--height: 30vh;
+
+@media (orientation: portrait) {
+    .Header-container {
+        height: $header--height;
+        img {
+            height: $header--height;
+        }
+
+        .name-block {
+            h1, h3 {
+                font-size: 4rem;
+                display: inline;
+            }
+            h3 {
+                margin-left: 1rem;
+            }
+            span {
+                font-size: 1.28rem;
+            }
+        }
+    }
+}
