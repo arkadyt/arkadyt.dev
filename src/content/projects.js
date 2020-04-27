@@ -21,7 +21,7 @@ export default [
             Fully-fledged social networking platform built with JS, React, Redux, Node.js, Express and others.<br />
             Not a full Twitter copy, but a close one!
         </span>,
-        tags: ['JS', 'React.js', 'Redux', 'Node.js', 'Express', 'MongoDB', 'AWS'],
+        tags: ['JS', 'React.js', 'Redux', 'Node.js', 'Express', 'MongoDB', 'AWS', '+20'],
         links: [
             { title: 'Website', href: 'https://wework.arkadyt.dev' },
             { title: 'GitHub', href: 'https://github.com/arkadyt/wework' },
@@ -37,7 +37,7 @@ export default [
         description: <span>
             An eCommerce platform built on MERN stack. Application is hosted on AWS. No free shipping! :)
         </span>,
-        tags: ['JS', 'React', 'Redux.js', 'Node', 'Express.js', 'MongoDB', 'AWS'],
+        tags: ['JS', 'React', 'Redux.js', 'Node', 'Express.js', 'MongoDB', 'AWS', '+17'],
         links: [
             { title: 'Website', href: 'https://vspace.arkadyt.dev' },
             { title: 'GitHub', href: 'https://github.com/arkadyt/vspace' },
@@ -51,7 +51,7 @@ export default [
         },
         title: 'arkadyt.dev',
         description: 'My personal portfolio website arkadyt.dev. And actually you\'re looking at it right now! Check out the source code at GitHub!',
-        tags: ['JavaScript', 'HTML', 'CSS', 'React', 'AWS', 'S3', 'CloudFront', 'Lambda@Edge'],
+        tags: ['JavaScript', 'HTML', 'CSS', 'React', 'AWS', 'S3', 'CloudFront', 'Lambda@Edge', '+9'],
         links: [
             { title: 'Website', href: 'https://arkadyt.dev' },
             { title: 'GitHub', href: 'https://github.com/arkadyt/arkadyt.dev' },
