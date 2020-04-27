@@ -12,7 +12,7 @@ import * as serviceWorker from './serviceWorker';
 
 const App = () => {
   const [theme, setTheme] = useState(
-    getLastUsedTheme(), getPreferredTheme() || 'l-theme'
+    getLastUsedTheme() || getPreferredTheme() || 'l-theme'
   );
 
   const toggleTheme = () => {
