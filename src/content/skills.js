@@ -107,152 +107,41 @@ export const skills = [
 ];
 
 export const awsSkills = [
-  {
-    icon: Lambda,
-    title: `AWS Lambda`
-  },
-  {
-    icon: StepFunctions,
-    title: `AWS StepFunctions`
-  },
-  {
-    icon: ApiGateway,
-    title: `AWS ApiGateway`
-  },
-  {
-    icon: VPC,
-    title: `AWS VPC`
-  },
-  {
-    icon: IAM,
-    title: `AWS IAM`
-  },
-  {
-    icon: Cognito,
-    title: `AWS Cognito`
-  },
-  {
-    icon: EC2,
-    title: `AWS EC2`
-  },
-  {
-    icon: DynamoDB,
-    title: `AWS DynamoDB`
-  },
-  {
-    icon: Route53,
-    title: `AWS Route53`
-  },
-  {
-    icon: CloudFront,
-    title: `AWS CloudFront`
-  },
-  {
-    icon: LoadBalancers,
-    title: `AWS Elastic\nLoad Balancing`
-  },
-  {
-    icon: SES,
-    title: `AWS SES`
-  },
-  {
-    icon: S3,
-    title: `AWS S3`
-  },
-  {
-    icon: SQS,
-    title: `AWS SQS`
-  },
-  {
-    icon: SNS,
-    title: `AWS SNS`
-  },
-  {
-    icon: RDS,
-    title: `AWS RDS`
-  },
-  {
-    icon: Redshift,
-    title: `AWS Redshift`
-  },
-  {
-    icon: Beanstalk,
-    title: `AWS Elastic Beanstalk`
-  },
-  {
-    icon: CloudFormation,
-    title: `AWS CloudFormation`
-  },
-  {
-    icon: EFS,
-    title: `AWS EFS`
-  },
-  {
-    icon: KMS,
-    title: `AWS KMS`
-  },
-  {
-    icon: Shield,
-    title: `AWS Shield`
-  },
-  {
-    icon: WAF,
-    title: `AWS WAF`
-  },
-  {
-    icon: DirectConnect,
-    title: `AWS Direct Connect`
-  },
-  {
-    icon: StorageGateway,
-    title: `AWS Storage Gateway`
-  },
-  {
-    icon: ElastiCache,
-    title: `AWS ElastiCache`
-  },
-  {
-    icon: ElasticSearch,
-    title: `AWS Elasticsearch`
-  },
-  {
-    icon: CloudTrail,
-    title: `AWS CloudTrail`
-  },
-  {
-    icon: CloudWatch,
-    title: `AWS CloudWatch`
-  },
-  {
-    icon: ECS,
-    title: `AWS ECS`
-  },
-  {
-    icon: CodeBuild,
-    title: `AWS CodeBuild`
-  },
-  {
-    icon: CodeDeploy,
-    title: `AWS CodeDeploy`
-  },
-  {
-    icon: CodePipeline,
-    title: `AWS CodePipeline`
-  },
-  {
-    icon: Batch,
-    title: `AWS Batch`
-  },
-  {
-    icon: SWF,
-    title: `AWS SWF`
-  },
-  {
-    icon: Kinesis,
-    title: `AWS Kinesis`
-  },
-  {
-    icon: XRay,
-    title: `AWS X-Ray`
-  },
+  { icon: Lambda,           title: `AWS Lambda`                     },
+  { icon: StepFunctions,    title: `AWS StepFunctions`              },
+  { icon: ApiGateway,       title: `AWS ApiGateway`                 },
+  { icon: VPC,              title: `AWS VPC`                        },
+  { icon: IAM,              title: `AWS IAM`                        },
+  { icon: Cognito,          title: `AWS Cognito`                    },
+  { icon: EC2,              title: `AWS EC2`                        },
+  { icon: DynamoDB,         title: `AWS DynamoDB`                   },
+  { icon: Route53,          title: `AWS Route53`                    },
+  { icon: CloudFront,       title: `AWS CloudFront`                 },
+  { icon: LoadBalancers,    title: `AWS Elastic\nLoad Balancing`    },
+  { icon: SES,              title: `AWS SES`                        },
+  { icon: S3,               title: `AWS S3`                         },
+  { icon: SQS,              title: `AWS SQS`                        },
+  { icon: SNS,              title: `AWS SNS`                        },
+  { icon: RDS,              title: `AWS RDS`                        },
+  { icon: Redshift,         title: `AWS Redshift`                   },
+  { icon: Beanstalk,        title: `AWS Elastic Beanstalk`          },
+  { icon: CloudFormation,   title: `AWS CloudFormation`             },
+  { icon: EFS,              title: `AWS EFS`                        },
+  { icon: KMS,              title: `AWS KMS`                        },
+  { icon: Shield,           title: `AWS Shield`                     },
+  { icon: WAF,              title: `AWS WAF`                        },
+  { icon: DirectConnect,    title: `AWS Direct Connect`             },
+  { icon: StorageGateway,   title: `AWS Storage Gateway`            },
+  { icon: ElastiCache,      title: `AWS ElastiCache`                },
+  { icon: ElasticSearch,    title: `AWS Elasticsearch`              },
+  { icon: CloudTrail,       title: `AWS CloudTrail`                 },
+  { icon: CloudWatch,       title: `AWS CloudWatch`                 },
+  { icon: ECS,              title: `AWS ECS`                        },
+  { icon: CodeBuild,        title: `AWS CodeBuild`                  },
+  { icon: CodeDeploy,       title: `AWS CodeDeploy`                 },
+  { icon: CodePipeline,     title: `AWS CodePipeline`               },
+  { icon: Batch,            title: `AWS Batch`                      },
+  { icon: SWF,              title: `AWS SWF`                        },
+  { icon: Kinesis,          title: `AWS Kinesis`                    },
+  { icon: XRay,             title: `AWS X-Ray`                      },
 ];
