@@ -6,6 +6,7 @@ import { goTo } from 'tools';
 import clsx from 'clsx';
 import { FaExternalLinkAlt as IconHref } from 'react-icons/fa';
 import './styles.scss';
+import './styles.mobile.scss';
 
 const ProjCard = props => {
     const { title, description, tags, image, links, horizontal } = props;
