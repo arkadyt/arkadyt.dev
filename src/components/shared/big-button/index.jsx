@@ -4,6 +4,7 @@ import ThemeContext from 'state/context/theme';
 import { FaExternalLinkAlt as IconHref } from 'react-icons/fa';
 import { goTo } from 'tools';
 import './styles.scss';
+import './styles.mobile.scss';
 
 const BigButton = props => {
   const { title, href, onClick, theme, showShadow, noExplosion } = props;

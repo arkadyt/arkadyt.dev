@@ -1,0 +1,12 @@
+@import '_variables';
+
+@media (orientation: portrait) {
+    .BigButton-container {
+        button {
+            padding: 0 4.2rem;
+            font-size: 1.4rem;
+            height: 5rem;
+            line-height: 5.8rem;
+        }
+    }
+}
