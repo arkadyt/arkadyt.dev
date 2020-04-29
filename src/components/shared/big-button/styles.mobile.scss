@@ -6,7 +6,41 @@
             padding: 0 4.2rem;
             font-size: 1.4rem;
             height: 5rem;
-            line-height: 5.8rem;
+            line-height: 5.6rem;
+        }
+    }
+
+    /**
+     * Theme and colors
+     */
+    .BigButton-container {
+        &.l-theme {
+            .flat {
+                border: $l-theme--border--big-button--flat;
+                &.show-shadow {
+                    box-shadow: unset;
+                }
+                &:hover {
+                    box-shadow: unset;
+                }
+                &:active {
+                    box-shadow: unset; 
+                }
+            }
+        }
+        &.d-theme {
+            .flat {
+                border: $d-theme--border--big-button--flat;
+                &.show-shadow {
+                    box-shadow: unset;
+                }
+                &:hover {
+                    box-shadow: unset;
+                }
+                &:active {
+                    box-shadow: unset; 
+                }
+            }
         }
     }
 }

@@ -21,4 +21,26 @@
             }
         }
     }
+
+    .ProjCard-container {
+        &.l-theme {
+            .frontface {
+                box-shadow: unset;
+                border: $d-theme--border--projcard-frontface;
+            }
+            .backface {
+                box-shadow: unset;
+            }
+        }
+
+        &.d-theme {
+            .frontface {
+                box-shadow: unset;
+                border: $d-theme--border--projcard-frontface
+            }
+            .backface {
+                box-shadow: unset;
+            }
+        }
+    }
 }

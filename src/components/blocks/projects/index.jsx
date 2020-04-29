@@ -52,7 +52,13 @@ const Projects = props => {
         </div>
         {isMobile ? mobileView : desktopView}
         <div className="view-more-row">
-            <BigButton title="View more projects" href={links.github.href} showShadow noExplosion />
+            <BigButton
+              title="View more projects"
+              href={links.github.href}
+              flat
+              noRipple
+              showShadow
+            />
         </div>
     </Section>
   );

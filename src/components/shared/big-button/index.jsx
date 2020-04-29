@@ -7,14 +7,24 @@ import './styles.scss';
 import './styles.mobile.scss';
 
 const BigButton = props => {
-  const { title, href, onClick, theme, showShadow, noExplosion } = props;
+  const { title, href, onClick, theme, showShadow, noRipple, flat } = props;
   const { theme: ctxTheme } = useContext(ThemeContext);
   const clickFn = (typeof onClick === "function" && onClick)
     || goTo.bind(null, href);
 
+  const containerClasses = clsx(
+    "BigButton-container",
+    theme || ctxTheme,
+    noRipple && 'no-ripple',
+  );
+  const btnClasses = clsx(
+    showShadow && "show-shadow",
+    flat && 'flat'
+  );
+
   return (
-    <div className={clsx("BigButton-container", theme || ctxTheme, noExplosion && 'no-explosion')}>
-      <button className={clsx(showShadow && "show-shadow")} onClick={clickFn}>
+    <div className={containerClasses}>
+      <button className={btnClasses} onClick={clickFn}>
         {title}
         {href ? <span>&nbsp;&nbsp;<IconHref /></span> : null}
       </button>

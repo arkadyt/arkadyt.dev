@@ -24,7 +24,13 @@ const Publications = props => {
             ))}
         </div>
         <div className="view-more-row">
-            <BigButton title="View more articles" href={links.blog.href} showShadow noExplosion />
+            <BigButton
+              title="View more articles"
+              href={links.blog.href} 
+              flat
+              noRipple
+              showShadow
+            />
         </div>
     </Section>
   );
