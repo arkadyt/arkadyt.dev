@@ -3,6 +3,7 @@ import ThemeContext from 'state/context/theme';
 import BigButton from 'components/shared/big-button';
 import clsx from 'clsx';
 import './styles.scss';
+import './styles.mobile.scss';
 
 const ensurePlural = (count, singularForm) => {
     if (count > 1) return `${count} ${singularForm}s`;

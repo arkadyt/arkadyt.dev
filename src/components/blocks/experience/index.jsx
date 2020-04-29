@@ -3,6 +3,7 @@ import { jobs } from 'content';
 import WexpCard from 'components/cards/experience';
 import Section from 'components/shared/section';
 import './styles.scss';
+import './styles.mobile.scss';
 
 const Experience = props => {
     return (
