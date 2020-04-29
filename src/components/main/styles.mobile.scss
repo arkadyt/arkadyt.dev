@@ -19,8 +19,12 @@
         }
         
         .view-more-row {
-            .BigButton-container button {
-                width: 35rem;
+            padding-bottom: 0;
+
+            .BigButton-container {
+                button {
+                    width: 35rem;
+                }
             }
         }
     }

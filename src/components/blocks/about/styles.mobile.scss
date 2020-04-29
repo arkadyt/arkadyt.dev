@@ -1,0 +1,9 @@
+@import "_variables";
+
+@media (orientation: portrait) {
+    .Section-container {
+        .regular-text {
+            margin-bottom: 0;
+        }
+    }
+}

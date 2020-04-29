@@ -1,5 +1,6 @@
 import React from 'react';
 import Section from 'components/shared/section';
+import './styles.mobile.scss';
 
 const AboutMe = props => {
   return (
