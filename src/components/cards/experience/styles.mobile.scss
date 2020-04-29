@@ -5,26 +5,55 @@ $card-height: 9rem;
 @media (orientation: portrait) {
     .WexpCard-container {
         .frontface {
-            grid-template-columns: 0.2fr 0.95fr;
-            grid-template-rows: $card-height;
-            grid-column-gap: 1rem;
+            position: relative;
+            display: block;
             padding-left: 1.5rem;
+            height: 22rem;
 
-            .colored-block {
+            .colored-chunk {
                 display: none;
             }
 
+            .colored-block {
+                position: absolute;
+                top: 1rem; left: 7rem;
+                transform: translateX(-50%);
+            }
+
+            img {
+                position: absolute;
+                top: 2.25rem; right: 4rem;
+                height: 10rem;
+                width: unset;
+            }
+
             .text {
+                flex-direction: column-reverse;
+                position: absolute;
+                bottom: 2.5rem; left: 2rem;
+
                 h2 {
-                    font-size: 2rem;
+                    font-size: 2.4rem;
                     margin: .5rem 0;
                 }
                 h3 {
-                    font-size: 1.3rem;
+                    font-size: 1.8rem;
                 }
                 h4 {
-                    font-size: 1rem;
+                    font-size: 1.3rem;
                 }
+            }
+        }
+    }
+
+    /**
+     * Theme and colors.
+     */
+    .WexpCard-container {
+        &.l-theme {
+            .frontface {
+                box-shadow: unset;
+                border: $l-theme--border--card-frontface;
             }
         }
     }

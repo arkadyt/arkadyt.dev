@@ -49,9 +49,7 @@ const WexpCard = props => {
                         <span className="number">{number}</span>
                     </div>
                 </div>
-                <img src={jobIcon}
-                     style={{ width: `${imgWidth}%`, color: 'white' }} 
-                     alt='' />
+                <img src={jobIcon} alt='' />
                 <div className="text">
                     <h4>{appendLongevity(date)}</h4>
                     <h2>{company}</h2>

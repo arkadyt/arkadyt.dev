@@ -26,7 +26,7 @@
         &.l-theme {
             .frontface {
                 box-shadow: unset;
-                border: $d-theme--border--projcard-frontface;
+                border: $d-theme--border--card-frontface;
             }
             .backface {
                 box-shadow: unset;
@@ -36,7 +36,7 @@
         &.d-theme {
             .frontface {
                 box-shadow: unset;
-                border: $d-theme--border--projcard-frontface
+                border: $d-theme--border--card-frontface
             }
             .backface {
                 box-shadow: unset;
