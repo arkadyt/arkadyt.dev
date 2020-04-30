@@ -1,0 +1,9 @@
+@import "_variables";
+
+@media (orientation: portrait) {
+    .PublCard-container {
+        &:first-child {
+            margin-top: 3rem;
+        }
+    }
+}

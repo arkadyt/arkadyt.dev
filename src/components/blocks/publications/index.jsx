@@ -4,6 +4,7 @@ import PublCard from 'components/cards/publication';
 import BigButton from 'components/shared/big-button';
 import { publications, links } from 'content';
 import './styles.scss';
+import './styles.mobile.scss';
 
 const Publications = props => {
   return (
