@@ -72,8 +72,8 @@ $d-theme--sdw--bigbutton--onhover: 0 1rem 2rem rgba(0, 0, 0, .2);
 $d-theme--sdw--bigbutton--pressed: 0 .5rem 1rem rgba(0, 0, 0, .2);
 $d-theme--sdw--section: 0 .1rem 1.2rem rgba(32, 33, 36, 0.28);
 
-$d-theme--border--card-frontface: 1px solid #DFE1E5;
-$d-theme--border--big-button--flat: 1px solid #DFE1E5;
+$d-theme--clr--card--border: #DFE1E5;
+$d-theme--clr--big-button--border: #DFE1E5;
 
 $d-theme--fltr--publcard-img: invert(100%) contrast(50%) brightness(110%) grayscale(100%);
 $d-theme--prop--skillcard-opacity: 0.5;

@@ -53,7 +53,13 @@ $card-height: 9rem;
         &.l-theme {
             .frontface {
                 box-shadow: unset;
-                border: $l-theme--border--card-frontface;
+                border: 1px solid $l-theme--clr--card--border;
+            }
+        }
+        &.d-theme {
+            .frontface {
+                box-shadow: unset;
+                border: 1px solid $d-theme--clr--card--border;
             }
         }
     }

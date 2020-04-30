@@ -16,7 +16,7 @@
     .BigButton-container {
         &.l-theme {
             .flat {
-                border: $l-theme--border--big-button--flat;
+                border: 1px solid $l-theme--clr--big-button--border;
                 &.show-shadow {
                     box-shadow: unset;
                 }
@@ -30,7 +30,7 @@
         }
         &.d-theme {
             .flat {
-                border: $d-theme--border--big-button--flat;
+                border: 1px solid $d-theme--clr--big-button--border;
                 &.show-shadow {
                     box-shadow: unset;
                 }
