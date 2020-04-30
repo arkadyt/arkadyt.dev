@@ -1,6 +1,7 @@
 import React from 'react';
-import { skills, awsSkills } from 'content';
+import { skills, links, awsSkills } from 'content';
 import { useMobileDetector } from 'hooks';
+import BigButton from 'components/shared/big-button';
 import SkillCard from 'components/cards/skill';
 import Section from 'components/shared/section';
 import './styles.scss';
@@ -44,6 +45,15 @@ const Skills = props => {
             {awsSkills.map((item, index) => (
                 <SkillCard key={index} {...item} />
             ))}
+        </div>
+        <div className="view-more-row">
+            <BigButton
+              title="View My LinkedIn"
+              href={links.linkedin.href}
+              flat
+              noRipple
+              showShadow
+            />
         </div>
     </Section>
   );
