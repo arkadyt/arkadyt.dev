@@ -2,17 +2,17 @@ import React from 'react';
 import {
   FaLinkedin as IconLinkedIn,
   FaMediumM as IconMedium,
-  FaPaperPlane as IconMail
+  FaPaperPlane as IconMail,
 } from 'react-icons/fa';
 import {
   GoMarkGithub as IconGitHub
-} from 'react-icons/go'
+} from 'react-icons/go';
 
 export default {
     email: {
         ico: <IconMail />,
-        href: 'mailto:admin@arkadyt.com',
-        readableLink: 'admin@arkadyt.com',
+        href: 'mailto:a.titenko@arkadyt.dev',
+        readableLink: 'a.titenko@arkadyt.dev',
         title: 'Contact',
     },
     github: {
