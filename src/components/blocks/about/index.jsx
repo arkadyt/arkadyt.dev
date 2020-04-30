@@ -4,7 +4,7 @@ import './styles.mobile.scss';
 
 const AboutMe = props => {
   return (
-    <Section id="about-me" title="About Me">
+    <Section id="about-me" title="About Me" {...props}>
         <div className="regular-text">
             <p>
                 Hey there! My name is Andrew. I work as a Software Engineer at HP, here in Palo Alto. I work on everything related to designing and building highly available,

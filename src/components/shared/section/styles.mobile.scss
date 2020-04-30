@@ -2,10 +2,13 @@
 
 @media (orientation: portrait) {
     .Section-container {
-        width: 92%;
-        margin: 3rem 2rem;
         padding: 0 2rem;
-        border-radius: 1rem;
+
+        &.card-style {
+            width: 92%;
+            margin: 3rem 2rem;
+            border-radius: 1rem;
+        }
 
         > .content {
             width: 100%;
@@ -18,12 +21,17 @@
         }
     }
 
+    /**
+     * Theme and colors
+     */
     .Section-container {
-        &.l-theme {
-            box-shadow: $l-theme--sdw--section;
-        }
-        &.d-theme {
-            box-shadow: $d-theme--sdw--section;
+        &.card-style {
+            &.l-theme {
+                box-shadow: $l-theme--sdw--section;
+            }
+            &.d-theme {
+                box-shadow: $d-theme--sdw--section;
+            }
         }
     }
 }

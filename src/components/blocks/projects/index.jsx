@@ -39,7 +39,7 @@ const Projects = props => {
   );
 
   return (
-    <Section id="personal-projects" title="Projects">
+    <Section id="personal-projects" title="Projects" {...props}>
         <div className="regular-text">
             <p>
                 Below are the solo projects of mine that I consider most relevant in the context of frontend and backend engineering,

@@ -6,7 +6,7 @@ import './styles.scss';
 
 const Contact = props => {
   return (
-    <Section id="contact" title="Contact" accent>
+    <Section id="contact" title="Contact" accent {...props}>
         <div className="contact-view">
             {Object.values(links).map((item, index) => {
                 const data = {

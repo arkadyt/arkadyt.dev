@@ -5,9 +5,15 @@ import './styles.scss';
 import './styles.mobile.scss';
 
 const Section = props => {
+    const { cardStyle } = props;
     const { theme } = useContext(ThemeContext);
+    const containerClasses = clsx(
+        `Section-container`, theme, props.accent && 'accent',
+        cardStyle && 'card-style'
+    );
+
     return (
-        <div id={props.id} className={clsx(`Section-container`, theme, props.accent && 'accent')}>
+        <div id={props.id} className={containerClasses}>
             <div className="gradient-shadow" />
             <div className="content">
                 <h1>{props.title}</h1>

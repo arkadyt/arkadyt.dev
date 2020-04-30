@@ -8,7 +8,7 @@ import './styles.mobile.scss';
 
 const Publications = props => {
   return (
-    <Section id="recent-from-blog" title="Publications">
+    <Section id="recent-from-blog" title="Publications" {...props}>
         <div className="regular-text">
             <p>
                 Also check out the articles I list below. I write on different topics surrounding software engineering, computers and networking.

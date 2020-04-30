@@ -8,7 +8,7 @@ import './styles.mobile.scss';
 
 const Experience = props => {
     return (
-      <Section id="work-experience" title="Experience">
+      <Section id="work-experience" title="Experience" {...props}>
           <div className="wexpcard-view">
               {jobs.map((item, index) => {
                   const position = {

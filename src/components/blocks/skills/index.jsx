@@ -14,7 +14,7 @@ const Skills = props => {
     : skills;
 
   return (
-    <Section id="skills" title="Skills">
+    <Section id="skills" title="Skills" {...props}>
         <div className="regular-text">
             <p>
                 My areas of expertise include frameworks, languages and operating systems surrounding the development of cloud based,
