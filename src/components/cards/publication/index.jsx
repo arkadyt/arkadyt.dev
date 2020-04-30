@@ -6,6 +6,7 @@ import BigButton from 'components/shared/big-button';
 import { goTo } from 'tools';
 import Image from 'components/shared/image';
 import "./styles.scss";
+import "./styles.mobile.scss";
 
 const PublCard = props => {
   const { image, title, href } = props;

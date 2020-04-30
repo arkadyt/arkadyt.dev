@@ -1,13 +1,13 @@
-import imgYupWebp from 'images/publications/yup.webp';
-import imgYupJpg from 'images/publications/yup.jpg';
+import imgYupPrimary from 'images/publications/yup_bw.png';
+import imgYupJpg from 'images/publications/yup_bw.png';
 
-import imgCidrWebp from 'images/publications/cidr.webp';
-import imgCidrJpg from 'images/publications/cidr.jpg';
+import imgCidrPrimary from 'images/publications/cidr_bw.png';
+import imgCidrJpg from 'images/publications/cidr_bw.png';
 
 export default [
     {
         image: {
-            webp: imgCidrWebp,
+            primary: imgCidrPrimary,
             fallback: imgCidrJpg,
         },
         title: "Converting CIDR Block to IP Range in Your Head in 9 Seconds",
@@ -16,7 +16,7 @@ export default [
     },
     {
         image: {
-            webp: imgYupWebp,
+            primary: imgYupPrimary,
             fallback: imgYupJpg,
         },
         title: "How Does yup.addMethod() Work? Creating Custom Validation Functions With Yup",

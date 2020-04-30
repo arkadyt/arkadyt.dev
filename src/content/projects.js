@@ -1,19 +1,19 @@
 import React from 'react';
 
-import weworkWEBP from 'images/projects/wework.webp';
+import weworkWebp from 'images/projects/wework.webp';
 import weworkJPG from 'images/projects/wework.jpg';
 
-import vspaceWEBP from 'images/projects/vspace.webp';
+import vspaceWebp from 'images/projects/vspace.webp';
 import vspaceJPG from 'images/projects/vspace.jpg';
 
-import arkadytWEBP from 'images/projects/arkadyt.webp';
+import arkadytWebp from 'images/projects/arkadyt.webp';
 import arkadytJPG from 'images/projects/arkadyt.jpg';
 
 export default [
     {
         href: 'https://github.com/arkadyt/wework',
         image: {
-            webp: weworkWEBP,
+            primary: weworkWebp,
             fallback: weworkJPG,
         },
         title: 'WeWork',
@@ -30,7 +30,7 @@ export default [
     {
         href: 'https://github.com/arkadyt/vspace',
         image: {
-            webp: vspaceWEBP,
+            primary: vspaceWebp,
             fallback: vspaceJPG,
         },
         title: 'vSpace',
@@ -46,7 +46,7 @@ export default [
     {
         href: 'https://github.com/arkadyt/arkadyt.dev',
         image: {
-            webp: arkadytWEBP,
+            primary: arkadytWebp,
             fallback: arkadytJPG,
         },
         title: 'arkadyt.dev',

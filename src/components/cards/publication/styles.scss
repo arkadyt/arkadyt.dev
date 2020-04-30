@@ -11,14 +11,16 @@
     perspective: 150rem;
     height: 10rem;
 
-    &:nth-child(even) {
-        .frontface {
-            flex-direction: row-reverse;
-            .content {
-                text-align: right;
-            }
-            .card-image img {
-                clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
+    @media (orientation: landscape) {
+        &:nth-child(even) {
+            .frontface {
+                flex-direction: row-reverse;
+                .content {
+                    text-align: right;
+                }
+                .card-image img {
+                    clip-path: polygon(8% 0%, 100% 0%, 100% 100%, 0% 100%);
+                }
             }
         }
     }
@@ -67,12 +69,9 @@
                 font-style: italic;
             }
 
-            .title, .snippet {
+            .title {
                 display: block;
                 width: 67rem;
-                overflow: hidden;
-                // white-space: nowrap;
-                text-overflow: ellipsis;
             }
 
             .title {
