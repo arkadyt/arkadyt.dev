@@ -1,4 +1,8 @@
-.contact-view {
-    display: flex;
-    flex-wrap: wrap;
+@import "_variables";
+
+#contact {
+    .contact-view {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

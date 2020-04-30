@@ -1,0 +1,10 @@
+@import "_variables";
+
+@media (orientation: portrait) {
+    #contact {
+        .contact-view {
+            padding-top: 2.5em;
+            padding-left: 1rem;
+        }
+    }
+}

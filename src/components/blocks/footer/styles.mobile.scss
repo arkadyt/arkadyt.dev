@@ -4,5 +4,8 @@
     .Footer-container {
         position: absolute;
         bottom: 0;
+        .footer {
+            padding-left: 3rem;
+        }
     }
 }
