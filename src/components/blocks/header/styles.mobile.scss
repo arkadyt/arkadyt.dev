@@ -1,6 +1,6 @@
 @import "_variables";
 
-$header--height: 35rem;
+$header--height: 50rem;
 
 @media (orientation: portrait) {
     .Header-container {
@@ -24,7 +24,7 @@ $header--height: 35rem;
 
         .name-block {
             position: absolute;
-            top: $header--height / 5;
+            top: $header--height / 7;
             width: 100%;
 
             h1, h3 {
