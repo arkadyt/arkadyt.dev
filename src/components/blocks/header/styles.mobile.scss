@@ -4,7 +4,7 @@ $header--height: 35rem;
 
 @media (orientation: portrait) {
     .Header-container {
-        position: fixed;
+        position: absolute;
         top: 0; left: 0;
         height: $header--height;
         width: 100vw;
@@ -16,7 +16,7 @@ $header--height: 35rem;
 
         .blending-gradient {
             display: block;
-            position: fixed;
+            position: absolute;
             top: $header--height / 2;
             height: $header--height / 2;
             width: 100%;
