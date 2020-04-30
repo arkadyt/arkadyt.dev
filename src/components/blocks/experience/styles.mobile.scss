@@ -1,7 +1,9 @@
 @import "_variables";
 
 @media (orientation: portrait) {
-    .wexpcard-view {
-        margin-top: 5rem;
+    #work-experience {
+        .wexpcard-view {
+            margin-top: 5rem;
+        }
     }
 }

@@ -4,6 +4,7 @@ import ThemeContext from 'state/context/theme';
 import Contact from 'components/blocks/contact';
 import clsx from 'clsx';
 import './styles.scss';
+import './styles.mobile.scss';
 
 const Footer = props => {
   const { theme } = useContext(ThemeContext);
