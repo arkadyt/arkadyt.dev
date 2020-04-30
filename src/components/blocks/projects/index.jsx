@@ -53,7 +53,7 @@ const Projects = props => {
         {isMobile ? mobileView : desktopView}
         <div className="view-more-row">
             <BigButton
-              title="View more projects"
+              title="View All Projects"
               href={links.github.href}
               flat
               noRipple

@@ -26,7 +26,7 @@ const Publications = props => {
         </div>
         <div className="view-more-row">
             <BigButton
-              title="View more articles"
+              title="View All Articles"
               href={links.blog.href} 
               flat
               noRipple

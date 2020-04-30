@@ -1,5 +1,6 @@
 import React from 'react';
-import { jobs } from 'content';
+import { jobs, links } from 'content';
+import BigButton from 'components/shared/big-button';
 import WexpCard from 'components/cards/experience';
 import Section from 'components/shared/section';
 import './styles.scss';
@@ -24,6 +25,15 @@ const Experience = props => {
                       />
                   );
               })}
+          </div>
+          <div className="view-more-row">
+              <BigButton
+                title="View My LinkedIn"
+                href={links.linkedin.href}
+                flat
+                noRipple
+                showShadow
+              />
           </div>
       </Section>
     );
