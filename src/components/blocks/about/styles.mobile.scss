@@ -2,6 +2,9 @@
 
 @media (orientation: portrait) {
     .Section-container {
+        &:first-child {
+            margin-top: 17.5rem;
+        }
         .regular-text {
             margin-bottom: 0;
         }

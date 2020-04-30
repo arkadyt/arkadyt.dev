@@ -35,6 +35,7 @@ $d-theme--clr--bg--wexpcard-number-disk: unset; // lighten($d-theme--clr--bg--we
 $d-theme--clr--brdr--wexpcard-circle: rgba(white, .6);
 $d-theme--clr--brdr--wexpcard-stick: rgba(white, .6);
 
+$d-theme--grd--section: transparent;
 $d-theme--grd--projcard-backface: linear-gradient(
     to bottom right,
     lighten($d-theme--clr--bg--projcard-backface, 20),
@@ -50,8 +51,16 @@ $d-theme--grd--wexpcard-backface: linear-gradient(
     lighten($d-theme--clr--bg--wexpcard-backface, 20),
     lighten($d-theme--clr--bg--wexpcard-backface, 12)
 );
-$d-theme--grd--frontpage: linear-gradient(to top, rgba(47, 54, 64, 0.95), rgba(72, 126, 176, 0.68));
-$d-theme--grd--section: transparent;
+$d-theme--grd--frontpage: linear-gradient(
+    to top,
+    rgba(47, 54, 64, 0.95),
+    rgba(72, 126, 176, 0.68)
+);
+$d-theme--grd--header-blend: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+);
 
 $d-theme--sdw--generic--card: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
 $d-theme--sdw--projcard: $d-theme--sdw--generic--card;

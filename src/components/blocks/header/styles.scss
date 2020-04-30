@@ -6,17 +6,34 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    z-index: -5;
+    z-index: -10;
     object-fit: cover;
 }
 
 .Header-container {
+    // create a stacking context
+    position: relative;
+    z-index: 0;
+
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    .shadow-gradient {
+        position: absolute;
+        z-index: -5;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .blending-gradient {
+        display: none;
+    }
+
     .name-block {
         text-transform: uppercase;
         text-align: center;
@@ -52,13 +69,17 @@
  */
 .Header-container {
     &.l-theme {
-        background: $l-theme--grd--frontpage;
+        .shadow-gradient {
+            background: $l-theme--grd--frontpage;
+        }
         .name-block {
             color:  $l-theme--clr--txt--frontpage;
         }
     }
     &.d-theme {
-        background: $d-theme--grd--frontpage;
+        .shadow-gradient {
+            background: $d-theme--grd--frontpage;
+        }
         .name-block {
             color:  $d-theme--clr--txt--frontpage;
         }

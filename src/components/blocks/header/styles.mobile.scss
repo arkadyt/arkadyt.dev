@@ -1,24 +1,57 @@
 @import "_variables";
 
-$header--height: 30vh;
+$header--height: 35rem;
 
 @media (orientation: portrait) {
     .Header-container {
+        position: fixed;
+        top: 0; left: 0;
         height: $header--height;
+        width: 100vw;
+
         img {
+            position: absolute;
             height: $header--height;
         }
 
+        .blending-gradient {
+            display: block;
+            position: fixed;
+            top: $header--height / 2;
+            height: $header--height / 2;
+            width: 100%;
+        }
+
         .name-block {
+            position: absolute;
+            top: $header--height / 6;
+            width: 100%;
+
             h1, h3 {
-                font-size: 4rem;
+                font-size: 4.6rem;
                 display: inline;
             }
             h3 {
                 margin-left: 1rem;
             }
             span {
-                font-size: 1.28rem;
+                font-size: 1.47rem;
+            }
+        }
+    }
+
+    /**
+     * Theme and colors
+     */
+    .Header-container {
+        &.l-theme {
+            .blending-gradient {
+                background: $l-theme--grd--header-blend;
+            }
+        }
+        &.d-theme {
+            .blending-gradient {
+                background: $d-theme--grd--header-blend;
             }
         }
     }

@@ -15,6 +15,8 @@ const Header = (props) => {
                 imgProps={{ alt: "Website background image" }}
                 containerProps={{ className: clsx("Header-background", theme) }}
             />
+            <div className="shadow-gradient" />
+            <div className="blending-gradient" />
             <div className="name-block">
                 <h1>Andrew</h1><h3>Titenko</h3><br />
                 <span>Software Developer</span>
