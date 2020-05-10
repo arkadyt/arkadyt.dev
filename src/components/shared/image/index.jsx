@@ -28,7 +28,7 @@ const Image = props => {
             {image.fallback && (
                 <img
                     src={image.fallback} {...imgProps}
-                    alt="Website background image"
+                    alt=""
                 />
             )}
         </picture>

@@ -3,8 +3,9 @@
 @media (orientation: portrait) {
     .Layout-content {
         margin: 0;
-        // to position footer in 'absolute' mode
+        // create new stacking and block formatting contexts
         position: relative;
+        z-index: 5;
 
         .regular-text {
             margin: 4rem 1rem;
@@ -12,7 +13,9 @@
         }
 
         .content-body {
-            padding: 16rem 0 60rem 0;
+            padding: 16rem 0 55rem 0;
+            position: relative;
+            z-index: 5;
 
             > *:first-child {
                 padding-top: 0;
@@ -29,6 +32,18 @@
                 button {
                     width: 35rem;
                 }
+            }
+        }
+    }
+
+    /**
+     * Theme and colors
+     */
+
+    .Layout-content {
+        &.l-theme {
+            .content-body {
+                background: unset;
             }
         }
     }

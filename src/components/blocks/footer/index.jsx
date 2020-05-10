@@ -17,6 +17,7 @@ const Footer = props => {
                     <div><IconCopyright /><span>Andrew Titenko 2020</span></div>
                 </div>
             </div>
+            <div className="blending-gradient" />
         </div>
     );
 };

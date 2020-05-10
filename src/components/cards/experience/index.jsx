@@ -35,7 +35,7 @@ const appendLongevity = str => {
 };
 
 const WexpCard = props => {
-    const { imgWidth, date, company, title, number, noflip } = props;
+    const { date, company, title, number, noflip } = props;
     const { theme } = useContext(ThemeContext);
     const { image, imageDark } = props;
     const jobIcon = theme === 'd-theme' && imageDark ? imageDark : image;

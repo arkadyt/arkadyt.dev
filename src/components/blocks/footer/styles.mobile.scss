@@ -1,12 +1,41 @@
 @import "_variables";
 
+$footer--height: 100rem;
+
 @media (orientation: portrait) {
     .Footer-container {
         position: absolute;
         bottom: 0; left: 0;
+        width: 100vw;
+        height: $footer--height;
+        overflow: hidden;
+
+        .blending-gradient {
+            width: 100vw;
+            height: $footer--height / 2.5;
+            position: absolute;
+            top: 0; left: 0;
+        }
+
+        .footer-content {
+            position: absolute;
+            bottom: 0;
+        }
 
         .footer {
             padding-left: 3rem;
+        }
+    }
+
+    /**
+     * Theme and colors
+     */
+    .Footer-container {
+        &.l-theme {
+            background: $l-theme--clr--bg--accent;
+            .blending-gradient {
+                background: $l-theme--grd--footer-blend;
+            }
         }
     }
 }
