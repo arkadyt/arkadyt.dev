@@ -14,7 +14,7 @@ const Skills = props => {
     : skills;
 
   return (
-    <Section id="skills" title="Skills" {...props}>
+    <Section id="skills" title="Skills" {...props} button="default">
         <div className="regular-text">
             <p>
                 My areas of expertise include frameworks, languages and operating systems surrounding the development of cloud based,
@@ -45,15 +45,6 @@ const Skills = props => {
             {awsSkills.map((item, index) => (
                 <SkillCard key={index} {...item} />
             ))}
-        </div>
-        <div className="view-more-row">
-            <BigButton
-              title="View My LinkedIn"
-              href={links.linkedin.href}
-              flat
-              noRipple
-              showShadow
-            />
         </div>
     </Section>
   );

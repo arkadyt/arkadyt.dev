@@ -48,7 +48,7 @@ $border-radius: 80rem;
         }
     }
 
-    &.no-explosion {
+    &.no-ripple {
         button::after {
             display: none;
         }
@@ -77,6 +77,18 @@ $border-radius: 80rem;
                 box-shadow: $l-theme--sdw--bigbutton--pressed; 
             }
         }
+        .flat {
+            border: 1px solid $l-theme--clr--big-button--border;
+            &.show-shadow {
+                box-shadow: unset;
+            }
+            &:hover {
+                box-shadow: unset;
+            }
+            &:active {
+                box-shadow: unset; 
+            }
+        }
     }
     &.d-theme {
         button {
@@ -93,6 +105,18 @@ $border-radius: 80rem;
             }
             &:active {
                 box-shadow: $d-theme--sdw--bigbutton--pressed; 
+            }
+        }
+        .flat {
+            border: 1px solid $d-theme--clr--big-button--border;
+            &.show-shadow {
+                box-shadow: unset;
+            }
+            &:hover {
+                box-shadow: unset;
+            }
+            &:active {
+                box-shadow: unset; 
             }
         }
     }

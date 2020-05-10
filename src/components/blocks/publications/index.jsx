@@ -7,8 +7,13 @@ import './styles.scss';
 import './styles.mobile.scss';
 
 const Publications = props => {
+    const buttonProps = {
+        title: "View All Articles",
+        href: links.blog.href
+    };
+
     return (
-        <Section id="recent-from-blog" title="Publications" {...props}>
+        <Section id="recent-from-blog" title="Publications" {...props} button={buttonProps}>
             <div className="regular-text">
                 <p>
                     Also check out the articles I list below. I write on different topics surrounding software engineering, computers and networking.
@@ -23,15 +28,6 @@ const Publications = props => {
                 {publications.map((item, index) => (
                     <PublCard {...item} key={index} />
                 ))}
-            </div>
-            <div className="view-more-row">
-                <BigButton
-                    title="View All Articles"
-                    href={links.blog.href} 
-                    flat
-                    noRipple
-                    showShadow
-                />
             </div>
         </Section>
     );

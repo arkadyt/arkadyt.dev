@@ -1,6 +1,5 @@
 import React from 'react';
-import { jobs, links } from 'content';
-import BigButton from 'components/shared/big-button';
+import { jobs } from 'content';
 import WexpCard from 'components/cards/experience';
 import Section from 'components/shared/section';
 import './styles.scss';
@@ -8,7 +7,7 @@ import './styles.mobile.scss';
 
 const Experience = props => {
     return (
-      <Section id="work-experience" title="Experience" {...props}>
+      <Section id="work-experience" title="Experience" {...props} button="default">
           <div className="wexpcard-view">
               {jobs.map((item, index) => {
                   const position = {
@@ -25,15 +24,6 @@ const Experience = props => {
                       />
                   );
               })}
-          </div>
-          <div className="view-more-row">
-              <BigButton
-                title="View My LinkedIn"
-                href={links.linkedin.href}
-                flat
-                noRipple
-                showShadow
-              />
           </div>
       </Section>
     );

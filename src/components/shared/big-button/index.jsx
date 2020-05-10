@@ -7,7 +7,7 @@ import './styles.scss';
 import './styles.mobile.scss';
 
 const BigButton = props => {
-  const { title, href, onClick, theme, showShadow, noRipple, flat } = props;
+  const { title, href, onClick, theme, noRipple, flat } = props;
   const { theme: ctxTheme } = useContext(ThemeContext);
   const clickFn = (typeof onClick === "function" && onClick)
     || goTo.bind(null, href);
@@ -15,11 +15,10 @@ const BigButton = props => {
   const containerClasses = clsx(
     "BigButton-container",
     theme || ctxTheme,
-    noRipple && 'no-ripple',
+    noRipple && "no-ripple",
   );
   const btnClasses = clsx(
-    showShadow && "show-shadow",
-    flat && 'flat'
+    flat ? "flat" : "show-shadow"
   );
 
   return (

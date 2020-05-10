@@ -9,38 +9,4 @@
             line-height: 5.6rem;
         }
     }
-
-    /**
-     * Theme and colors
-     */
-    .BigButton-container {
-        &.l-theme {
-            .flat {
-                border: 1px solid $l-theme--clr--big-button--border;
-                &.show-shadow {
-                    box-shadow: unset;
-                }
-                &:hover {
-                    box-shadow: unset;
-                }
-                &:active {
-                    box-shadow: unset; 
-                }
-            }
-        }
-        &.d-theme {
-            .flat {
-                border: 1px solid $d-theme--clr--big-button--border;
-                &.show-shadow {
-                    box-shadow: unset;
-                }
-                &:hover {
-                    box-shadow: unset;
-                }
-                &:active {
-                    box-shadow: unset; 
-                }
-            }
-        }
-    }
 }
