@@ -1,11 +1,36 @@
 import React from 'react';
 
 const Image = props => {
-    const { image={}, containerProps, imgProps } = props;
+    const { image={}, imageMobile={}, containerProps, imgProps } = props;
+
     return (
         <picture {...containerProps}>
-          {image.primary && <source type="image/webp" srcSet={image.primary} />}
-          {image.fallback && <img src={image.fallback} {...imgProps} alt="" />}
+            {imageMobile.primary && (
+                <source
+                    type="image/webp"
+                    media="(orientation: portrait)"
+                    srcSet={imageMobile.primary}
+                />
+            )}
+            {imageMobile.fallback && (
+                <source
+                    type="image/jpeg"
+                    media="(orientation: portrait)"
+                    srcSet={imageMobile.fallback}
+                />
+            )}
+            {image.primary && (
+                <source
+                    type="image/webp"
+                    srcSet={image.primary}
+                />
+            )}
+            {image.fallback && (
+                <img
+                    src={image.fallback} {...imgProps}
+                    alt="Website background image"
+                />
+            )}
         </picture>
     );
 };

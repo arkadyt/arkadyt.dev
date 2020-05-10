@@ -3,7 +3,8 @@
 @media (orientation: portrait) {
     .Footer-container {
         position: absolute;
-        bottom: 0;
+        bottom: 0; left: 0;
+
         .footer {
             padding-left: 3rem;
         }

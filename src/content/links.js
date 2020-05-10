@@ -11,8 +11,8 @@ import {
 export default {
     email: {
         ico: <IconMail />,
-        href: 'mailto:a.titenko@arkadyt.dev',
-        readableLink: 'a.titenko@arkadyt.dev',
+        href: 'mailto:contact.me@arkadyt.dev',
+        readableLink: 'contact.me@arkadyt.dev',
         title: 'Contact',
     },
     github: {

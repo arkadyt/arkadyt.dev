@@ -8,10 +8,12 @@ import './styles.mobile.scss';
 
 const Header = (props) => {
     const { theme } = useContext(ThemeContext);
+
     return (
         <div className={clsx("Header-container", theme)}>
             <Image
                 image={header.image}
+                imageMobile={header.imageMobile}
                 imgProps={{ alt: "Website background image" }}
                 containerProps={{ className: clsx("Header-background", theme) }}
             />
