@@ -18,8 +18,8 @@ export default [
         },
         title: 'WeWork',
         description: <span>
-            Fully-fledged social networking platform built with<br />JS, React, Redux, Node.js, Express and others.<br />
-            Not a full Twitter copy, but a close one!
+            Fully-fledged social networking platform built with JS, React, Redux, Node.js, Express and other software.
+            Not a full Twitter copy, but pretty close!
         </span>,
         tags: ['JS', 'React.js', 'Redux', 'Node.js', 'Express', 'MongoDB', 'AWS', '+20'],
         links: [
@@ -35,7 +35,8 @@ export default [
         },
         title: 'vSpace',
         description: <span>
-            An eCommerce platform built on MERN stack.<br />Application is hosted on AWS Cloud. Free shipping! :)
+            An open source e-Commerce platform built on MERN stack.
+            This is a work in progress, however don't shy away from checking it out! :)
         </span>,
         tags: ['JS', 'React', 'Redux.js', 'Node', 'Express.js', 'MongoDB', 'AWS', '+17'],
         links: [
@@ -50,7 +51,10 @@ export default [
             fallback: arkadytJPG,
         },
         title: 'arkadyt.dev',
-        description: 'My personal portfolio website arkadyt.dev. And actually you\'re looking at it right now! Check out the source code on GitHub!',
+        description: <span>
+            Personal portfolio website built with CSS, HTML, SASS, JavaScript, React.js and other software.
+            Hosted on AWS!
+        </span>,
         tags: ['JavaScript', 'HTML', 'CSS', 'React', 'AWS', 'S3', 'CloudFront', 'Lambda@Edge', '+9'],
         links: [
             { title: 'Website', href: 'https://arkadyt.dev' },
