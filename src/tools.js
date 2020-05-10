@@ -1,3 +1,14 @@
+export const ellipsizeText = (text, length) => {
+    let result = text;
+    try {
+        if (text.length > length) {
+            result = text.slice(0, length) + '...';
+        }
+    } finally {
+        return result;
+    }
+}
+
 export const goTo = href => {
   window.open(href, '_blank');
 }
