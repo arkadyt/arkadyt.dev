@@ -47,8 +47,14 @@ const Projects = props => {
             </p>
             <p>
                 There are however many other projects that I've worked on throughout the years.
-                Majority of them is hosted on my GitHub profile, so if you're interested, click on the "VIEW MORE PROJECTS" button below!
+                Majority of them is hosted on my GitHub profile, so if you're interested, click on the "VIEW ALL PROJECTS" button below!
             </p>
+            {!isMobile ? null : (
+              <p style={{ fontStyle: "italic" }}>
+                A small note for mobile users: WeWork and vSpace project websites are not yet optimized for mobile devices.
+                I apologize for this inconvenience and recommend you to view them from a desktop or a laptop screen. Thank you!
+              </p>
+            )}
         </div>
         {isMobile ? mobileView : desktopView}
         <div className="view-more-row">
