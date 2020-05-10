@@ -7,13 +7,13 @@
         .frontface {
             > .card-image {
                 position: absolute;
-                top: 3rem; left: 2rem;
-                height: 6rem;
+                top: 2rem; left: 2rem;
+                height: 8rem;
 
                 img {
                     height: 100%;
+                    width: unset;
                     object-fit: cover;
-                    clip-path: unset;
                 }
             }
 

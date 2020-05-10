@@ -1,5 +1,9 @@
-.publcard-view {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 2.5rem;
+@import "_variables";
+
+#recent-from-blog {
+    .publcard-view {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2.5rem;
+    }
 }
