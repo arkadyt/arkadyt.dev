@@ -87,13 +87,13 @@ export const skills = [
   { icon: Java,         title: 'Java',                             mobileOrder: 1050,                                                         },
   { icon: Python,       title: 'Python',                           mobileOrder: 1060,                                                         },
   { icon: Kubernetes,   title: 'Kubernetes',                       mobileOrder: 1070,                                                         },
-  { icon: Docker,       title: 'Docker',                           mobileOrder: 1080,     iconDark: Docker_dt                                 },
-  { icon: AWS,          title: `AWS Cloud Services`,               mobileOrder: 1090,     iconDark: AWS_dt, megaWide: true                    },
+  { icon: Docker,       title: 'Docker',                           mobileOrder: 1080,     height: 90, iconDark: Docker_dt                     },
+  { icon: AWS,          title: `AWS Cloud Services`,               mobileOrder: 1100,     iconDark: AWS_dt, megaWide: true                    },
   { icon: AwsCLI,       title: 'AWS\nCommand Line Utils',          mobileOrder: 1190,                                                         },
-  { icon: MongoDB,      title: 'MongoDB',                          mobileOrder: 1100,     iconDark: MongoDB_dt, megaWide: true, height: 90    },
+  { icon: MongoDB,      title: 'MongoDB',                          mobileOrder: 1090,     iconDark: MongoDB_dt, megaWide: true, height: 90    },
   { icon: Redux,        title: 'Redux.js',                         mobileOrder: 1110,     height: 90                                          },
   { icon: Webpack,      title: 'Webpack',                          mobileOrder: 1130,                                                         },
-  { icon: Workbox,      title: 'Workbox.js',                       mobileOrder: 1140,                                                         },
+  { icon: Workbox,      title: 'Workbox.js',                       mobileOrder: 1140,     height: 90                                          },
   { icon: PWA,          title: `Progressive Web Apps`,             mobileOrder: 1120,     megaWide: true, height: 80                          },
   { icon: Git,          title: 'Git',                              mobileOrder: 1160,     iconDark: Git_dt, megaWide: true                    },
   { icon: GraphQL,      title: 'GraphQL',                          mobileOrder: 1170,                                                         },
@@ -103,7 +103,7 @@ export const skills = [
   { icon: Less,         title: `LESS`,                             mobileOrder: 1210,     wide: true, height: 88                              },
   { icon: Bash,         title: "Bash",                             mobileOrder: 1240,     iconDark: Bash_dt, megaWide: true                   },
   { icon: Linux,        title: "Linux Systems\nAdministration",    mobileOrder: 1230,     iconDark: Linux_dt                                  },
-  { icon: Redis,        title: 'Redis',                            mobileOrder: 1220,                                                         },
+  { icon: Redis,        title: 'Redis',                            mobileOrder: 1220,     height: 90                                          },
 ];
 
 export const awsSkills = [

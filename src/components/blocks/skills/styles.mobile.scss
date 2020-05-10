@@ -1,14 +1,21 @@
 @import "_variables";
 
-$grid--cell-size: 6rem;
+$grid--cell-size: 5.8rem;
 
 @media(orientation: portrait) {
     #skills {
+        // this grid causes a horizontal scrollbar to appear
+        // on mobile devices for some reason; hide it
+        overflow: hidden;
+
         .skills-view {
             grid-template-columns: repeat(6, $grid--cell-size);
             grid-template-rows: $grid--cell-size;
             grid-auto-rows: $grid--cell-size;
             grid-gap: 1.5rem 1rem;
+            justify-items: center;
+            justify-content: center;
+            align-items: center;
         }
     }
 }
