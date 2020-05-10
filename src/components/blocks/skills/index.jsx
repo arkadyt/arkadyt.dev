@@ -10,7 +10,7 @@ import './styles.mobile.scss';
 const Skills = props => {
   const isMobile = useMobileDetector();
   const _skills = isMobile
-    ? skills.sort((a, b) => a.mobileOrder - b.mobileOrder)
+    ? skills.slice().sort((a, b) => a.mobileOrder - b.mobileOrder)
     : skills;
 
   return (
