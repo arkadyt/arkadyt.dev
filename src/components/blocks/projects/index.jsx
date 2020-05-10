@@ -50,8 +50,8 @@ const Projects = props => {
                 Majority of them is hosted on my GitHub profile, so if you're interested, click on the "VIEW ALL PROJECTS" button below!
             </p>
             {!isMobile ? null : (
-              <p style={{ fontStyle: "italic" }}>
-                A small note for mobile users: WeWork and vSpace project websites are not yet optimized for mobile devices.
+              <p style={{ color: "rgba(150, 0, 0, .75)" }}>
+                A small note for mobile viewers: some project websites are not yet optimized for mobile devices!
                 I apologize for this inconvenience and recommend you to view them from a desktop or a laptop screen. Thank you!
               </p>
             )}
