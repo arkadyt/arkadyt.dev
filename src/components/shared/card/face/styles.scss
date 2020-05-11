@@ -14,34 +14,39 @@
  */
 
 .Card-face {
-    box-shadow: $l-theme--sdw--card;
-}
-
-.Card-face.flat {
     &.l-theme {
+        box-shadow: $l-theme--sdw--card;
         &.frontface {
             background: $l-theme--clr--bg--card-frontface;
-            border: $l-theme--brdr--flat-element;
             color: $l-theme--clr--txt--regular;
         }
         &.backface {
             background: $l-theme--clr--bg--card-backface $l-theme--grd--card-backface;
         }
-        &.frontface, &.backface {
-            box-shadow: unset;
-        }
     }
     &.d-theme {
+        box-shadow: $d-theme--sdw--card;
         &.frontface {
             background: $d-theme--clr--bg--card-frontface;
-            border: $d-theme--brdr--flat-element;
             color: $d-theme--clr--txt--regular;
         }
         &.backface {
             background: $d-theme--clr--bg--card-backface $d-theme--grd--card-backface;
         }
-        &.frontface, &.backface {
-            box-shadow: unset;
+    }
+}
+
+.Card-face.flat {
+    &.l-theme {
+        box-shadow: unset;
+        &.frontface {
+            border: $l-theme--brdr--flat-element;
+        }
+    }
+    &.d-theme {
+        box-shadow: unset;
+        &.frontface {
+            border: $d-theme--brdr--flat-element;
         }
     }
 }
