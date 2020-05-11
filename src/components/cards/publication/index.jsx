@@ -11,12 +11,12 @@ import "./styles.scss";
 import "./styles.mobile.scss";
 
 const PublCard = props => {
-    const { image, title, href } = props;
+    const { image, title, href, ...rest } = props;
     const { theme } = useContext(ThemeContext);
     const isMobile = useMobileDetector();
 
     return (
-        <Card className={clsx("PublCard-container")} flat={isMobile}>
+        <Card className={clsx("PublCard-container")} flat={isMobile} {...rest}>
             <Face type="frontface" onClick={() => goTo(href)}>
                 <Image
                     image={image}

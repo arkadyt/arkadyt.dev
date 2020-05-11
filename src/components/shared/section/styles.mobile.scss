@@ -4,7 +4,7 @@
     .Section-container {
         padding: 0 2rem;
 
-        &.card-style {
+        &.rounded {
             width: 92%;
             margin: 3rem 2rem;
             border-radius: 1rem;
@@ -25,7 +25,7 @@
      * Theme and colors
      */
     .Section-container {
-        &.card-style {
+        &.rounded {
             &.l-theme {
                 box-shadow: $l-theme--sdw--section;
             }

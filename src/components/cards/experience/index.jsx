@@ -40,14 +40,14 @@ const parseDateString = str => {
 };
 
 const WexpCard = props => {
-    const { date, company, title, number, noflip } = props;
+    const { date, company, title, number, ...rest } = props;
     const { theme } = useContext(ThemeContext);
     const isMobile = useMobileDetector();
     const { image, imageDark } = props;
     const jobIcon = theme === 'd-theme' && imageDark ? imageDark : image;
 
     return (
-        <Card className={clsx("WexpCard-container")} noflip={noflip} flat={isMobile}>
+        <Card className={clsx("WexpCard-container")} flat={isMobile} {...rest}>
             <Face type="frontface">
                 <div className="colored-block">
                     <div className="colored-chunk" />

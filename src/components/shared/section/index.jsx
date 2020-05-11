@@ -8,7 +8,7 @@ import './styles.scss';
 import './styles.mobile.scss';
 
 const Section = props => {
-    const { cardStyle, button } = props;
+    const { rounded, button } = props;
     const btnProps = button === "default"
         ? { title: "View My LinkedIn", href: links.linkedin.href }
         : button;
@@ -17,7 +17,7 @@ const Section = props => {
     const isMobile = useMobileDetector();
     const containerClasses = clsx(
         `Section-container`, theme, props.accent && 'accent',
-        cardStyle && 'card-style'
+        rounded && 'rounded'
     );
 
     return (

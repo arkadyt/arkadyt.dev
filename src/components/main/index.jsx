@@ -23,11 +23,11 @@ const Layout = props => {
             <div className={clsx("Layout-content", theme)}>
                 <Header />
                 <div className="content-body">
-                    <AboutMe cardStyle={isMobile} />
-                    <Experience cardStyle={isMobile} />
-                    <Skills cardStyle={isMobile} />
-                    <Projects cardStyle={isMobile} />
-                    <Publications cardStyle={isMobile} />
+                    <AboutMe rounded={isMobile} />
+                    <Experience rounded={isMobile} />
+                    <Skills rounded={isMobile} />
+                    <Projects rounded={isMobile} />
+                    <Publications rounded={isMobile} />
                 </div>
                 <Footer />
             </div>

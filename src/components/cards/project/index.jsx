@@ -11,12 +11,12 @@ import './styles.scss';
 import './styles.mobile.scss';
 
 const ProjCard = props => {
-    const { title, description, tags, image, links, horizontal } = props;
+    const { title, description, tags, image, links, horizontal, ...rest } = props;
     const { theme } = useContext(ThemeContext);
     const isMobile = useMobileDetector();
 
     return (
-        <Card className={clsx("ProjCard-container", horizontal && 'horizontal')} flat={isMobile}>
+        <Card className={clsx("ProjCard-container", horizontal && 'horizontal')} flat={isMobile} {...rest}>
             <Face type="frontface" onClick={() => goTo(links[0].href)}>
                 <Image image={image} imgProps={{ alt: "Project Image" }} />
                 <div className="description">
