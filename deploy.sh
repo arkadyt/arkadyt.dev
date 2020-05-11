@@ -5,7 +5,7 @@
 # import aws key variables from .env file
 export $(xargs < ./.env)
 
-deploy-aws-s3-cloudfront \
+./node_modules/deploy-aws-s3-cloudfront/bin/deploy-aws-s3-cloudfront \
   --acl private \
   --bucket apphost-7 \
   --cache-control "**:no-cache" \
