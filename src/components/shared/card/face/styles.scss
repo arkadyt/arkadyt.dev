@@ -14,7 +14,7 @@
 .Card-face.flat {
     &.l-theme {
         &.frontface {
-            border: .11rem solid $l-theme--clr--card--border;
+            border: $l-theme--brdr--flat-element;
         }
         &.frontface, &.backface {
             box-shadow: unset;
@@ -22,7 +22,7 @@
     }
     &.d-theme {
         &.frontface {
-            border: .11rem solid $d-theme--clr--card--border;
+            border: $d-theme--brdr--flat-element;
         }
         &.frontface, &.backface {
             box-shadow: unset;

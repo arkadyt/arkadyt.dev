@@ -32,8 +32,7 @@ $d-theme--clr--bg--wexpcard-circle: $d-theme--clr--bg--section;
 $d-theme--clr--bg--wexpcard-clchunk: lighten($d-theme--clr--bg--wexpcard-frontface, 2.5);
 $d-theme--clr--bg--wexpcard-number-disk: unset; // lighten($d-theme--clr--bg--wexpcard-clchunk, 7.5);
 
-$d-theme--clr--brdr--wexpcard-circle: rgba(white, .6);
-$d-theme--clr--brdr--wexpcard-stick: rgba(white, .6);
+$d-theme--brdr--flat-element: .11rem solid #DFE1E5;
 
 $d-theme--grd--section: transparent;
 $d-theme--grd--projcard-backface: linear-gradient(
@@ -71,9 +70,6 @@ $d-theme--sdw--bigbutton--initial: 0 .5rem 1rem rgba(0, 0, 0, .15);
 $d-theme--sdw--bigbutton--onhover: 0 1rem 2rem rgba(0, 0, 0, .2);
 $d-theme--sdw--bigbutton--pressed: 0 .5rem 1rem rgba(0, 0, 0, .2);
 $d-theme--sdw--section: 0 .1rem 1.2rem rgba(32, 33, 36, 0.28);
-
-$d-theme--clr--card--border: #DFE1E5;
-$d-theme--clr--big-button--border: #DFE1E5;
 
 $d-theme--fltr--publcard-img: invert(100%) contrast(50%) brightness(110%) grayscale(100%);
 $d-theme--prop--skillcard-opacity: 0.5;
