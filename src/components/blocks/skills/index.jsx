@@ -1,7 +1,6 @@
 import React from 'react';
-import { skills, links, awsSkills } from 'content';
+import { skills, awsSkills } from 'content';
 import { useMobileDetector } from 'hooks';
-import BigButton from 'components/shared/big-button';
 import SkillCard from 'components/cards/skill';
 import Section from 'components/shared/section';
 import './styles.scss';

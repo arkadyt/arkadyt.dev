@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import Section from 'components/shared/section';
 import ProjCard from 'components/cards/project';
-import BigButton from 'components/shared/big-button';
 import { useMobileDetector } from 'hooks';
 import { projects, links } from 'content';
 import clsx from 'clsx';
