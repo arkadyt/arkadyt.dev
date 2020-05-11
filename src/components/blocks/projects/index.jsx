@@ -19,7 +19,7 @@ const Projects = props => {
         <Fragment>
             <div className={clsx("projcard-view")}>
                 {(isProjCountOdd ? projects.slice(0, -1) : projects).map((item, index) => (
-                    <ProjCard {...item} key={index} />
+                    <ProjCard {...item} key={index} flipDirection="rtl" />
                 ))}
             </div>
             <div className={clsx("projcard-view", "horizontal")}>
@@ -27,7 +27,7 @@ const Projects = props => {
                 but must produce no visual effects on the page, and should have no padding and/or margins.
                 A ghost! */}
                 {!isProjCountOdd ? null : projects.slice(-1).map((item, index) => (
-                    <ProjCard {...item} key={index} horizontal />
+                    <ProjCard {...item} key={index} horizontal flipDirection="btu" />
                 ))}
             </div>
         </Fragment>
@@ -35,7 +35,7 @@ const Projects = props => {
     const mobileView = (
         <div className={clsx("projcard-view")}>
             {projects.map((item, index) => (
-                <ProjCard {...item} key={index} />
+                <ProjCard {...item} key={index} flipDirection="rtl" />
             ))}
         </div>
     );
@@ -53,8 +53,8 @@ const Projects = props => {
                 </p>
                 {!isMobile ? null : (
                     <p style={{ color: "rgba(150, 0, 0, .75)" }}>
-                        A small note for mobile viewers: some project websites are not yet optimized for mobile devices!
-                        I apologize for this inconvenience and recommend you to view them from a desktop or a laptop screen. Thank you!
+                        A small note for mobile viewers: some project websites are not yet optimized for vertical layouts and mobile devices with smaller screens!
+                        I apologize for this inconvenience and recommend you to view the pages in the landscape mode or from a desktop screen! Thank you!
                     </p>
                 )}
             </div>

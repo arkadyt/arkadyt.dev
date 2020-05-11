@@ -25,7 +25,7 @@ const Publications = props => {
             </div>
             <div className="publcard-view">
                 {publications.map((item, index) => (
-                    <PublCard {...item} key={index} />
+                    <PublCard {...item} key={index} flipDirection="btu" />
                 ))}
             </div>
         </Section>
