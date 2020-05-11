@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import ThemeContext from 'state/context/theme';
 import BigButton from 'components/shared/big-button';
+import { Container as Card, Face } from 'components/shared/card';
 import clsx from 'clsx';
 import './styles.scss';
 import './styles.mobile.scss';
@@ -10,7 +11,10 @@ const ensurePlural = (count, singularForm) => {
     else return `${count} ${singularForm}`;
 }
 
-const appendLongevity = str => {
+/**
+ * Parses the date string and adds the total longevity of the term in a human readable form.
+ */
+const parseDateString = str => {
     try {
         const split = str.split('—').map(el => el.trim());
         split[0] = new Date(`1 ${split[0]}`);
@@ -41,8 +45,8 @@ const WexpCard = props => {
     const jobIcon = theme === 'd-theme' && imageDark ? imageDark : image;
 
     return (
-        <div className={clsx("WexpCard-container", theme, noflip && 'noflip')}>
-            <div className="frontface">
+        <Card className={clsx("WexpCard-container", theme)} noflip={noflip}>
+            <Face type="frontface">
                 <div className="colored-block">
                     <div className="colored-chunk" />
                     <div className="number-base">
@@ -51,15 +55,15 @@ const WexpCard = props => {
                 </div>
                 <img src={jobIcon} alt='' />
                 <div className="text">
-                    <h4>{appendLongevity(date)}</h4>
+                    <h4>{parseDateString(date)}</h4>
                     <h2>{company}</h2>
                     <h3>{title}</h3>
                 </div>
-            </div>
-            <div className="backface">
+            </Face>
+            <Face type="backface">
                 <BigButton title="View more" onClick={() => {}} theme="l-theme" />
-            </div>
-        </div>
+            </Face>
+        </Card>
     );
 };
 

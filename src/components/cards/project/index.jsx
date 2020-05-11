@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import ThemeContext from 'state/context/theme';
 import Image from 'components/shared/image';
 import BigButton from 'components/shared/big-button';
+import { Container as Card, Face } from 'components/shared/card';
 import { goTo } from 'tools';
 import clsx from 'clsx';
 import { FaExternalLinkAlt as IconHref } from 'react-icons/fa';
@@ -13,8 +14,8 @@ const ProjCard = props => {
     const { theme } = useContext(ThemeContext);
 
     return (
-        <div className={clsx("ProjCard-container", theme, horizontal && 'horizontal')}>
-            <div className="frontface" onClick={() => goTo(links[0].href)}>
+        <Card className={clsx("ProjCard-container", theme, horizontal && 'horizontal')}>
+            <Face type="frontface" onClick={() => goTo(links[0].href)}>
                 <Image image={image} imgProps={{ alt: "Project Image" }} />
                 <div className="description">
                     <h3>{title}</h3>
@@ -26,13 +27,13 @@ const ProjCard = props => {
                     </div>
                 </div>
                 <div className="hint"><IconHref /></div>
-            </div>
-            <div className="backface">
+            </Face>
+            <Face type="backface">
                 {links.map((item, index) => (
                     <BigButton key={index} {...item} theme="l-theme" />
                 ))}
-            </div>
-        </div>
+            </Face>
+        </Card>
     );
 };
 

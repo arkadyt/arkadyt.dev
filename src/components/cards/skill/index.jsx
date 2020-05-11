@@ -5,6 +5,9 @@ import ThemeContext from 'state/context/theme';
 import Tooltip from 'components/shared/tooltip';
 import './styles.scss';
 
+/**
+ * This is not a standard card, hence it's not using the shared Card wrapper.
+ */
 const SkillCard = props => {
   const isMobile = useMobileDetector();
   const IMG_HEIGHT = isMobile ? 6 : 9;
