@@ -21,26 +21,4 @@
             }
         }
     }
-
-    .ProjCard-container {
-        &.l-theme {
-            .frontface {
-                box-shadow: unset;
-                border: 1px solid $l-theme--clr--card--border;
-            }
-            .backface {
-                box-shadow: unset;
-            }
-        }
-
-        &.d-theme {
-            .frontface {
-                box-shadow: unset;
-                border: 1px solid $d-theme--clr--card--border;
-            }
-            .backface {
-                box-shadow: unset;
-            }
-        }
-    }
 }

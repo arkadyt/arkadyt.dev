@@ -1,0 +1,31 @@
+@import "_variables";
+
+.Card-face {
+    height: 100%;
+    width: 100%;
+    border-radius: .5rem;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+/**
+ * Theme and colors.
+ */
+.Card-face.flat {
+    &.l-theme {
+        &.frontface {
+            border: .11rem solid $l-theme--clr--card--border;
+        }
+        &.frontface, &.backface {
+            box-shadow: unset;
+        }
+    }
+    &.d-theme {
+        &.frontface {
+            border: .11rem solid $d-theme--clr--card--border;
+        }
+        &.frontface, &.backface {
+            box-shadow: unset;
+        }
+    }
+}

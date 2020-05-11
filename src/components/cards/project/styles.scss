@@ -1,8 +1,6 @@
 @import '_variables';
-@import 'styles/mixins/3d';
 
 %proj_card_face {
-    @include card_face;
     transition: transform .4s ease;
 }
 
@@ -49,8 +47,6 @@
 }
 
 .ProjCard-container {
-    position: relative;
-    perspective: 150rem;
     height: 100%;
     
     &:hover {

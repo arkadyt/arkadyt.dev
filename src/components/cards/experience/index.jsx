@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import ThemeContext from 'state/context/theme';
+import { useMobileDetector } from 'hooks';
 import BigButton from 'components/shared/big-button';
 import { Container as Card, Face } from 'components/shared/card';
 import clsx from 'clsx';
@@ -41,11 +42,12 @@ const parseDateString = str => {
 const WexpCard = props => {
     const { date, company, title, number, noflip } = props;
     const { theme } = useContext(ThemeContext);
+    const isMobile = useMobileDetector();
     const { image, imageDark } = props;
     const jobIcon = theme === 'd-theme' && imageDark ? imageDark : image;
 
     return (
-        <Card className={clsx("WexpCard-container", theme)} noflip={noflip}>
+        <Card className={clsx("WexpCard-container")} noflip={noflip} flat={isMobile}>
             <Face type="frontface">
                 <div className="colored-block">
                     <div className="colored-chunk" />

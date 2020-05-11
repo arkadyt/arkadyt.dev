@@ -1,0 +1,8 @@
+.Card-container {
+    position: relative;
+    perspective: 150rem;
+
+    &.noflip {
+        pointer-events: none;
+    }
+}

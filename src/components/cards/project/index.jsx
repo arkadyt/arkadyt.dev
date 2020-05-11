@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import ThemeContext from 'state/context/theme';
+import { useMobileDetector } from 'hooks';
 import Image from 'components/shared/image';
 import BigButton from 'components/shared/big-button';
 import { Container as Card, Face } from 'components/shared/card';
@@ -12,9 +13,10 @@ import './styles.mobile.scss';
 const ProjCard = props => {
     const { title, description, tags, image, links, horizontal } = props;
     const { theme } = useContext(ThemeContext);
+    const isMobile = useMobileDetector();
 
     return (
-        <Card className={clsx("ProjCard-container", theme, horizontal && 'horizontal')}>
+        <Card className={clsx("ProjCard-container", horizontal && 'horizontal')} flat={isMobile}>
             <Face type="frontface" onClick={() => goTo(links[0].href)}>
                 <Image image={image} imgProps={{ alt: "Project Image" }} />
                 <div className="description">

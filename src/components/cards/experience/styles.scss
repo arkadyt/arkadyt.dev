@@ -1,10 +1,8 @@
 @import '_variables';
-@import 'styles/mixins/3d';
 
 $card-height: 15rem;
 
 %wexp_card_face {
-    @include card_face;
     transition: transform .3s ease-out;
     box-shadow: $l-theme--sdw--wexpcard;
 }
@@ -22,8 +20,6 @@ $card-height: 15rem;
 }
 
 .WexpCard-container {
-    position: relative;
-    perspective: 150rem;
 
     &:hover {
         .frontface {
@@ -32,10 +28,6 @@ $card-height: 15rem;
         .backface {
             transform: rotateX(0deg);
         }
-    }
-
-    &.noflip {
-        pointer-events: none;
     }
 
     .frontface {

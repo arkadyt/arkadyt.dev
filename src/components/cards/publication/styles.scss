@@ -1,14 +1,10 @@
 @import "_variables";
-@import "styles/mixins/3d";
 
 %publ_card_face {
-    @include card_face;
     transition: transform .2s ease-out;
 }
 
 .PublCard-container {
-    position: relative;
-    perspective: 150rem;
     height: 10rem;
 
     @media (orientation: landscape) {

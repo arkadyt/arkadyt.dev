@@ -16,7 +16,7 @@ const PublCard = props => {
     const isMobile = useMobileDetector();
 
     return (
-        <Card className={clsx("PublCard-container", theme)}>
+        <Card className={clsx("PublCard-container")} flat={isMobile}>
             <Face type="frontface" onClick={() => goTo(href)}>
                 <Image
                     image={image}
