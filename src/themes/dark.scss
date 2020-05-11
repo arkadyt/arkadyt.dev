@@ -19,36 +19,22 @@ $d-theme--clr--bg--tooltip: #212121;
 $d-theme--clr--bg--section: #353535;
 $d-theme--clr--bg--footer: #353535;
 $d-theme--clr--bg--accent: lighten($d-theme--clr--bg--footer, 4);
-$d-theme--clr--bg--projcard-backface: #212121;
-$d-theme--clr--bg--publcard-backface: #212121;
-$d-theme--clr--bg--wexpcard-backface: #212121;
 $d-theme--clr--bg--bigbutton: lighten($d-theme--clr--bg--section, 7);
 $d-theme--clr--bg--bigbutton-ripple: lighten($d-theme--clr--bg--section, 7);
-$d-theme--clr--bg--projcard-frontface: lighten($d-theme--clr--bg--section, 7);
-$d-theme--clr--bg--projcard-tag: lighten($d-theme--clr--bg--projcard-frontface, 10);
-$d-theme--clr--bg--publcard-frontface: lighten($d-theme--clr--bg--section, 7);
-$d-theme--clr--bg--wexpcard-frontface: lighten($d-theme--clr--bg--section, 7);
+$d-theme--clr--bg--card-frontface: lighten($d-theme--clr--bg--section, 7);
+$d-theme--clr--bg--card-backface: #212121;
+$d-theme--clr--bg--projcard-tag: lighten($d-theme--clr--bg--card-frontface, 10);
 $d-theme--clr--bg--wexpcard-circle: $d-theme--clr--bg--section;
-$d-theme--clr--bg--wexpcard-clchunk: lighten($d-theme--clr--bg--wexpcard-frontface, 2.5);
-$d-theme--clr--bg--wexpcard-number-disk: unset; // lighten($d-theme--clr--bg--wexpcard-clchunk, 7.5);
+$d-theme--clr--bg--wexpcard-clchunk: lighten($d-theme--clr--bg--card-frontface, 2.5);
+$d-theme--clr--bg--wexpcard-number-disk: unset;
 
 $d-theme--brdr--flat-element: .11rem solid #DFE1E5;
 
 $d-theme--grd--section: transparent;
-$d-theme--grd--projcard-backface: linear-gradient(
+$d-theme--grd--card-backface: linear-gradient(
     to bottom right,
-    lighten($d-theme--clr--bg--projcard-backface, 20),
-    lighten($d-theme--clr--bg--projcard-backface, 12)
-);
-$d-theme--grd--publcard-backface: linear-gradient(
-    to bottom right,
-    lighten($d-theme--clr--bg--publcard-backface, 20),
-    lighten($d-theme--clr--bg--publcard-backface, 12)
-);
-$d-theme--grd--wexpcard-backface: linear-gradient(
-    to bottom right,
-    lighten($d-theme--clr--bg--wexpcard-backface, 20),
-    lighten($d-theme--clr--bg--wexpcard-backface, 12)
+    lighten($d-theme--clr--bg--card-backface, 20),
+    lighten($d-theme--clr--bg--card-backface, 12)
 );
 $d-theme--grd--frontpage: linear-gradient(
     to top,
@@ -61,10 +47,7 @@ $d-theme--grd--header-blend: linear-gradient(
     rgba(255, 255, 255, 1)
 );
 
-$d-theme--sdw--generic--card: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
-$d-theme--sdw--projcard: $d-theme--sdw--generic--card;
-$d-theme--sdw--publcard: $d-theme--sdw--generic--card;
-$d-theme--sdw--wexpcard: $d-theme--sdw--generic--card;
+$d-theme--sdw--card: 0 .2rem 2rem 0 rgba(0, 0, 0, 0.15);
 $d-theme--sdw--tooltip: 0 .4rem 1.5rem 0 rgba(0,0,0,0.75);
 $d-theme--sdw--bigbutton--initial: 0 .5rem 1rem rgba(0, 0, 0, .15);
 $d-theme--sdw--bigbutton--onhover: 0 1rem 2rem rgba(0, 0, 0, .2);

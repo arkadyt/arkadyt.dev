@@ -4,7 +4,6 @@ $card-height: 15rem;
 
 %wexp_card_face {
     transition: transform .3s ease-out;
-    box-shadow: $l-theme--sdw--wexpcard;
 }
 
 .WexpCard-container:nth-child(even) {
@@ -20,7 +19,6 @@ $card-height: 15rem;
 }
 
 .WexpCard-container {
-
     &:hover {
         .frontface {
             transform: rotateX(180deg);
@@ -125,12 +123,6 @@ $card-height: 15rem;
  */
 .WexpCard-container {
     &.l-theme {
-        .frontface {
-            background-color: $l-theme--clr--bg--wexpcard-frontface;
-        }
-        .backface {
-            background: $l-theme--clr--bg--wexpcard-backface $l-theme--grd--wexpcard-backface;
-        }
         .text {
             h4 {
                 color: $l-theme--clr--txt--wexpcard-date;
@@ -144,12 +136,6 @@ $card-height: 15rem;
         }
     }
     &.d-theme {
-        .frontface {
-            background-color: $d-theme--clr--bg--wexpcard-frontface;
-        }
-        .backface {
-            background: $d-theme--clr--bg--wexpcard-backface $d-theme--grd--wexpcard-backface;
-        }
         .text {
             h4 {
                 color: $d-theme--clr--txt--wexpcard-date;

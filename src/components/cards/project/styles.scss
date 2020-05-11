@@ -143,15 +143,6 @@
 
 .ProjCard-container {
     &.l-theme {
-        .backface {
-            box-shadow: $l-theme--sdw--projcard;
-            background: $l-theme--clr--bg--projcard-backface $l-theme--grd--projcard-backface;
-        }
-        .frontface {
-            box-shadow: $l-theme--sdw--projcard;
-            color: $l-theme--clr--txt--regular;
-            background: $l-theme--clr--bg--projcard-frontface;
-        }
         .description {
             .tags {
                 span {
@@ -165,15 +156,7 @@
         }
     }
     &.d-theme {
-        .backface {
-            box-shadow: $d-theme--sdw--projcard;
-            background: $d-theme--clr--bg--projcard-backface $d-theme--grd--projcard-backface;
-        }
         .frontface {
-            box-shadow: $d-theme--sdw--projcard;
-            background: $d-theme--clr--bg--projcard-frontface;
-            color: $d-theme--clr--txt--regular;
-
             > picture > img {
                 filter: grayscale(1) brightness(1.08);
             }

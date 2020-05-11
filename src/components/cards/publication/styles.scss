@@ -102,26 +102,16 @@
 .PublCard-container {
     &.l-theme {
         .frontface {
-            box-shadow: $l-theme--sdw--publcard;
-            background-color: $l-theme--clr--bg--publcard-frontface;
             > .card-image img {
                 filter: $l-theme--fltr--publcard-img;
             }
         }
-        .backface {
-            background: $l-theme--clr--bg--publcard-backface $l-theme--grd--publcard-backface;
-        }
     }
     &.d-theme {
         .frontface {
-            box-shadow: $d-theme--sdw--publcard;
-            background-color: $d-theme--clr--bg--publcard-frontface;
             > .card-image img {
                 filter: $d-theme--fltr--publcard-img;
             }
-        }
-        .backface {
-            background: $d-theme--clr--bg--publcard-backface $d-theme--grd--publcard-backface;
         }
     }
 }

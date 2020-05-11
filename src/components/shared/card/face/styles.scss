@@ -8,13 +8,24 @@
     backface-visibility: hidden;
 }
 
+
 /**
  * Theme and colors.
  */
+
+.Card-face {
+    box-shadow: $l-theme--sdw--card;
+}
+
 .Card-face.flat {
     &.l-theme {
         &.frontface {
+            background: $l-theme--clr--bg--card-frontface;
             border: $l-theme--brdr--flat-element;
+            color: $l-theme--clr--txt--regular;
+        }
+        &.backface {
+            background: $l-theme--clr--bg--card-backface $l-theme--grd--card-backface;
         }
         &.frontface, &.backface {
             box-shadow: unset;
@@ -22,7 +33,12 @@
     }
     &.d-theme {
         &.frontface {
+            background: $d-theme--clr--bg--card-frontface;
             border: $d-theme--brdr--flat-element;
+            color: $d-theme--clr--txt--regular;
+        }
+        &.backface {
+            background: $d-theme--clr--bg--card-backface $d-theme--grd--card-backface;
         }
         &.frontface, &.backface {
             box-shadow: unset;
