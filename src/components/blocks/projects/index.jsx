@@ -53,8 +53,9 @@ const Projects = props => {
                 </p>
                 {!isMobile ? null : (
                     <p style={{ color: "rgba(150, 0, 0, .75)" }}>
-                        A small note for mobile viewers: some project websites are not yet optimized for vertical layouts and mobile devices with smaller screens!
-                        I apologize for this inconvenience and recommend you to view the pages in the landscape mode or from a desktop screen! Thank you!
+                        A small note for mobile viewers: some websites are not optimized for mobile screens yet.
+                        I recommend to view them in landscape mode or from a desktop screen!
+                        I apologize for this inconvenience. Thank you.
                     </p>
                 )}
             </div>
