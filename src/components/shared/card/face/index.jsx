@@ -9,6 +9,11 @@ const CardFace = props => {
     const { flat } = useContext(StyleContext);
     const { theme } = useContext(ThemeContext);
 
+    // enforce naming convention
+    if (!["frontface", "backface"].includes(type)) {
+        throw new Error("Wrong face type specified");
+    }
+
     return (
         <div className={clsx("Card-face", type, theme, flat && 'flat')} onClick={onClick}>
             {children}

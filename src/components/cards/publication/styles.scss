@@ -18,15 +18,6 @@
         }
     }
 
-    &:hover {
-        & .frontface {
-            transform: rotateX(180deg);
-        }
-        & .backface {
-            transform: rotateX(0deg);
-        }
-    }
-
     .frontface {
         @extend %publ_card_face;
 
@@ -85,7 +76,6 @@
         position: absolute;
         top: 0;
         left: 0;
-        transform: rotateX(-180deg);
         display: flex;
         width: 100%;
         height: 100%;

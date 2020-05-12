@@ -19,15 +19,6 @@ $card-height: 15rem;
 }
 
 .WexpCard-container {
-    &:hover {
-        .frontface {
-            transform: rotateX(180deg);
-        }
-        .backface {
-            transform: rotateX(0deg);
-        }
-    }
-
     .frontface {
         @extend %wexp_card_face;
 
@@ -107,7 +98,6 @@ $card-height: 15rem;
 
         position: absolute;
         top: 0; left: 0;
-        transform: rotateX(-180deg);
 
         display: flex;
         width: 100%;

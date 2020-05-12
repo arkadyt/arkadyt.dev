@@ -1,8 +1,46 @@
+@import "_variables";
+
 .Card-container {
     position: relative;
     perspective: 150rem;
 
     &.noflip {
-        pointer-events: none;
+        .backface {
+            display: none;
+        }
+    }
+
+    /**
+     * Rotation: bottom to up
+     */
+    &.flip-direction--btu {
+        .backface {
+            transform: rotateX(-180deg);
+        }
+        &:hover {
+            .backface {
+                transform: rotateX(0deg);
+            }
+            .frontface {
+                transform: rotateX(180deg);
+            }
+        }
+    }
+
+    /**
+     * Rotation: right-to-left
+     */
+    &.flip-direction--rtl {
+        .backface {
+            transform: rotateY(-180deg);
+        }
+        &:hover {
+            .backface {
+                transform: rotateY(0deg);
+            }
+            .frontface {
+                transform: rotateY(180deg);
+            }
+        }
     }
 }

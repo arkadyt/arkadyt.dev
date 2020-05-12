@@ -5,12 +5,16 @@ import clsx from 'clsx';
 import './styles.scss';
 
 const CardContainer = props => {
-    const { children, noflip, flat, className: containerClasses } = props;
+    const { children, noflip, flipDirection, flat, className } = props;
     const { theme } = useContext(ThemeContext);
+    const classNames = [
+        className, "Card-container", theme, noflip && 'noflip',
+        typeof flipDirection === "string" && `flip-direction--${flipDirection}`
+    ];
 
     return (
         <StyleContext.Provider value={{ flat }}>
-            <div className={clsx(containerClasses, "Card-container", theme, noflip && 'noflip')}>
+            <div className={clsx(...classNames)}>
                 {children}
             </div>
         </StyleContext.Provider>
