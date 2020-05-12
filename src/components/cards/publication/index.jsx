@@ -17,7 +17,7 @@ const PublCard = props => {
 
     return (
         <Card className={clsx("PublCard-container")} flat={isMobile} {...rest}>
-            <Face type="frontface" onClick={() => goTo(href)}>
+            <Face type="frontface">
                 <Image
                     image={image}
                     containerProps={{ className: "card-image" }}

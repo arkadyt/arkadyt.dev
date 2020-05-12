@@ -18,13 +18,12 @@ const CardContainer = props => {
     ];
 
     const isMobile = useMobileDetector();
-    const updateFlipStatus = e => {
-        console.log('updating...')
-    };
+    const onEnter = e => !isMobile && setFlipped(true);
+    const onLeave = e => !isMobile && setFlipped(false);
 
     return (
-        <CardContext.Provider value={{ flat, updateFlipStatus }}>
-            <div className={clsx(...classNames)} onMouseEnter={updateFlipStatus} onMouseLeave={updateFlipStatus}>
+        <CardContext.Provider value={{ flat, setFlipped }}>
+            <div className={clsx(...classNames)} onMouseEnter={onEnter} onMouseLeave={onLeave}>
                 {children}
             </div>
         </CardContext.Provider>

@@ -17,7 +17,7 @@ const ProjCard = props => {
 
     return (
         <Card className={clsx("ProjCard-container", horizontal && 'horizontal')} flat={isMobile} {...rest}>
-            <Face type="frontface" onClick={() => goTo(links[0].href)}>
+            <Face type="frontface">
                 <Image image={image} imgProps={{ alt: "Project Image" }} />
                 <div className="description">
                     <h3>{title}</h3>
