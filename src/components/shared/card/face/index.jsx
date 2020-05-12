@@ -1,12 +1,12 @@
 import React, { useContext } from 'react';
-import StyleContext from 'state/context/style';
+import { CardContext } from '..';
 import ThemeContext from 'state/context/theme';
 import clsx from 'clsx';
 import './styles.scss';
 
 const CardFace = props => {
     const { type, onClick, children } = props;
-    const { flat } = useContext(StyleContext);
+    const { flat } = useContext(CardContext);
     const { theme } = useContext(ThemeContext);
 
     // enforce naming convention

@@ -17,7 +17,7 @@
         .backface {
             transform: rotateX(-180deg);
         }
-        &:hover {
+        &.flipped {
             .backface {
                 transform: rotateX(0deg);
             }
@@ -34,7 +34,7 @@
         .backface {
             transform: rotateY(-180deg);
         }
-        &:hover {
+        &.flipped {
             .backface {
                 transform: rotateY(0deg);
             }
