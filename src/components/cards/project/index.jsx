@@ -1,10 +1,8 @@
-import React, { useContext } from 'react';
-import ThemeContext from 'state/context/theme';
+import React from 'react';
 import { useMobileDetector } from 'hooks';
 import Image from 'components/shared/image';
 import BigButton from 'components/shared/big-button';
 import { Container as Card, Face } from 'components/shared/card';
-import { goTo } from 'tools';
 import clsx from 'clsx';
 import { FaExternalLinkAlt as IconHref } from 'react-icons/fa';
 import './styles.scss';
@@ -12,7 +10,6 @@ import './styles.mobile.scss';
 
 const ProjCard = props => {
     const { title, description, tags, image, links, horizontal, ...rest } = props;
-    const { theme } = useContext(ThemeContext);
     const isMobile = useMobileDetector();
 
     return (
