@@ -1,8 +1,14 @@
 .skills-view {
-    display: grid;
-    grid-template-columns: repeat(10, 8.75rem);
-    grid-template-rows: 8.75rem;
-    grid-auto-rows: 8.75rem;
-    grid-gap: 2.5rem 1rem;
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+.skills-row {
+    display: flex;
+    justify-content: space-between;
+
+    &:not(:first-child) {
+        margin-top: 2.5rem;
+    }
 }

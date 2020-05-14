@@ -82,7 +82,7 @@
         text-align: right;
         z-index: 2;
     
-        h3 {
+        .title {
             display: inline-block;
             border-radius: .4rem;
             margin: 0;
@@ -90,11 +90,11 @@
             font-size: 2.4rem;
         }
         
-        > span {
+        .text {
             display: block;
             margin-top: 2rem;
             font-family: $font-paragraph-primary;
-            font-size: 1.6rem;
+            font-size: 1.8rem;
         }
         
         .tags {

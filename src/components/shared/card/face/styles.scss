@@ -19,6 +19,10 @@
         &.frontface {
             background: $l-theme--clr--bg--card-frontface;
             color: $l-theme--clr--txt--regular;
+
+            a, a:link, a:visited {
+                color: $l-theme--clr--txt--regular;
+            }
         }
         &.backface {
             background: $l-theme--clr--bg--card-backface $l-theme--grd--card-backface;
@@ -29,6 +33,10 @@
         &.frontface {
             background: $d-theme--clr--bg--card-frontface;
             color: $d-theme--clr--txt--regular;
+
+            a, a:link, a:visited {
+                color: $d-theme--clr--txt--regular;
+            }
         }
         &.backface {
             background: $d-theme--clr--bg--card-backface $d-theme--grd--card-backface;

@@ -10,9 +10,15 @@
     @media (orientation: landscape) {
         &:nth-child(even) {
             .frontface {
-                flex-direction: row-reverse;
-                .content {
-                    text-align: right;
+                .number-block {
+                    clip-path: polygon(0% 0%, 88% 0%, 100% 100%, 0% 100%);
+                }
+            }
+        }
+        &:nth-child(odd) {
+            .frontface {
+                .number-block {
+                    clip-path: polygon(0% 0%, 100% 0%, 88% 100%, 0% 100%);
                 }
             }
         }
@@ -28,15 +34,21 @@
             cursor: pointer;
         }
 
-        > .card-image {
+        .number-block {
             display: flex;
             align-items: center;
             justify-content: center;
+        }
 
-            img {
-                width: 80%;
-                object-fit: cover;
-            }
+        .number {
+            width: 100%;
+            height: 100%;
+            display: block;
+
+            font-size: 8rem;
+            font-weight: bolder;
+            font-family: $font-header-primary;
+            padding: 1rem 5rem 0 4rem;
         }
 
         > .content {
@@ -44,7 +56,7 @@
             flex-direction: column;
             justify-content: center;
             height: 100%;
-            padding: 2rem;
+            padding: 2rem 4rem 2rem 2rem;
 
             .href-icon {
                 display: inline-block;
@@ -52,19 +64,10 @@
                 opacity: .3;
             }
 
-            .website-str {
-                font-weight: bold;
-                font-style: italic;
-            }
-
             .title {
                 display: block;
-                width: 67rem;
-            }
-
-            .title {
-                font-size: 2rem;
-                font-weight: bold;
+                width: 100%;
+                font-size: 2.2rem;
                 font-family: $font-header-secondary;
             }
         }
@@ -92,15 +95,21 @@
 .PublCard-container {
     &.l-theme {
         .frontface {
-            > .card-image img {
-                filter: $l-theme--fltr--publcard-img;
+            .number-block {
+                background: $l-theme--clr--bg--publcard--image;
+            }
+            .number {
+                color: $l-theme--clr--txt--publcard-number;
             }
         }
     }
     &.d-theme {
         .frontface {
-            > .card-image img {
-                filter: $d-theme--fltr--publcard-img;
+            .number-block {
+                background: $d-theme--clr--bg--publcard--image;
+            }
+            .number {
+                color: $d-theme--clr--txt--publcard-number;
             }
         }
     }

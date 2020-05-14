@@ -9,8 +9,9 @@ $d-theme--clr--txt--bigbutton: white;
 $d-theme--clr--txt--projcard-tag: white;
 $d-theme--clr--txt--projcard-hint: rgba(white, .8);
 $d-theme--clr--txt--sidebar: white;
-$d-theme--clr--txt--wexpcard-number: rgba(white, .3);
-$d-theme--clr--txt--wexpcard-date: rgba(white, .5);
+$d-theme--clr--txt--expcard-number: rgba(white, .3);
+$d-theme--clr--txt--publcard-number: rgba(white, .6);
+$d-theme--clr--txt--expcard-date: rgba(white, .5);
 
 $d-theme--clr--bg--sidebar: #212121;
 $d-theme--clr--bg--sidebar-link: #353535;
@@ -24,9 +25,10 @@ $d-theme--clr--bg--bigbutton-ripple: lighten($d-theme--clr--bg--section, 7);
 $d-theme--clr--bg--card-frontface: lighten($d-theme--clr--bg--section, 7);
 $d-theme--clr--bg--card-backface: #212121;
 $d-theme--clr--bg--projcard-tag: lighten($d-theme--clr--bg--card-frontface, 10);
-$d-theme--clr--bg--wexpcard-circle: $d-theme--clr--bg--section;
-$d-theme--clr--bg--wexpcard-clchunk: lighten($d-theme--clr--bg--card-frontface, 2.5);
-$d-theme--clr--bg--wexpcard-number-disk: unset;
+$d-theme--clr--bg--expcard-circle: $d-theme--clr--bg--section;
+$d-theme--clr--bg--expcard-clchunk: lighten($d-theme--clr--bg--card-frontface, 2.5);
+$d-theme--clr--bg--expcard-number-disk: unset;
+$d-theme--clr--bg--publcard--image: lighten($d-theme--clr--bg--card-frontface, 5);
 
 $d-theme--brdr--flat-element: .11rem solid #DFE1E5;
 

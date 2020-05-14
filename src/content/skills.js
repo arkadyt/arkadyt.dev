@@ -3,7 +3,7 @@ import DirectConnect from 'images/skills/aws/directconnect.svg';
 import SWF from 'images/skills/aws/swf.svg';
 import WAF from 'images/skills/aws/waf.svg';
 import Shield from 'images/skills/aws/shield.svg';
-import KMS from 'images/skills/aws/ad.svg';
+import KMS from 'images/skills/aws/kms.svg';
 import Batch from 'images/skills/aws/batch.svg';
 
 import React from 'images/skills/reactbig.svg';
@@ -64,7 +64,7 @@ import EFS from 'images/skills/aws/efs.svg';
 import ElasticSearch from 'images/skills/aws/elasticsearch.svg';
 import IAM from 'images/skills/aws/iam.svg';
 import Lambda from 'images/skills/aws/lambda.svg';
-import LoadBalancers from 'images/skills/aws/loadbalancers2.svg';
+import LoadBalancers from 'images/skills/aws/elb.svg';
 import RDS from 'images/skills/aws/rds.svg';
 import Redshift from 'images/skills/aws/redshift.svg';
 import Route53 from 'images/skills/aws/route53.svg';
@@ -77,71 +77,119 @@ import VPC from 'images/skills/aws/vpc.svg';
 import XRay from 'images/skills/aws/xray.svg';
 import Kinesis from 'images/skills/aws/kinesis.svg';
 
+const sk = {
+  HTML:         { icon: HTML,         title: 'HTML',                            iconDark: HTML_dt                                   },
+  CSS:          { icon: CSS,          title: 'CSS',                             iconDark: CSS_dt                                    },
+  JS:           { icon: JS,           title: 'JavaScript',                                                                          },
+  React:        { icon: React,        title: 'React.js',                        iconDark: React_dt, megaWide: true                  },
+  NodeJS:       { icon: NodeJS,       title: 'NodeJS',                          iconDark: NodeJS_dt, wide: true                     },
+  Java:         { icon: Java,         title: 'Java',                                                                                },
+  Python:       { icon: Python,       title: 'Python',                                                                              },
+  Kubernetes:   { icon: Kubernetes,   title: 'Kubernetes',                                                                          },
+  Docker:       { icon: Docker,       title: 'Docker',                          height: 90, iconDark: Docker_dt                     },
+  AWS:          { icon: AWS,          title: `AWS Cloud Services`,              iconDark: AWS_dt, megaWide: true                    },
+  AwsCLI:       { icon: AwsCLI,       title: 'AWS\nCommand Line Utils',                                                             },
+  MongoDB:      { icon: MongoDB,      title: 'MongoDB',                         iconDark: MongoDB_dt, megaWide: true, height: 90    },
+  Redux:        { icon: Redux,        title: 'Redux.js',                        height: 90                                          },
+  Webpack:      { icon: Webpack,      title: 'Webpack',                                                                             },
+  Workbox:      { icon: Workbox,      title: 'Workbox.js',                      height: 90                                          },
+  PWA:          { icon: PWA,          title: `Progressive Web Apps`,            megaWide: true, height: 80                          },
+  Git:          { icon: Git,          title: 'Git',                             iconDark: Git_dt, megaWide: true                    },
+  GraphQL:      { icon: GraphQL,      title: 'GraphQL',                                                                             },
+  Apollo:       { icon: Apollo,       title: 'Apollo',                          iconDark: Apollo_dt                                 },
+  GulpJS:       { icon: GulpJS,       title: "Gulp.js",                                                                             },
+  Sass:         { icon: Sass,         title: `SASS / SCSS`,                     wide: true                                          },
+  Less:         { icon: Less,         title: `LESS`,                            wide: true, height: 88                              },
+  Bash:         { icon: Bash,         title: "Bash",                            iconDark: Bash_dt, megaWide: true                   },
+  Linux:        { icon: Linux,        title: "Linux Systems\nAdministration",   iconDark: Linux_dt                                  },
+  Redis:        { icon: Redis,        title: 'Redis',                           height: 90                                          },
+};
 
-export const skills = [
-  { icon: HTML,         title: 'HTML',                             mobileOrder: 1000,     iconDark: HTML_dt                                   },
-  { icon: CSS,          title: 'CSS',                              mobileOrder: 1010,     iconDark: CSS_dt                                    },
-  { icon: JS,           title: 'JavaScript',                       mobileOrder: 1020,                                                         },
-  { icon: React,        title: 'React.js',                         mobileOrder: 1030,     iconDark: React_dt, megaWide: true                  },
-  { icon: NodeJS,       title: 'NodeJS',                           mobileOrder: 1040,     iconDark: NodeJS_dt, wide: true                     },
-  { icon: Java,         title: 'Java',                             mobileOrder: 1050,                                                         },
-  { icon: Python,       title: 'Python',                           mobileOrder: 1060,                                                         },
-  { icon: Kubernetes,   title: 'Kubernetes',                       mobileOrder: 1070,                                                         },
-  { icon: Docker,       title: 'Docker',                           mobileOrder: 1080,     height: 90, iconDark: Docker_dt                     },
-  { icon: AWS,          title: `AWS Cloud Services`,               mobileOrder: 1100,     iconDark: AWS_dt, megaWide: true                    },
-  { icon: AwsCLI,       title: 'AWS\nCommand Line Utils',          mobileOrder: 1190,                                                         },
-  { icon: MongoDB,      title: 'MongoDB',                          mobileOrder: 1090,     iconDark: MongoDB_dt, megaWide: true, height: 90    },
-  { icon: Redux,        title: 'Redux.js',                         mobileOrder: 1110,     height: 90                                          },
-  { icon: Webpack,      title: 'Webpack',                          mobileOrder: 1130,                                                         },
-  { icon: Workbox,      title: 'Workbox.js',                       mobileOrder: 1140,     height: 90                                          },
-  { icon: PWA,          title: `Progressive Web Apps`,             mobileOrder: 1120,     megaWide: true, height: 80                          },
-  { icon: Git,          title: 'Git',                              mobileOrder: 1160,     iconDark: Git_dt, megaWide: true                    },
-  { icon: GraphQL,      title: 'GraphQL',                          mobileOrder: 1170,                                                         },
-  { icon: Apollo,       title: 'Apollo',                           mobileOrder: 1180,     iconDark: Apollo_dt                                 },
-  { icon: GulpJS,       title: "Gulp.js",                          mobileOrder: 1150,                                                         },
-  { icon: Sass,         title: `SASS / SCSS`,                      mobileOrder: 1200,     wide: true                                          },
-  { icon: Less,         title: `LESS`,                             mobileOrder: 1210,     wide: true, height: 88                              },
-  { icon: Bash,         title: "Bash",                             mobileOrder: 1240,     iconDark: Bash_dt, megaWide: true                   },
-  { icon: Linux,        title: "Linux Systems\nAdministration",    mobileOrder: 1230,     iconDark: Linux_dt                                  },
-  { icon: Redis,        title: 'Redis',                            mobileOrder: 1220,     height: 90                                          },
-];
+export const skills = {
+  mobile: [
+    [ sk.HTML, sk.CSS, sk.JS, sk.React ],
+    [ sk.NodeJS, sk.Java, sk.Python, sk.Kubernetes, sk.Docker ],
+    [ sk.MongoDB, sk.AWS ],
+    [ sk.AwsCLI, sk.PWA, sk.Webpack, sk.Workbox ],
+    [ sk.GulpJS, sk.Git, sk.GraphQL, sk.Apollo ],
+    [ sk.Redux, sk.Redis, sk.Less, sk.Sass ],
+    [ sk.Linux, sk.Bash, 'dummy', 'dummy', 'dummy' ]
+  ],
+  desktop: [
+    [ sk.HTML, sk.CSS, sk.JS, sk.React, sk.NodeJS, sk.Java, sk.Python ],
+    [ sk.Kubernetes, sk.Docker, sk.AWS, sk.AwsCLI, sk.MongoDB, sk.Redux ],
+    [ sk.Webpack, sk.Workbox, sk.PWA, sk.Git, sk.GraphQL, sk.Apollo ],
+    [ sk.GulpJS, sk.Sass, sk.Less, sk.Bash, sk.Linux, sk.Redis ]
+  ]
+};
 
-export const awsSkills = [
-  { icon: Lambda,           title: `AWS Lambda`                     },
-  { icon: StepFunctions,    title: `AWS StepFunctions`              },
-  { icon: ApiGateway,       title: `AWS ApiGateway`                 },
-  { icon: VPC,              title: `AWS VPC`                        },
-  { icon: IAM,              title: `AWS IAM`                        },
-  { icon: Cognito,          title: `AWS Cognito`                    },
-  { icon: EC2,              title: `AWS EC2`                        },
-  { icon: DynamoDB,         title: `AWS DynamoDB`                   },
-  { icon: Route53,          title: `AWS Route53`                    },
-  { icon: CloudFront,       title: `AWS CloudFront`                 },
-  { icon: LoadBalancers,    title: `AWS Elastic\nLoad Balancing`    },
-  { icon: SES,              title: `AWS SES`                        },
-  { icon: S3,               title: `AWS S3`                         },
-  { icon: SQS,              title: `AWS SQS`                        },
-  { icon: SNS,              title: `AWS SNS`                        },
-  { icon: RDS,              title: `AWS RDS`                        },
-  { icon: Redshift,         title: `AWS Redshift`                   },
-  { icon: Beanstalk,        title: `AWS Elastic Beanstalk`          },
-  { icon: CloudFormation,   title: `AWS CloudFormation`             },
-  { icon: EFS,              title: `AWS EFS`                        },
-  { icon: KMS,              title: `AWS KMS`                        },
-  { icon: Shield,           title: `AWS Shield`                     },
-  { icon: WAF,              title: `AWS WAF`                        },
-  { icon: DirectConnect,    title: `AWS Direct Connect`             },
-  { icon: StorageGateway,   title: `AWS Storage Gateway`            },
-  { icon: ElastiCache,      title: `AWS ElastiCache`                },
-  { icon: ElasticSearch,    title: `AWS Elasticsearch`              },
-  { icon: CloudTrail,       title: `AWS CloudTrail`                 },
-  { icon: CloudWatch,       title: `AWS CloudWatch`                 },
-  { icon: ECS,              title: `AWS ECS`                        },
-  { icon: CodeBuild,        title: `AWS CodeBuild`                  },
-  { icon: CodeDeploy,       title: `AWS CodeDeploy`                 },
-  { icon: CodePipeline,     title: `AWS CodePipeline`               },
-  { icon: Batch,            title: `AWS Batch`                      },
-  { icon: SWF,              title: `AWS SWF`                        },
-  { icon: Kinesis,          title: `AWS Kinesis`                    },
-  { icon: XRay,             title: `AWS X-Ray`                      },
-];
+const aws = {
+  Lambda:          { icon: Lambda,           title: `AWS Lambda`                     },
+  StepFunctions:   { icon: StepFunctions,    title: `AWS StepFunctions`              },
+  ApiGateway:      { icon: ApiGateway,       title: `AWS ApiGateway`                 },
+  VPC:             { icon: VPC,              title: `AWS VPC`                        },
+  IAM:             { icon: IAM,              title: `AWS IAM`                        },
+  Cognito:         { icon: Cognito,          title: `AWS Cognito`                    },
+  EC2:             { icon: EC2,              title: `AWS EC2`                        },
+  DynamoDB:        { icon: DynamoDB,         title: `AWS DynamoDB`                   },
+  Route53:         { icon: Route53,          title: `AWS Route53`                    },
+  CloudFront:      { icon: CloudFront,       title: `AWS CloudFront`                 },
+  LoadBalancers:   { icon: LoadBalancers,    title: `AWS Elastic\nLoad Balancing`    },
+  SES:             { icon: SES,              title: `AWS SES`                        },
+  S3:              { icon: S3,               title: `AWS S3`                         },
+  SQS:             { icon: SQS,              title: `AWS SQS`                        },
+  SNS:             { icon: SNS,              title: `AWS SNS`                        },
+  RDS:             { icon: RDS,              title: `AWS RDS`                        },
+  Redshift:        { icon: Redshift,         title: `AWS Redshift`                   },
+  Beanstalk:       { icon: Beanstalk,        title: `AWS Elastic Beanstalk`          },
+  CloudFormation:  { icon: CloudFormation,   title: `AWS CloudFormation`             },
+  EFS:             { icon: EFS,              title: `AWS EFS`                        },
+  KMS:             { icon: KMS,              title: `AWS KMS`                        },
+  Shield:          { icon: Shield,           title: `AWS Shield`                     },
+  WAF:             { icon: WAF,              title: `AWS WAF`                        },
+  DirectConnect:   { icon: DirectConnect,    title: `AWS Direct Connect`             },
+  StorageGateway:  { icon: StorageGateway,   title: `AWS Storage Gateway`            },
+  ElastiCache:     { icon: ElastiCache,      title: `AWS ElastiCache`                },
+  ElasticSearch:   { icon: ElasticSearch,    title: `AWS Elasticsearch`              },
+  CloudTrail:      { icon: CloudTrail,       title: `AWS CloudTrail`                 },
+  CloudWatch:      { icon: CloudWatch,       title: `AWS CloudWatch`                 },
+  ECS:             { icon: ECS,              title: `AWS ECS`                        },
+  CodeBuild:       { icon: CodeBuild,        title: `AWS CodeBuild`                  },
+  CodeDeploy:      { icon: CodeDeploy,       title: `AWS CodeDeploy`                 },
+  CodePipeline:    { icon: CodePipeline,     title: `AWS CodePipeline`               },
+  Batch:           { icon: Batch,            title: `AWS Batch`                      },
+  SWF:             { icon: SWF,              title: `AWS SWF`                        },
+  Kinesis:         { icon: Kinesis,          title: `AWS Kinesis`                    },
+  XRay:            { icon: XRay,             title: `AWS X-Ray`                      },
+};
+
+/**
+ * Fills the array with arrays of items from source array,
+ * where each row can be at maximum as long as {cols} argument.
+ * Fills the last row with dummy items to reach {cols} length.
+ */
+function fillArray(source, cols) {
+  let currRow = 0;
+  let rows = [[]];
+
+  Object.values(source).forEach(item => {
+    if (rows[currRow].length === cols) currRow += 1;
+    if (!Array.isArray(rows[currRow])) rows[currRow] = [];
+    rows[currRow].push(item);
+  });
+
+  /**
+   * Fill last row with dummy objects to keep flexbox visual item
+   * distribution similar to full rows.
+   */
+  const lastRow = rows[rows.length - 1];
+  const dummyCount = cols - lastRow.length;
+  lastRow.push(...(Array(dummyCount).fill('dummy')));
+
+  return rows;
+};
+
+export const awsSkills = {
+  mobile: fillArray(aws, 6),
+  desktop: fillArray(aws, 10)
+};

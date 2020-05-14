@@ -44,18 +44,13 @@ const Projects = props => {
         <Section id="personal-projects" title="Projects" {...props} button={buttonProps}>
             <div className="regular-text">
                 <p>
-                    Below are the solo projects of mine that I consider most relevant in the context of frontend and backend engineering,
-                    development of cloud solutions and working with MERN development stack.
-                </p>
-                <p>
-                    There are however many other projects that I've worked on throughout the years.
-                    Majority of them is hosted on my GitHub profile, so if you're interested, click on the "VIEW ALL PROJECTS" button below!
+                    Below are some solo projects of mine that I would consider most relevant in context of frontend and backend engineering.
+                    However, if you'd like to see more, you can visit my GitHub by clicking "View all projects" button below.
                 </p>
                 {!isMobile ? null : (
                     <p style={{ color: "rgba(150, 0, 0, .75)" }}>
-                        A small note for mobile viewers: some websites are not optimized for mobile screens yet.
-                        I recommend to view them in landscape mode or from a desktop screen!
-                        I apologize for this inconvenience. Thank you.
+                        Small note for mobile users — some webpages are not optimized for mobile devices yet.
+                        For best viewing experience, please visit them from a desktop or laptop screen.
                     </p>
                 )}
             </div>

@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { Fragment, useContext } from 'react';
 import ThemeContext from 'state/context/theme';
 import { useMobileDetector } from 'hooks';
 import BigButton from 'components/shared/big-button';
@@ -27,11 +27,26 @@ const parseDateString = str => {
         }
 
         let longevity = Math.ceil((split[1] - split[0]) / 1000 / 60 / 60 / 24 / 30);
-        if (longevity > 12) {
+        if (isNaN(longevity)) throw new Error("Value is NaN");
+
+        if (longevity >= 12) {
             let years = Math.floor(longevity / 12);
-            return `${str} (${ensurePlural(years, 'yr')}. and ${ensurePlural(longevity % 12, 'mo')}.)`;
+            let months = longevity % 12;
+            return (
+                <span>
+                    {str}&nbsp;&#x2022;&nbsp;
+                    {ensurePlural(years, 'yr')}
+                    &nbsp;
+                    {months ? ensurePlural(months, 'mo') : null}
+                </span>
+            );
         } else {
-            return `${str} (${ensurePlural(longevity, 'mo')}.)`;
+            return (
+                <span>
+                    {str}&nbsp;&#x2022;&nbsp;
+                    {ensurePlural(longevity, 'mo')}
+                </span>
+            );
         }
     } catch (e) {
         console.error('Could not parse date string!', e);
@@ -39,16 +54,44 @@ const parseDateString = str => {
     }
 };
 
-const WexpCard = props => {
-    const { date, company, title, number, ...rest } = props;
+const Subtitle = props => {
+    const { subtitle } = props;
+    const isMobile = useMobileDetector();
+
+    const getDesktopVer = () => {
+        return subtitle.map((entry, i) => {
+            const separator = <Fragment>&nbsp;&nbsp;&#x2022;&nbsp;&nbsp;</Fragment>;
+            return <Fragment>{i > 0 ? separator : null}{entry}</Fragment>;
+        }); 
+    };
+    const getMobileVer = () => {
+        return subtitle.map(entry => (
+            <div>{entry}</div>
+        ));
+    };
+
+    return (
+        <span className="subtitle">
+            {Array.isArray(subtitle)
+                ? isMobile ? getMobileVer() : getDesktopVer()
+                : subtitle
+            }
+        </span>
+    );
+};
+
+const ExpCard = props => {
+    const { date, title, subtitle, subtitleMobile, noLongevity, number, ...rest } = props;
     const { theme } = useContext(ThemeContext);
     const isMobile = useMobileDetector();
     const { image, imageDark } = props;
     const jobIcon = theme === 'd-theme' && imageDark ? imageDark : image;
+    const _subtitle = isMobile && subtitleMobile ? subtitleMobile : subtitle;
+    const frFaceCls = clsx(Array.isArray(_subtitle) && `taller-${_subtitle.length}`);
 
     return (
-        <Card className={clsx("WexpCard-container")} flat={isMobile} {...rest}>
-            <Face type="frontface">
+        <Card className="WexpCard-container" flat={isMobile} {...rest}>
+            <Face type="frontface" className={frFaceCls}>
                 <div className="colored-block">
                     <div className="colored-chunk" />
                     <div className="number-base">
@@ -57,9 +100,9 @@ const WexpCard = props => {
                 </div>
                 <img src={jobIcon} alt='' />
                 <div className="text">
-                    <h4>{parseDateString(date)}</h4>
-                    <h2>{company}</h2>
-                    <h3>{title}</h3>
+                    <span className="date">{noLongevity ? date : parseDateString(date)}</span>
+                    <span className="title">{title}</span>
+                    <Subtitle subtitle={_subtitle} />
                 </div>
             </Face>
             <Face type="backface">
@@ -69,4 +112,4 @@ const WexpCard = props => {
     );
 };
 
-export default WexpCard;
+export default ExpCard;

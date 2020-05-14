@@ -17,8 +17,8 @@ const ProjCard = props => {
             <Face type="frontface">
                 <Image image={image} imgProps={{ alt: "Project Image" }} />
                 <div className="description">
-                    <h3>{title}</h3>
-                    <span>{description}</span>
+                    <span className="title">{title}</span>
+                    <span className="text">{description}</span>
                     <div className="tags">
                         {tags.map((item, index) => (
                             <span key={index}>{item}</span>

@@ -19,6 +19,7 @@ $header--height: 50rem;
         .blending-gradient {
             display: block;
             position: absolute;
+            z-index: 15;
             top: $header--height / 2;
             height: $header--height / 2;
             width: 100%;

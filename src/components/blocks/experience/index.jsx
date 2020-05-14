@@ -1,26 +1,27 @@
 import React from 'react';
-import { jobs } from 'content';
-import WexpCard from 'components/cards/experience';
+import ExpCard from 'components/cards/experience';
 import Section from 'components/shared/section';
 import './styles.scss';
 import './styles.mobile.scss';
 
 const Experience = props => {
+    const { title, items } = props;
+
     return (
-      <Section id="work-experience" title="Experience" {...props} button="default">
-          <div className="wexpcard-view">
-              {jobs.map((item, index) => {
+      <Section id="experience" title={title} {...props} button="default">
+          <div className="expcard-view">
+              {items.map((item, index) => {
                   const position = {
                       start: index === 0,
-                      end: index === jobs.length - 1
+                      end: index === items.length - 1
                   }
                   return (
-                      <WexpCard
+                      <ExpCard
                         noflip
                         {...item}
                         key={index}
                         {...position}
-                        number={jobs.length - index}
+                        number={items.length - index}
                       />
                   );
               })}

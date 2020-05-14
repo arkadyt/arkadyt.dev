@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import './styles.scss';
 
 const CardFace = props => {
-    const { type, children } = props;
+    const { type, className=[], children } = props;
     const { flat, setFlipped } = useContext(CardContext);
     const { theme } = useContext(ThemeContext);
     const isMobile = useMobileDetector();
@@ -27,7 +27,7 @@ const CardFace = props => {
     }
 
     return (
-        <div className={clsx("Card-face", type, theme, flat && 'flat')} onClick={onFaceClick}>
+        <div className={clsx("Card-face", className, type, theme, flat && 'flat')} onClick={onFaceClick}>
             {children}
         </div>
     );

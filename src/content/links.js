@@ -11,26 +11,26 @@ import {
 export default {
     email: {
         ico: <IconMail />,
-        href: 'mailto:contact.me@arkadyt.dev',
-        readableLink: 'contact.me@arkadyt.dev',
+        href: 'mailto:administrator@arkadyt.dev',
+        readableLink: 'administrator@arkadyt.dev',
         title: 'Contact',
     },
     github: {
         ico: <IconGitHub />,
-        href: 'https://github.com/arkadyt',
-        readableLink: 'github.com/arkadyt',
+        href: 'https://github.com/iamarkadyt',
+        readableLink: 'github.com/iamarkadyt',
         title: 'GitHub',
     },
     linkedin: {
         ico: <IconLinkedIn />,
-        href: 'https://linkedin.com/in/arkadyt',
-        readableLink: 'linkedin.com/in/arkadyt',
+        href: 'https://linkedin.com/in/iamarkadyt',
+        readableLink: 'linkedin.com/in/iamarkadyt',
         title: 'LinkedIn',
     },
     blog: {
         ico: <IconMedium />,
-        href: 'https://medium.com/@arkadyt',
-        readableLink: 'medium.com/@arkadyt',
+        href: 'https://medium.com/@iamarkadyt',
+        readableLink: 'medium.com/@iamarkadyt',
         title: 'Blog',
     },
 };

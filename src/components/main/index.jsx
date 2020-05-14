@@ -1,6 +1,7 @@
 import React, { useContext, Fragment } from 'react';
 import ThemeContext from 'state/context/theme';
 import { useMobileDetector } from 'hooks';
+import { jobs, education } from 'content';
 import clsx from 'clsx';
 import './styles.scss';
 import './styles.mobile.scss';
@@ -24,8 +25,9 @@ const Layout = props => {
                 <Header />
                 <div className="content-body">
                     <AboutMe rounded={isMobile} />
-                    <Experience rounded={isMobile} />
+                    <Experience rounded={isMobile} items={jobs} title="Experience" />
                     <Skills rounded={isMobile} />
+                    <Experience rounded={isMobile} items={education} title="Education" />
                     <Projects rounded={isMobile} />
                     <Publications rounded={isMobile} />
                 </div>

@@ -18,8 +18,8 @@ export default [
         },
         title: 'WeWork',
         description: <span>
-            Fully-fledged social networking platform built with JS, React, Redux, Node.js, Express and other software.
-            Not a full Twitter copy, but pretty close!
+            Fully-fledged social networking platform built with JS, React, Node and others.
+            Served through CloudFront with help of Lambda@Edge.
         </span>,
         tags: ['JS', 'React.js', 'Redux', 'Node.js', 'Express', 'MongoDB', 'AWS', '+20'],
         links: [
@@ -36,7 +36,7 @@ export default [
         title: 'vSpace',
         description: <span>
             An open source e-Commerce platform built on MERN stack.
-            This is a work in progress, however don't shy away from checking it out! :)
+            This is a work in progress, however don't shy away from checking it out!
         </span>,
         tags: ['JS', 'React', 'Redux.js', 'Node', 'Express.js', 'MongoDB', 'AWS', '+17'],
         links: [
@@ -52,8 +52,8 @@ export default [
         },
         title: 'arkadyt.dev',
         description: <span>
-            Personal portfolio website built with CSS, HTML, SASS, JavaScript, React.js and other software.
-            Hosted on AWS!
+            Personal portfolio website built with CSS, HTML, SASS, JavaScript, React.js and others.
+            Hosted on AWS.
         </span>,
         tags: ['JavaScript', 'HTML', 'CSS', 'React', 'AWS', 'S3', 'CloudFront', 'Lambda@Edge', '+9'],
         links: [

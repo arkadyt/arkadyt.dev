@@ -2,7 +2,7 @@
 
 $card-height: 15rem;
 
-%wexp_card_face {
+%exp_card_face {
     transition: transform .3s ease-out;
 }
 
@@ -20,7 +20,7 @@ $card-height: 15rem;
 
 .WexpCard-container {
     .frontface {
-        @extend %wexp_card_face;
+        @extend %exp_card_face;
 
         display: grid;
         grid-template-columns: 0.35fr 0.15fr 0.95fr;
@@ -75,16 +75,16 @@ $card-height: 15rem;
                 margin: 0;
             }
 
-            h2 {
+            .title {
                 @extend %header;
                 font-size: 3.2rem;
                 margin: .5rem 0;
             }
-            h3 {
+            .subtitle {
                 @extend %header;
                 font-size: 2rem;
             }
-            h4 {
+            .date {
                 @extend %header;
                 font-size: 1.6rem;
                 letter-spacing: .2rem;
@@ -94,7 +94,7 @@ $card-height: 15rem;
     }
     
     .backface {
-        @extend %wexp_card_face;
+        @extend %exp_card_face;
 
         position: absolute;
         top: 0; left: 0;
@@ -114,28 +114,28 @@ $card-height: 15rem;
 .WexpCard-container {
     &.l-theme {
         .text {
-            h4 {
-                color: $l-theme--clr--txt--wexpcard-date;
+            .date {
+                color: $l-theme--clr--txt--expcard-date;
             }
         }
         .colored-chunk {
-            background-color: $l-theme--clr--bg--wexpcard-clchunk;
+            background-color: $l-theme--clr--bg--expcard-clchunk;
         }
         .number {
-            color: $l-theme--clr--txt--wexpcard-number;
+            color: $l-theme--clr--txt--expcard-number;
         }
     }
     &.d-theme {
         .text {
-            h4 {
-                color: $d-theme--clr--txt--wexpcard-date;
+            .date {
+                color: $d-theme--clr--txt--expcard-date;
             }
         }
         .colored-chunk {
-            background-color: $d-theme--clr--bg--wexpcard-clchunk;
+            background-color: $d-theme--clr--bg--expcard-clchunk;
         }
         .number {
-            color: $d-theme--clr--txt--wexpcard-number;
+            color: $d-theme--clr--txt--expcard-number;
         }
     }
 }

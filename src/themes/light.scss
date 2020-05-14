@@ -9,8 +9,9 @@ $l-theme--clr--txt--bigbutton: #212121;
 $l-theme--clr--txt--projcard-tag: #313131;
 $l-theme--clr--txt--projcard-hint: rgba(white, .8);
 $l-theme--clr--txt--sidebar: white;
-$l-theme--clr--txt--wexpcard-number: rgba(black, .2);
-$l-theme--clr--txt--wexpcard-date: rgba(black, .5);
+$l-theme--clr--txt--expcard-number: rgba(black, .2);
+$l-theme--clr--txt--publcard-number: rgba(black, .6);
+$l-theme--clr--txt--expcard-date: rgba(black, .5);
 
 $l-theme--clr--bg--sidebar: #212121;
 $l-theme--clr--bg--sidebar-link: #353535;
@@ -24,9 +25,10 @@ $l-theme--clr--bg--bigbutton-ripple: white;
 $l-theme--clr--bg--card-frontface: lighten($l-theme--clr--bg--section, 5);
 $l-theme--clr--bg--card-backface: #212121;
 $l-theme--clr--bg--projcard-tag: darken($l-theme--clr--bg--card-frontface, 10);
-$l-theme--clr--bg--wexpcard-circle: white;
-$l-theme--clr--bg--wexpcard-clchunk: darken($l-theme--clr--bg--card-frontface, 3);
-$l-theme--clr--bg--wexpcard-number-disk: unset;
+$l-theme--clr--bg--expcard-circle: white;
+$l-theme--clr--bg--expcard-clchunk: darken($l-theme--clr--bg--card-frontface, 3);
+$l-theme--clr--bg--expcard-number-disk: unset;
+$l-theme--clr--bg--publcard--image: darken($l-theme--clr--bg--card-frontface, 5);
 
 $l-theme--brdr--flat-element: .11rem solid #DFE1E5;
 
